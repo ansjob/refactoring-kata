@@ -1,4 +1,4 @@
-package compiler;
+package compiler.sanitychecks;
 
 import org.junit.Before;
 
@@ -19,6 +19,5 @@ public class SimpleSkipCompilerTest extends CompilerTestBase {
 		noop.stmControlPoint = 0;
 		expected.add(noop);
 	}
-	
 	
 }

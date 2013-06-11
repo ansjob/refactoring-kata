@@ -1,4 +1,4 @@
-package compiler;
+package compiler.sanitychecks;
 
 import static org.junit.Assert.assertEquals;
 
