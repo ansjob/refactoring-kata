@@ -1,0 +1,36 @@
+=== Running from {x=NEG}
+<[L0] PUSH-2:[L0] STORE-x:[L1] LOOP([[L1] PUSH-4, [L1] FETCH-x, [L1] LE], [[L2] PUSH-0, [L2] PUSH-1, [L2] DIV, [L2] STORE-x, [L3] PUSH-3, [L3] STORE-x]):ε, ε, s[x→NEG]>
+<[L0] STORE-x:[L1] LOOP([[L1] PUSH-4, [L1] FETCH-x, [L1] LE], [[L2] PUSH-0, [L2] PUSH-1, [L2] DIV, [L2] STORE-x, [L3] PUSH-3, [L3] STORE-x]):ε, POS:ε, s[x→NEG]>
+<[L1] LOOP([[L1] PUSH-4, [L1] FETCH-x, [L1] LE], [[L2] PUSH-0, [L2] PUSH-1, [L2] DIV, [L2] STORE-x, [L3] PUSH-3, [L3] STORE-x]):ε, ε, s[x→POS]>
+<[L1] PUSH-4:[L1] FETCH-x:[L1] LE:[L1] BRANCH([[L2] PUSH-0, [L2] PUSH-1, [L2] DIV, [L2] STORE-x, [L3] PUSH-3, [L3] STORE-x, [L1] LOOP([[L1] PUSH-4, [L1] FETCH-x, [L1] LE], [[L2] PUSH-0, [L2] PUSH-1, [L2] DIV, [L2] STORE-x, [L3] PUSH-3, [L3] STORE-x])], [[L1] NOOP]):ε, ε, s[x→POS]>
+<[L1] FETCH-x:[L1] LE:[L1] BRANCH([[L2] PUSH-0, [L2] PUSH-1, [L2] DIV, [L2] STORE-x, [L3] PUSH-3, [L3] STORE-x, [L1] LOOP([[L1] PUSH-4, [L1] FETCH-x, [L1] LE], [[L2] PUSH-0, [L2] PUSH-1, [L2] DIV, [L2] STORE-x, [L3] PUSH-3, [L3] STORE-x])], [[L1] NOOP]):ε, POS:ε, s[x→POS]>
+<[L1] LE:[L1] BRANCH([[L2] PUSH-0, [L2] PUSH-1, [L2] DIV, [L2] STORE-x, [L3] PUSH-3, [L3] STORE-x, [L1] LOOP([[L1] PUSH-4, [L1] FETCH-x, [L1] LE], [[L2] PUSH-0, [L2] PUSH-1, [L2] DIV, [L2] STORE-x, [L3] PUSH-3, [L3] STORE-x])], [[L1] NOOP]):ε, POS:POS:ε, s[x→POS]>
+<[L1] BRANCH([[L2] PUSH-0, [L2] PUSH-1, [L2] DIV, [L2] STORE-x, [L3] PUSH-3, [L3] STORE-x, [L1] LOOP([[L1] PUSH-4, [L1] FETCH-x, [L1] LE], [[L2] PUSH-0, [L2] PUSH-1, [L2] DIV, [L2] STORE-x, [L3] PUSH-3, [L3] STORE-x])], [[L1] NOOP]):ε, T:ε, s[x→POS]>
+<[L2] PUSH-0:[L2] PUSH-1:[L2] DIV:[L2] STORE-x:[L3] PUSH-3:[L3] STORE-x:[L1] LOOP([[L1] PUSH-4, [L1] FETCH-x, [L1] LE], [[L2] PUSH-0, [L2] PUSH-1, [L2] DIV, [L2] STORE-x, [L3] PUSH-3, [L3] STORE-x]):ε, ε, s[x→POS]>
+<[L2] PUSH-1:[L2] DIV:[L2] STORE-x:[L3] PUSH-3:[L3] STORE-x:[L1] LOOP([[L1] PUSH-4, [L1] FETCH-x, [L1] LE], [[L2] PUSH-0, [L2] PUSH-1, [L2] DIV, [L2] STORE-x, [L3] PUSH-3, [L3] STORE-x]):ε, ZERO:ε, s[x→POS]>
+<[L2] DIV:[L2] STORE-x:[L3] PUSH-3:[L3] STORE-x:[L1] LOOP([[L1] PUSH-4, [L1] FETCH-x, [L1] LE], [[L2] PUSH-0, [L2] PUSH-1, [L2] DIV, [L2] STORE-x, [L3] PUSH-3, [L3] STORE-x]):ε, POS:ZERO:ε, s[x→POS]>
+<[L2] STORE-x:[L3] PUSH-3:[L3] STORE-x:[L1] LOOP([[L1] PUSH-4, [L1] FETCH-x, [L1] LE], [[L2] PUSH-0, [L2] PUSH-1, [L2] DIV, [L2] STORE-x, [L3] PUSH-3, [L3] STORE-x]):ε, ERR_A:ε, ŝ[x→POS]>
+<[L3] PUSH-3:[L3] STORE-x:[L1] LOOP([[L1] PUSH-4, [L1] FETCH-x, [L1] LE], [[L2] PUSH-0, [L2] PUSH-1, [L2] DIV, [L2] STORE-x, [L3] PUSH-3, [L3] STORE-x]):ε, ε, ŝ[x→POS]>
+<[L3] STORE-x:[L1] LOOP([[L1] PUSH-4, [L1] FETCH-x, [L1] LE], [[L2] PUSH-0, [L2] PUSH-1, [L2] DIV, [L2] STORE-x, [L3] PUSH-3, [L3] STORE-x]):ε, POS:ε, ŝ[x→POS]>
+<[L1] LOOP([[L1] PUSH-4, [L1] FETCH-x, [L1] LE], [[L2] PUSH-0, [L2] PUSH-1, [L2] DIV, [L2] STORE-x, [L3] PUSH-3, [L3] STORE-x]):ε, ε, ŝ[x→POS]>
+<ε, ε, ŝ[x→POS]>
+<[L1] NOOP:ε, ε, s[x→POS]>
+<ε, ε, s[x→POS]>
+=== Running from {x=ZERO}
+<[L0] PUSH-2:[L0] STORE-x:[L1] LOOP([[L1] PUSH-4, [L1] FETCH-x, [L1] LE], [[L2] PUSH-0, [L2] PUSH-1, [L2] DIV, [L2] STORE-x, [L3] PUSH-3, [L3] STORE-x]):ε, ε, s[x→ZERO]>
+<[L0] STORE-x:[L1] LOOP([[L1] PUSH-4, [L1] FETCH-x, [L1] LE], [[L2] PUSH-0, [L2] PUSH-1, [L2] DIV, [L2] STORE-x, [L3] PUSH-3, [L3] STORE-x]):ε, POS:ε, s[x→ZERO]>
+=== Running from {x=POS}
+<[L0] PUSH-2:[L0] STORE-x:[L1] LOOP([[L1] PUSH-4, [L1] FETCH-x, [L1] LE], [[L2] PUSH-0, [L2] PUSH-1, [L2] DIV, [L2] STORE-x, [L3] PUSH-3, [L3] STORE-x]):ε, ε, s[x→POS]>
+<[L0] STORE-x:[L1] LOOP([[L1] PUSH-4, [L1] FETCH-x, [L1] LE], [[L2] PUSH-0, [L2] PUSH-1, [L2] DIV, [L2] STORE-x, [L3] PUSH-3, [L3] STORE-x]):ε, POS:ε, s[x→POS]>
+
+{x=Z} rhs: POS
+x := 2;
+{x=POS} rhs: T
+while x <= 4 do
+    {x=POS} rhs: ERR_A
+    x := (1 / 0);
+    {x=NONE_A} rhs: NONE (Dead Code)
+    x := 3;
+{x=POS}
+Abnormal termination possible!
+Normal termination possible!

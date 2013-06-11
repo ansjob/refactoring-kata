@@ -1,0 +1,441 @@
+=== Running from {q=NEG, p=NEG, pq=NEG}
+<[L0] PUSH-41:[L0] STORE-pq:[L1] PUSH-2:[L1] STORE-p:[L2] LOOP([[L2] FETCH-pq, [L2] FETCH-p, [L2] FETCH-pq, [L2] DIV, [L2] FETCH-p, [L2] MULT, [L2] EQ, [L2] NEG], [[L3] PUSH-1, [L3] FETCH-p, [L3] ADD, [L3] STORE-p]):[L4] FETCH-p:[L4] FETCH-pq:[L4] DIV:[L4] STORE-q:ε, ε, s[q→NEG,p→NEG,pq→NEG]>
+<[L0] STORE-pq:[L1] PUSH-2:[L1] STORE-p:[L2] LOOP([[L2] FETCH-pq, [L2] FETCH-p, [L2] FETCH-pq, [L2] DIV, [L2] FETCH-p, [L2] MULT, [L2] EQ, [L2] NEG], [[L3] PUSH-1, [L3] FETCH-p, [L3] ADD, [L3] STORE-p]):[L4] FETCH-p:[L4] FETCH-pq:[L4] DIV:[L4] STORE-q:ε, POS:ε, s[q→NEG,p→NEG,pq→NEG]>
+<[L1] PUSH-2:[L1] STORE-p:[L2] LOOP([[L2] FETCH-pq, [L2] FETCH-p, [L2] FETCH-pq, [L2] DIV, [L2] FETCH-p, [L2] MULT, [L2] EQ, [L2] NEG], [[L3] PUSH-1, [L3] FETCH-p, [L3] ADD, [L3] STORE-p]):[L4] FETCH-p:[L4] FETCH-pq:[L4] DIV:[L4] STORE-q:ε, ε, s[q→NEG,p→NEG,pq→POS]>
+<[L1] STORE-p:[L2] LOOP([[L2] FETCH-pq, [L2] FETCH-p, [L2] FETCH-pq, [L2] DIV, [L2] FETCH-p, [L2] MULT, [L2] EQ, [L2] NEG], [[L3] PUSH-1, [L3] FETCH-p, [L3] ADD, [L3] STORE-p]):[L4] FETCH-p:[L4] FETCH-pq:[L4] DIV:[L4] STORE-q:ε, POS:ε, s[q→NEG,p→NEG,pq→POS]>
+<[L2] LOOP([[L2] FETCH-pq, [L2] FETCH-p, [L2] FETCH-pq, [L2] DIV, [L2] FETCH-p, [L2] MULT, [L2] EQ, [L2] NEG], [[L3] PUSH-1, [L3] FETCH-p, [L3] ADD, [L3] STORE-p]):[L4] FETCH-p:[L4] FETCH-pq:[L4] DIV:[L4] STORE-q:ε, ε, s[q→NEG,p→POS,pq→POS]>
+<[L2] FETCH-pq:[L2] FETCH-p:[L2] FETCH-pq:[L2] DIV:[L2] FETCH-p:[L2] MULT:[L2] EQ:[L2] NEG:[L2] BRANCH([[L3] PUSH-1, [L3] FETCH-p, [L3] ADD, [L3] STORE-p, [L2] LOOP([[L2] FETCH-pq, [L2] FETCH-p, [L2] FETCH-pq, [L2] DIV, [L2] FETCH-p, [L2] MULT, [L2] EQ, [L2] NEG], [[L3] PUSH-1, [L3] FETCH-p, [L3] ADD, [L3] STORE-p])], [[L2] NOOP]):[L4] FETCH-p:[L4] FETCH-pq:[L4] DIV:[L4] STORE-q:ε, ε, s[q→NEG,p→POS,pq→POS]>
+<[L2] FETCH-p:[L2] FETCH-pq:[L2] DIV:[L2] FETCH-p:[L2] MULT:[L2] EQ:[L2] NEG:[L2] BRANCH([[L3] PUSH-1, [L3] FETCH-p, [L3] ADD, [L3] STORE-p, [L2] LOOP([[L2] FETCH-pq, [L2] FETCH-p, [L2] FETCH-pq, [L2] DIV, [L2] FETCH-p, [L2] MULT, [L2] EQ, [L2] NEG], [[L3] PUSH-1, [L3] FETCH-p, [L3] ADD, [L3] STORE-p])], [[L2] NOOP]):[L4] FETCH-p:[L4] FETCH-pq:[L4] DIV:[L4] STORE-q:ε, POS:ε, s[q→NEG,p→POS,pq→POS]>
+<[L2] FETCH-pq:[L2] DIV:[L2] FETCH-p:[L2] MULT:[L2] EQ:[L2] NEG:[L2] BRANCH([[L3] PUSH-1, [L3] FETCH-p, [L3] ADD, [L3] STORE-p, [L2] LOOP([[L2] FETCH-pq, [L2] FETCH-p, [L2] FETCH-pq, [L2] DIV, [L2] FETCH-p, [L2] MULT, [L2] EQ, [L2] NEG], [[L3] PUSH-1, [L3] FETCH-p, [L3] ADD, [L3] STORE-p])], [[L2] NOOP]):[L4] FETCH-p:[L4] FETCH-pq:[L4] DIV:[L4] STORE-q:ε, POS:POS:ε, s[q→NEG,p→POS,pq→POS]>
+<[L2] DIV:[L2] FETCH-p:[L2] MULT:[L2] EQ:[L2] NEG:[L2] BRANCH([[L3] PUSH-1, [L3] FETCH-p, [L3] ADD, [L3] STORE-p, [L2] LOOP([[L2] FETCH-pq, [L2] FETCH-p, [L2] FETCH-pq, [L2] DIV, [L2] FETCH-p, [L2] MULT, [L2] EQ, [L2] NEG], [[L3] PUSH-1, [L3] FETCH-p, [L3] ADD, [L3] STORE-p])], [[L2] NOOP]):[L4] FETCH-p:[L4] FETCH-pq:[L4] DIV:[L4] STORE-q:ε, POS:POS:POS:ε, s[q→NEG,p→POS,pq→POS]>
+<[L2] FETCH-p:[L2] MULT:[L2] EQ:[L2] NEG:[L2] BRANCH([[L3] PUSH-1, [L3] FETCH-p, [L3] ADD, [L3] STORE-p, [L2] LOOP([[L2] FETCH-pq, [L2] FETCH-p, [L2] FETCH-pq, [L2] DIV, [L2] FETCH-p, [L2] MULT, [L2] EQ, [L2] NEG], [[L3] PUSH-1, [L3] FETCH-p, [L3] ADD, [L3] STORE-p])], [[L2] NOOP]):[L4] FETCH-p:[L4] FETCH-pq:[L4] DIV:[L4] STORE-q:ε, NON_NEG:POS:ε, s[q→NEG,p→POS,pq→POS]>
+<[L2] MULT:[L2] EQ:[L2] NEG:[L2] BRANCH([[L3] PUSH-1, [L3] FETCH-p, [L3] ADD, [L3] STORE-p, [L2] LOOP([[L2] FETCH-pq, [L2] FETCH-p, [L2] FETCH-pq, [L2] DIV, [L2] FETCH-p, [L2] MULT, [L2] EQ, [L2] NEG], [[L3] PUSH-1, [L3] FETCH-p, [L3] ADD, [L3] STORE-p])], [[L2] NOOP]):[L4] FETCH-p:[L4] FETCH-pq:[L4] DIV:[L4] STORE-q:ε, POS:NON_NEG:POS:ε, s[q→NEG,p→POS,pq→POS]>
+<[L2] EQ:[L2] NEG:[L2] BRANCH([[L3] PUSH-1, [L3] FETCH-p, [L3] ADD, [L3] STORE-p, [L2] LOOP([[L2] FETCH-pq, [L2] FETCH-p, [L2] FETCH-pq, [L2] DIV, [L2] FETCH-p, [L2] MULT, [L2] EQ, [L2] NEG], [[L3] PUSH-1, [L3] FETCH-p, [L3] ADD, [L3] STORE-p])], [[L2] NOOP]):[L4] FETCH-p:[L4] FETCH-pq:[L4] DIV:[L4] STORE-q:ε, NON_NEG:POS:ε, s[q→NEG,p→POS,pq→POS]>
+<[L2] NEG:[L2] BRANCH([[L3] PUSH-1, [L3] FETCH-p, [L3] ADD, [L3] STORE-p, [L2] LOOP([[L2] FETCH-pq, [L2] FETCH-p, [L2] FETCH-pq, [L2] DIV, [L2] FETCH-p, [L2] MULT, [L2] EQ, [L2] NEG], [[L3] PUSH-1, [L3] FETCH-p, [L3] ADD, [L3] STORE-p])], [[L2] NOOP]):[L4] FETCH-p:[L4] FETCH-pq:[L4] DIV:[L4] STORE-q:ε, T:ε, s[q→NEG,p→POS,pq→POS]>
+<[L2] BRANCH([[L3] PUSH-1, [L3] FETCH-p, [L3] ADD, [L3] STORE-p, [L2] LOOP([[L2] FETCH-pq, [L2] FETCH-p, [L2] FETCH-pq, [L2] DIV, [L2] FETCH-p, [L2] MULT, [L2] EQ, [L2] NEG], [[L3] PUSH-1, [L3] FETCH-p, [L3] ADD, [L3] STORE-p])], [[L2] NOOP]):[L4] FETCH-p:[L4] FETCH-pq:[L4] DIV:[L4] STORE-q:ε, T:ε, s[q→NEG,p→POS,pq→POS]>
+<[L2] NOOP:[L4] FETCH-p:[L4] FETCH-pq:[L4] DIV:[L4] STORE-q:ε, ε, s[q→NEG,p→POS,pq→POS]>
+<[L4] FETCH-p:[L4] FETCH-pq:[L4] DIV:[L4] STORE-q:ε, ε, s[q→NEG,p→POS,pq→POS]>
+<[L4] FETCH-pq:[L4] DIV:[L4] STORE-q:ε, POS:ε, s[q→NEG,p→POS,pq→POS]>
+<[L4] DIV:[L4] STORE-q:ε, POS:POS:ε, s[q→NEG,p→POS,pq→POS]>
+<[L4] STORE-q:ε, NON_NEG:ε, s[q→NEG,p→POS,pq→POS]>
+<ε, ε, s[q→NON_NEG,p→POS,pq→POS]>
+<[L3] PUSH-1:[L3] FETCH-p:[L3] ADD:[L3] STORE-p:[L2] LOOP([[L2] FETCH-pq, [L2] FETCH-p, [L2] FETCH-pq, [L2] DIV, [L2] FETCH-p, [L2] MULT, [L2] EQ, [L2] NEG], [[L3] PUSH-1, [L3] FETCH-p, [L3] ADD, [L3] STORE-p]):[L4] FETCH-p:[L4] FETCH-pq:[L4] DIV:[L4] STORE-q:ε, ε, s[q→NEG,p→POS,pq→POS]>
+<[L3] FETCH-p:[L3] ADD:[L3] STORE-p:[L2] LOOP([[L2] FETCH-pq, [L2] FETCH-p, [L2] FETCH-pq, [L2] DIV, [L2] FETCH-p, [L2] MULT, [L2] EQ, [L2] NEG], [[L3] PUSH-1, [L3] FETCH-p, [L3] ADD, [L3] STORE-p]):[L4] FETCH-p:[L4] FETCH-pq:[L4] DIV:[L4] STORE-q:ε, POS:ε, s[q→NEG,p→POS,pq→POS]>
+<[L3] ADD:[L3] STORE-p:[L2] LOOP([[L2] FETCH-pq, [L2] FETCH-p, [L2] FETCH-pq, [L2] DIV, [L2] FETCH-p, [L2] MULT, [L2] EQ, [L2] NEG], [[L3] PUSH-1, [L3] FETCH-p, [L3] ADD, [L3] STORE-p]):[L4] FETCH-p:[L4] FETCH-pq:[L4] DIV:[L4] STORE-q:ε, POS:POS:ε, s[q→NEG,p→POS,pq→POS]>
+<[L3] STORE-p:[L2] LOOP([[L2] FETCH-pq, [L2] FETCH-p, [L2] FETCH-pq, [L2] DIV, [L2] FETCH-p, [L2] MULT, [L2] EQ, [L2] NEG], [[L3] PUSH-1, [L3] FETCH-p, [L3] ADD, [L3] STORE-p]):[L4] FETCH-p:[L4] FETCH-pq:[L4] DIV:[L4] STORE-q:ε, POS:ε, s[q→NEG,p→POS,pq→POS]>
+=== Running from {q=NEG, p=NEG, pq=ZERO}
+<[L0] PUSH-41:[L0] STORE-pq:[L1] PUSH-2:[L1] STORE-p:[L2] LOOP([[L2] FETCH-pq, [L2] FETCH-p, [L2] FETCH-pq, [L2] DIV, [L2] FETCH-p, [L2] MULT, [L2] EQ, [L2] NEG], [[L3] PUSH-1, [L3] FETCH-p, [L3] ADD, [L3] STORE-p]):[L4] FETCH-p:[L4] FETCH-pq:[L4] DIV:[L4] STORE-q:ε, ε, s[q→NEG,p→NEG,pq→ZERO]>
+<[L0] STORE-pq:[L1] PUSH-2:[L1] STORE-p:[L2] LOOP([[L2] FETCH-pq, [L2] FETCH-p, [L2] FETCH-pq, [L2] DIV, [L2] FETCH-p, [L2] MULT, [L2] EQ, [L2] NEG], [[L3] PUSH-1, [L3] FETCH-p, [L3] ADD, [L3] STORE-p]):[L4] FETCH-p:[L4] FETCH-pq:[L4] DIV:[L4] STORE-q:ε, POS:ε, s[q→NEG,p→NEG,pq→ZERO]>
+=== Running from {q=NEG, p=NEG, pq=POS}
+<[L0] PUSH-41:[L0] STORE-pq:[L1] PUSH-2:[L1] STORE-p:[L2] LOOP([[L2] FETCH-pq, [L2] FETCH-p, [L2] FETCH-pq, [L2] DIV, [L2] FETCH-p, [L2] MULT, [L2] EQ, [L2] NEG], [[L3] PUSH-1, [L3] FETCH-p, [L3] ADD, [L3] STORE-p]):[L4] FETCH-p:[L4] FETCH-pq:[L4] DIV:[L4] STORE-q:ε, ε, s[q→NEG,p→NEG,pq→POS]>
+<[L0] STORE-pq:[L1] PUSH-2:[L1] STORE-p:[L2] LOOP([[L2] FETCH-pq, [L2] FETCH-p, [L2] FETCH-pq, [L2] DIV, [L2] FETCH-p, [L2] MULT, [L2] EQ, [L2] NEG], [[L3] PUSH-1, [L3] FETCH-p, [L3] ADD, [L3] STORE-p]):[L4] FETCH-p:[L4] FETCH-pq:[L4] DIV:[L4] STORE-q:ε, POS:ε, s[q→NEG,p→NEG,pq→POS]>
+=== Running from {q=NEG, p=ZERO, pq=NEG}
+<[L0] PUSH-41:[L0] STORE-pq:[L1] PUSH-2:[L1] STORE-p:[L2] LOOP([[L2] FETCH-pq, [L2] FETCH-p, [L2] FETCH-pq, [L2] DIV, [L2] FETCH-p, [L2] MULT, [L2] EQ, [L2] NEG], [[L3] PUSH-1, [L3] FETCH-p, [L3] ADD, [L3] STORE-p]):[L4] FETCH-p:[L4] FETCH-pq:[L4] DIV:[L4] STORE-q:ε, ε, s[q→NEG,p→ZERO,pq→NEG]>
+<[L0] STORE-pq:[L1] PUSH-2:[L1] STORE-p:[L2] LOOP([[L2] FETCH-pq, [L2] FETCH-p, [L2] FETCH-pq, [L2] DIV, [L2] FETCH-p, [L2] MULT, [L2] EQ, [L2] NEG], [[L3] PUSH-1, [L3] FETCH-p, [L3] ADD, [L3] STORE-p]):[L4] FETCH-p:[L4] FETCH-pq:[L4] DIV:[L4] STORE-q:ε, POS:ε, s[q→NEG,p→ZERO,pq→NEG]>
+<[L1] PUSH-2:[L1] STORE-p:[L2] LOOP([[L2] FETCH-pq, [L2] FETCH-p, [L2] FETCH-pq, [L2] DIV, [L2] FETCH-p, [L2] MULT, [L2] EQ, [L2] NEG], [[L3] PUSH-1, [L3] FETCH-p, [L3] ADD, [L3] STORE-p]):[L4] FETCH-p:[L4] FETCH-pq:[L4] DIV:[L4] STORE-q:ε, ε, s[q→NEG,p→ZERO,pq→POS]>
+<[L1] STORE-p:[L2] LOOP([[L2] FETCH-pq, [L2] FETCH-p, [L2] FETCH-pq, [L2] DIV, [L2] FETCH-p, [L2] MULT, [L2] EQ, [L2] NEG], [[L3] PUSH-1, [L3] FETCH-p, [L3] ADD, [L3] STORE-p]):[L4] FETCH-p:[L4] FETCH-pq:[L4] DIV:[L4] STORE-q:ε, POS:ε, s[q→NEG,p→ZERO,pq→POS]>
+=== Running from {q=NEG, p=ZERO, pq=ZERO}
+<[L0] PUSH-41:[L0] STORE-pq:[L1] PUSH-2:[L1] STORE-p:[L2] LOOP([[L2] FETCH-pq, [L2] FETCH-p, [L2] FETCH-pq, [L2] DIV, [L2] FETCH-p, [L2] MULT, [L2] EQ, [L2] NEG], [[L3] PUSH-1, [L3] FETCH-p, [L3] ADD, [L3] STORE-p]):[L4] FETCH-p:[L4] FETCH-pq:[L4] DIV:[L4] STORE-q:ε, ε, s[q→NEG,p→ZERO,pq→ZERO]>
+<[L0] STORE-pq:[L1] PUSH-2:[L1] STORE-p:[L2] LOOP([[L2] FETCH-pq, [L2] FETCH-p, [L2] FETCH-pq, [L2] DIV, [L2] FETCH-p, [L2] MULT, [L2] EQ, [L2] NEG], [[L3] PUSH-1, [L3] FETCH-p, [L3] ADD, [L3] STORE-p]):[L4] FETCH-p:[L4] FETCH-pq:[L4] DIV:[L4] STORE-q:ε, POS:ε, s[q→NEG,p→ZERO,pq→ZERO]>
+=== Running from {q=NEG, p=ZERO, pq=POS}
+<[L0] PUSH-41:[L0] STORE-pq:[L1] PUSH-2:[L1] STORE-p:[L2] LOOP([[L2] FETCH-pq, [L2] FETCH-p, [L2] FETCH-pq, [L2] DIV, [L2] FETCH-p, [L2] MULT, [L2] EQ, [L2] NEG], [[L3] PUSH-1, [L3] FETCH-p, [L3] ADD, [L3] STORE-p]):[L4] FETCH-p:[L4] FETCH-pq:[L4] DIV:[L4] STORE-q:ε, ε, s[q→NEG,p→ZERO,pq→POS]>
+<[L0] STORE-pq:[L1] PUSH-2:[L1] STORE-p:[L2] LOOP([[L2] FETCH-pq, [L2] FETCH-p, [L2] FETCH-pq, [L2] DIV, [L2] FETCH-p, [L2] MULT, [L2] EQ, [L2] NEG], [[L3] PUSH-1, [L3] FETCH-p, [L3] ADD, [L3] STORE-p]):[L4] FETCH-p:[L4] FETCH-pq:[L4] DIV:[L4] STORE-q:ε, POS:ε, s[q→NEG,p→ZERO,pq→POS]>
+=== Running from {q=NEG, p=POS, pq=NEG}
+<[L0] PUSH-41:[L0] STORE-pq:[L1] PUSH-2:[L1] STORE-p:[L2] LOOP([[L2] FETCH-pq, [L2] FETCH-p, [L2] FETCH-pq, [L2] DIV, [L2] FETCH-p, [L2] MULT, [L2] EQ, [L2] NEG], [[L3] PUSH-1, [L3] FETCH-p, [L3] ADD, [L3] STORE-p]):[L4] FETCH-p:[L4] FETCH-pq:[L4] DIV:[L4] STORE-q:ε, ε, s[q→NEG,p→POS,pq→NEG]>
+<[L0] STORE-pq:[L1] PUSH-2:[L1] STORE-p:[L2] LOOP([[L2] FETCH-pq, [L2] FETCH-p, [L2] FETCH-pq, [L2] DIV, [L2] FETCH-p, [L2] MULT, [L2] EQ, [L2] NEG], [[L3] PUSH-1, [L3] FETCH-p, [L3] ADD, [L3] STORE-p]):[L4] FETCH-p:[L4] FETCH-pq:[L4] DIV:[L4] STORE-q:ε, POS:ε, s[q→NEG,p→POS,pq→NEG]>
+<[L1] PUSH-2:[L1] STORE-p:[L2] LOOP([[L2] FETCH-pq, [L2] FETCH-p, [L2] FETCH-pq, [L2] DIV, [L2] FETCH-p, [L2] MULT, [L2] EQ, [L2] NEG], [[L3] PUSH-1, [L3] FETCH-p, [L3] ADD, [L3] STORE-p]):[L4] FETCH-p:[L4] FETCH-pq:[L4] DIV:[L4] STORE-q:ε, ε, s[q→NEG,p→POS,pq→POS]>
+<[L1] STORE-p:[L2] LOOP([[L2] FETCH-pq, [L2] FETCH-p, [L2] FETCH-pq, [L2] DIV, [L2] FETCH-p, [L2] MULT, [L2] EQ, [L2] NEG], [[L3] PUSH-1, [L3] FETCH-p, [L3] ADD, [L3] STORE-p]):[L4] FETCH-p:[L4] FETCH-pq:[L4] DIV:[L4] STORE-q:ε, POS:ε, s[q→NEG,p→POS,pq→POS]>
+=== Running from {q=NEG, p=POS, pq=ZERO}
+<[L0] PUSH-41:[L0] STORE-pq:[L1] PUSH-2:[L1] STORE-p:[L2] LOOP([[L2] FETCH-pq, [L2] FETCH-p, [L2] FETCH-pq, [L2] DIV, [L2] FETCH-p, [L2] MULT, [L2] EQ, [L2] NEG], [[L3] PUSH-1, [L3] FETCH-p, [L3] ADD, [L3] STORE-p]):[L4] FETCH-p:[L4] FETCH-pq:[L4] DIV:[L4] STORE-q:ε, ε, s[q→NEG,p→POS,pq→ZERO]>
+<[L0] STORE-pq:[L1] PUSH-2:[L1] STORE-p:[L2] LOOP([[L2] FETCH-pq, [L2] FETCH-p, [L2] FETCH-pq, [L2] DIV, [L2] FETCH-p, [L2] MULT, [L2] EQ, [L2] NEG], [[L3] PUSH-1, [L3] FETCH-p, [L3] ADD, [L3] STORE-p]):[L4] FETCH-p:[L4] FETCH-pq:[L4] DIV:[L4] STORE-q:ε, POS:ε, s[q→NEG,p→POS,pq→ZERO]>
+=== Running from {q=NEG, p=POS, pq=POS}
+<[L0] PUSH-41:[L0] STORE-pq:[L1] PUSH-2:[L1] STORE-p:[L2] LOOP([[L2] FETCH-pq, [L2] FETCH-p, [L2] FETCH-pq, [L2] DIV, [L2] FETCH-p, [L2] MULT, [L2] EQ, [L2] NEG], [[L3] PUSH-1, [L3] FETCH-p, [L3] ADD, [L3] STORE-p]):[L4] FETCH-p:[L4] FETCH-pq:[L4] DIV:[L4] STORE-q:ε, ε, s[q→NEG,p→POS,pq→POS]>
+<[L0] STORE-pq:[L1] PUSH-2:[L1] STORE-p:[L2] LOOP([[L2] FETCH-pq, [L2] FETCH-p, [L2] FETCH-pq, [L2] DIV, [L2] FETCH-p, [L2] MULT, [L2] EQ, [L2] NEG], [[L3] PUSH-1, [L3] FETCH-p, [L3] ADD, [L3] STORE-p]):[L4] FETCH-p:[L4] FETCH-pq:[L4] DIV:[L4] STORE-q:ε, POS:ε, s[q→NEG,p→POS,pq→POS]>
+=== Running from {q=NEG, p=NEG, pq=NEG}
+<[L0] PUSH-41:[L0] STORE-pq:[L1] PUSH-2:[L1] STORE-p:[L2] LOOP([[L2] FETCH-pq, [L2] FETCH-p, [L2] FETCH-pq, [L2] DIV, [L2] FETCH-p, [L2] MULT, [L2] EQ, [L2] NEG], [[L3] PUSH-1, [L3] FETCH-p, [L3] ADD, [L3] STORE-p]):[L4] FETCH-p:[L4] FETCH-pq:[L4] DIV:[L4] STORE-q:ε, ε, s[q→NEG,p→NEG,pq→NEG]>
+=== Running from {q=NEG, p=ZERO, pq=NEG}
+<[L0] PUSH-41:[L0] STORE-pq:[L1] PUSH-2:[L1] STORE-p:[L2] LOOP([[L2] FETCH-pq, [L2] FETCH-p, [L2] FETCH-pq, [L2] DIV, [L2] FETCH-p, [L2] MULT, [L2] EQ, [L2] NEG], [[L3] PUSH-1, [L3] FETCH-p, [L3] ADD, [L3] STORE-p]):[L4] FETCH-p:[L4] FETCH-pq:[L4] DIV:[L4] STORE-q:ε, ε, s[q→NEG,p→ZERO,pq→NEG]>
+=== Running from {q=NEG, p=POS, pq=NEG}
+<[L0] PUSH-41:[L0] STORE-pq:[L1] PUSH-2:[L1] STORE-p:[L2] LOOP([[L2] FETCH-pq, [L2] FETCH-p, [L2] FETCH-pq, [L2] DIV, [L2] FETCH-p, [L2] MULT, [L2] EQ, [L2] NEG], [[L3] PUSH-1, [L3] FETCH-p, [L3] ADD, [L3] STORE-p]):[L4] FETCH-p:[L4] FETCH-pq:[L4] DIV:[L4] STORE-q:ε, ε, s[q→NEG,p→POS,pq→NEG]>
+=== Running from {q=NEG, p=NEG, pq=ZERO}
+<[L0] PUSH-41:[L0] STORE-pq:[L1] PUSH-2:[L1] STORE-p:[L2] LOOP([[L2] FETCH-pq, [L2] FETCH-p, [L2] FETCH-pq, [L2] DIV, [L2] FETCH-p, [L2] MULT, [L2] EQ, [L2] NEG], [[L3] PUSH-1, [L3] FETCH-p, [L3] ADD, [L3] STORE-p]):[L4] FETCH-p:[L4] FETCH-pq:[L4] DIV:[L4] STORE-q:ε, ε, s[q→NEG,p→NEG,pq→ZERO]>
+=== Running from {q=NEG, p=ZERO, pq=ZERO}
+<[L0] PUSH-41:[L0] STORE-pq:[L1] PUSH-2:[L1] STORE-p:[L2] LOOP([[L2] FETCH-pq, [L2] FETCH-p, [L2] FETCH-pq, [L2] DIV, [L2] FETCH-p, [L2] MULT, [L2] EQ, [L2] NEG], [[L3] PUSH-1, [L3] FETCH-p, [L3] ADD, [L3] STORE-p]):[L4] FETCH-p:[L4] FETCH-pq:[L4] DIV:[L4] STORE-q:ε, ε, s[q→NEG,p→ZERO,pq→ZERO]>
+=== Running from {q=NEG, p=POS, pq=ZERO}
+<[L0] PUSH-41:[L0] STORE-pq:[L1] PUSH-2:[L1] STORE-p:[L2] LOOP([[L2] FETCH-pq, [L2] FETCH-p, [L2] FETCH-pq, [L2] DIV, [L2] FETCH-p, [L2] MULT, [L2] EQ, [L2] NEG], [[L3] PUSH-1, [L3] FETCH-p, [L3] ADD, [L3] STORE-p]):[L4] FETCH-p:[L4] FETCH-pq:[L4] DIV:[L4] STORE-q:ε, ε, s[q→NEG,p→POS,pq→ZERO]>
+=== Running from {q=NEG, p=NEG, pq=POS}
+<[L0] PUSH-41:[L0] STORE-pq:[L1] PUSH-2:[L1] STORE-p:[L2] LOOP([[L2] FETCH-pq, [L2] FETCH-p, [L2] FETCH-pq, [L2] DIV, [L2] FETCH-p, [L2] MULT, [L2] EQ, [L2] NEG], [[L3] PUSH-1, [L3] FETCH-p, [L3] ADD, [L3] STORE-p]):[L4] FETCH-p:[L4] FETCH-pq:[L4] DIV:[L4] STORE-q:ε, ε, s[q→NEG,p→NEG,pq→POS]>
+=== Running from {q=NEG, p=ZERO, pq=POS}
+<[L0] PUSH-41:[L0] STORE-pq:[L1] PUSH-2:[L1] STORE-p:[L2] LOOP([[L2] FETCH-pq, [L2] FETCH-p, [L2] FETCH-pq, [L2] DIV, [L2] FETCH-p, [L2] MULT, [L2] EQ, [L2] NEG], [[L3] PUSH-1, [L3] FETCH-p, [L3] ADD, [L3] STORE-p]):[L4] FETCH-p:[L4] FETCH-pq:[L4] DIV:[L4] STORE-q:ε, ε, s[q→NEG,p→ZERO,pq→POS]>
+=== Running from {q=NEG, p=POS, pq=POS}
+<[L0] PUSH-41:[L0] STORE-pq:[L1] PUSH-2:[L1] STORE-p:[L2] LOOP([[L2] FETCH-pq, [L2] FETCH-p, [L2] FETCH-pq, [L2] DIV, [L2] FETCH-p, [L2] MULT, [L2] EQ, [L2] NEG], [[L3] PUSH-1, [L3] FETCH-p, [L3] ADD, [L3] STORE-p]):[L4] FETCH-p:[L4] FETCH-pq:[L4] DIV:[L4] STORE-q:ε, ε, s[q→NEG,p→POS,pq→POS]>
+=== Running from {q=ZERO, p=NEG, pq=NEG}
+<[L0] PUSH-41:[L0] STORE-pq:[L1] PUSH-2:[L1] STORE-p:[L2] LOOP([[L2] FETCH-pq, [L2] FETCH-p, [L2] FETCH-pq, [L2] DIV, [L2] FETCH-p, [L2] MULT, [L2] EQ, [L2] NEG], [[L3] PUSH-1, [L3] FETCH-p, [L3] ADD, [L3] STORE-p]):[L4] FETCH-p:[L4] FETCH-pq:[L4] DIV:[L4] STORE-q:ε, ε, s[q→ZERO,p→NEG,pq→NEG]>
+<[L0] STORE-pq:[L1] PUSH-2:[L1] STORE-p:[L2] LOOP([[L2] FETCH-pq, [L2] FETCH-p, [L2] FETCH-pq, [L2] DIV, [L2] FETCH-p, [L2] MULT, [L2] EQ, [L2] NEG], [[L3] PUSH-1, [L3] FETCH-p, [L3] ADD, [L3] STORE-p]):[L4] FETCH-p:[L4] FETCH-pq:[L4] DIV:[L4] STORE-q:ε, POS:ε, s[q→ZERO,p→NEG,pq→NEG]>
+<[L1] PUSH-2:[L1] STORE-p:[L2] LOOP([[L2] FETCH-pq, [L2] FETCH-p, [L2] FETCH-pq, [L2] DIV, [L2] FETCH-p, [L2] MULT, [L2] EQ, [L2] NEG], [[L3] PUSH-1, [L3] FETCH-p, [L3] ADD, [L3] STORE-p]):[L4] FETCH-p:[L4] FETCH-pq:[L4] DIV:[L4] STORE-q:ε, ε, s[q→ZERO,p→NEG,pq→POS]>
+<[L1] STORE-p:[L2] LOOP([[L2] FETCH-pq, [L2] FETCH-p, [L2] FETCH-pq, [L2] DIV, [L2] FETCH-p, [L2] MULT, [L2] EQ, [L2] NEG], [[L3] PUSH-1, [L3] FETCH-p, [L3] ADD, [L3] STORE-p]):[L4] FETCH-p:[L4] FETCH-pq:[L4] DIV:[L4] STORE-q:ε, POS:ε, s[q→ZERO,p→NEG,pq→POS]>
+<[L2] LOOP([[L2] FETCH-pq, [L2] FETCH-p, [L2] FETCH-pq, [L2] DIV, [L2] FETCH-p, [L2] MULT, [L2] EQ, [L2] NEG], [[L3] PUSH-1, [L3] FETCH-p, [L3] ADD, [L3] STORE-p]):[L4] FETCH-p:[L4] FETCH-pq:[L4] DIV:[L4] STORE-q:ε, ε, s[q→ZERO,p→POS,pq→POS]>
+<[L2] FETCH-pq:[L2] FETCH-p:[L2] FETCH-pq:[L2] DIV:[L2] FETCH-p:[L2] MULT:[L2] EQ:[L2] NEG:[L2] BRANCH([[L3] PUSH-1, [L3] FETCH-p, [L3] ADD, [L3] STORE-p, [L2] LOOP([[L2] FETCH-pq, [L2] FETCH-p, [L2] FETCH-pq, [L2] DIV, [L2] FETCH-p, [L2] MULT, [L2] EQ, [L2] NEG], [[L3] PUSH-1, [L3] FETCH-p, [L3] ADD, [L3] STORE-p])], [[L2] NOOP]):[L4] FETCH-p:[L4] FETCH-pq:[L4] DIV:[L4] STORE-q:ε, ε, s[q→ZERO,p→POS,pq→POS]>
+<[L2] FETCH-p:[L2] FETCH-pq:[L2] DIV:[L2] FETCH-p:[L2] MULT:[L2] EQ:[L2] NEG:[L2] BRANCH([[L3] PUSH-1, [L3] FETCH-p, [L3] ADD, [L3] STORE-p, [L2] LOOP([[L2] FETCH-pq, [L2] FETCH-p, [L2] FETCH-pq, [L2] DIV, [L2] FETCH-p, [L2] MULT, [L2] EQ, [L2] NEG], [[L3] PUSH-1, [L3] FETCH-p, [L3] ADD, [L3] STORE-p])], [[L2] NOOP]):[L4] FETCH-p:[L4] FETCH-pq:[L4] DIV:[L4] STORE-q:ε, POS:ε, s[q→ZERO,p→POS,pq→POS]>
+<[L2] FETCH-pq:[L2] DIV:[L2] FETCH-p:[L2] MULT:[L2] EQ:[L2] NEG:[L2] BRANCH([[L3] PUSH-1, [L3] FETCH-p, [L3] ADD, [L3] STORE-p, [L2] LOOP([[L2] FETCH-pq, [L2] FETCH-p, [L2] FETCH-pq, [L2] DIV, [L2] FETCH-p, [L2] MULT, [L2] EQ, [L2] NEG], [[L3] PUSH-1, [L3] FETCH-p, [L3] ADD, [L3] STORE-p])], [[L2] NOOP]):[L4] FETCH-p:[L4] FETCH-pq:[L4] DIV:[L4] STORE-q:ε, POS:POS:ε, s[q→ZERO,p→POS,pq→POS]>
+<[L2] DIV:[L2] FETCH-p:[L2] MULT:[L2] EQ:[L2] NEG:[L2] BRANCH([[L3] PUSH-1, [L3] FETCH-p, [L3] ADD, [L3] STORE-p, [L2] LOOP([[L2] FETCH-pq, [L2] FETCH-p, [L2] FETCH-pq, [L2] DIV, [L2] FETCH-p, [L2] MULT, [L2] EQ, [L2] NEG], [[L3] PUSH-1, [L3] FETCH-p, [L3] ADD, [L3] STORE-p])], [[L2] NOOP]):[L4] FETCH-p:[L4] FETCH-pq:[L4] DIV:[L4] STORE-q:ε, POS:POS:POS:ε, s[q→ZERO,p→POS,pq→POS]>
+<[L2] FETCH-p:[L2] MULT:[L2] EQ:[L2] NEG:[L2] BRANCH([[L3] PUSH-1, [L3] FETCH-p, [L3] ADD, [L3] STORE-p, [L2] LOOP([[L2] FETCH-pq, [L2] FETCH-p, [L2] FETCH-pq, [L2] DIV, [L2] FETCH-p, [L2] MULT, [L2] EQ, [L2] NEG], [[L3] PUSH-1, [L3] FETCH-p, [L3] ADD, [L3] STORE-p])], [[L2] NOOP]):[L4] FETCH-p:[L4] FETCH-pq:[L4] DIV:[L4] STORE-q:ε, NON_NEG:POS:ε, s[q→ZERO,p→POS,pq→POS]>
+<[L2] MULT:[L2] EQ:[L2] NEG:[L2] BRANCH([[L3] PUSH-1, [L3] FETCH-p, [L3] ADD, [L3] STORE-p, [L2] LOOP([[L2] FETCH-pq, [L2] FETCH-p, [L2] FETCH-pq, [L2] DIV, [L2] FETCH-p, [L2] MULT, [L2] EQ, [L2] NEG], [[L3] PUSH-1, [L3] FETCH-p, [L3] ADD, [L3] STORE-p])], [[L2] NOOP]):[L4] FETCH-p:[L4] FETCH-pq:[L4] DIV:[L4] STORE-q:ε, POS:NON_NEG:POS:ε, s[q→ZERO,p→POS,pq→POS]>
+<[L2] EQ:[L2] NEG:[L2] BRANCH([[L3] PUSH-1, [L3] FETCH-p, [L3] ADD, [L3] STORE-p, [L2] LOOP([[L2] FETCH-pq, [L2] FETCH-p, [L2] FETCH-pq, [L2] DIV, [L2] FETCH-p, [L2] MULT, [L2] EQ, [L2] NEG], [[L3] PUSH-1, [L3] FETCH-p, [L3] ADD, [L3] STORE-p])], [[L2] NOOP]):[L4] FETCH-p:[L4] FETCH-pq:[L4] DIV:[L4] STORE-q:ε, NON_NEG:POS:ε, s[q→ZERO,p→POS,pq→POS]>
+<[L2] NEG:[L2] BRANCH([[L3] PUSH-1, [L3] FETCH-p, [L3] ADD, [L3] STORE-p, [L2] LOOP([[L2] FETCH-pq, [L2] FETCH-p, [L2] FETCH-pq, [L2] DIV, [L2] FETCH-p, [L2] MULT, [L2] EQ, [L2] NEG], [[L3] PUSH-1, [L3] FETCH-p, [L3] ADD, [L3] STORE-p])], [[L2] NOOP]):[L4] FETCH-p:[L4] FETCH-pq:[L4] DIV:[L4] STORE-q:ε, T:ε, s[q→ZERO,p→POS,pq→POS]>
+<[L2] BRANCH([[L3] PUSH-1, [L3] FETCH-p, [L3] ADD, [L3] STORE-p, [L2] LOOP([[L2] FETCH-pq, [L2] FETCH-p, [L2] FETCH-pq, [L2] DIV, [L2] FETCH-p, [L2] MULT, [L2] EQ, [L2] NEG], [[L3] PUSH-1, [L3] FETCH-p, [L3] ADD, [L3] STORE-p])], [[L2] NOOP]):[L4] FETCH-p:[L4] FETCH-pq:[L4] DIV:[L4] STORE-q:ε, T:ε, s[q→ZERO,p→POS,pq→POS]>
+<[L3] PUSH-1:[L3] FETCH-p:[L3] ADD:[L3] STORE-p:[L2] LOOP([[L2] FETCH-pq, [L2] FETCH-p, [L2] FETCH-pq, [L2] DIV, [L2] FETCH-p, [L2] MULT, [L2] EQ, [L2] NEG], [[L3] PUSH-1, [L3] FETCH-p, [L3] ADD, [L3] STORE-p]):[L4] FETCH-p:[L4] FETCH-pq:[L4] DIV:[L4] STORE-q:ε, ε, s[q→ZERO,p→POS,pq→POS]>
+<[L3] FETCH-p:[L3] ADD:[L3] STORE-p:[L2] LOOP([[L2] FETCH-pq, [L2] FETCH-p, [L2] FETCH-pq, [L2] DIV, [L2] FETCH-p, [L2] MULT, [L2] EQ, [L2] NEG], [[L3] PUSH-1, [L3] FETCH-p, [L3] ADD, [L3] STORE-p]):[L4] FETCH-p:[L4] FETCH-pq:[L4] DIV:[L4] STORE-q:ε, POS:ε, s[q→ZERO,p→POS,pq→POS]>
+<[L3] ADD:[L3] STORE-p:[L2] LOOP([[L2] FETCH-pq, [L2] FETCH-p, [L2] FETCH-pq, [L2] DIV, [L2] FETCH-p, [L2] MULT, [L2] EQ, [L2] NEG], [[L3] PUSH-1, [L3] FETCH-p, [L3] ADD, [L3] STORE-p]):[L4] FETCH-p:[L4] FETCH-pq:[L4] DIV:[L4] STORE-q:ε, POS:POS:ε, s[q→ZERO,p→POS,pq→POS]>
+<[L3] STORE-p:[L2] LOOP([[L2] FETCH-pq, [L2] FETCH-p, [L2] FETCH-pq, [L2] DIV, [L2] FETCH-p, [L2] MULT, [L2] EQ, [L2] NEG], [[L3] PUSH-1, [L3] FETCH-p, [L3] ADD, [L3] STORE-p]):[L4] FETCH-p:[L4] FETCH-pq:[L4] DIV:[L4] STORE-q:ε, POS:ε, s[q→ZERO,p→POS,pq→POS]>
+<[L2] NOOP:[L4] FETCH-p:[L4] FETCH-pq:[L4] DIV:[L4] STORE-q:ε, ε, s[q→ZERO,p→POS,pq→POS]>
+<[L4] FETCH-p:[L4] FETCH-pq:[L4] DIV:[L4] STORE-q:ε, ε, s[q→ZERO,p→POS,pq→POS]>
+<[L4] FETCH-pq:[L4] DIV:[L4] STORE-q:ε, POS:ε, s[q→ZERO,p→POS,pq→POS]>
+<[L4] DIV:[L4] STORE-q:ε, POS:POS:ε, s[q→ZERO,p→POS,pq→POS]>
+<[L4] STORE-q:ε, NON_NEG:ε, s[q→ZERO,p→POS,pq→POS]>
+=== Running from {q=ZERO, p=NEG, pq=ZERO}
+<[L0] PUSH-41:[L0] STORE-pq:[L1] PUSH-2:[L1] STORE-p:[L2] LOOP([[L2] FETCH-pq, [L2] FETCH-p, [L2] FETCH-pq, [L2] DIV, [L2] FETCH-p, [L2] MULT, [L2] EQ, [L2] NEG], [[L3] PUSH-1, [L3] FETCH-p, [L3] ADD, [L3] STORE-p]):[L4] FETCH-p:[L4] FETCH-pq:[L4] DIV:[L4] STORE-q:ε, ε, s[q→ZERO,p→NEG,pq→ZERO]>
+<[L0] STORE-pq:[L1] PUSH-2:[L1] STORE-p:[L2] LOOP([[L2] FETCH-pq, [L2] FETCH-p, [L2] FETCH-pq, [L2] DIV, [L2] FETCH-p, [L2] MULT, [L2] EQ, [L2] NEG], [[L3] PUSH-1, [L3] FETCH-p, [L3] ADD, [L3] STORE-p]):[L4] FETCH-p:[L4] FETCH-pq:[L4] DIV:[L4] STORE-q:ε, POS:ε, s[q→ZERO,p→NEG,pq→ZERO]>
+=== Running from {q=ZERO, p=NEG, pq=POS}
+<[L0] PUSH-41:[L0] STORE-pq:[L1] PUSH-2:[L1] STORE-p:[L2] LOOP([[L2] FETCH-pq, [L2] FETCH-p, [L2] FETCH-pq, [L2] DIV, [L2] FETCH-p, [L2] MULT, [L2] EQ, [L2] NEG], [[L3] PUSH-1, [L3] FETCH-p, [L3] ADD, [L3] STORE-p]):[L4] FETCH-p:[L4] FETCH-pq:[L4] DIV:[L4] STORE-q:ε, ε, s[q→ZERO,p→NEG,pq→POS]>
+<[L0] STORE-pq:[L1] PUSH-2:[L1] STORE-p:[L2] LOOP([[L2] FETCH-pq, [L2] FETCH-p, [L2] FETCH-pq, [L2] DIV, [L2] FETCH-p, [L2] MULT, [L2] EQ, [L2] NEG], [[L3] PUSH-1, [L3] FETCH-p, [L3] ADD, [L3] STORE-p]):[L4] FETCH-p:[L4] FETCH-pq:[L4] DIV:[L4] STORE-q:ε, POS:ε, s[q→ZERO,p→NEG,pq→POS]>
+=== Running from {q=ZERO, p=ZERO, pq=NEG}
+<[L0] PUSH-41:[L0] STORE-pq:[L1] PUSH-2:[L1] STORE-p:[L2] LOOP([[L2] FETCH-pq, [L2] FETCH-p, [L2] FETCH-pq, [L2] DIV, [L2] FETCH-p, [L2] MULT, [L2] EQ, [L2] NEG], [[L3] PUSH-1, [L3] FETCH-p, [L3] ADD, [L3] STORE-p]):[L4] FETCH-p:[L4] FETCH-pq:[L4] DIV:[L4] STORE-q:ε, ε, s[q→ZERO,p→ZERO,pq→NEG]>
+<[L0] STORE-pq:[L1] PUSH-2:[L1] STORE-p:[L2] LOOP([[L2] FETCH-pq, [L2] FETCH-p, [L2] FETCH-pq, [L2] DIV, [L2] FETCH-p, [L2] MULT, [L2] EQ, [L2] NEG], [[L3] PUSH-1, [L3] FETCH-p, [L3] ADD, [L3] STORE-p]):[L4] FETCH-p:[L4] FETCH-pq:[L4] DIV:[L4] STORE-q:ε, POS:ε, s[q→ZERO,p→ZERO,pq→NEG]>
+<[L1] PUSH-2:[L1] STORE-p:[L2] LOOP([[L2] FETCH-pq, [L2] FETCH-p, [L2] FETCH-pq, [L2] DIV, [L2] FETCH-p, [L2] MULT, [L2] EQ, [L2] NEG], [[L3] PUSH-1, [L3] FETCH-p, [L3] ADD, [L3] STORE-p]):[L4] FETCH-p:[L4] FETCH-pq:[L4] DIV:[L4] STORE-q:ε, ε, s[q→ZERO,p→ZERO,pq→POS]>
+<[L1] STORE-p:[L2] LOOP([[L2] FETCH-pq, [L2] FETCH-p, [L2] FETCH-pq, [L2] DIV, [L2] FETCH-p, [L2] MULT, [L2] EQ, [L2] NEG], [[L3] PUSH-1, [L3] FETCH-p, [L3] ADD, [L3] STORE-p]):[L4] FETCH-p:[L4] FETCH-pq:[L4] DIV:[L4] STORE-q:ε, POS:ε, s[q→ZERO,p→ZERO,pq→POS]>
+=== Running from {q=ZERO, p=ZERO, pq=ZERO}
+<[L0] PUSH-41:[L0] STORE-pq:[L1] PUSH-2:[L1] STORE-p:[L2] LOOP([[L2] FETCH-pq, [L2] FETCH-p, [L2] FETCH-pq, [L2] DIV, [L2] FETCH-p, [L2] MULT, [L2] EQ, [L2] NEG], [[L3] PUSH-1, [L3] FETCH-p, [L3] ADD, [L3] STORE-p]):[L4] FETCH-p:[L4] FETCH-pq:[L4] DIV:[L4] STORE-q:ε, ε, s[q→ZERO,p→ZERO,pq→ZERO]>
+<[L0] STORE-pq:[L1] PUSH-2:[L1] STORE-p:[L2] LOOP([[L2] FETCH-pq, [L2] FETCH-p, [L2] FETCH-pq, [L2] DIV, [L2] FETCH-p, [L2] MULT, [L2] EQ, [L2] NEG], [[L3] PUSH-1, [L3] FETCH-p, [L3] ADD, [L3] STORE-p]):[L4] FETCH-p:[L4] FETCH-pq:[L4] DIV:[L4] STORE-q:ε, POS:ε, s[q→ZERO,p→ZERO,pq→ZERO]>
+=== Running from {q=ZERO, p=ZERO, pq=POS}
+<[L0] PUSH-41:[L0] STORE-pq:[L1] PUSH-2:[L1] STORE-p:[L2] LOOP([[L2] FETCH-pq, [L2] FETCH-p, [L2] FETCH-pq, [L2] DIV, [L2] FETCH-p, [L2] MULT, [L2] EQ, [L2] NEG], [[L3] PUSH-1, [L3] FETCH-p, [L3] ADD, [L3] STORE-p]):[L4] FETCH-p:[L4] FETCH-pq:[L4] DIV:[L4] STORE-q:ε, ε, s[q→ZERO,p→ZERO,pq→POS]>
+<[L0] STORE-pq:[L1] PUSH-2:[L1] STORE-p:[L2] LOOP([[L2] FETCH-pq, [L2] FETCH-p, [L2] FETCH-pq, [L2] DIV, [L2] FETCH-p, [L2] MULT, [L2] EQ, [L2] NEG], [[L3] PUSH-1, [L3] FETCH-p, [L3] ADD, [L3] STORE-p]):[L4] FETCH-p:[L4] FETCH-pq:[L4] DIV:[L4] STORE-q:ε, POS:ε, s[q→ZERO,p→ZERO,pq→POS]>
+=== Running from {q=ZERO, p=POS, pq=NEG}
+<[L0] PUSH-41:[L0] STORE-pq:[L1] PUSH-2:[L1] STORE-p:[L2] LOOP([[L2] FETCH-pq, [L2] FETCH-p, [L2] FETCH-pq, [L2] DIV, [L2] FETCH-p, [L2] MULT, [L2] EQ, [L2] NEG], [[L3] PUSH-1, [L3] FETCH-p, [L3] ADD, [L3] STORE-p]):[L4] FETCH-p:[L4] FETCH-pq:[L4] DIV:[L4] STORE-q:ε, ε, s[q→ZERO,p→POS,pq→NEG]>
+<[L0] STORE-pq:[L1] PUSH-2:[L1] STORE-p:[L2] LOOP([[L2] FETCH-pq, [L2] FETCH-p, [L2] FETCH-pq, [L2] DIV, [L2] FETCH-p, [L2] MULT, [L2] EQ, [L2] NEG], [[L3] PUSH-1, [L3] FETCH-p, [L3] ADD, [L3] STORE-p]):[L4] FETCH-p:[L4] FETCH-pq:[L4] DIV:[L4] STORE-q:ε, POS:ε, s[q→ZERO,p→POS,pq→NEG]>
+<[L1] PUSH-2:[L1] STORE-p:[L2] LOOP([[L2] FETCH-pq, [L2] FETCH-p, [L2] FETCH-pq, [L2] DIV, [L2] FETCH-p, [L2] MULT, [L2] EQ, [L2] NEG], [[L3] PUSH-1, [L3] FETCH-p, [L3] ADD, [L3] STORE-p]):[L4] FETCH-p:[L4] FETCH-pq:[L4] DIV:[L4] STORE-q:ε, ε, s[q→ZERO,p→POS,pq→POS]>
+<[L1] STORE-p:[L2] LOOP([[L2] FETCH-pq, [L2] FETCH-p, [L2] FETCH-pq, [L2] DIV, [L2] FETCH-p, [L2] MULT, [L2] EQ, [L2] NEG], [[L3] PUSH-1, [L3] FETCH-p, [L3] ADD, [L3] STORE-p]):[L4] FETCH-p:[L4] FETCH-pq:[L4] DIV:[L4] STORE-q:ε, POS:ε, s[q→ZERO,p→POS,pq→POS]>
+=== Running from {q=ZERO, p=POS, pq=ZERO}
+<[L0] PUSH-41:[L0] STORE-pq:[L1] PUSH-2:[L1] STORE-p:[L2] LOOP([[L2] FETCH-pq, [L2] FETCH-p, [L2] FETCH-pq, [L2] DIV, [L2] FETCH-p, [L2] MULT, [L2] EQ, [L2] NEG], [[L3] PUSH-1, [L3] FETCH-p, [L3] ADD, [L3] STORE-p]):[L4] FETCH-p:[L4] FETCH-pq:[L4] DIV:[L4] STORE-q:ε, ε, s[q→ZERO,p→POS,pq→ZERO]>
+<[L0] STORE-pq:[L1] PUSH-2:[L1] STORE-p:[L2] LOOP([[L2] FETCH-pq, [L2] FETCH-p, [L2] FETCH-pq, [L2] DIV, [L2] FETCH-p, [L2] MULT, [L2] EQ, [L2] NEG], [[L3] PUSH-1, [L3] FETCH-p, [L3] ADD, [L3] STORE-p]):[L4] FETCH-p:[L4] FETCH-pq:[L4] DIV:[L4] STORE-q:ε, POS:ε, s[q→ZERO,p→POS,pq→ZERO]>
+=== Running from {q=ZERO, p=POS, pq=POS}
+<[L0] PUSH-41:[L0] STORE-pq:[L1] PUSH-2:[L1] STORE-p:[L2] LOOP([[L2] FETCH-pq, [L2] FETCH-p, [L2] FETCH-pq, [L2] DIV, [L2] FETCH-p, [L2] MULT, [L2] EQ, [L2] NEG], [[L3] PUSH-1, [L3] FETCH-p, [L3] ADD, [L3] STORE-p]):[L4] FETCH-p:[L4] FETCH-pq:[L4] DIV:[L4] STORE-q:ε, ε, s[q→ZERO,p→POS,pq→POS]>
+<[L0] STORE-pq:[L1] PUSH-2:[L1] STORE-p:[L2] LOOP([[L2] FETCH-pq, [L2] FETCH-p, [L2] FETCH-pq, [L2] DIV, [L2] FETCH-p, [L2] MULT, [L2] EQ, [L2] NEG], [[L3] PUSH-1, [L3] FETCH-p, [L3] ADD, [L3] STORE-p]):[L4] FETCH-p:[L4] FETCH-pq:[L4] DIV:[L4] STORE-q:ε, POS:ε, s[q→ZERO,p→POS,pq→POS]>
+=== Running from {q=ZERO, p=NEG, pq=NEG}
+<[L0] PUSH-41:[L0] STORE-pq:[L1] PUSH-2:[L1] STORE-p:[L2] LOOP([[L2] FETCH-pq, [L2] FETCH-p, [L2] FETCH-pq, [L2] DIV, [L2] FETCH-p, [L2] MULT, [L2] EQ, [L2] NEG], [[L3] PUSH-1, [L3] FETCH-p, [L3] ADD, [L3] STORE-p]):[L4] FETCH-p:[L4] FETCH-pq:[L4] DIV:[L4] STORE-q:ε, ε, s[q→ZERO,p→NEG,pq→NEG]>
+=== Running from {q=ZERO, p=ZERO, pq=NEG}
+<[L0] PUSH-41:[L0] STORE-pq:[L1] PUSH-2:[L1] STORE-p:[L2] LOOP([[L2] FETCH-pq, [L2] FETCH-p, [L2] FETCH-pq, [L2] DIV, [L2] FETCH-p, [L2] MULT, [L2] EQ, [L2] NEG], [[L3] PUSH-1, [L3] FETCH-p, [L3] ADD, [L3] STORE-p]):[L4] FETCH-p:[L4] FETCH-pq:[L4] DIV:[L4] STORE-q:ε, ε, s[q→ZERO,p→ZERO,pq→NEG]>
+=== Running from {q=ZERO, p=POS, pq=NEG}
+<[L0] PUSH-41:[L0] STORE-pq:[L1] PUSH-2:[L1] STORE-p:[L2] LOOP([[L2] FETCH-pq, [L2] FETCH-p, [L2] FETCH-pq, [L2] DIV, [L2] FETCH-p, [L2] MULT, [L2] EQ, [L2] NEG], [[L3] PUSH-1, [L3] FETCH-p, [L3] ADD, [L3] STORE-p]):[L4] FETCH-p:[L4] FETCH-pq:[L4] DIV:[L4] STORE-q:ε, ε, s[q→ZERO,p→POS,pq→NEG]>
+=== Running from {q=ZERO, p=NEG, pq=ZERO}
+<[L0] PUSH-41:[L0] STORE-pq:[L1] PUSH-2:[L1] STORE-p:[L2] LOOP([[L2] FETCH-pq, [L2] FETCH-p, [L2] FETCH-pq, [L2] DIV, [L2] FETCH-p, [L2] MULT, [L2] EQ, [L2] NEG], [[L3] PUSH-1, [L3] FETCH-p, [L3] ADD, [L3] STORE-p]):[L4] FETCH-p:[L4] FETCH-pq:[L4] DIV:[L4] STORE-q:ε, ε, s[q→ZERO,p→NEG,pq→ZERO]>
+=== Running from {q=ZERO, p=ZERO, pq=ZERO}
+<[L0] PUSH-41:[L0] STORE-pq:[L1] PUSH-2:[L1] STORE-p:[L2] LOOP([[L2] FETCH-pq, [L2] FETCH-p, [L2] FETCH-pq, [L2] DIV, [L2] FETCH-p, [L2] MULT, [L2] EQ, [L2] NEG], [[L3] PUSH-1, [L3] FETCH-p, [L3] ADD, [L3] STORE-p]):[L4] FETCH-p:[L4] FETCH-pq:[L4] DIV:[L4] STORE-q:ε, ε, s[q→ZERO,p→ZERO,pq→ZERO]>
+=== Running from {q=ZERO, p=POS, pq=ZERO}
+<[L0] PUSH-41:[L0] STORE-pq:[L1] PUSH-2:[L1] STORE-p:[L2] LOOP([[L2] FETCH-pq, [L2] FETCH-p, [L2] FETCH-pq, [L2] DIV, [L2] FETCH-p, [L2] MULT, [L2] EQ, [L2] NEG], [[L3] PUSH-1, [L3] FETCH-p, [L3] ADD, [L3] STORE-p]):[L4] FETCH-p:[L4] FETCH-pq:[L4] DIV:[L4] STORE-q:ε, ε, s[q→ZERO,p→POS,pq→ZERO]>
+=== Running from {q=ZERO, p=NEG, pq=POS}
+<[L0] PUSH-41:[L0] STORE-pq:[L1] PUSH-2:[L1] STORE-p:[L2] LOOP([[L2] FETCH-pq, [L2] FETCH-p, [L2] FETCH-pq, [L2] DIV, [L2] FETCH-p, [L2] MULT, [L2] EQ, [L2] NEG], [[L3] PUSH-1, [L3] FETCH-p, [L3] ADD, [L3] STORE-p]):[L4] FETCH-p:[L4] FETCH-pq:[L4] DIV:[L4] STORE-q:ε, ε, s[q→ZERO,p→NEG,pq→POS]>
+=== Running from {q=ZERO, p=ZERO, pq=POS}
+<[L0] PUSH-41:[L0] STORE-pq:[L1] PUSH-2:[L1] STORE-p:[L2] LOOP([[L2] FETCH-pq, [L2] FETCH-p, [L2] FETCH-pq, [L2] DIV, [L2] FETCH-p, [L2] MULT, [L2] EQ, [L2] NEG], [[L3] PUSH-1, [L3] FETCH-p, [L3] ADD, [L3] STORE-p]):[L4] FETCH-p:[L4] FETCH-pq:[L4] DIV:[L4] STORE-q:ε, ε, s[q→ZERO,p→ZERO,pq→POS]>
+=== Running from {q=ZERO, p=POS, pq=POS}
+<[L0] PUSH-41:[L0] STORE-pq:[L1] PUSH-2:[L1] STORE-p:[L2] LOOP([[L2] FETCH-pq, [L2] FETCH-p, [L2] FETCH-pq, [L2] DIV, [L2] FETCH-p, [L2] MULT, [L2] EQ, [L2] NEG], [[L3] PUSH-1, [L3] FETCH-p, [L3] ADD, [L3] STORE-p]):[L4] FETCH-p:[L4] FETCH-pq:[L4] DIV:[L4] STORE-q:ε, ε, s[q→ZERO,p→POS,pq→POS]>
+=== Running from {q=POS, p=NEG, pq=NEG}
+<[L0] PUSH-41:[L0] STORE-pq:[L1] PUSH-2:[L1] STORE-p:[L2] LOOP([[L2] FETCH-pq, [L2] FETCH-p, [L2] FETCH-pq, [L2] DIV, [L2] FETCH-p, [L2] MULT, [L2] EQ, [L2] NEG], [[L3] PUSH-1, [L3] FETCH-p, [L3] ADD, [L3] STORE-p]):[L4] FETCH-p:[L4] FETCH-pq:[L4] DIV:[L4] STORE-q:ε, ε, s[q→POS,p→NEG,pq→NEG]>
+<[L0] STORE-pq:[L1] PUSH-2:[L1] STORE-p:[L2] LOOP([[L2] FETCH-pq, [L2] FETCH-p, [L2] FETCH-pq, [L2] DIV, [L2] FETCH-p, [L2] MULT, [L2] EQ, [L2] NEG], [[L3] PUSH-1, [L3] FETCH-p, [L3] ADD, [L3] STORE-p]):[L4] FETCH-p:[L4] FETCH-pq:[L4] DIV:[L4] STORE-q:ε, POS:ε, s[q→POS,p→NEG,pq→NEG]>
+<[L1] PUSH-2:[L1] STORE-p:[L2] LOOP([[L2] FETCH-pq, [L2] FETCH-p, [L2] FETCH-pq, [L2] DIV, [L2] FETCH-p, [L2] MULT, [L2] EQ, [L2] NEG], [[L3] PUSH-1, [L3] FETCH-p, [L3] ADD, [L3] STORE-p]):[L4] FETCH-p:[L4] FETCH-pq:[L4] DIV:[L4] STORE-q:ε, ε, s[q→POS,p→NEG,pq→POS]>
+<[L1] STORE-p:[L2] LOOP([[L2] FETCH-pq, [L2] FETCH-p, [L2] FETCH-pq, [L2] DIV, [L2] FETCH-p, [L2] MULT, [L2] EQ, [L2] NEG], [[L3] PUSH-1, [L3] FETCH-p, [L3] ADD, [L3] STORE-p]):[L4] FETCH-p:[L4] FETCH-pq:[L4] DIV:[L4] STORE-q:ε, POS:ε, s[q→POS,p→NEG,pq→POS]>
+<[L2] LOOP([[L2] FETCH-pq, [L2] FETCH-p, [L2] FETCH-pq, [L2] DIV, [L2] FETCH-p, [L2] MULT, [L2] EQ, [L2] NEG], [[L3] PUSH-1, [L3] FETCH-p, [L3] ADD, [L3] STORE-p]):[L4] FETCH-p:[L4] FETCH-pq:[L4] DIV:[L4] STORE-q:ε, ε, s[q→POS,p→POS,pq→POS]>
+<[L2] FETCH-pq:[L2] FETCH-p:[L2] FETCH-pq:[L2] DIV:[L2] FETCH-p:[L2] MULT:[L2] EQ:[L2] NEG:[L2] BRANCH([[L3] PUSH-1, [L3] FETCH-p, [L3] ADD, [L3] STORE-p, [L2] LOOP([[L2] FETCH-pq, [L2] FETCH-p, [L2] FETCH-pq, [L2] DIV, [L2] FETCH-p, [L2] MULT, [L2] EQ, [L2] NEG], [[L3] PUSH-1, [L3] FETCH-p, [L3] ADD, [L3] STORE-p])], [[L2] NOOP]):[L4] FETCH-p:[L4] FETCH-pq:[L4] DIV:[L4] STORE-q:ε, ε, s[q→POS,p→POS,pq→POS]>
+<[L2] FETCH-p:[L2] FETCH-pq:[L2] DIV:[L2] FETCH-p:[L2] MULT:[L2] EQ:[L2] NEG:[L2] BRANCH([[L3] PUSH-1, [L3] FETCH-p, [L3] ADD, [L3] STORE-p, [L2] LOOP([[L2] FETCH-pq, [L2] FETCH-p, [L2] FETCH-pq, [L2] DIV, [L2] FETCH-p, [L2] MULT, [L2] EQ, [L2] NEG], [[L3] PUSH-1, [L3] FETCH-p, [L3] ADD, [L3] STORE-p])], [[L2] NOOP]):[L4] FETCH-p:[L4] FETCH-pq:[L4] DIV:[L4] STORE-q:ε, POS:ε, s[q→POS,p→POS,pq→POS]>
+<[L2] FETCH-pq:[L2] DIV:[L2] FETCH-p:[L2] MULT:[L2] EQ:[L2] NEG:[L2] BRANCH([[L3] PUSH-1, [L3] FETCH-p, [L3] ADD, [L3] STORE-p, [L2] LOOP([[L2] FETCH-pq, [L2] FETCH-p, [L2] FETCH-pq, [L2] DIV, [L2] FETCH-p, [L2] MULT, [L2] EQ, [L2] NEG], [[L3] PUSH-1, [L3] FETCH-p, [L3] ADD, [L3] STORE-p])], [[L2] NOOP]):[L4] FETCH-p:[L4] FETCH-pq:[L4] DIV:[L4] STORE-q:ε, POS:POS:ε, s[q→POS,p→POS,pq→POS]>
+<[L2] DIV:[L2] FETCH-p:[L2] MULT:[L2] EQ:[L2] NEG:[L2] BRANCH([[L3] PUSH-1, [L3] FETCH-p, [L3] ADD, [L3] STORE-p, [L2] LOOP([[L2] FETCH-pq, [L2] FETCH-p, [L2] FETCH-pq, [L2] DIV, [L2] FETCH-p, [L2] MULT, [L2] EQ, [L2] NEG], [[L3] PUSH-1, [L3] FETCH-p, [L3] ADD, [L3] STORE-p])], [[L2] NOOP]):[L4] FETCH-p:[L4] FETCH-pq:[L4] DIV:[L4] STORE-q:ε, POS:POS:POS:ε, s[q→POS,p→POS,pq→POS]>
+<[L2] FETCH-p:[L2] MULT:[L2] EQ:[L2] NEG:[L2] BRANCH([[L3] PUSH-1, [L3] FETCH-p, [L3] ADD, [L3] STORE-p, [L2] LOOP([[L2] FETCH-pq, [L2] FETCH-p, [L2] FETCH-pq, [L2] DIV, [L2] FETCH-p, [L2] MULT, [L2] EQ, [L2] NEG], [[L3] PUSH-1, [L3] FETCH-p, [L3] ADD, [L3] STORE-p])], [[L2] NOOP]):[L4] FETCH-p:[L4] FETCH-pq:[L4] DIV:[L4] STORE-q:ε, NON_NEG:POS:ε, s[q→POS,p→POS,pq→POS]>
+<[L2] MULT:[L2] EQ:[L2] NEG:[L2] BRANCH([[L3] PUSH-1, [L3] FETCH-p, [L3] ADD, [L3] STORE-p, [L2] LOOP([[L2] FETCH-pq, [L2] FETCH-p, [L2] FETCH-pq, [L2] DIV, [L2] FETCH-p, [L2] MULT, [L2] EQ, [L2] NEG], [[L3] PUSH-1, [L3] FETCH-p, [L3] ADD, [L3] STORE-p])], [[L2] NOOP]):[L4] FETCH-p:[L4] FETCH-pq:[L4] DIV:[L4] STORE-q:ε, POS:NON_NEG:POS:ε, s[q→POS,p→POS,pq→POS]>
+<[L2] EQ:[L2] NEG:[L2] BRANCH([[L3] PUSH-1, [L3] FETCH-p, [L3] ADD, [L3] STORE-p, [L2] LOOP([[L2] FETCH-pq, [L2] FETCH-p, [L2] FETCH-pq, [L2] DIV, [L2] FETCH-p, [L2] MULT, [L2] EQ, [L2] NEG], [[L3] PUSH-1, [L3] FETCH-p, [L3] ADD, [L3] STORE-p])], [[L2] NOOP]):[L4] FETCH-p:[L4] FETCH-pq:[L4] DIV:[L4] STORE-q:ε, NON_NEG:POS:ε, s[q→POS,p→POS,pq→POS]>
+<[L2] NEG:[L2] BRANCH([[L3] PUSH-1, [L3] FETCH-p, [L3] ADD, [L3] STORE-p, [L2] LOOP([[L2] FETCH-pq, [L2] FETCH-p, [L2] FETCH-pq, [L2] DIV, [L2] FETCH-p, [L2] MULT, [L2] EQ, [L2] NEG], [[L3] PUSH-1, [L3] FETCH-p, [L3] ADD, [L3] STORE-p])], [[L2] NOOP]):[L4] FETCH-p:[L4] FETCH-pq:[L4] DIV:[L4] STORE-q:ε, T:ε, s[q→POS,p→POS,pq→POS]>
+<[L2] BRANCH([[L3] PUSH-1, [L3] FETCH-p, [L3] ADD, [L3] STORE-p, [L2] LOOP([[L2] FETCH-pq, [L2] FETCH-p, [L2] FETCH-pq, [L2] DIV, [L2] FETCH-p, [L2] MULT, [L2] EQ, [L2] NEG], [[L3] PUSH-1, [L3] FETCH-p, [L3] ADD, [L3] STORE-p])], [[L2] NOOP]):[L4] FETCH-p:[L4] FETCH-pq:[L4] DIV:[L4] STORE-q:ε, T:ε, s[q→POS,p→POS,pq→POS]>
+<[L3] PUSH-1:[L3] FETCH-p:[L3] ADD:[L3] STORE-p:[L2] LOOP([[L2] FETCH-pq, [L2] FETCH-p, [L2] FETCH-pq, [L2] DIV, [L2] FETCH-p, [L2] MULT, [L2] EQ, [L2] NEG], [[L3] PUSH-1, [L3] FETCH-p, [L3] ADD, [L3] STORE-p]):[L4] FETCH-p:[L4] FETCH-pq:[L4] DIV:[L4] STORE-q:ε, ε, s[q→POS,p→POS,pq→POS]>
+<[L3] FETCH-p:[L3] ADD:[L3] STORE-p:[L2] LOOP([[L2] FETCH-pq, [L2] FETCH-p, [L2] FETCH-pq, [L2] DIV, [L2] FETCH-p, [L2] MULT, [L2] EQ, [L2] NEG], [[L3] PUSH-1, [L3] FETCH-p, [L3] ADD, [L3] STORE-p]):[L4] FETCH-p:[L4] FETCH-pq:[L4] DIV:[L4] STORE-q:ε, POS:ε, s[q→POS,p→POS,pq→POS]>
+<[L3] ADD:[L3] STORE-p:[L2] LOOP([[L2] FETCH-pq, [L2] FETCH-p, [L2] FETCH-pq, [L2] DIV, [L2] FETCH-p, [L2] MULT, [L2] EQ, [L2] NEG], [[L3] PUSH-1, [L3] FETCH-p, [L3] ADD, [L3] STORE-p]):[L4] FETCH-p:[L4] FETCH-pq:[L4] DIV:[L4] STORE-q:ε, POS:POS:ε, s[q→POS,p→POS,pq→POS]>
+<[L3] STORE-p:[L2] LOOP([[L2] FETCH-pq, [L2] FETCH-p, [L2] FETCH-pq, [L2] DIV, [L2] FETCH-p, [L2] MULT, [L2] EQ, [L2] NEG], [[L3] PUSH-1, [L3] FETCH-p, [L3] ADD, [L3] STORE-p]):[L4] FETCH-p:[L4] FETCH-pq:[L4] DIV:[L4] STORE-q:ε, POS:ε, s[q→POS,p→POS,pq→POS]>
+<[L2] NOOP:[L4] FETCH-p:[L4] FETCH-pq:[L4] DIV:[L4] STORE-q:ε, ε, s[q→POS,p→POS,pq→POS]>
+<[L4] FETCH-p:[L4] FETCH-pq:[L4] DIV:[L4] STORE-q:ε, ε, s[q→POS,p→POS,pq→POS]>
+<[L4] FETCH-pq:[L4] DIV:[L4] STORE-q:ε, POS:ε, s[q→POS,p→POS,pq→POS]>
+<[L4] DIV:[L4] STORE-q:ε, POS:POS:ε, s[q→POS,p→POS,pq→POS]>
+<[L4] STORE-q:ε, NON_NEG:ε, s[q→POS,p→POS,pq→POS]>
+=== Running from {q=POS, p=NEG, pq=ZERO}
+<[L0] PUSH-41:[L0] STORE-pq:[L1] PUSH-2:[L1] STORE-p:[L2] LOOP([[L2] FETCH-pq, [L2] FETCH-p, [L2] FETCH-pq, [L2] DIV, [L2] FETCH-p, [L2] MULT, [L2] EQ, [L2] NEG], [[L3] PUSH-1, [L3] FETCH-p, [L3] ADD, [L3] STORE-p]):[L4] FETCH-p:[L4] FETCH-pq:[L4] DIV:[L4] STORE-q:ε, ε, s[q→POS,p→NEG,pq→ZERO]>
+<[L0] STORE-pq:[L1] PUSH-2:[L1] STORE-p:[L2] LOOP([[L2] FETCH-pq, [L2] FETCH-p, [L2] FETCH-pq, [L2] DIV, [L2] FETCH-p, [L2] MULT, [L2] EQ, [L2] NEG], [[L3] PUSH-1, [L3] FETCH-p, [L3] ADD, [L3] STORE-p]):[L4] FETCH-p:[L4] FETCH-pq:[L4] DIV:[L4] STORE-q:ε, POS:ε, s[q→POS,p→NEG,pq→ZERO]>
+=== Running from {q=POS, p=NEG, pq=POS}
+<[L0] PUSH-41:[L0] STORE-pq:[L1] PUSH-2:[L1] STORE-p:[L2] LOOP([[L2] FETCH-pq, [L2] FETCH-p, [L2] FETCH-pq, [L2] DIV, [L2] FETCH-p, [L2] MULT, [L2] EQ, [L2] NEG], [[L3] PUSH-1, [L3] FETCH-p, [L3] ADD, [L3] STORE-p]):[L4] FETCH-p:[L4] FETCH-pq:[L4] DIV:[L4] STORE-q:ε, ε, s[q→POS,p→NEG,pq→POS]>
+<[L0] STORE-pq:[L1] PUSH-2:[L1] STORE-p:[L2] LOOP([[L2] FETCH-pq, [L2] FETCH-p, [L2] FETCH-pq, [L2] DIV, [L2] FETCH-p, [L2] MULT, [L2] EQ, [L2] NEG], [[L3] PUSH-1, [L3] FETCH-p, [L3] ADD, [L3] STORE-p]):[L4] FETCH-p:[L4] FETCH-pq:[L4] DIV:[L4] STORE-q:ε, POS:ε, s[q→POS,p→NEG,pq→POS]>
+=== Running from {q=POS, p=ZERO, pq=NEG}
+<[L0] PUSH-41:[L0] STORE-pq:[L1] PUSH-2:[L1] STORE-p:[L2] LOOP([[L2] FETCH-pq, [L2] FETCH-p, [L2] FETCH-pq, [L2] DIV, [L2] FETCH-p, [L2] MULT, [L2] EQ, [L2] NEG], [[L3] PUSH-1, [L3] FETCH-p, [L3] ADD, [L3] STORE-p]):[L4] FETCH-p:[L4] FETCH-pq:[L4] DIV:[L4] STORE-q:ε, ε, s[q→POS,p→ZERO,pq→NEG]>
+<[L0] STORE-pq:[L1] PUSH-2:[L1] STORE-p:[L2] LOOP([[L2] FETCH-pq, [L2] FETCH-p, [L2] FETCH-pq, [L2] DIV, [L2] FETCH-p, [L2] MULT, [L2] EQ, [L2] NEG], [[L3] PUSH-1, [L3] FETCH-p, [L3] ADD, [L3] STORE-p]):[L4] FETCH-p:[L4] FETCH-pq:[L4] DIV:[L4] STORE-q:ε, POS:ε, s[q→POS,p→ZERO,pq→NEG]>
+<[L1] PUSH-2:[L1] STORE-p:[L2] LOOP([[L2] FETCH-pq, [L2] FETCH-p, [L2] FETCH-pq, [L2] DIV, [L2] FETCH-p, [L2] MULT, [L2] EQ, [L2] NEG], [[L3] PUSH-1, [L3] FETCH-p, [L3] ADD, [L3] STORE-p]):[L4] FETCH-p:[L4] FETCH-pq:[L4] DIV:[L4] STORE-q:ε, ε, s[q→POS,p→ZERO,pq→POS]>
+<[L1] STORE-p:[L2] LOOP([[L2] FETCH-pq, [L2] FETCH-p, [L2] FETCH-pq, [L2] DIV, [L2] FETCH-p, [L2] MULT, [L2] EQ, [L2] NEG], [[L3] PUSH-1, [L3] FETCH-p, [L3] ADD, [L3] STORE-p]):[L4] FETCH-p:[L4] FETCH-pq:[L4] DIV:[L4] STORE-q:ε, POS:ε, s[q→POS,p→ZERO,pq→POS]>
+=== Running from {q=POS, p=ZERO, pq=ZERO}
+<[L0] PUSH-41:[L0] STORE-pq:[L1] PUSH-2:[L1] STORE-p:[L2] LOOP([[L2] FETCH-pq, [L2] FETCH-p, [L2] FETCH-pq, [L2] DIV, [L2] FETCH-p, [L2] MULT, [L2] EQ, [L2] NEG], [[L3] PUSH-1, [L3] FETCH-p, [L3] ADD, [L3] STORE-p]):[L4] FETCH-p:[L4] FETCH-pq:[L4] DIV:[L4] STORE-q:ε, ε, s[q→POS,p→ZERO,pq→ZERO]>
+<[L0] STORE-pq:[L1] PUSH-2:[L1] STORE-p:[L2] LOOP([[L2] FETCH-pq, [L2] FETCH-p, [L2] FETCH-pq, [L2] DIV, [L2] FETCH-p, [L2] MULT, [L2] EQ, [L2] NEG], [[L3] PUSH-1, [L3] FETCH-p, [L3] ADD, [L3] STORE-p]):[L4] FETCH-p:[L4] FETCH-pq:[L4] DIV:[L4] STORE-q:ε, POS:ε, s[q→POS,p→ZERO,pq→ZERO]>
+=== Running from {q=POS, p=ZERO, pq=POS}
+<[L0] PUSH-41:[L0] STORE-pq:[L1] PUSH-2:[L1] STORE-p:[L2] LOOP([[L2] FETCH-pq, [L2] FETCH-p, [L2] FETCH-pq, [L2] DIV, [L2] FETCH-p, [L2] MULT, [L2] EQ, [L2] NEG], [[L3] PUSH-1, [L3] FETCH-p, [L3] ADD, [L3] STORE-p]):[L4] FETCH-p:[L4] FETCH-pq:[L4] DIV:[L4] STORE-q:ε, ε, s[q→POS,p→ZERO,pq→POS]>
+<[L0] STORE-pq:[L1] PUSH-2:[L1] STORE-p:[L2] LOOP([[L2] FETCH-pq, [L2] FETCH-p, [L2] FETCH-pq, [L2] DIV, [L2] FETCH-p, [L2] MULT, [L2] EQ, [L2] NEG], [[L3] PUSH-1, [L3] FETCH-p, [L3] ADD, [L3] STORE-p]):[L4] FETCH-p:[L4] FETCH-pq:[L4] DIV:[L4] STORE-q:ε, POS:ε, s[q→POS,p→ZERO,pq→POS]>
+=== Running from {q=POS, p=POS, pq=NEG}
+<[L0] PUSH-41:[L0] STORE-pq:[L1] PUSH-2:[L1] STORE-p:[L2] LOOP([[L2] FETCH-pq, [L2] FETCH-p, [L2] FETCH-pq, [L2] DIV, [L2] FETCH-p, [L2] MULT, [L2] EQ, [L2] NEG], [[L3] PUSH-1, [L3] FETCH-p, [L3] ADD, [L3] STORE-p]):[L4] FETCH-p:[L4] FETCH-pq:[L4] DIV:[L4] STORE-q:ε, ε, s[q→POS,p→POS,pq→NEG]>
+<[L0] STORE-pq:[L1] PUSH-2:[L1] STORE-p:[L2] LOOP([[L2] FETCH-pq, [L2] FETCH-p, [L2] FETCH-pq, [L2] DIV, [L2] FETCH-p, [L2] MULT, [L2] EQ, [L2] NEG], [[L3] PUSH-1, [L3] FETCH-p, [L3] ADD, [L3] STORE-p]):[L4] FETCH-p:[L4] FETCH-pq:[L4] DIV:[L4] STORE-q:ε, POS:ε, s[q→POS,p→POS,pq→NEG]>
+<[L1] PUSH-2:[L1] STORE-p:[L2] LOOP([[L2] FETCH-pq, [L2] FETCH-p, [L2] FETCH-pq, [L2] DIV, [L2] FETCH-p, [L2] MULT, [L2] EQ, [L2] NEG], [[L3] PUSH-1, [L3] FETCH-p, [L3] ADD, [L3] STORE-p]):[L4] FETCH-p:[L4] FETCH-pq:[L4] DIV:[L4] STORE-q:ε, ε, s[q→POS,p→POS,pq→POS]>
+<[L1] STORE-p:[L2] LOOP([[L2] FETCH-pq, [L2] FETCH-p, [L2] FETCH-pq, [L2] DIV, [L2] FETCH-p, [L2] MULT, [L2] EQ, [L2] NEG], [[L3] PUSH-1, [L3] FETCH-p, [L3] ADD, [L3] STORE-p]):[L4] FETCH-p:[L4] FETCH-pq:[L4] DIV:[L4] STORE-q:ε, POS:ε, s[q→POS,p→POS,pq→POS]>
+=== Running from {q=POS, p=POS, pq=ZERO}
+<[L0] PUSH-41:[L0] STORE-pq:[L1] PUSH-2:[L1] STORE-p:[L2] LOOP([[L2] FETCH-pq, [L2] FETCH-p, [L2] FETCH-pq, [L2] DIV, [L2] FETCH-p, [L2] MULT, [L2] EQ, [L2] NEG], [[L3] PUSH-1, [L3] FETCH-p, [L3] ADD, [L3] STORE-p]):[L4] FETCH-p:[L4] FETCH-pq:[L4] DIV:[L4] STORE-q:ε, ε, s[q→POS,p→POS,pq→ZERO]>
+<[L0] STORE-pq:[L1] PUSH-2:[L1] STORE-p:[L2] LOOP([[L2] FETCH-pq, [L2] FETCH-p, [L2] FETCH-pq, [L2] DIV, [L2] FETCH-p, [L2] MULT, [L2] EQ, [L2] NEG], [[L3] PUSH-1, [L3] FETCH-p, [L3] ADD, [L3] STORE-p]):[L4] FETCH-p:[L4] FETCH-pq:[L4] DIV:[L4] STORE-q:ε, POS:ε, s[q→POS,p→POS,pq→ZERO]>
+=== Running from {q=POS, p=POS, pq=POS}
+<[L0] PUSH-41:[L0] STORE-pq:[L1] PUSH-2:[L1] STORE-p:[L2] LOOP([[L2] FETCH-pq, [L2] FETCH-p, [L2] FETCH-pq, [L2] DIV, [L2] FETCH-p, [L2] MULT, [L2] EQ, [L2] NEG], [[L3] PUSH-1, [L3] FETCH-p, [L3] ADD, [L3] STORE-p]):[L4] FETCH-p:[L4] FETCH-pq:[L4] DIV:[L4] STORE-q:ε, ε, s[q→POS,p→POS,pq→POS]>
+<[L0] STORE-pq:[L1] PUSH-2:[L1] STORE-p:[L2] LOOP([[L2] FETCH-pq, [L2] FETCH-p, [L2] FETCH-pq, [L2] DIV, [L2] FETCH-p, [L2] MULT, [L2] EQ, [L2] NEG], [[L3] PUSH-1, [L3] FETCH-p, [L3] ADD, [L3] STORE-p]):[L4] FETCH-p:[L4] FETCH-pq:[L4] DIV:[L4] STORE-q:ε, POS:ε, s[q→POS,p→POS,pq→POS]>
+=== Running from {q=POS, p=NEG, pq=NEG}
+<[L0] PUSH-41:[L0] STORE-pq:[L1] PUSH-2:[L1] STORE-p:[L2] LOOP([[L2] FETCH-pq, [L2] FETCH-p, [L2] FETCH-pq, [L2] DIV, [L2] FETCH-p, [L2] MULT, [L2] EQ, [L2] NEG], [[L3] PUSH-1, [L3] FETCH-p, [L3] ADD, [L3] STORE-p]):[L4] FETCH-p:[L4] FETCH-pq:[L4] DIV:[L4] STORE-q:ε, ε, s[q→POS,p→NEG,pq→NEG]>
+=== Running from {q=POS, p=ZERO, pq=NEG}
+<[L0] PUSH-41:[L0] STORE-pq:[L1] PUSH-2:[L1] STORE-p:[L2] LOOP([[L2] FETCH-pq, [L2] FETCH-p, [L2] FETCH-pq, [L2] DIV, [L2] FETCH-p, [L2] MULT, [L2] EQ, [L2] NEG], [[L3] PUSH-1, [L3] FETCH-p, [L3] ADD, [L3] STORE-p]):[L4] FETCH-p:[L4] FETCH-pq:[L4] DIV:[L4] STORE-q:ε, ε, s[q→POS,p→ZERO,pq→NEG]>
+=== Running from {q=POS, p=POS, pq=NEG}
+<[L0] PUSH-41:[L0] STORE-pq:[L1] PUSH-2:[L1] STORE-p:[L2] LOOP([[L2] FETCH-pq, [L2] FETCH-p, [L2] FETCH-pq, [L2] DIV, [L2] FETCH-p, [L2] MULT, [L2] EQ, [L2] NEG], [[L3] PUSH-1, [L3] FETCH-p, [L3] ADD, [L3] STORE-p]):[L4] FETCH-p:[L4] FETCH-pq:[L4] DIV:[L4] STORE-q:ε, ε, s[q→POS,p→POS,pq→NEG]>
+=== Running from {q=POS, p=NEG, pq=ZERO}
+<[L0] PUSH-41:[L0] STORE-pq:[L1] PUSH-2:[L1] STORE-p:[L2] LOOP([[L2] FETCH-pq, [L2] FETCH-p, [L2] FETCH-pq, [L2] DIV, [L2] FETCH-p, [L2] MULT, [L2] EQ, [L2] NEG], [[L3] PUSH-1, [L3] FETCH-p, [L3] ADD, [L3] STORE-p]):[L4] FETCH-p:[L4] FETCH-pq:[L4] DIV:[L4] STORE-q:ε, ε, s[q→POS,p→NEG,pq→ZERO]>
+=== Running from {q=POS, p=ZERO, pq=ZERO}
+<[L0] PUSH-41:[L0] STORE-pq:[L1] PUSH-2:[L1] STORE-p:[L2] LOOP([[L2] FETCH-pq, [L2] FETCH-p, [L2] FETCH-pq, [L2] DIV, [L2] FETCH-p, [L2] MULT, [L2] EQ, [L2] NEG], [[L3] PUSH-1, [L3] FETCH-p, [L3] ADD, [L3] STORE-p]):[L4] FETCH-p:[L4] FETCH-pq:[L4] DIV:[L4] STORE-q:ε, ε, s[q→POS,p→ZERO,pq→ZERO]>
+=== Running from {q=POS, p=POS, pq=ZERO}
+<[L0] PUSH-41:[L0] STORE-pq:[L1] PUSH-2:[L1] STORE-p:[L2] LOOP([[L2] FETCH-pq, [L2] FETCH-p, [L2] FETCH-pq, [L2] DIV, [L2] FETCH-p, [L2] MULT, [L2] EQ, [L2] NEG], [[L3] PUSH-1, [L3] FETCH-p, [L3] ADD, [L3] STORE-p]):[L4] FETCH-p:[L4] FETCH-pq:[L4] DIV:[L4] STORE-q:ε, ε, s[q→POS,p→POS,pq→ZERO]>
+=== Running from {q=POS, p=NEG, pq=POS}
+<[L0] PUSH-41:[L0] STORE-pq:[L1] PUSH-2:[L1] STORE-p:[L2] LOOP([[L2] FETCH-pq, [L2] FETCH-p, [L2] FETCH-pq, [L2] DIV, [L2] FETCH-p, [L2] MULT, [L2] EQ, [L2] NEG], [[L3] PUSH-1, [L3] FETCH-p, [L3] ADD, [L3] STORE-p]):[L4] FETCH-p:[L4] FETCH-pq:[L4] DIV:[L4] STORE-q:ε, ε, s[q→POS,p→NEG,pq→POS]>
+=== Running from {q=POS, p=ZERO, pq=POS}
+<[L0] PUSH-41:[L0] STORE-pq:[L1] PUSH-2:[L1] STORE-p:[L2] LOOP([[L2] FETCH-pq, [L2] FETCH-p, [L2] FETCH-pq, [L2] DIV, [L2] FETCH-p, [L2] MULT, [L2] EQ, [L2] NEG], [[L3] PUSH-1, [L3] FETCH-p, [L3] ADD, [L3] STORE-p]):[L4] FETCH-p:[L4] FETCH-pq:[L4] DIV:[L4] STORE-q:ε, ε, s[q→POS,p→ZERO,pq→POS]>
+=== Running from {q=POS, p=POS, pq=POS}
+<[L0] PUSH-41:[L0] STORE-pq:[L1] PUSH-2:[L1] STORE-p:[L2] LOOP([[L2] FETCH-pq, [L2] FETCH-p, [L2] FETCH-pq, [L2] DIV, [L2] FETCH-p, [L2] MULT, [L2] EQ, [L2] NEG], [[L3] PUSH-1, [L3] FETCH-p, [L3] ADD, [L3] STORE-p]):[L4] FETCH-p:[L4] FETCH-pq:[L4] DIV:[L4] STORE-q:ε, ε, s[q→POS,p→POS,pq→POS]>
+=== Running from {q=NEG, p=NEG, pq=NEG}
+<[L0] PUSH-41:[L0] STORE-pq:[L1] PUSH-2:[L1] STORE-p:[L2] LOOP([[L2] FETCH-pq, [L2] FETCH-p, [L2] FETCH-pq, [L2] DIV, [L2] FETCH-p, [L2] MULT, [L2] EQ, [L2] NEG], [[L3] PUSH-1, [L3] FETCH-p, [L3] ADD, [L3] STORE-p]):[L4] FETCH-p:[L4] FETCH-pq:[L4] DIV:[L4] STORE-q:ε, ε, s[q→NEG,p→NEG,pq→NEG]>
+=== Running from {q=NEG, p=NEG, pq=ZERO}
+<[L0] PUSH-41:[L0] STORE-pq:[L1] PUSH-2:[L1] STORE-p:[L2] LOOP([[L2] FETCH-pq, [L2] FETCH-p, [L2] FETCH-pq, [L2] DIV, [L2] FETCH-p, [L2] MULT, [L2] EQ, [L2] NEG], [[L3] PUSH-1, [L3] FETCH-p, [L3] ADD, [L3] STORE-p]):[L4] FETCH-p:[L4] FETCH-pq:[L4] DIV:[L4] STORE-q:ε, ε, s[q→NEG,p→NEG,pq→ZERO]>
+=== Running from {q=NEG, p=NEG, pq=POS}
+<[L0] PUSH-41:[L0] STORE-pq:[L1] PUSH-2:[L1] STORE-p:[L2] LOOP([[L2] FETCH-pq, [L2] FETCH-p, [L2] FETCH-pq, [L2] DIV, [L2] FETCH-p, [L2] MULT, [L2] EQ, [L2] NEG], [[L3] PUSH-1, [L3] FETCH-p, [L3] ADD, [L3] STORE-p]):[L4] FETCH-p:[L4] FETCH-pq:[L4] DIV:[L4] STORE-q:ε, ε, s[q→NEG,p→NEG,pq→POS]>
+=== Running from {q=ZERO, p=NEG, pq=NEG}
+<[L0] PUSH-41:[L0] STORE-pq:[L1] PUSH-2:[L1] STORE-p:[L2] LOOP([[L2] FETCH-pq, [L2] FETCH-p, [L2] FETCH-pq, [L2] DIV, [L2] FETCH-p, [L2] MULT, [L2] EQ, [L2] NEG], [[L3] PUSH-1, [L3] FETCH-p, [L3] ADD, [L3] STORE-p]):[L4] FETCH-p:[L4] FETCH-pq:[L4] DIV:[L4] STORE-q:ε, ε, s[q→ZERO,p→NEG,pq→NEG]>
+=== Running from {q=ZERO, p=NEG, pq=ZERO}
+<[L0] PUSH-41:[L0] STORE-pq:[L1] PUSH-2:[L1] STORE-p:[L2] LOOP([[L2] FETCH-pq, [L2] FETCH-p, [L2] FETCH-pq, [L2] DIV, [L2] FETCH-p, [L2] MULT, [L2] EQ, [L2] NEG], [[L3] PUSH-1, [L3] FETCH-p, [L3] ADD, [L3] STORE-p]):[L4] FETCH-p:[L4] FETCH-pq:[L4] DIV:[L4] STORE-q:ε, ε, s[q→ZERO,p→NEG,pq→ZERO]>
+=== Running from {q=ZERO, p=NEG, pq=POS}
+<[L0] PUSH-41:[L0] STORE-pq:[L1] PUSH-2:[L1] STORE-p:[L2] LOOP([[L2] FETCH-pq, [L2] FETCH-p, [L2] FETCH-pq, [L2] DIV, [L2] FETCH-p, [L2] MULT, [L2] EQ, [L2] NEG], [[L3] PUSH-1, [L3] FETCH-p, [L3] ADD, [L3] STORE-p]):[L4] FETCH-p:[L4] FETCH-pq:[L4] DIV:[L4] STORE-q:ε, ε, s[q→ZERO,p→NEG,pq→POS]>
+=== Running from {q=POS, p=NEG, pq=NEG}
+<[L0] PUSH-41:[L0] STORE-pq:[L1] PUSH-2:[L1] STORE-p:[L2] LOOP([[L2] FETCH-pq, [L2] FETCH-p, [L2] FETCH-pq, [L2] DIV, [L2] FETCH-p, [L2] MULT, [L2] EQ, [L2] NEG], [[L3] PUSH-1, [L3] FETCH-p, [L3] ADD, [L3] STORE-p]):[L4] FETCH-p:[L4] FETCH-pq:[L4] DIV:[L4] STORE-q:ε, ε, s[q→POS,p→NEG,pq→NEG]>
+=== Running from {q=POS, p=NEG, pq=ZERO}
+<[L0] PUSH-41:[L0] STORE-pq:[L1] PUSH-2:[L1] STORE-p:[L2] LOOP([[L2] FETCH-pq, [L2] FETCH-p, [L2] FETCH-pq, [L2] DIV, [L2] FETCH-p, [L2] MULT, [L2] EQ, [L2] NEG], [[L3] PUSH-1, [L3] FETCH-p, [L3] ADD, [L3] STORE-p]):[L4] FETCH-p:[L4] FETCH-pq:[L4] DIV:[L4] STORE-q:ε, ε, s[q→POS,p→NEG,pq→ZERO]>
+=== Running from {q=POS, p=NEG, pq=POS}
+<[L0] PUSH-41:[L0] STORE-pq:[L1] PUSH-2:[L1] STORE-p:[L2] LOOP([[L2] FETCH-pq, [L2] FETCH-p, [L2] FETCH-pq, [L2] DIV, [L2] FETCH-p, [L2] MULT, [L2] EQ, [L2] NEG], [[L3] PUSH-1, [L3] FETCH-p, [L3] ADD, [L3] STORE-p]):[L4] FETCH-p:[L4] FETCH-pq:[L4] DIV:[L4] STORE-q:ε, ε, s[q→POS,p→NEG,pq→POS]>
+=== Running from {q=NEG, p=NEG, pq=NEG}
+<[L0] PUSH-41:[L0] STORE-pq:[L1] PUSH-2:[L1] STORE-p:[L2] LOOP([[L2] FETCH-pq, [L2] FETCH-p, [L2] FETCH-pq, [L2] DIV, [L2] FETCH-p, [L2] MULT, [L2] EQ, [L2] NEG], [[L3] PUSH-1, [L3] FETCH-p, [L3] ADD, [L3] STORE-p]):[L4] FETCH-p:[L4] FETCH-pq:[L4] DIV:[L4] STORE-q:ε, ε, s[q→NEG,p→NEG,pq→NEG]>
+=== Running from {q=ZERO, p=NEG, pq=NEG}
+<[L0] PUSH-41:[L0] STORE-pq:[L1] PUSH-2:[L1] STORE-p:[L2] LOOP([[L2] FETCH-pq, [L2] FETCH-p, [L2] FETCH-pq, [L2] DIV, [L2] FETCH-p, [L2] MULT, [L2] EQ, [L2] NEG], [[L3] PUSH-1, [L3] FETCH-p, [L3] ADD, [L3] STORE-p]):[L4] FETCH-p:[L4] FETCH-pq:[L4] DIV:[L4] STORE-q:ε, ε, s[q→ZERO,p→NEG,pq→NEG]>
+=== Running from {q=POS, p=NEG, pq=NEG}
+<[L0] PUSH-41:[L0] STORE-pq:[L1] PUSH-2:[L1] STORE-p:[L2] LOOP([[L2] FETCH-pq, [L2] FETCH-p, [L2] FETCH-pq, [L2] DIV, [L2] FETCH-p, [L2] MULT, [L2] EQ, [L2] NEG], [[L3] PUSH-1, [L3] FETCH-p, [L3] ADD, [L3] STORE-p]):[L4] FETCH-p:[L4] FETCH-pq:[L4] DIV:[L4] STORE-q:ε, ε, s[q→POS,p→NEG,pq→NEG]>
+=== Running from {q=NEG, p=NEG, pq=ZERO}
+<[L0] PUSH-41:[L0] STORE-pq:[L1] PUSH-2:[L1] STORE-p:[L2] LOOP([[L2] FETCH-pq, [L2] FETCH-p, [L2] FETCH-pq, [L2] DIV, [L2] FETCH-p, [L2] MULT, [L2] EQ, [L2] NEG], [[L3] PUSH-1, [L3] FETCH-p, [L3] ADD, [L3] STORE-p]):[L4] FETCH-p:[L4] FETCH-pq:[L4] DIV:[L4] STORE-q:ε, ε, s[q→NEG,p→NEG,pq→ZERO]>
+=== Running from {q=ZERO, p=NEG, pq=ZERO}
+<[L0] PUSH-41:[L0] STORE-pq:[L1] PUSH-2:[L1] STORE-p:[L2] LOOP([[L2] FETCH-pq, [L2] FETCH-p, [L2] FETCH-pq, [L2] DIV, [L2] FETCH-p, [L2] MULT, [L2] EQ, [L2] NEG], [[L3] PUSH-1, [L3] FETCH-p, [L3] ADD, [L3] STORE-p]):[L4] FETCH-p:[L4] FETCH-pq:[L4] DIV:[L4] STORE-q:ε, ε, s[q→ZERO,p→NEG,pq→ZERO]>
+=== Running from {q=POS, p=NEG, pq=ZERO}
+<[L0] PUSH-41:[L0] STORE-pq:[L1] PUSH-2:[L1] STORE-p:[L2] LOOP([[L2] FETCH-pq, [L2] FETCH-p, [L2] FETCH-pq, [L2] DIV, [L2] FETCH-p, [L2] MULT, [L2] EQ, [L2] NEG], [[L3] PUSH-1, [L3] FETCH-p, [L3] ADD, [L3] STORE-p]):[L4] FETCH-p:[L4] FETCH-pq:[L4] DIV:[L4] STORE-q:ε, ε, s[q→POS,p→NEG,pq→ZERO]>
+=== Running from {q=NEG, p=NEG, pq=POS}
+<[L0] PUSH-41:[L0] STORE-pq:[L1] PUSH-2:[L1] STORE-p:[L2] LOOP([[L2] FETCH-pq, [L2] FETCH-p, [L2] FETCH-pq, [L2] DIV, [L2] FETCH-p, [L2] MULT, [L2] EQ, [L2] NEG], [[L3] PUSH-1, [L3] FETCH-p, [L3] ADD, [L3] STORE-p]):[L4] FETCH-p:[L4] FETCH-pq:[L4] DIV:[L4] STORE-q:ε, ε, s[q→NEG,p→NEG,pq→POS]>
+=== Running from {q=ZERO, p=NEG, pq=POS}
+<[L0] PUSH-41:[L0] STORE-pq:[L1] PUSH-2:[L1] STORE-p:[L2] LOOP([[L2] FETCH-pq, [L2] FETCH-p, [L2] FETCH-pq, [L2] DIV, [L2] FETCH-p, [L2] MULT, [L2] EQ, [L2] NEG], [[L3] PUSH-1, [L3] FETCH-p, [L3] ADD, [L3] STORE-p]):[L4] FETCH-p:[L4] FETCH-pq:[L4] DIV:[L4] STORE-q:ε, ε, s[q→ZERO,p→NEG,pq→POS]>
+=== Running from {q=POS, p=NEG, pq=POS}
+<[L0] PUSH-41:[L0] STORE-pq:[L1] PUSH-2:[L1] STORE-p:[L2] LOOP([[L2] FETCH-pq, [L2] FETCH-p, [L2] FETCH-pq, [L2] DIV, [L2] FETCH-p, [L2] MULT, [L2] EQ, [L2] NEG], [[L3] PUSH-1, [L3] FETCH-p, [L3] ADD, [L3] STORE-p]):[L4] FETCH-p:[L4] FETCH-pq:[L4] DIV:[L4] STORE-q:ε, ε, s[q→POS,p→NEG,pq→POS]>
+=== Running from {q=NEG, p=ZERO, pq=NEG}
+<[L0] PUSH-41:[L0] STORE-pq:[L1] PUSH-2:[L1] STORE-p:[L2] LOOP([[L2] FETCH-pq, [L2] FETCH-p, [L2] FETCH-pq, [L2] DIV, [L2] FETCH-p, [L2] MULT, [L2] EQ, [L2] NEG], [[L3] PUSH-1, [L3] FETCH-p, [L3] ADD, [L3] STORE-p]):[L4] FETCH-p:[L4] FETCH-pq:[L4] DIV:[L4] STORE-q:ε, ε, s[q→NEG,p→ZERO,pq→NEG]>
+=== Running from {q=NEG, p=ZERO, pq=ZERO}
+<[L0] PUSH-41:[L0] STORE-pq:[L1] PUSH-2:[L1] STORE-p:[L2] LOOP([[L2] FETCH-pq, [L2] FETCH-p, [L2] FETCH-pq, [L2] DIV, [L2] FETCH-p, [L2] MULT, [L2] EQ, [L2] NEG], [[L3] PUSH-1, [L3] FETCH-p, [L3] ADD, [L3] STORE-p]):[L4] FETCH-p:[L4] FETCH-pq:[L4] DIV:[L4] STORE-q:ε, ε, s[q→NEG,p→ZERO,pq→ZERO]>
+=== Running from {q=NEG, p=ZERO, pq=POS}
+<[L0] PUSH-41:[L0] STORE-pq:[L1] PUSH-2:[L1] STORE-p:[L2] LOOP([[L2] FETCH-pq, [L2] FETCH-p, [L2] FETCH-pq, [L2] DIV, [L2] FETCH-p, [L2] MULT, [L2] EQ, [L2] NEG], [[L3] PUSH-1, [L3] FETCH-p, [L3] ADD, [L3] STORE-p]):[L4] FETCH-p:[L4] FETCH-pq:[L4] DIV:[L4] STORE-q:ε, ε, s[q→NEG,p→ZERO,pq→POS]>
+=== Running from {q=ZERO, p=ZERO, pq=NEG}
+<[L0] PUSH-41:[L0] STORE-pq:[L1] PUSH-2:[L1] STORE-p:[L2] LOOP([[L2] FETCH-pq, [L2] FETCH-p, [L2] FETCH-pq, [L2] DIV, [L2] FETCH-p, [L2] MULT, [L2] EQ, [L2] NEG], [[L3] PUSH-1, [L3] FETCH-p, [L3] ADD, [L3] STORE-p]):[L4] FETCH-p:[L4] FETCH-pq:[L4] DIV:[L4] STORE-q:ε, ε, s[q→ZERO,p→ZERO,pq→NEG]>
+=== Running from {q=ZERO, p=ZERO, pq=ZERO}
+<[L0] PUSH-41:[L0] STORE-pq:[L1] PUSH-2:[L1] STORE-p:[L2] LOOP([[L2] FETCH-pq, [L2] FETCH-p, [L2] FETCH-pq, [L2] DIV, [L2] FETCH-p, [L2] MULT, [L2] EQ, [L2] NEG], [[L3] PUSH-1, [L3] FETCH-p, [L3] ADD, [L3] STORE-p]):[L4] FETCH-p:[L4] FETCH-pq:[L4] DIV:[L4] STORE-q:ε, ε, s[q→ZERO,p→ZERO,pq→ZERO]>
+=== Running from {q=ZERO, p=ZERO, pq=POS}
+<[L0] PUSH-41:[L0] STORE-pq:[L1] PUSH-2:[L1] STORE-p:[L2] LOOP([[L2] FETCH-pq, [L2] FETCH-p, [L2] FETCH-pq, [L2] DIV, [L2] FETCH-p, [L2] MULT, [L2] EQ, [L2] NEG], [[L3] PUSH-1, [L3] FETCH-p, [L3] ADD, [L3] STORE-p]):[L4] FETCH-p:[L4] FETCH-pq:[L4] DIV:[L4] STORE-q:ε, ε, s[q→ZERO,p→ZERO,pq→POS]>
+=== Running from {q=POS, p=ZERO, pq=NEG}
+<[L0] PUSH-41:[L0] STORE-pq:[L1] PUSH-2:[L1] STORE-p:[L2] LOOP([[L2] FETCH-pq, [L2] FETCH-p, [L2] FETCH-pq, [L2] DIV, [L2] FETCH-p, [L2] MULT, [L2] EQ, [L2] NEG], [[L3] PUSH-1, [L3] FETCH-p, [L3] ADD, [L3] STORE-p]):[L4] FETCH-p:[L4] FETCH-pq:[L4] DIV:[L4] STORE-q:ε, ε, s[q→POS,p→ZERO,pq→NEG]>
+=== Running from {q=POS, p=ZERO, pq=ZERO}
+<[L0] PUSH-41:[L0] STORE-pq:[L1] PUSH-2:[L1] STORE-p:[L2] LOOP([[L2] FETCH-pq, [L2] FETCH-p, [L2] FETCH-pq, [L2] DIV, [L2] FETCH-p, [L2] MULT, [L2] EQ, [L2] NEG], [[L3] PUSH-1, [L3] FETCH-p, [L3] ADD, [L3] STORE-p]):[L4] FETCH-p:[L4] FETCH-pq:[L4] DIV:[L4] STORE-q:ε, ε, s[q→POS,p→ZERO,pq→ZERO]>
+=== Running from {q=POS, p=ZERO, pq=POS}
+<[L0] PUSH-41:[L0] STORE-pq:[L1] PUSH-2:[L1] STORE-p:[L2] LOOP([[L2] FETCH-pq, [L2] FETCH-p, [L2] FETCH-pq, [L2] DIV, [L2] FETCH-p, [L2] MULT, [L2] EQ, [L2] NEG], [[L3] PUSH-1, [L3] FETCH-p, [L3] ADD, [L3] STORE-p]):[L4] FETCH-p:[L4] FETCH-pq:[L4] DIV:[L4] STORE-q:ε, ε, s[q→POS,p→ZERO,pq→POS]>
+=== Running from {q=NEG, p=ZERO, pq=NEG}
+<[L0] PUSH-41:[L0] STORE-pq:[L1] PUSH-2:[L1] STORE-p:[L2] LOOP([[L2] FETCH-pq, [L2] FETCH-p, [L2] FETCH-pq, [L2] DIV, [L2] FETCH-p, [L2] MULT, [L2] EQ, [L2] NEG], [[L3] PUSH-1, [L3] FETCH-p, [L3] ADD, [L3] STORE-p]):[L4] FETCH-p:[L4] FETCH-pq:[L4] DIV:[L4] STORE-q:ε, ε, s[q→NEG,p→ZERO,pq→NEG]>
+=== Running from {q=ZERO, p=ZERO, pq=NEG}
+<[L0] PUSH-41:[L0] STORE-pq:[L1] PUSH-2:[L1] STORE-p:[L2] LOOP([[L2] FETCH-pq, [L2] FETCH-p, [L2] FETCH-pq, [L2] DIV, [L2] FETCH-p, [L2] MULT, [L2] EQ, [L2] NEG], [[L3] PUSH-1, [L3] FETCH-p, [L3] ADD, [L3] STORE-p]):[L4] FETCH-p:[L4] FETCH-pq:[L4] DIV:[L4] STORE-q:ε, ε, s[q→ZERO,p→ZERO,pq→NEG]>
+=== Running from {q=POS, p=ZERO, pq=NEG}
+<[L0] PUSH-41:[L0] STORE-pq:[L1] PUSH-2:[L1] STORE-p:[L2] LOOP([[L2] FETCH-pq, [L2] FETCH-p, [L2] FETCH-pq, [L2] DIV, [L2] FETCH-p, [L2] MULT, [L2] EQ, [L2] NEG], [[L3] PUSH-1, [L3] FETCH-p, [L3] ADD, [L3] STORE-p]):[L4] FETCH-p:[L4] FETCH-pq:[L4] DIV:[L4] STORE-q:ε, ε, s[q→POS,p→ZERO,pq→NEG]>
+=== Running from {q=NEG, p=ZERO, pq=ZERO}
+<[L0] PUSH-41:[L0] STORE-pq:[L1] PUSH-2:[L1] STORE-p:[L2] LOOP([[L2] FETCH-pq, [L2] FETCH-p, [L2] FETCH-pq, [L2] DIV, [L2] FETCH-p, [L2] MULT, [L2] EQ, [L2] NEG], [[L3] PUSH-1, [L3] FETCH-p, [L3] ADD, [L3] STORE-p]):[L4] FETCH-p:[L4] FETCH-pq:[L4] DIV:[L4] STORE-q:ε, ε, s[q→NEG,p→ZERO,pq→ZERO]>
+=== Running from {q=ZERO, p=ZERO, pq=ZERO}
+<[L0] PUSH-41:[L0] STORE-pq:[L1] PUSH-2:[L1] STORE-p:[L2] LOOP([[L2] FETCH-pq, [L2] FETCH-p, [L2] FETCH-pq, [L2] DIV, [L2] FETCH-p, [L2] MULT, [L2] EQ, [L2] NEG], [[L3] PUSH-1, [L3] FETCH-p, [L3] ADD, [L3] STORE-p]):[L4] FETCH-p:[L4] FETCH-pq:[L4] DIV:[L4] STORE-q:ε, ε, s[q→ZERO,p→ZERO,pq→ZERO]>
+=== Running from {q=POS, p=ZERO, pq=ZERO}
+<[L0] PUSH-41:[L0] STORE-pq:[L1] PUSH-2:[L1] STORE-p:[L2] LOOP([[L2] FETCH-pq, [L2] FETCH-p, [L2] FETCH-pq, [L2] DIV, [L2] FETCH-p, [L2] MULT, [L2] EQ, [L2] NEG], [[L3] PUSH-1, [L3] FETCH-p, [L3] ADD, [L3] STORE-p]):[L4] FETCH-p:[L4] FETCH-pq:[L4] DIV:[L4] STORE-q:ε, ε, s[q→POS,p→ZERO,pq→ZERO]>
+=== Running from {q=NEG, p=ZERO, pq=POS}
+<[L0] PUSH-41:[L0] STORE-pq:[L1] PUSH-2:[L1] STORE-p:[L2] LOOP([[L2] FETCH-pq, [L2] FETCH-p, [L2] FETCH-pq, [L2] DIV, [L2] FETCH-p, [L2] MULT, [L2] EQ, [L2] NEG], [[L3] PUSH-1, [L3] FETCH-p, [L3] ADD, [L3] STORE-p]):[L4] FETCH-p:[L4] FETCH-pq:[L4] DIV:[L4] STORE-q:ε, ε, s[q→NEG,p→ZERO,pq→POS]>
+=== Running from {q=ZERO, p=ZERO, pq=POS}
+<[L0] PUSH-41:[L0] STORE-pq:[L1] PUSH-2:[L1] STORE-p:[L2] LOOP([[L2] FETCH-pq, [L2] FETCH-p, [L2] FETCH-pq, [L2] DIV, [L2] FETCH-p, [L2] MULT, [L2] EQ, [L2] NEG], [[L3] PUSH-1, [L3] FETCH-p, [L3] ADD, [L3] STORE-p]):[L4] FETCH-p:[L4] FETCH-pq:[L4] DIV:[L4] STORE-q:ε, ε, s[q→ZERO,p→ZERO,pq→POS]>
+=== Running from {q=POS, p=ZERO, pq=POS}
+<[L0] PUSH-41:[L0] STORE-pq:[L1] PUSH-2:[L1] STORE-p:[L2] LOOP([[L2] FETCH-pq, [L2] FETCH-p, [L2] FETCH-pq, [L2] DIV, [L2] FETCH-p, [L2] MULT, [L2] EQ, [L2] NEG], [[L3] PUSH-1, [L3] FETCH-p, [L3] ADD, [L3] STORE-p]):[L4] FETCH-p:[L4] FETCH-pq:[L4] DIV:[L4] STORE-q:ε, ε, s[q→POS,p→ZERO,pq→POS]>
+=== Running from {q=NEG, p=POS, pq=NEG}
+<[L0] PUSH-41:[L0] STORE-pq:[L1] PUSH-2:[L1] STORE-p:[L2] LOOP([[L2] FETCH-pq, [L2] FETCH-p, [L2] FETCH-pq, [L2] DIV, [L2] FETCH-p, [L2] MULT, [L2] EQ, [L2] NEG], [[L3] PUSH-1, [L3] FETCH-p, [L3] ADD, [L3] STORE-p]):[L4] FETCH-p:[L4] FETCH-pq:[L4] DIV:[L4] STORE-q:ε, ε, s[q→NEG,p→POS,pq→NEG]>
+=== Running from {q=NEG, p=POS, pq=ZERO}
+<[L0] PUSH-41:[L0] STORE-pq:[L1] PUSH-2:[L1] STORE-p:[L2] LOOP([[L2] FETCH-pq, [L2] FETCH-p, [L2] FETCH-pq, [L2] DIV, [L2] FETCH-p, [L2] MULT, [L2] EQ, [L2] NEG], [[L3] PUSH-1, [L3] FETCH-p, [L3] ADD, [L3] STORE-p]):[L4] FETCH-p:[L4] FETCH-pq:[L4] DIV:[L4] STORE-q:ε, ε, s[q→NEG,p→POS,pq→ZERO]>
+=== Running from {q=NEG, p=POS, pq=POS}
+<[L0] PUSH-41:[L0] STORE-pq:[L1] PUSH-2:[L1] STORE-p:[L2] LOOP([[L2] FETCH-pq, [L2] FETCH-p, [L2] FETCH-pq, [L2] DIV, [L2] FETCH-p, [L2] MULT, [L2] EQ, [L2] NEG], [[L3] PUSH-1, [L3] FETCH-p, [L3] ADD, [L3] STORE-p]):[L4] FETCH-p:[L4] FETCH-pq:[L4] DIV:[L4] STORE-q:ε, ε, s[q→NEG,p→POS,pq→POS]>
+=== Running from {q=ZERO, p=POS, pq=NEG}
+<[L0] PUSH-41:[L0] STORE-pq:[L1] PUSH-2:[L1] STORE-p:[L2] LOOP([[L2] FETCH-pq, [L2] FETCH-p, [L2] FETCH-pq, [L2] DIV, [L2] FETCH-p, [L2] MULT, [L2] EQ, [L2] NEG], [[L3] PUSH-1, [L3] FETCH-p, [L3] ADD, [L3] STORE-p]):[L4] FETCH-p:[L4] FETCH-pq:[L4] DIV:[L4] STORE-q:ε, ε, s[q→ZERO,p→POS,pq→NEG]>
+=== Running from {q=ZERO, p=POS, pq=ZERO}
+<[L0] PUSH-41:[L0] STORE-pq:[L1] PUSH-2:[L1] STORE-p:[L2] LOOP([[L2] FETCH-pq, [L2] FETCH-p, [L2] FETCH-pq, [L2] DIV, [L2] FETCH-p, [L2] MULT, [L2] EQ, [L2] NEG], [[L3] PUSH-1, [L3] FETCH-p, [L3] ADD, [L3] STORE-p]):[L4] FETCH-p:[L4] FETCH-pq:[L4] DIV:[L4] STORE-q:ε, ε, s[q→ZERO,p→POS,pq→ZERO]>
+=== Running from {q=ZERO, p=POS, pq=POS}
+<[L0] PUSH-41:[L0] STORE-pq:[L1] PUSH-2:[L1] STORE-p:[L2] LOOP([[L2] FETCH-pq, [L2] FETCH-p, [L2] FETCH-pq, [L2] DIV, [L2] FETCH-p, [L2] MULT, [L2] EQ, [L2] NEG], [[L3] PUSH-1, [L3] FETCH-p, [L3] ADD, [L3] STORE-p]):[L4] FETCH-p:[L4] FETCH-pq:[L4] DIV:[L4] STORE-q:ε, ε, s[q→ZERO,p→POS,pq→POS]>
+=== Running from {q=POS, p=POS, pq=NEG}
+<[L0] PUSH-41:[L0] STORE-pq:[L1] PUSH-2:[L1] STORE-p:[L2] LOOP([[L2] FETCH-pq, [L2] FETCH-p, [L2] FETCH-pq, [L2] DIV, [L2] FETCH-p, [L2] MULT, [L2] EQ, [L2] NEG], [[L3] PUSH-1, [L3] FETCH-p, [L3] ADD, [L3] STORE-p]):[L4] FETCH-p:[L4] FETCH-pq:[L4] DIV:[L4] STORE-q:ε, ε, s[q→POS,p→POS,pq→NEG]>
+=== Running from {q=POS, p=POS, pq=ZERO}
+<[L0] PUSH-41:[L0] STORE-pq:[L1] PUSH-2:[L1] STORE-p:[L2] LOOP([[L2] FETCH-pq, [L2] FETCH-p, [L2] FETCH-pq, [L2] DIV, [L2] FETCH-p, [L2] MULT, [L2] EQ, [L2] NEG], [[L3] PUSH-1, [L3] FETCH-p, [L3] ADD, [L3] STORE-p]):[L4] FETCH-p:[L4] FETCH-pq:[L4] DIV:[L4] STORE-q:ε, ε, s[q→POS,p→POS,pq→ZERO]>
+=== Running from {q=POS, p=POS, pq=POS}
+<[L0] PUSH-41:[L0] STORE-pq:[L1] PUSH-2:[L1] STORE-p:[L2] LOOP([[L2] FETCH-pq, [L2] FETCH-p, [L2] FETCH-pq, [L2] DIV, [L2] FETCH-p, [L2] MULT, [L2] EQ, [L2] NEG], [[L3] PUSH-1, [L3] FETCH-p, [L3] ADD, [L3] STORE-p]):[L4] FETCH-p:[L4] FETCH-pq:[L4] DIV:[L4] STORE-q:ε, ε, s[q→POS,p→POS,pq→POS]>
+=== Running from {q=NEG, p=POS, pq=NEG}
+<[L0] PUSH-41:[L0] STORE-pq:[L1] PUSH-2:[L1] STORE-p:[L2] LOOP([[L2] FETCH-pq, [L2] FETCH-p, [L2] FETCH-pq, [L2] DIV, [L2] FETCH-p, [L2] MULT, [L2] EQ, [L2] NEG], [[L3] PUSH-1, [L3] FETCH-p, [L3] ADD, [L3] STORE-p]):[L4] FETCH-p:[L4] FETCH-pq:[L4] DIV:[L4] STORE-q:ε, ε, s[q→NEG,p→POS,pq→NEG]>
+=== Running from {q=ZERO, p=POS, pq=NEG}
+<[L0] PUSH-41:[L0] STORE-pq:[L1] PUSH-2:[L1] STORE-p:[L2] LOOP([[L2] FETCH-pq, [L2] FETCH-p, [L2] FETCH-pq, [L2] DIV, [L2] FETCH-p, [L2] MULT, [L2] EQ, [L2] NEG], [[L3] PUSH-1, [L3] FETCH-p, [L3] ADD, [L3] STORE-p]):[L4] FETCH-p:[L4] FETCH-pq:[L4] DIV:[L4] STORE-q:ε, ε, s[q→ZERO,p→POS,pq→NEG]>
+=== Running from {q=POS, p=POS, pq=NEG}
+<[L0] PUSH-41:[L0] STORE-pq:[L1] PUSH-2:[L1] STORE-p:[L2] LOOP([[L2] FETCH-pq, [L2] FETCH-p, [L2] FETCH-pq, [L2] DIV, [L2] FETCH-p, [L2] MULT, [L2] EQ, [L2] NEG], [[L3] PUSH-1, [L3] FETCH-p, [L3] ADD, [L3] STORE-p]):[L4] FETCH-p:[L4] FETCH-pq:[L4] DIV:[L4] STORE-q:ε, ε, s[q→POS,p→POS,pq→NEG]>
+=== Running from {q=NEG, p=POS, pq=ZERO}
+<[L0] PUSH-41:[L0] STORE-pq:[L1] PUSH-2:[L1] STORE-p:[L2] LOOP([[L2] FETCH-pq, [L2] FETCH-p, [L2] FETCH-pq, [L2] DIV, [L2] FETCH-p, [L2] MULT, [L2] EQ, [L2] NEG], [[L3] PUSH-1, [L3] FETCH-p, [L3] ADD, [L3] STORE-p]):[L4] FETCH-p:[L4] FETCH-pq:[L4] DIV:[L4] STORE-q:ε, ε, s[q→NEG,p→POS,pq→ZERO]>
+=== Running from {q=ZERO, p=POS, pq=ZERO}
+<[L0] PUSH-41:[L0] STORE-pq:[L1] PUSH-2:[L1] STORE-p:[L2] LOOP([[L2] FETCH-pq, [L2] FETCH-p, [L2] FETCH-pq, [L2] DIV, [L2] FETCH-p, [L2] MULT, [L2] EQ, [L2] NEG], [[L3] PUSH-1, [L3] FETCH-p, [L3] ADD, [L3] STORE-p]):[L4] FETCH-p:[L4] FETCH-pq:[L4] DIV:[L4] STORE-q:ε, ε, s[q→ZERO,p→POS,pq→ZERO]>
+=== Running from {q=POS, p=POS, pq=ZERO}
+<[L0] PUSH-41:[L0] STORE-pq:[L1] PUSH-2:[L1] STORE-p:[L2] LOOP([[L2] FETCH-pq, [L2] FETCH-p, [L2] FETCH-pq, [L2] DIV, [L2] FETCH-p, [L2] MULT, [L2] EQ, [L2] NEG], [[L3] PUSH-1, [L3] FETCH-p, [L3] ADD, [L3] STORE-p]):[L4] FETCH-p:[L4] FETCH-pq:[L4] DIV:[L4] STORE-q:ε, ε, s[q→POS,p→POS,pq→ZERO]>
+=== Running from {q=NEG, p=POS, pq=POS}
+<[L0] PUSH-41:[L0] STORE-pq:[L1] PUSH-2:[L1] STORE-p:[L2] LOOP([[L2] FETCH-pq, [L2] FETCH-p, [L2] FETCH-pq, [L2] DIV, [L2] FETCH-p, [L2] MULT, [L2] EQ, [L2] NEG], [[L3] PUSH-1, [L3] FETCH-p, [L3] ADD, [L3] STORE-p]):[L4] FETCH-p:[L4] FETCH-pq:[L4] DIV:[L4] STORE-q:ε, ε, s[q→NEG,p→POS,pq→POS]>
+=== Running from {q=ZERO, p=POS, pq=POS}
+<[L0] PUSH-41:[L0] STORE-pq:[L1] PUSH-2:[L1] STORE-p:[L2] LOOP([[L2] FETCH-pq, [L2] FETCH-p, [L2] FETCH-pq, [L2] DIV, [L2] FETCH-p, [L2] MULT, [L2] EQ, [L2] NEG], [[L3] PUSH-1, [L3] FETCH-p, [L3] ADD, [L3] STORE-p]):[L4] FETCH-p:[L4] FETCH-pq:[L4] DIV:[L4] STORE-q:ε, ε, s[q→ZERO,p→POS,pq→POS]>
+=== Running from {q=POS, p=POS, pq=POS}
+<[L0] PUSH-41:[L0] STORE-pq:[L1] PUSH-2:[L1] STORE-p:[L2] LOOP([[L2] FETCH-pq, [L2] FETCH-p, [L2] FETCH-pq, [L2] DIV, [L2] FETCH-p, [L2] MULT, [L2] EQ, [L2] NEG], [[L3] PUSH-1, [L3] FETCH-p, [L3] ADD, [L3] STORE-p]):[L4] FETCH-p:[L4] FETCH-pq:[L4] DIV:[L4] STORE-q:ε, ε, s[q→POS,p→POS,pq→POS]>
+=== Running from {q=NEG, p=NEG, pq=NEG}
+<[L0] PUSH-41:[L0] STORE-pq:[L1] PUSH-2:[L1] STORE-p:[L2] LOOP([[L2] FETCH-pq, [L2] FETCH-p, [L2] FETCH-pq, [L2] DIV, [L2] FETCH-p, [L2] MULT, [L2] EQ, [L2] NEG], [[L3] PUSH-1, [L3] FETCH-p, [L3] ADD, [L3] STORE-p]):[L4] FETCH-p:[L4] FETCH-pq:[L4] DIV:[L4] STORE-q:ε, ε, s[q→NEG,p→NEG,pq→NEG]>
+=== Running from {q=NEG, p=ZERO, pq=NEG}
+<[L0] PUSH-41:[L0] STORE-pq:[L1] PUSH-2:[L1] STORE-p:[L2] LOOP([[L2] FETCH-pq, [L2] FETCH-p, [L2] FETCH-pq, [L2] DIV, [L2] FETCH-p, [L2] MULT, [L2] EQ, [L2] NEG], [[L3] PUSH-1, [L3] FETCH-p, [L3] ADD, [L3] STORE-p]):[L4] FETCH-p:[L4] FETCH-pq:[L4] DIV:[L4] STORE-q:ε, ε, s[q→NEG,p→ZERO,pq→NEG]>
+=== Running from {q=NEG, p=POS, pq=NEG}
+<[L0] PUSH-41:[L0] STORE-pq:[L1] PUSH-2:[L1] STORE-p:[L2] LOOP([[L2] FETCH-pq, [L2] FETCH-p, [L2] FETCH-pq, [L2] DIV, [L2] FETCH-p, [L2] MULT, [L2] EQ, [L2] NEG], [[L3] PUSH-1, [L3] FETCH-p, [L3] ADD, [L3] STORE-p]):[L4] FETCH-p:[L4] FETCH-pq:[L4] DIV:[L4] STORE-q:ε, ε, s[q→NEG,p→POS,pq→NEG]>
+=== Running from {q=ZERO, p=NEG, pq=NEG}
+<[L0] PUSH-41:[L0] STORE-pq:[L1] PUSH-2:[L1] STORE-p:[L2] LOOP([[L2] FETCH-pq, [L2] FETCH-p, [L2] FETCH-pq, [L2] DIV, [L2] FETCH-p, [L2] MULT, [L2] EQ, [L2] NEG], [[L3] PUSH-1, [L3] FETCH-p, [L3] ADD, [L3] STORE-p]):[L4] FETCH-p:[L4] FETCH-pq:[L4] DIV:[L4] STORE-q:ε, ε, s[q→ZERO,p→NEG,pq→NEG]>
+=== Running from {q=ZERO, p=ZERO, pq=NEG}
+<[L0] PUSH-41:[L0] STORE-pq:[L1] PUSH-2:[L1] STORE-p:[L2] LOOP([[L2] FETCH-pq, [L2] FETCH-p, [L2] FETCH-pq, [L2] DIV, [L2] FETCH-p, [L2] MULT, [L2] EQ, [L2] NEG], [[L3] PUSH-1, [L3] FETCH-p, [L3] ADD, [L3] STORE-p]):[L4] FETCH-p:[L4] FETCH-pq:[L4] DIV:[L4] STORE-q:ε, ε, s[q→ZERO,p→ZERO,pq→NEG]>
+=== Running from {q=ZERO, p=POS, pq=NEG}
+<[L0] PUSH-41:[L0] STORE-pq:[L1] PUSH-2:[L1] STORE-p:[L2] LOOP([[L2] FETCH-pq, [L2] FETCH-p, [L2] FETCH-pq, [L2] DIV, [L2] FETCH-p, [L2] MULT, [L2] EQ, [L2] NEG], [[L3] PUSH-1, [L3] FETCH-p, [L3] ADD, [L3] STORE-p]):[L4] FETCH-p:[L4] FETCH-pq:[L4] DIV:[L4] STORE-q:ε, ε, s[q→ZERO,p→POS,pq→NEG]>
+=== Running from {q=POS, p=NEG, pq=NEG}
+<[L0] PUSH-41:[L0] STORE-pq:[L1] PUSH-2:[L1] STORE-p:[L2] LOOP([[L2] FETCH-pq, [L2] FETCH-p, [L2] FETCH-pq, [L2] DIV, [L2] FETCH-p, [L2] MULT, [L2] EQ, [L2] NEG], [[L3] PUSH-1, [L3] FETCH-p, [L3] ADD, [L3] STORE-p]):[L4] FETCH-p:[L4] FETCH-pq:[L4] DIV:[L4] STORE-q:ε, ε, s[q→POS,p→NEG,pq→NEG]>
+=== Running from {q=POS, p=ZERO, pq=NEG}
+<[L0] PUSH-41:[L0] STORE-pq:[L1] PUSH-2:[L1] STORE-p:[L2] LOOP([[L2] FETCH-pq, [L2] FETCH-p, [L2] FETCH-pq, [L2] DIV, [L2] FETCH-p, [L2] MULT, [L2] EQ, [L2] NEG], [[L3] PUSH-1, [L3] FETCH-p, [L3] ADD, [L3] STORE-p]):[L4] FETCH-p:[L4] FETCH-pq:[L4] DIV:[L4] STORE-q:ε, ε, s[q→POS,p→ZERO,pq→NEG]>
+=== Running from {q=POS, p=POS, pq=NEG}
+<[L0] PUSH-41:[L0] STORE-pq:[L1] PUSH-2:[L1] STORE-p:[L2] LOOP([[L2] FETCH-pq, [L2] FETCH-p, [L2] FETCH-pq, [L2] DIV, [L2] FETCH-p, [L2] MULT, [L2] EQ, [L2] NEG], [[L3] PUSH-1, [L3] FETCH-p, [L3] ADD, [L3] STORE-p]):[L4] FETCH-p:[L4] FETCH-pq:[L4] DIV:[L4] STORE-q:ε, ε, s[q→POS,p→POS,pq→NEG]>
+=== Running from {q=NEG, p=NEG, pq=NEG}
+<[L0] PUSH-41:[L0] STORE-pq:[L1] PUSH-2:[L1] STORE-p:[L2] LOOP([[L2] FETCH-pq, [L2] FETCH-p, [L2] FETCH-pq, [L2] DIV, [L2] FETCH-p, [L2] MULT, [L2] EQ, [L2] NEG], [[L3] PUSH-1, [L3] FETCH-p, [L3] ADD, [L3] STORE-p]):[L4] FETCH-p:[L4] FETCH-pq:[L4] DIV:[L4] STORE-q:ε, ε, s[q→NEG,p→NEG,pq→NEG]>
+=== Running from {q=ZERO, p=NEG, pq=NEG}
+<[L0] PUSH-41:[L0] STORE-pq:[L1] PUSH-2:[L1] STORE-p:[L2] LOOP([[L2] FETCH-pq, [L2] FETCH-p, [L2] FETCH-pq, [L2] DIV, [L2] FETCH-p, [L2] MULT, [L2] EQ, [L2] NEG], [[L3] PUSH-1, [L3] FETCH-p, [L3] ADD, [L3] STORE-p]):[L4] FETCH-p:[L4] FETCH-pq:[L4] DIV:[L4] STORE-q:ε, ε, s[q→ZERO,p→NEG,pq→NEG]>
+=== Running from {q=POS, p=NEG, pq=NEG}
+<[L0] PUSH-41:[L0] STORE-pq:[L1] PUSH-2:[L1] STORE-p:[L2] LOOP([[L2] FETCH-pq, [L2] FETCH-p, [L2] FETCH-pq, [L2] DIV, [L2] FETCH-p, [L2] MULT, [L2] EQ, [L2] NEG], [[L3] PUSH-1, [L3] FETCH-p, [L3] ADD, [L3] STORE-p]):[L4] FETCH-p:[L4] FETCH-pq:[L4] DIV:[L4] STORE-q:ε, ε, s[q→POS,p→NEG,pq→NEG]>
+=== Running from {q=NEG, p=ZERO, pq=NEG}
+<[L0] PUSH-41:[L0] STORE-pq:[L1] PUSH-2:[L1] STORE-p:[L2] LOOP([[L2] FETCH-pq, [L2] FETCH-p, [L2] FETCH-pq, [L2] DIV, [L2] FETCH-p, [L2] MULT, [L2] EQ, [L2] NEG], [[L3] PUSH-1, [L3] FETCH-p, [L3] ADD, [L3] STORE-p]):[L4] FETCH-p:[L4] FETCH-pq:[L4] DIV:[L4] STORE-q:ε, ε, s[q→NEG,p→ZERO,pq→NEG]>
+=== Running from {q=ZERO, p=ZERO, pq=NEG}
+<[L0] PUSH-41:[L0] STORE-pq:[L1] PUSH-2:[L1] STORE-p:[L2] LOOP([[L2] FETCH-pq, [L2] FETCH-p, [L2] FETCH-pq, [L2] DIV, [L2] FETCH-p, [L2] MULT, [L2] EQ, [L2] NEG], [[L3] PUSH-1, [L3] FETCH-p, [L3] ADD, [L3] STORE-p]):[L4] FETCH-p:[L4] FETCH-pq:[L4] DIV:[L4] STORE-q:ε, ε, s[q→ZERO,p→ZERO,pq→NEG]>
+=== Running from {q=POS, p=ZERO, pq=NEG}
+<[L0] PUSH-41:[L0] STORE-pq:[L1] PUSH-2:[L1] STORE-p:[L2] LOOP([[L2] FETCH-pq, [L2] FETCH-p, [L2] FETCH-pq, [L2] DIV, [L2] FETCH-p, [L2] MULT, [L2] EQ, [L2] NEG], [[L3] PUSH-1, [L3] FETCH-p, [L3] ADD, [L3] STORE-p]):[L4] FETCH-p:[L4] FETCH-pq:[L4] DIV:[L4] STORE-q:ε, ε, s[q→POS,p→ZERO,pq→NEG]>
+=== Running from {q=NEG, p=POS, pq=NEG}
+<[L0] PUSH-41:[L0] STORE-pq:[L1] PUSH-2:[L1] STORE-p:[L2] LOOP([[L2] FETCH-pq, [L2] FETCH-p, [L2] FETCH-pq, [L2] DIV, [L2] FETCH-p, [L2] MULT, [L2] EQ, [L2] NEG], [[L3] PUSH-1, [L3] FETCH-p, [L3] ADD, [L3] STORE-p]):[L4] FETCH-p:[L4] FETCH-pq:[L4] DIV:[L4] STORE-q:ε, ε, s[q→NEG,p→POS,pq→NEG]>
+=== Running from {q=ZERO, p=POS, pq=NEG}
+<[L0] PUSH-41:[L0] STORE-pq:[L1] PUSH-2:[L1] STORE-p:[L2] LOOP([[L2] FETCH-pq, [L2] FETCH-p, [L2] FETCH-pq, [L2] DIV, [L2] FETCH-p, [L2] MULT, [L2] EQ, [L2] NEG], [[L3] PUSH-1, [L3] FETCH-p, [L3] ADD, [L3] STORE-p]):[L4] FETCH-p:[L4] FETCH-pq:[L4] DIV:[L4] STORE-q:ε, ε, s[q→ZERO,p→POS,pq→NEG]>
+=== Running from {q=POS, p=POS, pq=NEG}
+<[L0] PUSH-41:[L0] STORE-pq:[L1] PUSH-2:[L1] STORE-p:[L2] LOOP([[L2] FETCH-pq, [L2] FETCH-p, [L2] FETCH-pq, [L2] DIV, [L2] FETCH-p, [L2] MULT, [L2] EQ, [L2] NEG], [[L3] PUSH-1, [L3] FETCH-p, [L3] ADD, [L3] STORE-p]):[L4] FETCH-p:[L4] FETCH-pq:[L4] DIV:[L4] STORE-q:ε, ε, s[q→POS,p→POS,pq→NEG]>
+=== Running from {q=NEG, p=NEG, pq=ZERO}
+<[L0] PUSH-41:[L0] STORE-pq:[L1] PUSH-2:[L1] STORE-p:[L2] LOOP([[L2] FETCH-pq, [L2] FETCH-p, [L2] FETCH-pq, [L2] DIV, [L2] FETCH-p, [L2] MULT, [L2] EQ, [L2] NEG], [[L3] PUSH-1, [L3] FETCH-p, [L3] ADD, [L3] STORE-p]):[L4] FETCH-p:[L4] FETCH-pq:[L4] DIV:[L4] STORE-q:ε, ε, s[q→NEG,p→NEG,pq→ZERO]>
+=== Running from {q=NEG, p=ZERO, pq=ZERO}
+<[L0] PUSH-41:[L0] STORE-pq:[L1] PUSH-2:[L1] STORE-p:[L2] LOOP([[L2] FETCH-pq, [L2] FETCH-p, [L2] FETCH-pq, [L2] DIV, [L2] FETCH-p, [L2] MULT, [L2] EQ, [L2] NEG], [[L3] PUSH-1, [L3] FETCH-p, [L3] ADD, [L3] STORE-p]):[L4] FETCH-p:[L4] FETCH-pq:[L4] DIV:[L4] STORE-q:ε, ε, s[q→NEG,p→ZERO,pq→ZERO]>
+=== Running from {q=NEG, p=POS, pq=ZERO}
+<[L0] PUSH-41:[L0] STORE-pq:[L1] PUSH-2:[L1] STORE-p:[L2] LOOP([[L2] FETCH-pq, [L2] FETCH-p, [L2] FETCH-pq, [L2] DIV, [L2] FETCH-p, [L2] MULT, [L2] EQ, [L2] NEG], [[L3] PUSH-1, [L3] FETCH-p, [L3] ADD, [L3] STORE-p]):[L4] FETCH-p:[L4] FETCH-pq:[L4] DIV:[L4] STORE-q:ε, ε, s[q→NEG,p→POS,pq→ZERO]>
+=== Running from {q=ZERO, p=NEG, pq=ZERO}
+<[L0] PUSH-41:[L0] STORE-pq:[L1] PUSH-2:[L1] STORE-p:[L2] LOOP([[L2] FETCH-pq, [L2] FETCH-p, [L2] FETCH-pq, [L2] DIV, [L2] FETCH-p, [L2] MULT, [L2] EQ, [L2] NEG], [[L3] PUSH-1, [L3] FETCH-p, [L3] ADD, [L3] STORE-p]):[L4] FETCH-p:[L4] FETCH-pq:[L4] DIV:[L4] STORE-q:ε, ε, s[q→ZERO,p→NEG,pq→ZERO]>
+=== Running from {q=ZERO, p=ZERO, pq=ZERO}
+<[L0] PUSH-41:[L0] STORE-pq:[L1] PUSH-2:[L1] STORE-p:[L2] LOOP([[L2] FETCH-pq, [L2] FETCH-p, [L2] FETCH-pq, [L2] DIV, [L2] FETCH-p, [L2] MULT, [L2] EQ, [L2] NEG], [[L3] PUSH-1, [L3] FETCH-p, [L3] ADD, [L3] STORE-p]):[L4] FETCH-p:[L4] FETCH-pq:[L4] DIV:[L4] STORE-q:ε, ε, s[q→ZERO,p→ZERO,pq→ZERO]>
+=== Running from {q=ZERO, p=POS, pq=ZERO}
+<[L0] PUSH-41:[L0] STORE-pq:[L1] PUSH-2:[L1] STORE-p:[L2] LOOP([[L2] FETCH-pq, [L2] FETCH-p, [L2] FETCH-pq, [L2] DIV, [L2] FETCH-p, [L2] MULT, [L2] EQ, [L2] NEG], [[L3] PUSH-1, [L3] FETCH-p, [L3] ADD, [L3] STORE-p]):[L4] FETCH-p:[L4] FETCH-pq:[L4] DIV:[L4] STORE-q:ε, ε, s[q→ZERO,p→POS,pq→ZERO]>
+=== Running from {q=POS, p=NEG, pq=ZERO}
+<[L0] PUSH-41:[L0] STORE-pq:[L1] PUSH-2:[L1] STORE-p:[L2] LOOP([[L2] FETCH-pq, [L2] FETCH-p, [L2] FETCH-pq, [L2] DIV, [L2] FETCH-p, [L2] MULT, [L2] EQ, [L2] NEG], [[L3] PUSH-1, [L3] FETCH-p, [L3] ADD, [L3] STORE-p]):[L4] FETCH-p:[L4] FETCH-pq:[L4] DIV:[L4] STORE-q:ε, ε, s[q→POS,p→NEG,pq→ZERO]>
+=== Running from {q=POS, p=ZERO, pq=ZERO}
+<[L0] PUSH-41:[L0] STORE-pq:[L1] PUSH-2:[L1] STORE-p:[L2] LOOP([[L2] FETCH-pq, [L2] FETCH-p, [L2] FETCH-pq, [L2] DIV, [L2] FETCH-p, [L2] MULT, [L2] EQ, [L2] NEG], [[L3] PUSH-1, [L3] FETCH-p, [L3] ADD, [L3] STORE-p]):[L4] FETCH-p:[L4] FETCH-pq:[L4] DIV:[L4] STORE-q:ε, ε, s[q→POS,p→ZERO,pq→ZERO]>
+=== Running from {q=POS, p=POS, pq=ZERO}
+<[L0] PUSH-41:[L0] STORE-pq:[L1] PUSH-2:[L1] STORE-p:[L2] LOOP([[L2] FETCH-pq, [L2] FETCH-p, [L2] FETCH-pq, [L2] DIV, [L2] FETCH-p, [L2] MULT, [L2] EQ, [L2] NEG], [[L3] PUSH-1, [L3] FETCH-p, [L3] ADD, [L3] STORE-p]):[L4] FETCH-p:[L4] FETCH-pq:[L4] DIV:[L4] STORE-q:ε, ε, s[q→POS,p→POS,pq→ZERO]>
+=== Running from {q=NEG, p=NEG, pq=ZERO}
+<[L0] PUSH-41:[L0] STORE-pq:[L1] PUSH-2:[L1] STORE-p:[L2] LOOP([[L2] FETCH-pq, [L2] FETCH-p, [L2] FETCH-pq, [L2] DIV, [L2] FETCH-p, [L2] MULT, [L2] EQ, [L2] NEG], [[L3] PUSH-1, [L3] FETCH-p, [L3] ADD, [L3] STORE-p]):[L4] FETCH-p:[L4] FETCH-pq:[L4] DIV:[L4] STORE-q:ε, ε, s[q→NEG,p→NEG,pq→ZERO]>
+=== Running from {q=ZERO, p=NEG, pq=ZERO}
+<[L0] PUSH-41:[L0] STORE-pq:[L1] PUSH-2:[L1] STORE-p:[L2] LOOP([[L2] FETCH-pq, [L2] FETCH-p, [L2] FETCH-pq, [L2] DIV, [L2] FETCH-p, [L2] MULT, [L2] EQ, [L2] NEG], [[L3] PUSH-1, [L3] FETCH-p, [L3] ADD, [L3] STORE-p]):[L4] FETCH-p:[L4] FETCH-pq:[L4] DIV:[L4] STORE-q:ε, ε, s[q→ZERO,p→NEG,pq→ZERO]>
+=== Running from {q=POS, p=NEG, pq=ZERO}
+<[L0] PUSH-41:[L0] STORE-pq:[L1] PUSH-2:[L1] STORE-p:[L2] LOOP([[L2] FETCH-pq, [L2] FETCH-p, [L2] FETCH-pq, [L2] DIV, [L2] FETCH-p, [L2] MULT, [L2] EQ, [L2] NEG], [[L3] PUSH-1, [L3] FETCH-p, [L3] ADD, [L3] STORE-p]):[L4] FETCH-p:[L4] FETCH-pq:[L4] DIV:[L4] STORE-q:ε, ε, s[q→POS,p→NEG,pq→ZERO]>
+=== Running from {q=NEG, p=ZERO, pq=ZERO}
+<[L0] PUSH-41:[L0] STORE-pq:[L1] PUSH-2:[L1] STORE-p:[L2] LOOP([[L2] FETCH-pq, [L2] FETCH-p, [L2] FETCH-pq, [L2] DIV, [L2] FETCH-p, [L2] MULT, [L2] EQ, [L2] NEG], [[L3] PUSH-1, [L3] FETCH-p, [L3] ADD, [L3] STORE-p]):[L4] FETCH-p:[L4] FETCH-pq:[L4] DIV:[L4] STORE-q:ε, ε, s[q→NEG,p→ZERO,pq→ZERO]>
+=== Running from {q=ZERO, p=ZERO, pq=ZERO}
+<[L0] PUSH-41:[L0] STORE-pq:[L1] PUSH-2:[L1] STORE-p:[L2] LOOP([[L2] FETCH-pq, [L2] FETCH-p, [L2] FETCH-pq, [L2] DIV, [L2] FETCH-p, [L2] MULT, [L2] EQ, [L2] NEG], [[L3] PUSH-1, [L3] FETCH-p, [L3] ADD, [L3] STORE-p]):[L4] FETCH-p:[L4] FETCH-pq:[L4] DIV:[L4] STORE-q:ε, ε, s[q→ZERO,p→ZERO,pq→ZERO]>
+=== Running from {q=POS, p=ZERO, pq=ZERO}
+<[L0] PUSH-41:[L0] STORE-pq:[L1] PUSH-2:[L1] STORE-p:[L2] LOOP([[L2] FETCH-pq, [L2] FETCH-p, [L2] FETCH-pq, [L2] DIV, [L2] FETCH-p, [L2] MULT, [L2] EQ, [L2] NEG], [[L3] PUSH-1, [L3] FETCH-p, [L3] ADD, [L3] STORE-p]):[L4] FETCH-p:[L4] FETCH-pq:[L4] DIV:[L4] STORE-q:ε, ε, s[q→POS,p→ZERO,pq→ZERO]>
+=== Running from {q=NEG, p=POS, pq=ZERO}
+<[L0] PUSH-41:[L0] STORE-pq:[L1] PUSH-2:[L1] STORE-p:[L2] LOOP([[L2] FETCH-pq, [L2] FETCH-p, [L2] FETCH-pq, [L2] DIV, [L2] FETCH-p, [L2] MULT, [L2] EQ, [L2] NEG], [[L3] PUSH-1, [L3] FETCH-p, [L3] ADD, [L3] STORE-p]):[L4] FETCH-p:[L4] FETCH-pq:[L4] DIV:[L4] STORE-q:ε, ε, s[q→NEG,p→POS,pq→ZERO]>
+=== Running from {q=ZERO, p=POS, pq=ZERO}
+<[L0] PUSH-41:[L0] STORE-pq:[L1] PUSH-2:[L1] STORE-p:[L2] LOOP([[L2] FETCH-pq, [L2] FETCH-p, [L2] FETCH-pq, [L2] DIV, [L2] FETCH-p, [L2] MULT, [L2] EQ, [L2] NEG], [[L3] PUSH-1, [L3] FETCH-p, [L3] ADD, [L3] STORE-p]):[L4] FETCH-p:[L4] FETCH-pq:[L4] DIV:[L4] STORE-q:ε, ε, s[q→ZERO,p→POS,pq→ZERO]>
+=== Running from {q=POS, p=POS, pq=ZERO}
+<[L0] PUSH-41:[L0] STORE-pq:[L1] PUSH-2:[L1] STORE-p:[L2] LOOP([[L2] FETCH-pq, [L2] FETCH-p, [L2] FETCH-pq, [L2] DIV, [L2] FETCH-p, [L2] MULT, [L2] EQ, [L2] NEG], [[L3] PUSH-1, [L3] FETCH-p, [L3] ADD, [L3] STORE-p]):[L4] FETCH-p:[L4] FETCH-pq:[L4] DIV:[L4] STORE-q:ε, ε, s[q→POS,p→POS,pq→ZERO]>
+=== Running from {q=NEG, p=NEG, pq=POS}
+<[L0] PUSH-41:[L0] STORE-pq:[L1] PUSH-2:[L1] STORE-p:[L2] LOOP([[L2] FETCH-pq, [L2] FETCH-p, [L2] FETCH-pq, [L2] DIV, [L2] FETCH-p, [L2] MULT, [L2] EQ, [L2] NEG], [[L3] PUSH-1, [L3] FETCH-p, [L3] ADD, [L3] STORE-p]):[L4] FETCH-p:[L4] FETCH-pq:[L4] DIV:[L4] STORE-q:ε, ε, s[q→NEG,p→NEG,pq→POS]>
+=== Running from {q=NEG, p=ZERO, pq=POS}
+<[L0] PUSH-41:[L0] STORE-pq:[L1] PUSH-2:[L1] STORE-p:[L2] LOOP([[L2] FETCH-pq, [L2] FETCH-p, [L2] FETCH-pq, [L2] DIV, [L2] FETCH-p, [L2] MULT, [L2] EQ, [L2] NEG], [[L3] PUSH-1, [L3] FETCH-p, [L3] ADD, [L3] STORE-p]):[L4] FETCH-p:[L4] FETCH-pq:[L4] DIV:[L4] STORE-q:ε, ε, s[q→NEG,p→ZERO,pq→POS]>
+=== Running from {q=NEG, p=POS, pq=POS}
+<[L0] PUSH-41:[L0] STORE-pq:[L1] PUSH-2:[L1] STORE-p:[L2] LOOP([[L2] FETCH-pq, [L2] FETCH-p, [L2] FETCH-pq, [L2] DIV, [L2] FETCH-p, [L2] MULT, [L2] EQ, [L2] NEG], [[L3] PUSH-1, [L3] FETCH-p, [L3] ADD, [L3] STORE-p]):[L4] FETCH-p:[L4] FETCH-pq:[L4] DIV:[L4] STORE-q:ε, ε, s[q→NEG,p→POS,pq→POS]>
+=== Running from {q=ZERO, p=NEG, pq=POS}
+<[L0] PUSH-41:[L0] STORE-pq:[L1] PUSH-2:[L1] STORE-p:[L2] LOOP([[L2] FETCH-pq, [L2] FETCH-p, [L2] FETCH-pq, [L2] DIV, [L2] FETCH-p, [L2] MULT, [L2] EQ, [L2] NEG], [[L3] PUSH-1, [L3] FETCH-p, [L3] ADD, [L3] STORE-p]):[L4] FETCH-p:[L4] FETCH-pq:[L4] DIV:[L4] STORE-q:ε, ε, s[q→ZERO,p→NEG,pq→POS]>
+=== Running from {q=ZERO, p=ZERO, pq=POS}
+<[L0] PUSH-41:[L0] STORE-pq:[L1] PUSH-2:[L1] STORE-p:[L2] LOOP([[L2] FETCH-pq, [L2] FETCH-p, [L2] FETCH-pq, [L2] DIV, [L2] FETCH-p, [L2] MULT, [L2] EQ, [L2] NEG], [[L3] PUSH-1, [L3] FETCH-p, [L3] ADD, [L3] STORE-p]):[L4] FETCH-p:[L4] FETCH-pq:[L4] DIV:[L4] STORE-q:ε, ε, s[q→ZERO,p→ZERO,pq→POS]>
+=== Running from {q=ZERO, p=POS, pq=POS}
+<[L0] PUSH-41:[L0] STORE-pq:[L1] PUSH-2:[L1] STORE-p:[L2] LOOP([[L2] FETCH-pq, [L2] FETCH-p, [L2] FETCH-pq, [L2] DIV, [L2] FETCH-p, [L2] MULT, [L2] EQ, [L2] NEG], [[L3] PUSH-1, [L3] FETCH-p, [L3] ADD, [L3] STORE-p]):[L4] FETCH-p:[L4] FETCH-pq:[L4] DIV:[L4] STORE-q:ε, ε, s[q→ZERO,p→POS,pq→POS]>
+=== Running from {q=POS, p=NEG, pq=POS}
+<[L0] PUSH-41:[L0] STORE-pq:[L1] PUSH-2:[L1] STORE-p:[L2] LOOP([[L2] FETCH-pq, [L2] FETCH-p, [L2] FETCH-pq, [L2] DIV, [L2] FETCH-p, [L2] MULT, [L2] EQ, [L2] NEG], [[L3] PUSH-1, [L3] FETCH-p, [L3] ADD, [L3] STORE-p]):[L4] FETCH-p:[L4] FETCH-pq:[L4] DIV:[L4] STORE-q:ε, ε, s[q→POS,p→NEG,pq→POS]>
+=== Running from {q=POS, p=ZERO, pq=POS}
+<[L0] PUSH-41:[L0] STORE-pq:[L1] PUSH-2:[L1] STORE-p:[L2] LOOP([[L2] FETCH-pq, [L2] FETCH-p, [L2] FETCH-pq, [L2] DIV, [L2] FETCH-p, [L2] MULT, [L2] EQ, [L2] NEG], [[L3] PUSH-1, [L3] FETCH-p, [L3] ADD, [L3] STORE-p]):[L4] FETCH-p:[L4] FETCH-pq:[L4] DIV:[L4] STORE-q:ε, ε, s[q→POS,p→ZERO,pq→POS]>
+=== Running from {q=POS, p=POS, pq=POS}
+<[L0] PUSH-41:[L0] STORE-pq:[L1] PUSH-2:[L1] STORE-p:[L2] LOOP([[L2] FETCH-pq, [L2] FETCH-p, [L2] FETCH-pq, [L2] DIV, [L2] FETCH-p, [L2] MULT, [L2] EQ, [L2] NEG], [[L3] PUSH-1, [L3] FETCH-p, [L3] ADD, [L3] STORE-p]):[L4] FETCH-p:[L4] FETCH-pq:[L4] DIV:[L4] STORE-q:ε, ε, s[q→POS,p→POS,pq→POS]>
+=== Running from {q=NEG, p=NEG, pq=POS}
+<[L0] PUSH-41:[L0] STORE-pq:[L1] PUSH-2:[L1] STORE-p:[L2] LOOP([[L2] FETCH-pq, [L2] FETCH-p, [L2] FETCH-pq, [L2] DIV, [L2] FETCH-p, [L2] MULT, [L2] EQ, [L2] NEG], [[L3] PUSH-1, [L3] FETCH-p, [L3] ADD, [L3] STORE-p]):[L4] FETCH-p:[L4] FETCH-pq:[L4] DIV:[L4] STORE-q:ε, ε, s[q→NEG,p→NEG,pq→POS]>
+=== Running from {q=ZERO, p=NEG, pq=POS}
+<[L0] PUSH-41:[L0] STORE-pq:[L1] PUSH-2:[L1] STORE-p:[L2] LOOP([[L2] FETCH-pq, [L2] FETCH-p, [L2] FETCH-pq, [L2] DIV, [L2] FETCH-p, [L2] MULT, [L2] EQ, [L2] NEG], [[L3] PUSH-1, [L3] FETCH-p, [L3] ADD, [L3] STORE-p]):[L4] FETCH-p:[L4] FETCH-pq:[L4] DIV:[L4] STORE-q:ε, ε, s[q→ZERO,p→NEG,pq→POS]>
+=== Running from {q=POS, p=NEG, pq=POS}
+<[L0] PUSH-41:[L0] STORE-pq:[L1] PUSH-2:[L1] STORE-p:[L2] LOOP([[L2] FETCH-pq, [L2] FETCH-p, [L2] FETCH-pq, [L2] DIV, [L2] FETCH-p, [L2] MULT, [L2] EQ, [L2] NEG], [[L3] PUSH-1, [L3] FETCH-p, [L3] ADD, [L3] STORE-p]):[L4] FETCH-p:[L4] FETCH-pq:[L4] DIV:[L4] STORE-q:ε, ε, s[q→POS,p→NEG,pq→POS]>
+=== Running from {q=NEG, p=ZERO, pq=POS}
+<[L0] PUSH-41:[L0] STORE-pq:[L1] PUSH-2:[L1] STORE-p:[L2] LOOP([[L2] FETCH-pq, [L2] FETCH-p, [L2] FETCH-pq, [L2] DIV, [L2] FETCH-p, [L2] MULT, [L2] EQ, [L2] NEG], [[L3] PUSH-1, [L3] FETCH-p, [L3] ADD, [L3] STORE-p]):[L4] FETCH-p:[L4] FETCH-pq:[L4] DIV:[L4] STORE-q:ε, ε, s[q→NEG,p→ZERO,pq→POS]>
+=== Running from {q=ZERO, p=ZERO, pq=POS}
+<[L0] PUSH-41:[L0] STORE-pq:[L1] PUSH-2:[L1] STORE-p:[L2] LOOP([[L2] FETCH-pq, [L2] FETCH-p, [L2] FETCH-pq, [L2] DIV, [L2] FETCH-p, [L2] MULT, [L2] EQ, [L2] NEG], [[L3] PUSH-1, [L3] FETCH-p, [L3] ADD, [L3] STORE-p]):[L4] FETCH-p:[L4] FETCH-pq:[L4] DIV:[L4] STORE-q:ε, ε, s[q→ZERO,p→ZERO,pq→POS]>
+=== Running from {q=POS, p=ZERO, pq=POS}
+<[L0] PUSH-41:[L0] STORE-pq:[L1] PUSH-2:[L1] STORE-p:[L2] LOOP([[L2] FETCH-pq, [L2] FETCH-p, [L2] FETCH-pq, [L2] DIV, [L2] FETCH-p, [L2] MULT, [L2] EQ, [L2] NEG], [[L3] PUSH-1, [L3] FETCH-p, [L3] ADD, [L3] STORE-p]):[L4] FETCH-p:[L4] FETCH-pq:[L4] DIV:[L4] STORE-q:ε, ε, s[q→POS,p→ZERO,pq→POS]>
+=== Running from {q=NEG, p=POS, pq=POS}
+<[L0] PUSH-41:[L0] STORE-pq:[L1] PUSH-2:[L1] STORE-p:[L2] LOOP([[L2] FETCH-pq, [L2] FETCH-p, [L2] FETCH-pq, [L2] DIV, [L2] FETCH-p, [L2] MULT, [L2] EQ, [L2] NEG], [[L3] PUSH-1, [L3] FETCH-p, [L3] ADD, [L3] STORE-p]):[L4] FETCH-p:[L4] FETCH-pq:[L4] DIV:[L4] STORE-q:ε, ε, s[q→NEG,p→POS,pq→POS]>
+=== Running from {q=ZERO, p=POS, pq=POS}
+<[L0] PUSH-41:[L0] STORE-pq:[L1] PUSH-2:[L1] STORE-p:[L2] LOOP([[L2] FETCH-pq, [L2] FETCH-p, [L2] FETCH-pq, [L2] DIV, [L2] FETCH-p, [L2] MULT, [L2] EQ, [L2] NEG], [[L3] PUSH-1, [L3] FETCH-p, [L3] ADD, [L3] STORE-p]):[L4] FETCH-p:[L4] FETCH-pq:[L4] DIV:[L4] STORE-q:ε, ε, s[q→ZERO,p→POS,pq→POS]>
+=== Running from {q=POS, p=POS, pq=POS}
+<[L0] PUSH-41:[L0] STORE-pq:[L1] PUSH-2:[L1] STORE-p:[L2] LOOP([[L2] FETCH-pq, [L2] FETCH-p, [L2] FETCH-pq, [L2] DIV, [L2] FETCH-p, [L2] MULT, [L2] EQ, [L2] NEG], [[L3] PUSH-1, [L3] FETCH-p, [L3] ADD, [L3] STORE-p]):[L4] FETCH-p:[L4] FETCH-pq:[L4] DIV:[L4] STORE-q:ε, ε, s[q→POS,p→POS,pq→POS]>
+
+{q=Z, p=Z, pq=Z} rhs: POS
+pq := 41;
+{q=Z, p=Z, pq=POS} rhs: POS
+p := 2;
+{q=Z, p=POS, pq=POS} rhs: T
+while !((p * (pq / p)) = pq) do
+    {q=Z, p=POS, pq=POS} rhs: POS
+    p := (p + 1);
+{q=Z, p=POS, pq=POS} rhs: NON_NEG
+q := (pq / p);
+{q=NON_NEG, p=POS, pq=POS}
+Abnormal termination impossible!
+Normal termination possible!

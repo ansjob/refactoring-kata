@@ -1,0 +1,46 @@
+=== Running from {z=NEG}
+<[L0] PUSH-3:[L0] PUSH-5:[L0] LE:[L0] BRANCH([[L1] PUSH-5, [L1] STORE-z], [[L2] PUSH-5, [L2] PUSH-0, [L2] SUB, [L2] STORE-z]):ε, ε, s[z→NEG]>
+<[L0] PUSH-5:[L0] LE:[L0] BRANCH([[L1] PUSH-5, [L1] STORE-z], [[L2] PUSH-5, [L2] PUSH-0, [L2] SUB, [L2] STORE-z]):ε, POS:ε, s[z→NEG]>
+<[L0] LE:[L0] BRANCH([[L1] PUSH-5, [L1] STORE-z], [[L2] PUSH-5, [L2] PUSH-0, [L2] SUB, [L2] STORE-z]):ε, POS:POS:ε, s[z→NEG]>
+<[L0] BRANCH([[L1] PUSH-5, [L1] STORE-z], [[L2] PUSH-5, [L2] PUSH-0, [L2] SUB, [L2] STORE-z]):ε, T:ε, s[z→NEG]>
+<[L2] PUSH-5:[L2] PUSH-0:[L2] SUB:[L2] STORE-z:ε, ε, s[z→NEG]>
+<[L2] PUSH-0:[L2] SUB:[L2] STORE-z:ε, POS:ε, s[z→NEG]>
+<[L2] SUB:[L2] STORE-z:ε, ZERO:POS:ε, s[z→NEG]>
+<[L2] STORE-z:ε, NEG:ε, s[z→NEG]>
+<ε, ε, s[z→NEG]>
+<[L1] PUSH-5:[L1] STORE-z:ε, ε, s[z→NEG]>
+<[L1] STORE-z:ε, POS:ε, s[z→NEG]>
+<ε, ε, s[z→POS]>
+=== Running from {z=ZERO}
+<[L0] PUSH-3:[L0] PUSH-5:[L0] LE:[L0] BRANCH([[L1] PUSH-5, [L1] STORE-z], [[L2] PUSH-5, [L2] PUSH-0, [L2] SUB, [L2] STORE-z]):ε, ε, s[z→ZERO]>
+<[L0] PUSH-5:[L0] LE:[L0] BRANCH([[L1] PUSH-5, [L1] STORE-z], [[L2] PUSH-5, [L2] PUSH-0, [L2] SUB, [L2] STORE-z]):ε, POS:ε, s[z→ZERO]>
+<[L0] LE:[L0] BRANCH([[L1] PUSH-5, [L1] STORE-z], [[L2] PUSH-5, [L2] PUSH-0, [L2] SUB, [L2] STORE-z]):ε, POS:POS:ε, s[z→ZERO]>
+<[L0] BRANCH([[L1] PUSH-5, [L1] STORE-z], [[L2] PUSH-5, [L2] PUSH-0, [L2] SUB, [L2] STORE-z]):ε, T:ε, s[z→ZERO]>
+<[L2] PUSH-5:[L2] PUSH-0:[L2] SUB:[L2] STORE-z:ε, ε, s[z→ZERO]>
+<[L2] PUSH-0:[L2] SUB:[L2] STORE-z:ε, POS:ε, s[z→ZERO]>
+<[L2] SUB:[L2] STORE-z:ε, ZERO:POS:ε, s[z→ZERO]>
+<[L2] STORE-z:ε, NEG:ε, s[z→ZERO]>
+<[L1] PUSH-5:[L1] STORE-z:ε, ε, s[z→ZERO]>
+<[L1] STORE-z:ε, POS:ε, s[z→ZERO]>
+=== Running from {z=POS}
+<[L0] PUSH-3:[L0] PUSH-5:[L0] LE:[L0] BRANCH([[L1] PUSH-5, [L1] STORE-z], [[L2] PUSH-5, [L2] PUSH-0, [L2] SUB, [L2] STORE-z]):ε, ε, s[z→POS]>
+<[L0] PUSH-5:[L0] LE:[L0] BRANCH([[L1] PUSH-5, [L1] STORE-z], [[L2] PUSH-5, [L2] PUSH-0, [L2] SUB, [L2] STORE-z]):ε, POS:ε, s[z→POS]>
+<[L0] LE:[L0] BRANCH([[L1] PUSH-5, [L1] STORE-z], [[L2] PUSH-5, [L2] PUSH-0, [L2] SUB, [L2] STORE-z]):ε, POS:POS:ε, s[z→POS]>
+<[L0] BRANCH([[L1] PUSH-5, [L1] STORE-z], [[L2] PUSH-5, [L2] PUSH-0, [L2] SUB, [L2] STORE-z]):ε, T:ε, s[z→POS]>
+<[L2] PUSH-5:[L2] PUSH-0:[L2] SUB:[L2] STORE-z:ε, ε, s[z→POS]>
+<[L2] PUSH-0:[L2] SUB:[L2] STORE-z:ε, POS:ε, s[z→POS]>
+<[L2] SUB:[L2] STORE-z:ε, ZERO:POS:ε, s[z→POS]>
+<[L2] STORE-z:ε, NEG:ε, s[z→POS]>
+<[L1] PUSH-5:[L1] STORE-z:ε, ε, s[z→POS]>
+<[L1] STORE-z:ε, POS:ε, s[z→POS]>
+
+{z=Z} rhs: T
+if 5 <= 3 then
+    {z=Z} rhs: POS
+    z := 5
+else
+    {z=Z} rhs: NEG
+    z := (0 - 5);
+{z=NON_ZERO}
+Abnormal termination impossible!
+Normal termination possible!

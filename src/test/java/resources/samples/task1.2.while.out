@@ -1,0 +1,51 @@
+=== Running from {x=NEG}
+<[L0] PUSH-7:[L0] STORE-x:[L1] TRY([[L2] PUSH-7, [L2] FETCH-x, [L2] SUB, [L2] STORE-x, [L3] FETCH-x, [L3] PUSH-7, [L3] DIV, [L3] STORE-x, [L4] PUSH-7, [L4] FETCH-x, [L4] ADD, [L4] STORE-x]):[L6] CATCH([[L5] PUSH-7, [L5] FETCH-x, [L5] SUB, [L5] STORE-x]):ε, ε, s[x→NEG]>
+<[L0] STORE-x:[L1] TRY([[L2] PUSH-7, [L2] FETCH-x, [L2] SUB, [L2] STORE-x, [L3] FETCH-x, [L3] PUSH-7, [L3] DIV, [L3] STORE-x, [L4] PUSH-7, [L4] FETCH-x, [L4] ADD, [L4] STORE-x]):[L6] CATCH([[L5] PUSH-7, [L5] FETCH-x, [L5] SUB, [L5] STORE-x]):ε, POS:ε, s[x→NEG]>
+<[L1] TRY([[L2] PUSH-7, [L2] FETCH-x, [L2] SUB, [L2] STORE-x, [L3] FETCH-x, [L3] PUSH-7, [L3] DIV, [L3] STORE-x, [L4] PUSH-7, [L4] FETCH-x, [L4] ADD, [L4] STORE-x]):[L6] CATCH([[L5] PUSH-7, [L5] FETCH-x, [L5] SUB, [L5] STORE-x]):ε, ε, s[x→POS]>
+<[L2] PUSH-7:[L2] FETCH-x:[L2] SUB:[L2] STORE-x:[L3] FETCH-x:[L3] PUSH-7:[L3] DIV:[L3] STORE-x:[L4] PUSH-7:[L4] FETCH-x:[L4] ADD:[L4] STORE-x:[L6] CATCH([[L5] PUSH-7, [L5] FETCH-x, [L5] SUB, [L5] STORE-x]):ε, ε, s[x→POS]>
+<[L2] FETCH-x:[L2] SUB:[L2] STORE-x:[L3] FETCH-x:[L3] PUSH-7:[L3] DIV:[L3] STORE-x:[L4] PUSH-7:[L4] FETCH-x:[L4] ADD:[L4] STORE-x:[L6] CATCH([[L5] PUSH-7, [L5] FETCH-x, [L5] SUB, [L5] STORE-x]):ε, POS:ε, s[x→POS]>
+<[L2] SUB:[L2] STORE-x:[L3] FETCH-x:[L3] PUSH-7:[L3] DIV:[L3] STORE-x:[L4] PUSH-7:[L4] FETCH-x:[L4] ADD:[L4] STORE-x:[L6] CATCH([[L5] PUSH-7, [L5] FETCH-x, [L5] SUB, [L5] STORE-x]):ε, POS:POS:ε, s[x→POS]>
+<[L2] STORE-x:[L3] FETCH-x:[L3] PUSH-7:[L3] DIV:[L3] STORE-x:[L4] PUSH-7:[L4] FETCH-x:[L4] ADD:[L4] STORE-x:[L6] CATCH([[L5] PUSH-7, [L5] FETCH-x, [L5] SUB, [L5] STORE-x]):ε, Z:ε, s[x→POS]>
+<[L3] FETCH-x:[L3] PUSH-7:[L3] DIV:[L3] STORE-x:[L4] PUSH-7:[L4] FETCH-x:[L4] ADD:[L4] STORE-x:[L6] CATCH([[L5] PUSH-7, [L5] FETCH-x, [L5] SUB, [L5] STORE-x]):ε, ε, s[x→Z]>
+<[L3] PUSH-7:[L3] DIV:[L3] STORE-x:[L4] PUSH-7:[L4] FETCH-x:[L4] ADD:[L4] STORE-x:[L6] CATCH([[L5] PUSH-7, [L5] FETCH-x, [L5] SUB, [L5] STORE-x]):ε, Z:ε, s[x→Z]>
+<[L3] DIV:[L3] STORE-x:[L4] PUSH-7:[L4] FETCH-x:[L4] ADD:[L4] STORE-x:[L6] CATCH([[L5] PUSH-7, [L5] FETCH-x, [L5] SUB, [L5] STORE-x]):ε, POS:Z:ε, s[x→Z]>
+<[L3] STORE-x:[L4] PUSH-7:[L4] FETCH-x:[L4] ADD:[L4] STORE-x:[L6] CATCH([[L5] PUSH-7, [L5] FETCH-x, [L5] SUB, [L5] STORE-x]):ε, Z:ε, s[x→Z]>
+<[L4] PUSH-7:[L4] FETCH-x:[L4] ADD:[L4] STORE-x:[L6] CATCH([[L5] PUSH-7, [L5] FETCH-x, [L5] SUB, [L5] STORE-x]):ε, ε, s[x→Z]>
+<[L4] FETCH-x:[L4] ADD:[L4] STORE-x:[L6] CATCH([[L5] PUSH-7, [L5] FETCH-x, [L5] SUB, [L5] STORE-x]):ε, POS:ε, s[x→Z]>
+<[L4] ADD:[L4] STORE-x:[L6] CATCH([[L5] PUSH-7, [L5] FETCH-x, [L5] SUB, [L5] STORE-x]):ε, Z:POS:ε, s[x→Z]>
+<[L4] STORE-x:[L6] CATCH([[L5] PUSH-7, [L5] FETCH-x, [L5] SUB, [L5] STORE-x]):ε, Z:ε, s[x→Z]>
+<[L6] CATCH([[L5] PUSH-7, [L5] FETCH-x, [L5] SUB, [L5] STORE-x]):ε, ε, s[x→Z]>
+<ε, ε, s[x→Z]>
+<[L3] STORE-x:[L4] PUSH-7:[L4] FETCH-x:[L4] ADD:[L4] STORE-x:[L6] CATCH([[L5] PUSH-7, [L5] FETCH-x, [L5] SUB, [L5] STORE-x]):ε, ERR_A:ε, ŝ[x→Z]>
+<[L4] PUSH-7:[L4] FETCH-x:[L4] ADD:[L4] STORE-x:[L6] CATCH([[L5] PUSH-7, [L5] FETCH-x, [L5] SUB, [L5] STORE-x]):ε, ε, ŝ[x→Z]>
+<[L4] FETCH-x:[L4] ADD:[L4] STORE-x:[L6] CATCH([[L5] PUSH-7, [L5] FETCH-x, [L5] SUB, [L5] STORE-x]):ε, POS:ε, ŝ[x→Z]>
+<[L4] ADD:[L4] STORE-x:[L6] CATCH([[L5] PUSH-7, [L5] FETCH-x, [L5] SUB, [L5] STORE-x]):ε, Z:POS:ε, ŝ[x→Z]>
+<[L4] STORE-x:[L6] CATCH([[L5] PUSH-7, [L5] FETCH-x, [L5] SUB, [L5] STORE-x]):ε, Z:ε, ŝ[x→Z]>
+<[L6] CATCH([[L5] PUSH-7, [L5] FETCH-x, [L5] SUB, [L5] STORE-x]):ε, ε, ŝ[x→Z]>
+<[L5] PUSH-7:[L5] FETCH-x:[L5] SUB:[L5] STORE-x:ε, ε, s[x→Z]>
+<[L5] FETCH-x:[L5] SUB:[L5] STORE-x:ε, POS:ε, s[x→Z]>
+<[L5] SUB:[L5] STORE-x:ε, Z:POS:ε, s[x→Z]>
+<[L5] STORE-x:ε, Z:ε, s[x→Z]>
+=== Running from {x=ZERO}
+<[L0] PUSH-7:[L0] STORE-x:[L1] TRY([[L2] PUSH-7, [L2] FETCH-x, [L2] SUB, [L2] STORE-x, [L3] FETCH-x, [L3] PUSH-7, [L3] DIV, [L3] STORE-x, [L4] PUSH-7, [L4] FETCH-x, [L4] ADD, [L4] STORE-x]):[L6] CATCH([[L5] PUSH-7, [L5] FETCH-x, [L5] SUB, [L5] STORE-x]):ε, ε, s[x→ZERO]>
+<[L0] STORE-x:[L1] TRY([[L2] PUSH-7, [L2] FETCH-x, [L2] SUB, [L2] STORE-x, [L3] FETCH-x, [L3] PUSH-7, [L3] DIV, [L3] STORE-x, [L4] PUSH-7, [L4] FETCH-x, [L4] ADD, [L4] STORE-x]):[L6] CATCH([[L5] PUSH-7, [L5] FETCH-x, [L5] SUB, [L5] STORE-x]):ε, POS:ε, s[x→ZERO]>
+=== Running from {x=POS}
+<[L0] PUSH-7:[L0] STORE-x:[L1] TRY([[L2] PUSH-7, [L2] FETCH-x, [L2] SUB, [L2] STORE-x, [L3] FETCH-x, [L3] PUSH-7, [L3] DIV, [L3] STORE-x, [L4] PUSH-7, [L4] FETCH-x, [L4] ADD, [L4] STORE-x]):[L6] CATCH([[L5] PUSH-7, [L5] FETCH-x, [L5] SUB, [L5] STORE-x]):ε, ε, s[x→POS]>
+<[L0] STORE-x:[L1] TRY([[L2] PUSH-7, [L2] FETCH-x, [L2] SUB, [L2] STORE-x, [L3] FETCH-x, [L3] PUSH-7, [L3] DIV, [L3] STORE-x, [L4] PUSH-7, [L4] FETCH-x, [L4] ADD, [L4] STORE-x]):[L6] CATCH([[L5] PUSH-7, [L5] FETCH-x, [L5] SUB, [L5] STORE-x]):ε, POS:ε, s[x→POS]>
+
+{x=Z} rhs: POS
+x := 7;
+{x=POS}
+try
+    {x=POS} rhs: Z
+    x := (x - 7);
+    {x=Z} rhs: ANY_A
+    x := (7 / x);
+    {x=Z} rhs: Z
+    x := (x + 7)
+catch
+    {x=Z} rhs: Z
+    x := (x - 7);
+{x=Z}
+Abnormal termination impossible!
+Normal termination possible!

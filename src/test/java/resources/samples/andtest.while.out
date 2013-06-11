@@ -1,0 +1,4 @@
+=== Running from {x=NEG}
+<[L0] FALSE:[L0] TRUE:[L0] AND:[L0] BRANCH([[L1] PUSH-0, [L1] STORE-x], [[L2] PUSH-1, [L2] STORE-x]):ε, ε, s[x→NEG]>
+<[L0] TRUE:[L0] AND:[L0] BRANCH([[L1] PUSH-0, [L1] STORE-x], [[L2] PUSH-1, [L2] STORE-x]):ε, FF:ε, s[x→NEG]>
+<[L0] AND:[L0] BRANCH([[L1] PUSH-0, [L1] STORE-x], [[L2] PUSH-1, [L2] STORE-x]):ε, TT:FF:ε, s[x→NEG]>

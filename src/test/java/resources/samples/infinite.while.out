@@ -1,0 +1,34 @@
+=== Running from {a=NEG}
+<[L0] PUSH-0:[L0] STORE-a:[L1] LOOP([[L1] TRUE], [[L2] PUSH-1, [L2] FETCH-a, [L2] ADD, [L2] STORE-a, [L3] NOOP]):ε, ε, s[a→NEG]>
+<[L0] STORE-a:[L1] LOOP([[L1] TRUE], [[L2] PUSH-1, [L2] FETCH-a, [L2] ADD, [L2] STORE-a, [L3] NOOP]):ε, ZERO:ε, s[a→NEG]>
+<[L1] LOOP([[L1] TRUE], [[L2] PUSH-1, [L2] FETCH-a, [L2] ADD, [L2] STORE-a, [L3] NOOP]):ε, ε, s[a→ZERO]>
+<[L1] TRUE:[L1] BRANCH([[L2] PUSH-1, [L2] FETCH-a, [L2] ADD, [L2] STORE-a, [L3] NOOP, [L1] LOOP([[L1] TRUE], [[L2] PUSH-1, [L2] FETCH-a, [L2] ADD, [L2] STORE-a, [L3] NOOP])], [[L1] NOOP]):ε, ε, s[a→ZERO]>
+<[L1] BRANCH([[L2] PUSH-1, [L2] FETCH-a, [L2] ADD, [L2] STORE-a, [L3] NOOP, [L1] LOOP([[L1] TRUE], [[L2] PUSH-1, [L2] FETCH-a, [L2] ADD, [L2] STORE-a, [L3] NOOP])], [[L1] NOOP]):ε, TT:ε, s[a→ZERO]>
+<[L2] PUSH-1:[L2] FETCH-a:[L2] ADD:[L2] STORE-a:[L3] NOOP:[L1] LOOP([[L1] TRUE], [[L2] PUSH-1, [L2] FETCH-a, [L2] ADD, [L2] STORE-a, [L3] NOOP]):ε, ε, s[a→ZERO]>
+<[L2] FETCH-a:[L2] ADD:[L2] STORE-a:[L3] NOOP:[L1] LOOP([[L1] TRUE], [[L2] PUSH-1, [L2] FETCH-a, [L2] ADD, [L2] STORE-a, [L3] NOOP]):ε, POS:ε, s[a→ZERO]>
+<[L2] ADD:[L2] STORE-a:[L3] NOOP:[L1] LOOP([[L1] TRUE], [[L2] PUSH-1, [L2] FETCH-a, [L2] ADD, [L2] STORE-a, [L3] NOOP]):ε, ZERO:POS:ε, s[a→ZERO]>
+<[L2] STORE-a:[L3] NOOP:[L1] LOOP([[L1] TRUE], [[L2] PUSH-1, [L2] FETCH-a, [L2] ADD, [L2] STORE-a, [L3] NOOP]):ε, POS:ε, s[a→ZERO]>
+<[L3] NOOP:[L1] LOOP([[L1] TRUE], [[L2] PUSH-1, [L2] FETCH-a, [L2] ADD, [L2] STORE-a, [L3] NOOP]):ε, ε, s[a→POS]>
+<[L1] LOOP([[L1] TRUE], [[L2] PUSH-1, [L2] FETCH-a, [L2] ADD, [L2] STORE-a, [L3] NOOP]):ε, ε, s[a→POS]>
+<[L1] TRUE:[L1] BRANCH([[L2] PUSH-1, [L2] FETCH-a, [L2] ADD, [L2] STORE-a, [L3] NOOP, [L1] LOOP([[L1] TRUE], [[L2] PUSH-1, [L2] FETCH-a, [L2] ADD, [L2] STORE-a, [L3] NOOP])], [[L1] NOOP]):ε, ε, s[a→POS]>
+<[L1] BRANCH([[L2] PUSH-1, [L2] FETCH-a, [L2] ADD, [L2] STORE-a, [L3] NOOP, [L1] LOOP([[L1] TRUE], [[L2] PUSH-1, [L2] FETCH-a, [L2] ADD, [L2] STORE-a, [L3] NOOP])], [[L1] NOOP]):ε, TT:ε, s[a→POS]>
+<[L2] PUSH-1:[L2] FETCH-a:[L2] ADD:[L2] STORE-a:[L3] NOOP:[L1] LOOP([[L1] TRUE], [[L2] PUSH-1, [L2] FETCH-a, [L2] ADD, [L2] STORE-a, [L3] NOOP]):ε, ε, s[a→POS]>
+<[L2] FETCH-a:[L2] ADD:[L2] STORE-a:[L3] NOOP:[L1] LOOP([[L1] TRUE], [[L2] PUSH-1, [L2] FETCH-a, [L2] ADD, [L2] STORE-a, [L3] NOOP]):ε, POS:ε, s[a→POS]>
+<[L2] ADD:[L2] STORE-a:[L3] NOOP:[L1] LOOP([[L1] TRUE], [[L2] PUSH-1, [L2] FETCH-a, [L2] ADD, [L2] STORE-a, [L3] NOOP]):ε, POS:POS:ε, s[a→POS]>
+<[L2] STORE-a:[L3] NOOP:[L1] LOOP([[L1] TRUE], [[L2] PUSH-1, [L2] FETCH-a, [L2] ADD, [L2] STORE-a, [L3] NOOP]):ε, POS:ε, s[a→POS]>
+=== Running from {a=ZERO}
+<[L0] PUSH-0:[L0] STORE-a:[L1] LOOP([[L1] TRUE], [[L2] PUSH-1, [L2] FETCH-a, [L2] ADD, [L2] STORE-a, [L3] NOOP]):ε, ε, s[a→ZERO]>
+<[L0] STORE-a:[L1] LOOP([[L1] TRUE], [[L2] PUSH-1, [L2] FETCH-a, [L2] ADD, [L2] STORE-a, [L3] NOOP]):ε, ZERO:ε, s[a→ZERO]>
+=== Running from {a=POS}
+<[L0] PUSH-0:[L0] STORE-a:[L1] LOOP([[L1] TRUE], [[L2] PUSH-1, [L2] FETCH-a, [L2] ADD, [L2] STORE-a, [L3] NOOP]):ε, ε, s[a→POS]>
+<[L0] STORE-a:[L1] LOOP([[L1] TRUE], [[L2] PUSH-1, [L2] FETCH-a, [L2] ADD, [L2] STORE-a, [L3] NOOP]):ε, ZERO:ε, s[a→POS]>
+
+{a=Z} rhs: ZERO
+a := 0;
+{a=NON_NEG} rhs: TT
+while true do
+    {a=NON_NEG} rhs: POS
+    a := (a + 1);
+    skip;
+{a=NONE_A}
+Program does not terminate!

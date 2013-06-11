@@ -1,0 +1,26 @@
+=== Running from {x=NEG}
+<[L0] PUSH-4:[L0] STORE-x:[L1] PUSH-0:[L1] PUSH-1:[L1] DIV:[L1] STORE-x:[L2] PUSH-7:[L2] STORE-x:ε, ε, s[x→NEG]>
+<[L0] STORE-x:[L1] PUSH-0:[L1] PUSH-1:[L1] DIV:[L1] STORE-x:[L2] PUSH-7:[L2] STORE-x:ε, POS:ε, s[x→NEG]>
+<[L1] PUSH-0:[L1] PUSH-1:[L1] DIV:[L1] STORE-x:[L2] PUSH-7:[L2] STORE-x:ε, ε, s[x→POS]>
+<[L1] PUSH-1:[L1] DIV:[L1] STORE-x:[L2] PUSH-7:[L2] STORE-x:ε, ZERO:ε, s[x→POS]>
+<[L1] DIV:[L1] STORE-x:[L2] PUSH-7:[L2] STORE-x:ε, POS:ZERO:ε, s[x→POS]>
+<[L1] STORE-x:[L2] PUSH-7:[L2] STORE-x:ε, ERR_A:ε, ŝ[x→POS]>
+<[L2] PUSH-7:[L2] STORE-x:ε, ε, ŝ[x→POS]>
+<[L2] STORE-x:ε, POS:ε, ŝ[x→POS]>
+<ε, ε, ŝ[x→POS]>
+=== Running from {x=ZERO}
+<[L0] PUSH-4:[L0] STORE-x:[L1] PUSH-0:[L1] PUSH-1:[L1] DIV:[L1] STORE-x:[L2] PUSH-7:[L2] STORE-x:ε, ε, s[x→ZERO]>
+<[L0] STORE-x:[L1] PUSH-0:[L1] PUSH-1:[L1] DIV:[L1] STORE-x:[L2] PUSH-7:[L2] STORE-x:ε, POS:ε, s[x→ZERO]>
+=== Running from {x=POS}
+<[L0] PUSH-4:[L0] STORE-x:[L1] PUSH-0:[L1] PUSH-1:[L1] DIV:[L1] STORE-x:[L2] PUSH-7:[L2] STORE-x:ε, ε, s[x→POS]>
+<[L0] STORE-x:[L1] PUSH-0:[L1] PUSH-1:[L1] DIV:[L1] STORE-x:[L2] PUSH-7:[L2] STORE-x:ε, POS:ε, s[x→POS]>
+
+{x=Z} rhs: POS
+x := 4;
+{x=POS} rhs: ERR_A
+x := (1 / 0);
+{x=NONE_A} rhs: NONE (Dead Code)
+x := 7;
+{x=POS}
+Abnormal termination possible!
+Normal termination impossible!

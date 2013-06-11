@@ -1,0 +1,85 @@
+=== Running from {y=NEG, x=NEG}
+<[L0] PUSH-5:[L0] STORE-x:[L1] PUSH-0:[L1] STORE-y:[L2] TRY([[L3] PUSH-0, [L3] PUSH-7, [L3] DIV, [L3] STORE-x, [L4] TRY([[L5] PUSH-1, [L5] PUSH-5, [L5] DIV, [L5] STORE-x]), [L8] CATCH([[L6] PUSH-1, [L6] PUSH-5, [L6] DIV, [L6] STORE-x, [L7] PUSH-2, [L7] PUSH-4, [L7] DIV, [L7] STORE-y])]):[L10] CATCH([[L9] PUSH-3, [L9] STORE-y]):ε, ε, s[y→NEG,x→NEG]>
+<[L0] STORE-x:[L1] PUSH-0:[L1] STORE-y:[L2] TRY([[L3] PUSH-0, [L3] PUSH-7, [L3] DIV, [L3] STORE-x, [L4] TRY([[L5] PUSH-1, [L5] PUSH-5, [L5] DIV, [L5] STORE-x]), [L8] CATCH([[L6] PUSH-1, [L6] PUSH-5, [L6] DIV, [L6] STORE-x, [L7] PUSH-2, [L7] PUSH-4, [L7] DIV, [L7] STORE-y])]):[L10] CATCH([[L9] PUSH-3, [L9] STORE-y]):ε, POS:ε, s[y→NEG,x→NEG]>
+<[L1] PUSH-0:[L1] STORE-y:[L2] TRY([[L3] PUSH-0, [L3] PUSH-7, [L3] DIV, [L3] STORE-x, [L4] TRY([[L5] PUSH-1, [L5] PUSH-5, [L5] DIV, [L5] STORE-x]), [L8] CATCH([[L6] PUSH-1, [L6] PUSH-5, [L6] DIV, [L6] STORE-x, [L7] PUSH-2, [L7] PUSH-4, [L7] DIV, [L7] STORE-y])]):[L10] CATCH([[L9] PUSH-3, [L9] STORE-y]):ε, ε, s[y→NEG,x→POS]>
+<[L1] STORE-y:[L2] TRY([[L3] PUSH-0, [L3] PUSH-7, [L3] DIV, [L3] STORE-x, [L4] TRY([[L5] PUSH-1, [L5] PUSH-5, [L5] DIV, [L5] STORE-x]), [L8] CATCH([[L6] PUSH-1, [L6] PUSH-5, [L6] DIV, [L6] STORE-x, [L7] PUSH-2, [L7] PUSH-4, [L7] DIV, [L7] STORE-y])]):[L10] CATCH([[L9] PUSH-3, [L9] STORE-y]):ε, ZERO:ε, s[y→NEG,x→POS]>
+<[L2] TRY([[L3] PUSH-0, [L3] PUSH-7, [L3] DIV, [L3] STORE-x, [L4] TRY([[L5] PUSH-1, [L5] PUSH-5, [L5] DIV, [L5] STORE-x]), [L8] CATCH([[L6] PUSH-1, [L6] PUSH-5, [L6] DIV, [L6] STORE-x, [L7] PUSH-2, [L7] PUSH-4, [L7] DIV, [L7] STORE-y])]):[L10] CATCH([[L9] PUSH-3, [L9] STORE-y]):ε, ε, s[y→ZERO,x→POS]>
+<[L3] PUSH-0:[L3] PUSH-7:[L3] DIV:[L3] STORE-x:[L4] TRY([[L5] PUSH-1, [L5] PUSH-5, [L5] DIV, [L5] STORE-x]):[L8] CATCH([[L6] PUSH-1, [L6] PUSH-5, [L6] DIV, [L6] STORE-x, [L7] PUSH-2, [L7] PUSH-4, [L7] DIV, [L7] STORE-y]):[L10] CATCH([[L9] PUSH-3, [L9] STORE-y]):ε, ε, s[y→ZERO,x→POS]>
+<[L3] PUSH-7:[L3] DIV:[L3] STORE-x:[L4] TRY([[L5] PUSH-1, [L5] PUSH-5, [L5] DIV, [L5] STORE-x]):[L8] CATCH([[L6] PUSH-1, [L6] PUSH-5, [L6] DIV, [L6] STORE-x, [L7] PUSH-2, [L7] PUSH-4, [L7] DIV, [L7] STORE-y]):[L10] CATCH([[L9] PUSH-3, [L9] STORE-y]):ε, ZERO:ε, s[y→ZERO,x→POS]>
+<[L3] DIV:[L3] STORE-x:[L4] TRY([[L5] PUSH-1, [L5] PUSH-5, [L5] DIV, [L5] STORE-x]):[L8] CATCH([[L6] PUSH-1, [L6] PUSH-5, [L6] DIV, [L6] STORE-x, [L7] PUSH-2, [L7] PUSH-4, [L7] DIV, [L7] STORE-y]):[L10] CATCH([[L9] PUSH-3, [L9] STORE-y]):ε, POS:ZERO:ε, s[y→ZERO,x→POS]>
+<[L3] STORE-x:[L4] TRY([[L5] PUSH-1, [L5] PUSH-5, [L5] DIV, [L5] STORE-x]):[L8] CATCH([[L6] PUSH-1, [L6] PUSH-5, [L6] DIV, [L6] STORE-x, [L7] PUSH-2, [L7] PUSH-4, [L7] DIV, [L7] STORE-y]):[L10] CATCH([[L9] PUSH-3, [L9] STORE-y]):ε, ERR_A:ε, ŝ[y→ZERO,x→POS]>
+<[L4] TRY([[L5] PUSH-1, [L5] PUSH-5, [L5] DIV, [L5] STORE-x]):[L8] CATCH([[L6] PUSH-1, [L6] PUSH-5, [L6] DIV, [L6] STORE-x, [L7] PUSH-2, [L7] PUSH-4, [L7] DIV, [L7] STORE-y]):[L10] CATCH([[L9] PUSH-3, [L9] STORE-y]):ε, ε, ŝ[y→ZERO,x→POS]>
+<[L10] CATCH([[L9] PUSH-3, [L9] STORE-y]):ε, ε, ŝ[y→ZERO,x→POS]>
+<[L9] PUSH-3:[L9] STORE-y:ε, ε, s[y→ZERO,x→POS]>
+<[L9] STORE-y:ε, POS:ε, s[y→ZERO,x→POS]>
+<ε, ε, s[y→POS,x→POS]>
+=== Running from {y=NEG, x=ZERO}
+<[L0] PUSH-5:[L0] STORE-x:[L1] PUSH-0:[L1] STORE-y:[L2] TRY([[L3] PUSH-0, [L3] PUSH-7, [L3] DIV, [L3] STORE-x, [L4] TRY([[L5] PUSH-1, [L5] PUSH-5, [L5] DIV, [L5] STORE-x]), [L8] CATCH([[L6] PUSH-1, [L6] PUSH-5, [L6] DIV, [L6] STORE-x, [L7] PUSH-2, [L7] PUSH-4, [L7] DIV, [L7] STORE-y])]):[L10] CATCH([[L9] PUSH-3, [L9] STORE-y]):ε, ε, s[y→NEG,x→ZERO]>
+<[L0] STORE-x:[L1] PUSH-0:[L1] STORE-y:[L2] TRY([[L3] PUSH-0, [L3] PUSH-7, [L3] DIV, [L3] STORE-x, [L4] TRY([[L5] PUSH-1, [L5] PUSH-5, [L5] DIV, [L5] STORE-x]), [L8] CATCH([[L6] PUSH-1, [L6] PUSH-5, [L6] DIV, [L6] STORE-x, [L7] PUSH-2, [L7] PUSH-4, [L7] DIV, [L7] STORE-y])]):[L10] CATCH([[L9] PUSH-3, [L9] STORE-y]):ε, POS:ε, s[y→NEG,x→ZERO]>
+=== Running from {y=NEG, x=POS}
+<[L0] PUSH-5:[L0] STORE-x:[L1] PUSH-0:[L1] STORE-y:[L2] TRY([[L3] PUSH-0, [L3] PUSH-7, [L3] DIV, [L3] STORE-x, [L4] TRY([[L5] PUSH-1, [L5] PUSH-5, [L5] DIV, [L5] STORE-x]), [L8] CATCH([[L6] PUSH-1, [L6] PUSH-5, [L6] DIV, [L6] STORE-x, [L7] PUSH-2, [L7] PUSH-4, [L7] DIV, [L7] STORE-y])]):[L10] CATCH([[L9] PUSH-3, [L9] STORE-y]):ε, ε, s[y→NEG,x→POS]>
+<[L0] STORE-x:[L1] PUSH-0:[L1] STORE-y:[L2] TRY([[L3] PUSH-0, [L3] PUSH-7, [L3] DIV, [L3] STORE-x, [L4] TRY([[L5] PUSH-1, [L5] PUSH-5, [L5] DIV, [L5] STORE-x]), [L8] CATCH([[L6] PUSH-1, [L6] PUSH-5, [L6] DIV, [L6] STORE-x, [L7] PUSH-2, [L7] PUSH-4, [L7] DIV, [L7] STORE-y])]):[L10] CATCH([[L9] PUSH-3, [L9] STORE-y]):ε, POS:ε, s[y→NEG,x→POS]>
+=== Running from {y=ZERO, x=NEG}
+<[L0] PUSH-5:[L0] STORE-x:[L1] PUSH-0:[L1] STORE-y:[L2] TRY([[L3] PUSH-0, [L3] PUSH-7, [L3] DIV, [L3] STORE-x, [L4] TRY([[L5] PUSH-1, [L5] PUSH-5, [L5] DIV, [L5] STORE-x]), [L8] CATCH([[L6] PUSH-1, [L6] PUSH-5, [L6] DIV, [L6] STORE-x, [L7] PUSH-2, [L7] PUSH-4, [L7] DIV, [L7] STORE-y])]):[L10] CATCH([[L9] PUSH-3, [L9] STORE-y]):ε, ε, s[y→ZERO,x→NEG]>
+<[L0] STORE-x:[L1] PUSH-0:[L1] STORE-y:[L2] TRY([[L3] PUSH-0, [L3] PUSH-7, [L3] DIV, [L3] STORE-x, [L4] TRY([[L5] PUSH-1, [L5] PUSH-5, [L5] DIV, [L5] STORE-x]), [L8] CATCH([[L6] PUSH-1, [L6] PUSH-5, [L6] DIV, [L6] STORE-x, [L7] PUSH-2, [L7] PUSH-4, [L7] DIV, [L7] STORE-y])]):[L10] CATCH([[L9] PUSH-3, [L9] STORE-y]):ε, POS:ε, s[y→ZERO,x→NEG]>
+<[L1] PUSH-0:[L1] STORE-y:[L2] TRY([[L3] PUSH-0, [L3] PUSH-7, [L3] DIV, [L3] STORE-x, [L4] TRY([[L5] PUSH-1, [L5] PUSH-5, [L5] DIV, [L5] STORE-x]), [L8] CATCH([[L6] PUSH-1, [L6] PUSH-5, [L6] DIV, [L6] STORE-x, [L7] PUSH-2, [L7] PUSH-4, [L7] DIV, [L7] STORE-y])]):[L10] CATCH([[L9] PUSH-3, [L9] STORE-y]):ε, ε, s[y→ZERO,x→POS]>
+<[L1] STORE-y:[L2] TRY([[L3] PUSH-0, [L3] PUSH-7, [L3] DIV, [L3] STORE-x, [L4] TRY([[L5] PUSH-1, [L5] PUSH-5, [L5] DIV, [L5] STORE-x]), [L8] CATCH([[L6] PUSH-1, [L6] PUSH-5, [L6] DIV, [L6] STORE-x, [L7] PUSH-2, [L7] PUSH-4, [L7] DIV, [L7] STORE-y])]):[L10] CATCH([[L9] PUSH-3, [L9] STORE-y]):ε, ZERO:ε, s[y→ZERO,x→POS]>
+=== Running from {y=ZERO, x=ZERO}
+<[L0] PUSH-5:[L0] STORE-x:[L1] PUSH-0:[L1] STORE-y:[L2] TRY([[L3] PUSH-0, [L3] PUSH-7, [L3] DIV, [L3] STORE-x, [L4] TRY([[L5] PUSH-1, [L5] PUSH-5, [L5] DIV, [L5] STORE-x]), [L8] CATCH([[L6] PUSH-1, [L6] PUSH-5, [L6] DIV, [L6] STORE-x, [L7] PUSH-2, [L7] PUSH-4, [L7] DIV, [L7] STORE-y])]):[L10] CATCH([[L9] PUSH-3, [L9] STORE-y]):ε, ε, s[y→ZERO,x→ZERO]>
+<[L0] STORE-x:[L1] PUSH-0:[L1] STORE-y:[L2] TRY([[L3] PUSH-0, [L3] PUSH-7, [L3] DIV, [L3] STORE-x, [L4] TRY([[L5] PUSH-1, [L5] PUSH-5, [L5] DIV, [L5] STORE-x]), [L8] CATCH([[L6] PUSH-1, [L6] PUSH-5, [L6] DIV, [L6] STORE-x, [L7] PUSH-2, [L7] PUSH-4, [L7] DIV, [L7] STORE-y])]):[L10] CATCH([[L9] PUSH-3, [L9] STORE-y]):ε, POS:ε, s[y→ZERO,x→ZERO]>
+=== Running from {y=ZERO, x=POS}
+<[L0] PUSH-5:[L0] STORE-x:[L1] PUSH-0:[L1] STORE-y:[L2] TRY([[L3] PUSH-0, [L3] PUSH-7, [L3] DIV, [L3] STORE-x, [L4] TRY([[L5] PUSH-1, [L5] PUSH-5, [L5] DIV, [L5] STORE-x]), [L8] CATCH([[L6] PUSH-1, [L6] PUSH-5, [L6] DIV, [L6] STORE-x, [L7] PUSH-2, [L7] PUSH-4, [L7] DIV, [L7] STORE-y])]):[L10] CATCH([[L9] PUSH-3, [L9] STORE-y]):ε, ε, s[y→ZERO,x→POS]>
+<[L0] STORE-x:[L1] PUSH-0:[L1] STORE-y:[L2] TRY([[L3] PUSH-0, [L3] PUSH-7, [L3] DIV, [L3] STORE-x, [L4] TRY([[L5] PUSH-1, [L5] PUSH-5, [L5] DIV, [L5] STORE-x]), [L8] CATCH([[L6] PUSH-1, [L6] PUSH-5, [L6] DIV, [L6] STORE-x, [L7] PUSH-2, [L7] PUSH-4, [L7] DIV, [L7] STORE-y])]):[L10] CATCH([[L9] PUSH-3, [L9] STORE-y]):ε, POS:ε, s[y→ZERO,x→POS]>
+=== Running from {y=POS, x=NEG}
+<[L0] PUSH-5:[L0] STORE-x:[L1] PUSH-0:[L1] STORE-y:[L2] TRY([[L3] PUSH-0, [L3] PUSH-7, [L3] DIV, [L3] STORE-x, [L4] TRY([[L5] PUSH-1, [L5] PUSH-5, [L5] DIV, [L5] STORE-x]), [L8] CATCH([[L6] PUSH-1, [L6] PUSH-5, [L6] DIV, [L6] STORE-x, [L7] PUSH-2, [L7] PUSH-4, [L7] DIV, [L7] STORE-y])]):[L10] CATCH([[L9] PUSH-3, [L9] STORE-y]):ε, ε, s[y→POS,x→NEG]>
+<[L0] STORE-x:[L1] PUSH-0:[L1] STORE-y:[L2] TRY([[L3] PUSH-0, [L3] PUSH-7, [L3] DIV, [L3] STORE-x, [L4] TRY([[L5] PUSH-1, [L5] PUSH-5, [L5] DIV, [L5] STORE-x]), [L8] CATCH([[L6] PUSH-1, [L6] PUSH-5, [L6] DIV, [L6] STORE-x, [L7] PUSH-2, [L7] PUSH-4, [L7] DIV, [L7] STORE-y])]):[L10] CATCH([[L9] PUSH-3, [L9] STORE-y]):ε, POS:ε, s[y→POS,x→NEG]>
+<[L1] PUSH-0:[L1] STORE-y:[L2] TRY([[L3] PUSH-0, [L3] PUSH-7, [L3] DIV, [L3] STORE-x, [L4] TRY([[L5] PUSH-1, [L5] PUSH-5, [L5] DIV, [L5] STORE-x]), [L8] CATCH([[L6] PUSH-1, [L6] PUSH-5, [L6] DIV, [L6] STORE-x, [L7] PUSH-2, [L7] PUSH-4, [L7] DIV, [L7] STORE-y])]):[L10] CATCH([[L9] PUSH-3, [L9] STORE-y]):ε, ε, s[y→POS,x→POS]>
+<[L1] STORE-y:[L2] TRY([[L3] PUSH-0, [L3] PUSH-7, [L3] DIV, [L3] STORE-x, [L4] TRY([[L5] PUSH-1, [L5] PUSH-5, [L5] DIV, [L5] STORE-x]), [L8] CATCH([[L6] PUSH-1, [L6] PUSH-5, [L6] DIV, [L6] STORE-x, [L7] PUSH-2, [L7] PUSH-4, [L7] DIV, [L7] STORE-y])]):[L10] CATCH([[L9] PUSH-3, [L9] STORE-y]):ε, ZERO:ε, s[y→POS,x→POS]>
+=== Running from {y=POS, x=ZERO}
+<[L0] PUSH-5:[L0] STORE-x:[L1] PUSH-0:[L1] STORE-y:[L2] TRY([[L3] PUSH-0, [L3] PUSH-7, [L3] DIV, [L3] STORE-x, [L4] TRY([[L5] PUSH-1, [L5] PUSH-5, [L5] DIV, [L5] STORE-x]), [L8] CATCH([[L6] PUSH-1, [L6] PUSH-5, [L6] DIV, [L6] STORE-x, [L7] PUSH-2, [L7] PUSH-4, [L7] DIV, [L7] STORE-y])]):[L10] CATCH([[L9] PUSH-3, [L9] STORE-y]):ε, ε, s[y→POS,x→ZERO]>
+<[L0] STORE-x:[L1] PUSH-0:[L1] STORE-y:[L2] TRY([[L3] PUSH-0, [L3] PUSH-7, [L3] DIV, [L3] STORE-x, [L4] TRY([[L5] PUSH-1, [L5] PUSH-5, [L5] DIV, [L5] STORE-x]), [L8] CATCH([[L6] PUSH-1, [L6] PUSH-5, [L6] DIV, [L6] STORE-x, [L7] PUSH-2, [L7] PUSH-4, [L7] DIV, [L7] STORE-y])]):[L10] CATCH([[L9] PUSH-3, [L9] STORE-y]):ε, POS:ε, s[y→POS,x→ZERO]>
+=== Running from {y=POS, x=POS}
+<[L0] PUSH-5:[L0] STORE-x:[L1] PUSH-0:[L1] STORE-y:[L2] TRY([[L3] PUSH-0, [L3] PUSH-7, [L3] DIV, [L3] STORE-x, [L4] TRY([[L5] PUSH-1, [L5] PUSH-5, [L5] DIV, [L5] STORE-x]), [L8] CATCH([[L6] PUSH-1, [L6] PUSH-5, [L6] DIV, [L6] STORE-x, [L7] PUSH-2, [L7] PUSH-4, [L7] DIV, [L7] STORE-y])]):[L10] CATCH([[L9] PUSH-3, [L9] STORE-y]):ε, ε, s[y→POS,x→POS]>
+<[L0] STORE-x:[L1] PUSH-0:[L1] STORE-y:[L2] TRY([[L3] PUSH-0, [L3] PUSH-7, [L3] DIV, [L3] STORE-x, [L4] TRY([[L5] PUSH-1, [L5] PUSH-5, [L5] DIV, [L5] STORE-x]), [L8] CATCH([[L6] PUSH-1, [L6] PUSH-5, [L6] DIV, [L6] STORE-x, [L7] PUSH-2, [L7] PUSH-4, [L7] DIV, [L7] STORE-y])]):[L10] CATCH([[L9] PUSH-3, [L9] STORE-y]):ε, POS:ε, s[y→POS,x→POS]>
+=== Running from {y=NEG, x=NEG}
+<[L0] PUSH-5:[L0] STORE-x:[L1] PUSH-0:[L1] STORE-y:[L2] TRY([[L3] PUSH-0, [L3] PUSH-7, [L3] DIV, [L3] STORE-x, [L4] TRY([[L5] PUSH-1, [L5] PUSH-5, [L5] DIV, [L5] STORE-x]), [L8] CATCH([[L6] PUSH-1, [L6] PUSH-5, [L6] DIV, [L6] STORE-x, [L7] PUSH-2, [L7] PUSH-4, [L7] DIV, [L7] STORE-y])]):[L10] CATCH([[L9] PUSH-3, [L9] STORE-y]):ε, ε, s[y→NEG,x→NEG]>
+=== Running from {y=ZERO, x=NEG}
+<[L0] PUSH-5:[L0] STORE-x:[L1] PUSH-0:[L1] STORE-y:[L2] TRY([[L3] PUSH-0, [L3] PUSH-7, [L3] DIV, [L3] STORE-x, [L4] TRY([[L5] PUSH-1, [L5] PUSH-5, [L5] DIV, [L5] STORE-x]), [L8] CATCH([[L6] PUSH-1, [L6] PUSH-5, [L6] DIV, [L6] STORE-x, [L7] PUSH-2, [L7] PUSH-4, [L7] DIV, [L7] STORE-y])]):[L10] CATCH([[L9] PUSH-3, [L9] STORE-y]):ε, ε, s[y→ZERO,x→NEG]>
+=== Running from {y=POS, x=NEG}
+<[L0] PUSH-5:[L0] STORE-x:[L1] PUSH-0:[L1] STORE-y:[L2] TRY([[L3] PUSH-0, [L3] PUSH-7, [L3] DIV, [L3] STORE-x, [L4] TRY([[L5] PUSH-1, [L5] PUSH-5, [L5] DIV, [L5] STORE-x]), [L8] CATCH([[L6] PUSH-1, [L6] PUSH-5, [L6] DIV, [L6] STORE-x, [L7] PUSH-2, [L7] PUSH-4, [L7] DIV, [L7] STORE-y])]):[L10] CATCH([[L9] PUSH-3, [L9] STORE-y]):ε, ε, s[y→POS,x→NEG]>
+=== Running from {y=NEG, x=ZERO}
+<[L0] PUSH-5:[L0] STORE-x:[L1] PUSH-0:[L1] STORE-y:[L2] TRY([[L3] PUSH-0, [L3] PUSH-7, [L3] DIV, [L3] STORE-x, [L4] TRY([[L5] PUSH-1, [L5] PUSH-5, [L5] DIV, [L5] STORE-x]), [L8] CATCH([[L6] PUSH-1, [L6] PUSH-5, [L6] DIV, [L6] STORE-x, [L7] PUSH-2, [L7] PUSH-4, [L7] DIV, [L7] STORE-y])]):[L10] CATCH([[L9] PUSH-3, [L9] STORE-y]):ε, ε, s[y→NEG,x→ZERO]>
+=== Running from {y=ZERO, x=ZERO}
+<[L0] PUSH-5:[L0] STORE-x:[L1] PUSH-0:[L1] STORE-y:[L2] TRY([[L3] PUSH-0, [L3] PUSH-7, [L3] DIV, [L3] STORE-x, [L4] TRY([[L5] PUSH-1, [L5] PUSH-5, [L5] DIV, [L5] STORE-x]), [L8] CATCH([[L6] PUSH-1, [L6] PUSH-5, [L6] DIV, [L6] STORE-x, [L7] PUSH-2, [L7] PUSH-4, [L7] DIV, [L7] STORE-y])]):[L10] CATCH([[L9] PUSH-3, [L9] STORE-y]):ε, ε, s[y→ZERO,x→ZERO]>
+=== Running from {y=POS, x=ZERO}
+<[L0] PUSH-5:[L0] STORE-x:[L1] PUSH-0:[L1] STORE-y:[L2] TRY([[L3] PUSH-0, [L3] PUSH-7, [L3] DIV, [L3] STORE-x, [L4] TRY([[L5] PUSH-1, [L5] PUSH-5, [L5] DIV, [L5] STORE-x]), [L8] CATCH([[L6] PUSH-1, [L6] PUSH-5, [L6] DIV, [L6] STORE-x, [L7] PUSH-2, [L7] PUSH-4, [L7] DIV, [L7] STORE-y])]):[L10] CATCH([[L9] PUSH-3, [L9] STORE-y]):ε, ε, s[y→POS,x→ZERO]>
+=== Running from {y=NEG, x=POS}
+<[L0] PUSH-5:[L0] STORE-x:[L1] PUSH-0:[L1] STORE-y:[L2] TRY([[L3] PUSH-0, [L3] PUSH-7, [L3] DIV, [L3] STORE-x, [L4] TRY([[L5] PUSH-1, [L5] PUSH-5, [L5] DIV, [L5] STORE-x]), [L8] CATCH([[L6] PUSH-1, [L6] PUSH-5, [L6] DIV, [L6] STORE-x, [L7] PUSH-2, [L7] PUSH-4, [L7] DIV, [L7] STORE-y])]):[L10] CATCH([[L9] PUSH-3, [L9] STORE-y]):ε, ε, s[y→NEG,x→POS]>
+=== Running from {y=ZERO, x=POS}
+<[L0] PUSH-5:[L0] STORE-x:[L1] PUSH-0:[L1] STORE-y:[L2] TRY([[L3] PUSH-0, [L3] PUSH-7, [L3] DIV, [L3] STORE-x, [L4] TRY([[L5] PUSH-1, [L5] PUSH-5, [L5] DIV, [L5] STORE-x]), [L8] CATCH([[L6] PUSH-1, [L6] PUSH-5, [L6] DIV, [L6] STORE-x, [L7] PUSH-2, [L7] PUSH-4, [L7] DIV, [L7] STORE-y])]):[L10] CATCH([[L9] PUSH-3, [L9] STORE-y]):ε, ε, s[y→ZERO,x→POS]>
+=== Running from {y=POS, x=POS}
+<[L0] PUSH-5:[L0] STORE-x:[L1] PUSH-0:[L1] STORE-y:[L2] TRY([[L3] PUSH-0, [L3] PUSH-7, [L3] DIV, [L3] STORE-x, [L4] TRY([[L5] PUSH-1, [L5] PUSH-5, [L5] DIV, [L5] STORE-x]), [L8] CATCH([[L6] PUSH-1, [L6] PUSH-5, [L6] DIV, [L6] STORE-x, [L7] PUSH-2, [L7] PUSH-4, [L7] DIV, [L7] STORE-y])]):[L10] CATCH([[L9] PUSH-3, [L9] STORE-y]):ε, ε, s[y→POS,x→POS]>
+
+{y=Z, x=Z} rhs: POS
+x := 5;
+{y=Z, x=POS} rhs: ZERO
+y := 0;
+{y=ZERO, x=POS}
+try
+    {y=ZERO, x=POS} rhs: ERR_A
+    x := (7 / 0);
+    {y=NONE_A, x=NONE_A}
+    try
+        {y=NONE_A, x=NONE_A} rhs: NONE (Dead Code)
+        x := (5 / 1)
+    catch
+        {y=NONE_A, x=NONE_A} rhs: NONE (Dead Code)
+        x := (5 / 1);
+        {y=NONE_A, x=NONE_A} rhs: NONE (Dead Code)
+        y := (4 / 2)
+catch
+    {y=ZERO, x=POS} rhs: POS
+    y := 3;
+{y=POS, x=POS}
+Abnormal termination impossible!
+Normal termination possible!

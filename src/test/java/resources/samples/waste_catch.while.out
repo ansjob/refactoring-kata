@@ -1,0 +1,621 @@
+=== Running from {z=NEG, y=NEG, x=NEG}
+<[L0] FETCH-z:[L0] PUSH-5:[L0] DIV:[L0] STORE-z:[L1] TRY([[L2] PUSH-0, [L2] FETCH-x, [L2] EQ, [L2] NEG, [L2] BRANCH([[L3] FETCH-x, [L3] PUSH-100, [L3] DIV, [L3] STORE-y], [[L4] PUSH-100, [L4] STORE-y])]):[L6] CATCH([[L5] PUSH-5, [L5] STORE-x]):ε, ε, s[z→NEG,y→NEG,x→NEG]>
+<[L0] PUSH-5:[L0] DIV:[L0] STORE-z:[L1] TRY([[L2] PUSH-0, [L2] FETCH-x, [L2] EQ, [L2] NEG, [L2] BRANCH([[L3] FETCH-x, [L3] PUSH-100, [L3] DIV, [L3] STORE-y], [[L4] PUSH-100, [L4] STORE-y])]):[L6] CATCH([[L5] PUSH-5, [L5] STORE-x]):ε, NEG:ε, s[z→NEG,y→NEG,x→NEG]>
+<[L0] DIV:[L0] STORE-z:[L1] TRY([[L2] PUSH-0, [L2] FETCH-x, [L2] EQ, [L2] NEG, [L2] BRANCH([[L3] FETCH-x, [L3] PUSH-100, [L3] DIV, [L3] STORE-y], [[L4] PUSH-100, [L4] STORE-y])]):[L6] CATCH([[L5] PUSH-5, [L5] STORE-x]):ε, POS:NEG:ε, s[z→NEG,y→NEG,x→NEG]>
+<[L0] STORE-z:[L1] TRY([[L2] PUSH-0, [L2] FETCH-x, [L2] EQ, [L2] NEG, [L2] BRANCH([[L3] FETCH-x, [L3] PUSH-100, [L3] DIV, [L3] STORE-y], [[L4] PUSH-100, [L4] STORE-y])]):[L6] CATCH([[L5] PUSH-5, [L5] STORE-x]):ε, NON_POS:ε, s[z→NEG,y→NEG,x→NEG]>
+<[L1] TRY([[L2] PUSH-0, [L2] FETCH-x, [L2] EQ, [L2] NEG, [L2] BRANCH([[L3] FETCH-x, [L3] PUSH-100, [L3] DIV, [L3] STORE-y], [[L4] PUSH-100, [L4] STORE-y])]):[L6] CATCH([[L5] PUSH-5, [L5] STORE-x]):ε, ε, s[z→NON_POS,y→NEG,x→NEG]>
+<[L2] PUSH-0:[L2] FETCH-x:[L2] EQ:[L2] NEG:[L2] BRANCH([[L3] FETCH-x, [L3] PUSH-100, [L3] DIV, [L3] STORE-y], [[L4] PUSH-100, [L4] STORE-y]):[L6] CATCH([[L5] PUSH-5, [L5] STORE-x]):ε, ε, s[z→NON_POS,y→NEG,x→NEG]>
+<[L2] FETCH-x:[L2] EQ:[L2] NEG:[L2] BRANCH([[L3] FETCH-x, [L3] PUSH-100, [L3] DIV, [L3] STORE-y], [[L4] PUSH-100, [L4] STORE-y]):[L6] CATCH([[L5] PUSH-5, [L5] STORE-x]):ε, ZERO:ε, s[z→NON_POS,y→NEG,x→NEG]>
+<[L2] EQ:[L2] NEG:[L2] BRANCH([[L3] FETCH-x, [L3] PUSH-100, [L3] DIV, [L3] STORE-y], [[L4] PUSH-100, [L4] STORE-y]):[L6] CATCH([[L5] PUSH-5, [L5] STORE-x]):ε, NEG:ZERO:ε, s[z→NON_POS,y→NEG,x→NEG]>
+<[L2] NEG:[L2] BRANCH([[L3] FETCH-x, [L3] PUSH-100, [L3] DIV, [L3] STORE-y], [[L4] PUSH-100, [L4] STORE-y]):[L6] CATCH([[L5] PUSH-5, [L5] STORE-x]):ε, FF:ε, s[z→NON_POS,y→NEG,x→NEG]>
+<[L2] BRANCH([[L3] FETCH-x, [L3] PUSH-100, [L3] DIV, [L3] STORE-y], [[L4] PUSH-100, [L4] STORE-y]):[L6] CATCH([[L5] PUSH-5, [L5] STORE-x]):ε, TT:ε, s[z→NON_POS,y→NEG,x→NEG]>
+<[L3] FETCH-x:[L3] PUSH-100:[L3] DIV:[L3] STORE-y:[L6] CATCH([[L5] PUSH-5, [L5] STORE-x]):ε, ε, s[z→NON_POS,y→NEG,x→NEG]>
+<[L3] PUSH-100:[L3] DIV:[L3] STORE-y:[L6] CATCH([[L5] PUSH-5, [L5] STORE-x]):ε, NEG:ε, s[z→NON_POS,y→NEG,x→NEG]>
+<[L3] DIV:[L3] STORE-y:[L6] CATCH([[L5] PUSH-5, [L5] STORE-x]):ε, POS:NEG:ε, s[z→NON_POS,y→NEG,x→NEG]>
+<[L3] STORE-y:[L6] CATCH([[L5] PUSH-5, [L5] STORE-x]):ε, NON_POS:ε, s[z→NON_POS,y→NEG,x→NEG]>
+<[L6] CATCH([[L5] PUSH-5, [L5] STORE-x]):ε, ε, s[z→NON_POS,y→NON_POS,x→NEG]>
+<ε, ε, s[z→NON_POS,y→NON_POS,x→NEG]>
+=== Running from {z=NEG, y=NEG, x=ZERO}
+<[L0] FETCH-z:[L0] PUSH-5:[L0] DIV:[L0] STORE-z:[L1] TRY([[L2] PUSH-0, [L2] FETCH-x, [L2] EQ, [L2] NEG, [L2] BRANCH([[L3] FETCH-x, [L3] PUSH-100, [L3] DIV, [L3] STORE-y], [[L4] PUSH-100, [L4] STORE-y])]):[L6] CATCH([[L5] PUSH-5, [L5] STORE-x]):ε, ε, s[z→NEG,y→NEG,x→ZERO]>
+<[L0] PUSH-5:[L0] DIV:[L0] STORE-z:[L1] TRY([[L2] PUSH-0, [L2] FETCH-x, [L2] EQ, [L2] NEG, [L2] BRANCH([[L3] FETCH-x, [L3] PUSH-100, [L3] DIV, [L3] STORE-y], [[L4] PUSH-100, [L4] STORE-y])]):[L6] CATCH([[L5] PUSH-5, [L5] STORE-x]):ε, NEG:ε, s[z→NEG,y→NEG,x→ZERO]>
+<[L0] DIV:[L0] STORE-z:[L1] TRY([[L2] PUSH-0, [L2] FETCH-x, [L2] EQ, [L2] NEG, [L2] BRANCH([[L3] FETCH-x, [L3] PUSH-100, [L3] DIV, [L3] STORE-y], [[L4] PUSH-100, [L4] STORE-y])]):[L6] CATCH([[L5] PUSH-5, [L5] STORE-x]):ε, POS:NEG:ε, s[z→NEG,y→NEG,x→ZERO]>
+<[L0] STORE-z:[L1] TRY([[L2] PUSH-0, [L2] FETCH-x, [L2] EQ, [L2] NEG, [L2] BRANCH([[L3] FETCH-x, [L3] PUSH-100, [L3] DIV, [L3] STORE-y], [[L4] PUSH-100, [L4] STORE-y])]):[L6] CATCH([[L5] PUSH-5, [L5] STORE-x]):ε, NON_POS:ε, s[z→NEG,y→NEG,x→ZERO]>
+<[L1] TRY([[L2] PUSH-0, [L2] FETCH-x, [L2] EQ, [L2] NEG, [L2] BRANCH([[L3] FETCH-x, [L3] PUSH-100, [L3] DIV, [L3] STORE-y], [[L4] PUSH-100, [L4] STORE-y])]):[L6] CATCH([[L5] PUSH-5, [L5] STORE-x]):ε, ε, s[z→NON_POS,y→NEG,x→ZERO]>
+<[L2] PUSH-0:[L2] FETCH-x:[L2] EQ:[L2] NEG:[L2] BRANCH([[L3] FETCH-x, [L3] PUSH-100, [L3] DIV, [L3] STORE-y], [[L4] PUSH-100, [L4] STORE-y]):[L6] CATCH([[L5] PUSH-5, [L5] STORE-x]):ε, ε, s[z→NON_POS,y→NEG,x→ZERO]>
+<[L2] FETCH-x:[L2] EQ:[L2] NEG:[L2] BRANCH([[L3] FETCH-x, [L3] PUSH-100, [L3] DIV, [L3] STORE-y], [[L4] PUSH-100, [L4] STORE-y]):[L6] CATCH([[L5] PUSH-5, [L5] STORE-x]):ε, ZERO:ε, s[z→NON_POS,y→NEG,x→ZERO]>
+<[L2] EQ:[L2] NEG:[L2] BRANCH([[L3] FETCH-x, [L3] PUSH-100, [L3] DIV, [L3] STORE-y], [[L4] PUSH-100, [L4] STORE-y]):[L6] CATCH([[L5] PUSH-5, [L5] STORE-x]):ε, ZERO:ZERO:ε, s[z→NON_POS,y→NEG,x→ZERO]>
+<[L2] NEG:[L2] BRANCH([[L3] FETCH-x, [L3] PUSH-100, [L3] DIV, [L3] STORE-y], [[L4] PUSH-100, [L4] STORE-y]):[L6] CATCH([[L5] PUSH-5, [L5] STORE-x]):ε, TT:ε, s[z→NON_POS,y→NEG,x→ZERO]>
+<[L2] BRANCH([[L3] FETCH-x, [L3] PUSH-100, [L3] DIV, [L3] STORE-y], [[L4] PUSH-100, [L4] STORE-y]):[L6] CATCH([[L5] PUSH-5, [L5] STORE-x]):ε, FF:ε, s[z→NON_POS,y→NEG,x→ZERO]>
+<[L4] PUSH-100:[L4] STORE-y:[L6] CATCH([[L5] PUSH-5, [L5] STORE-x]):ε, ε, s[z→NON_POS,y→NEG,x→ZERO]>
+<[L4] STORE-y:[L6] CATCH([[L5] PUSH-5, [L5] STORE-x]):ε, POS:ε, s[z→NON_POS,y→NEG,x→ZERO]>
+<[L6] CATCH([[L5] PUSH-5, [L5] STORE-x]):ε, ε, s[z→NON_POS,y→POS,x→ZERO]>
+<ε, ε, s[z→NON_POS,y→POS,x→ZERO]>
+=== Running from {z=NEG, y=NEG, x=POS}
+<[L0] FETCH-z:[L0] PUSH-5:[L0] DIV:[L0] STORE-z:[L1] TRY([[L2] PUSH-0, [L2] FETCH-x, [L2] EQ, [L2] NEG, [L2] BRANCH([[L3] FETCH-x, [L3] PUSH-100, [L3] DIV, [L3] STORE-y], [[L4] PUSH-100, [L4] STORE-y])]):[L6] CATCH([[L5] PUSH-5, [L5] STORE-x]):ε, ε, s[z→NEG,y→NEG,x→POS]>
+<[L0] PUSH-5:[L0] DIV:[L0] STORE-z:[L1] TRY([[L2] PUSH-0, [L2] FETCH-x, [L2] EQ, [L2] NEG, [L2] BRANCH([[L3] FETCH-x, [L3] PUSH-100, [L3] DIV, [L3] STORE-y], [[L4] PUSH-100, [L4] STORE-y])]):[L6] CATCH([[L5] PUSH-5, [L5] STORE-x]):ε, NEG:ε, s[z→NEG,y→NEG,x→POS]>
+<[L0] DIV:[L0] STORE-z:[L1] TRY([[L2] PUSH-0, [L2] FETCH-x, [L2] EQ, [L2] NEG, [L2] BRANCH([[L3] FETCH-x, [L3] PUSH-100, [L3] DIV, [L3] STORE-y], [[L4] PUSH-100, [L4] STORE-y])]):[L6] CATCH([[L5] PUSH-5, [L5] STORE-x]):ε, POS:NEG:ε, s[z→NEG,y→NEG,x→POS]>
+<[L0] STORE-z:[L1] TRY([[L2] PUSH-0, [L2] FETCH-x, [L2] EQ, [L2] NEG, [L2] BRANCH([[L3] FETCH-x, [L3] PUSH-100, [L3] DIV, [L3] STORE-y], [[L4] PUSH-100, [L4] STORE-y])]):[L6] CATCH([[L5] PUSH-5, [L5] STORE-x]):ε, NON_POS:ε, s[z→NEG,y→NEG,x→POS]>
+<[L1] TRY([[L2] PUSH-0, [L2] FETCH-x, [L2] EQ, [L2] NEG, [L2] BRANCH([[L3] FETCH-x, [L3] PUSH-100, [L3] DIV, [L3] STORE-y], [[L4] PUSH-100, [L4] STORE-y])]):[L6] CATCH([[L5] PUSH-5, [L5] STORE-x]):ε, ε, s[z→NON_POS,y→NEG,x→POS]>
+<[L2] PUSH-0:[L2] FETCH-x:[L2] EQ:[L2] NEG:[L2] BRANCH([[L3] FETCH-x, [L3] PUSH-100, [L3] DIV, [L3] STORE-y], [[L4] PUSH-100, [L4] STORE-y]):[L6] CATCH([[L5] PUSH-5, [L5] STORE-x]):ε, ε, s[z→NON_POS,y→NEG,x→POS]>
+<[L2] FETCH-x:[L2] EQ:[L2] NEG:[L2] BRANCH([[L3] FETCH-x, [L3] PUSH-100, [L3] DIV, [L3] STORE-y], [[L4] PUSH-100, [L4] STORE-y]):[L6] CATCH([[L5] PUSH-5, [L5] STORE-x]):ε, ZERO:ε, s[z→NON_POS,y→NEG,x→POS]>
+<[L2] EQ:[L2] NEG:[L2] BRANCH([[L3] FETCH-x, [L3] PUSH-100, [L3] DIV, [L3] STORE-y], [[L4] PUSH-100, [L4] STORE-y]):[L6] CATCH([[L5] PUSH-5, [L5] STORE-x]):ε, POS:ZERO:ε, s[z→NON_POS,y→NEG,x→POS]>
+<[L2] NEG:[L2] BRANCH([[L3] FETCH-x, [L3] PUSH-100, [L3] DIV, [L3] STORE-y], [[L4] PUSH-100, [L4] STORE-y]):[L6] CATCH([[L5] PUSH-5, [L5] STORE-x]):ε, FF:ε, s[z→NON_POS,y→NEG,x→POS]>
+<[L2] BRANCH([[L3] FETCH-x, [L3] PUSH-100, [L3] DIV, [L3] STORE-y], [[L4] PUSH-100, [L4] STORE-y]):[L6] CATCH([[L5] PUSH-5, [L5] STORE-x]):ε, TT:ε, s[z→NON_POS,y→NEG,x→POS]>
+<[L3] FETCH-x:[L3] PUSH-100:[L3] DIV:[L3] STORE-y:[L6] CATCH([[L5] PUSH-5, [L5] STORE-x]):ε, ε, s[z→NON_POS,y→NEG,x→POS]>
+<[L3] PUSH-100:[L3] DIV:[L3] STORE-y:[L6] CATCH([[L5] PUSH-5, [L5] STORE-x]):ε, POS:ε, s[z→NON_POS,y→NEG,x→POS]>
+<[L3] DIV:[L3] STORE-y:[L6] CATCH([[L5] PUSH-5, [L5] STORE-x]):ε, POS:POS:ε, s[z→NON_POS,y→NEG,x→POS]>
+<[L3] STORE-y:[L6] CATCH([[L5] PUSH-5, [L5] STORE-x]):ε, NON_NEG:ε, s[z→NON_POS,y→NEG,x→POS]>
+<[L6] CATCH([[L5] PUSH-5, [L5] STORE-x]):ε, ε, s[z→NON_POS,y→NON_NEG,x→POS]>
+<ε, ε, s[z→NON_POS,y→NON_NEG,x→POS]>
+=== Running from {z=NEG, y=ZERO, x=NEG}
+<[L0] FETCH-z:[L0] PUSH-5:[L0] DIV:[L0] STORE-z:[L1] TRY([[L2] PUSH-0, [L2] FETCH-x, [L2] EQ, [L2] NEG, [L2] BRANCH([[L3] FETCH-x, [L3] PUSH-100, [L3] DIV, [L3] STORE-y], [[L4] PUSH-100, [L4] STORE-y])]):[L6] CATCH([[L5] PUSH-5, [L5] STORE-x]):ε, ε, s[z→NEG,y→ZERO,x→NEG]>
+<[L0] PUSH-5:[L0] DIV:[L0] STORE-z:[L1] TRY([[L2] PUSH-0, [L2] FETCH-x, [L2] EQ, [L2] NEG, [L2] BRANCH([[L3] FETCH-x, [L3] PUSH-100, [L3] DIV, [L3] STORE-y], [[L4] PUSH-100, [L4] STORE-y])]):[L6] CATCH([[L5] PUSH-5, [L5] STORE-x]):ε, NEG:ε, s[z→NEG,y→ZERO,x→NEG]>
+<[L0] DIV:[L0] STORE-z:[L1] TRY([[L2] PUSH-0, [L2] FETCH-x, [L2] EQ, [L2] NEG, [L2] BRANCH([[L3] FETCH-x, [L3] PUSH-100, [L3] DIV, [L3] STORE-y], [[L4] PUSH-100, [L4] STORE-y])]):[L6] CATCH([[L5] PUSH-5, [L5] STORE-x]):ε, POS:NEG:ε, s[z→NEG,y→ZERO,x→NEG]>
+<[L0] STORE-z:[L1] TRY([[L2] PUSH-0, [L2] FETCH-x, [L2] EQ, [L2] NEG, [L2] BRANCH([[L3] FETCH-x, [L3] PUSH-100, [L3] DIV, [L3] STORE-y], [[L4] PUSH-100, [L4] STORE-y])]):[L6] CATCH([[L5] PUSH-5, [L5] STORE-x]):ε, NON_POS:ε, s[z→NEG,y→ZERO,x→NEG]>
+<[L1] TRY([[L2] PUSH-0, [L2] FETCH-x, [L2] EQ, [L2] NEG, [L2] BRANCH([[L3] FETCH-x, [L3] PUSH-100, [L3] DIV, [L3] STORE-y], [[L4] PUSH-100, [L4] STORE-y])]):[L6] CATCH([[L5] PUSH-5, [L5] STORE-x]):ε, ε, s[z→NON_POS,y→ZERO,x→NEG]>
+<[L2] PUSH-0:[L2] FETCH-x:[L2] EQ:[L2] NEG:[L2] BRANCH([[L3] FETCH-x, [L3] PUSH-100, [L3] DIV, [L3] STORE-y], [[L4] PUSH-100, [L4] STORE-y]):[L6] CATCH([[L5] PUSH-5, [L5] STORE-x]):ε, ε, s[z→NON_POS,y→ZERO,x→NEG]>
+<[L2] FETCH-x:[L2] EQ:[L2] NEG:[L2] BRANCH([[L3] FETCH-x, [L3] PUSH-100, [L3] DIV, [L3] STORE-y], [[L4] PUSH-100, [L4] STORE-y]):[L6] CATCH([[L5] PUSH-5, [L5] STORE-x]):ε, ZERO:ε, s[z→NON_POS,y→ZERO,x→NEG]>
+<[L2] EQ:[L2] NEG:[L2] BRANCH([[L3] FETCH-x, [L3] PUSH-100, [L3] DIV, [L3] STORE-y], [[L4] PUSH-100, [L4] STORE-y]):[L6] CATCH([[L5] PUSH-5, [L5] STORE-x]):ε, NEG:ZERO:ε, s[z→NON_POS,y→ZERO,x→NEG]>
+<[L2] NEG:[L2] BRANCH([[L3] FETCH-x, [L3] PUSH-100, [L3] DIV, [L3] STORE-y], [[L4] PUSH-100, [L4] STORE-y]):[L6] CATCH([[L5] PUSH-5, [L5] STORE-x]):ε, FF:ε, s[z→NON_POS,y→ZERO,x→NEG]>
+<[L2] BRANCH([[L3] FETCH-x, [L3] PUSH-100, [L3] DIV, [L3] STORE-y], [[L4] PUSH-100, [L4] STORE-y]):[L6] CATCH([[L5] PUSH-5, [L5] STORE-x]):ε, TT:ε, s[z→NON_POS,y→ZERO,x→NEG]>
+<[L3] FETCH-x:[L3] PUSH-100:[L3] DIV:[L3] STORE-y:[L6] CATCH([[L5] PUSH-5, [L5] STORE-x]):ε, ε, s[z→NON_POS,y→ZERO,x→NEG]>
+<[L3] PUSH-100:[L3] DIV:[L3] STORE-y:[L6] CATCH([[L5] PUSH-5, [L5] STORE-x]):ε, NEG:ε, s[z→NON_POS,y→ZERO,x→NEG]>
+<[L3] DIV:[L3] STORE-y:[L6] CATCH([[L5] PUSH-5, [L5] STORE-x]):ε, POS:NEG:ε, s[z→NON_POS,y→ZERO,x→NEG]>
+<[L3] STORE-y:[L6] CATCH([[L5] PUSH-5, [L5] STORE-x]):ε, NON_POS:ε, s[z→NON_POS,y→ZERO,x→NEG]>
+=== Running from {z=NEG, y=ZERO, x=ZERO}
+<[L0] FETCH-z:[L0] PUSH-5:[L0] DIV:[L0] STORE-z:[L1] TRY([[L2] PUSH-0, [L2] FETCH-x, [L2] EQ, [L2] NEG, [L2] BRANCH([[L3] FETCH-x, [L3] PUSH-100, [L3] DIV, [L3] STORE-y], [[L4] PUSH-100, [L4] STORE-y])]):[L6] CATCH([[L5] PUSH-5, [L5] STORE-x]):ε, ε, s[z→NEG,y→ZERO,x→ZERO]>
+<[L0] PUSH-5:[L0] DIV:[L0] STORE-z:[L1] TRY([[L2] PUSH-0, [L2] FETCH-x, [L2] EQ, [L2] NEG, [L2] BRANCH([[L3] FETCH-x, [L3] PUSH-100, [L3] DIV, [L3] STORE-y], [[L4] PUSH-100, [L4] STORE-y])]):[L6] CATCH([[L5] PUSH-5, [L5] STORE-x]):ε, NEG:ε, s[z→NEG,y→ZERO,x→ZERO]>
+<[L0] DIV:[L0] STORE-z:[L1] TRY([[L2] PUSH-0, [L2] FETCH-x, [L2] EQ, [L2] NEG, [L2] BRANCH([[L3] FETCH-x, [L3] PUSH-100, [L3] DIV, [L3] STORE-y], [[L4] PUSH-100, [L4] STORE-y])]):[L6] CATCH([[L5] PUSH-5, [L5] STORE-x]):ε, POS:NEG:ε, s[z→NEG,y→ZERO,x→ZERO]>
+<[L0] STORE-z:[L1] TRY([[L2] PUSH-0, [L2] FETCH-x, [L2] EQ, [L2] NEG, [L2] BRANCH([[L3] FETCH-x, [L3] PUSH-100, [L3] DIV, [L3] STORE-y], [[L4] PUSH-100, [L4] STORE-y])]):[L6] CATCH([[L5] PUSH-5, [L5] STORE-x]):ε, NON_POS:ε, s[z→NEG,y→ZERO,x→ZERO]>
+<[L1] TRY([[L2] PUSH-0, [L2] FETCH-x, [L2] EQ, [L2] NEG, [L2] BRANCH([[L3] FETCH-x, [L3] PUSH-100, [L3] DIV, [L3] STORE-y], [[L4] PUSH-100, [L4] STORE-y])]):[L6] CATCH([[L5] PUSH-5, [L5] STORE-x]):ε, ε, s[z→NON_POS,y→ZERO,x→ZERO]>
+<[L2] PUSH-0:[L2] FETCH-x:[L2] EQ:[L2] NEG:[L2] BRANCH([[L3] FETCH-x, [L3] PUSH-100, [L3] DIV, [L3] STORE-y], [[L4] PUSH-100, [L4] STORE-y]):[L6] CATCH([[L5] PUSH-5, [L5] STORE-x]):ε, ε, s[z→NON_POS,y→ZERO,x→ZERO]>
+<[L2] FETCH-x:[L2] EQ:[L2] NEG:[L2] BRANCH([[L3] FETCH-x, [L3] PUSH-100, [L3] DIV, [L3] STORE-y], [[L4] PUSH-100, [L4] STORE-y]):[L6] CATCH([[L5] PUSH-5, [L5] STORE-x]):ε, ZERO:ε, s[z→NON_POS,y→ZERO,x→ZERO]>
+<[L2] EQ:[L2] NEG:[L2] BRANCH([[L3] FETCH-x, [L3] PUSH-100, [L3] DIV, [L3] STORE-y], [[L4] PUSH-100, [L4] STORE-y]):[L6] CATCH([[L5] PUSH-5, [L5] STORE-x]):ε, ZERO:ZERO:ε, s[z→NON_POS,y→ZERO,x→ZERO]>
+<[L2] NEG:[L2] BRANCH([[L3] FETCH-x, [L3] PUSH-100, [L3] DIV, [L3] STORE-y], [[L4] PUSH-100, [L4] STORE-y]):[L6] CATCH([[L5] PUSH-5, [L5] STORE-x]):ε, TT:ε, s[z→NON_POS,y→ZERO,x→ZERO]>
+<[L2] BRANCH([[L3] FETCH-x, [L3] PUSH-100, [L3] DIV, [L3] STORE-y], [[L4] PUSH-100, [L4] STORE-y]):[L6] CATCH([[L5] PUSH-5, [L5] STORE-x]):ε, FF:ε, s[z→NON_POS,y→ZERO,x→ZERO]>
+<[L4] PUSH-100:[L4] STORE-y:[L6] CATCH([[L5] PUSH-5, [L5] STORE-x]):ε, ε, s[z→NON_POS,y→ZERO,x→ZERO]>
+<[L4] STORE-y:[L6] CATCH([[L5] PUSH-5, [L5] STORE-x]):ε, POS:ε, s[z→NON_POS,y→ZERO,x→ZERO]>
+=== Running from {z=NEG, y=ZERO, x=POS}
+<[L0] FETCH-z:[L0] PUSH-5:[L0] DIV:[L0] STORE-z:[L1] TRY([[L2] PUSH-0, [L2] FETCH-x, [L2] EQ, [L2] NEG, [L2] BRANCH([[L3] FETCH-x, [L3] PUSH-100, [L3] DIV, [L3] STORE-y], [[L4] PUSH-100, [L4] STORE-y])]):[L6] CATCH([[L5] PUSH-5, [L5] STORE-x]):ε, ε, s[z→NEG,y→ZERO,x→POS]>
+<[L0] PUSH-5:[L0] DIV:[L0] STORE-z:[L1] TRY([[L2] PUSH-0, [L2] FETCH-x, [L2] EQ, [L2] NEG, [L2] BRANCH([[L3] FETCH-x, [L3] PUSH-100, [L3] DIV, [L3] STORE-y], [[L4] PUSH-100, [L4] STORE-y])]):[L6] CATCH([[L5] PUSH-5, [L5] STORE-x]):ε, NEG:ε, s[z→NEG,y→ZERO,x→POS]>
+<[L0] DIV:[L0] STORE-z:[L1] TRY([[L2] PUSH-0, [L2] FETCH-x, [L2] EQ, [L2] NEG, [L2] BRANCH([[L3] FETCH-x, [L3] PUSH-100, [L3] DIV, [L3] STORE-y], [[L4] PUSH-100, [L4] STORE-y])]):[L6] CATCH([[L5] PUSH-5, [L5] STORE-x]):ε, POS:NEG:ε, s[z→NEG,y→ZERO,x→POS]>
+<[L0] STORE-z:[L1] TRY([[L2] PUSH-0, [L2] FETCH-x, [L2] EQ, [L2] NEG, [L2] BRANCH([[L3] FETCH-x, [L3] PUSH-100, [L3] DIV, [L3] STORE-y], [[L4] PUSH-100, [L4] STORE-y])]):[L6] CATCH([[L5] PUSH-5, [L5] STORE-x]):ε, NON_POS:ε, s[z→NEG,y→ZERO,x→POS]>
+<[L1] TRY([[L2] PUSH-0, [L2] FETCH-x, [L2] EQ, [L2] NEG, [L2] BRANCH([[L3] FETCH-x, [L3] PUSH-100, [L3] DIV, [L3] STORE-y], [[L4] PUSH-100, [L4] STORE-y])]):[L6] CATCH([[L5] PUSH-5, [L5] STORE-x]):ε, ε, s[z→NON_POS,y→ZERO,x→POS]>
+<[L2] PUSH-0:[L2] FETCH-x:[L2] EQ:[L2] NEG:[L2] BRANCH([[L3] FETCH-x, [L3] PUSH-100, [L3] DIV, [L3] STORE-y], [[L4] PUSH-100, [L4] STORE-y]):[L6] CATCH([[L5] PUSH-5, [L5] STORE-x]):ε, ε, s[z→NON_POS,y→ZERO,x→POS]>
+<[L2] FETCH-x:[L2] EQ:[L2] NEG:[L2] BRANCH([[L3] FETCH-x, [L3] PUSH-100, [L3] DIV, [L3] STORE-y], [[L4] PUSH-100, [L4] STORE-y]):[L6] CATCH([[L5] PUSH-5, [L5] STORE-x]):ε, ZERO:ε, s[z→NON_POS,y→ZERO,x→POS]>
+<[L2] EQ:[L2] NEG:[L2] BRANCH([[L3] FETCH-x, [L3] PUSH-100, [L3] DIV, [L3] STORE-y], [[L4] PUSH-100, [L4] STORE-y]):[L6] CATCH([[L5] PUSH-5, [L5] STORE-x]):ε, POS:ZERO:ε, s[z→NON_POS,y→ZERO,x→POS]>
+<[L2] NEG:[L2] BRANCH([[L3] FETCH-x, [L3] PUSH-100, [L3] DIV, [L3] STORE-y], [[L4] PUSH-100, [L4] STORE-y]):[L6] CATCH([[L5] PUSH-5, [L5] STORE-x]):ε, FF:ε, s[z→NON_POS,y→ZERO,x→POS]>
+<[L2] BRANCH([[L3] FETCH-x, [L3] PUSH-100, [L3] DIV, [L3] STORE-y], [[L4] PUSH-100, [L4] STORE-y]):[L6] CATCH([[L5] PUSH-5, [L5] STORE-x]):ε, TT:ε, s[z→NON_POS,y→ZERO,x→POS]>
+<[L3] FETCH-x:[L3] PUSH-100:[L3] DIV:[L3] STORE-y:[L6] CATCH([[L5] PUSH-5, [L5] STORE-x]):ε, ε, s[z→NON_POS,y→ZERO,x→POS]>
+<[L3] PUSH-100:[L3] DIV:[L3] STORE-y:[L6] CATCH([[L5] PUSH-5, [L5] STORE-x]):ε, POS:ε, s[z→NON_POS,y→ZERO,x→POS]>
+<[L3] DIV:[L3] STORE-y:[L6] CATCH([[L5] PUSH-5, [L5] STORE-x]):ε, POS:POS:ε, s[z→NON_POS,y→ZERO,x→POS]>
+<[L3] STORE-y:[L6] CATCH([[L5] PUSH-5, [L5] STORE-x]):ε, NON_NEG:ε, s[z→NON_POS,y→ZERO,x→POS]>
+=== Running from {z=NEG, y=POS, x=NEG}
+<[L0] FETCH-z:[L0] PUSH-5:[L0] DIV:[L0] STORE-z:[L1] TRY([[L2] PUSH-0, [L2] FETCH-x, [L2] EQ, [L2] NEG, [L2] BRANCH([[L3] FETCH-x, [L3] PUSH-100, [L3] DIV, [L3] STORE-y], [[L4] PUSH-100, [L4] STORE-y])]):[L6] CATCH([[L5] PUSH-5, [L5] STORE-x]):ε, ε, s[z→NEG,y→POS,x→NEG]>
+<[L0] PUSH-5:[L0] DIV:[L0] STORE-z:[L1] TRY([[L2] PUSH-0, [L2] FETCH-x, [L2] EQ, [L2] NEG, [L2] BRANCH([[L3] FETCH-x, [L3] PUSH-100, [L3] DIV, [L3] STORE-y], [[L4] PUSH-100, [L4] STORE-y])]):[L6] CATCH([[L5] PUSH-5, [L5] STORE-x]):ε, NEG:ε, s[z→NEG,y→POS,x→NEG]>
+<[L0] DIV:[L0] STORE-z:[L1] TRY([[L2] PUSH-0, [L2] FETCH-x, [L2] EQ, [L2] NEG, [L2] BRANCH([[L3] FETCH-x, [L3] PUSH-100, [L3] DIV, [L3] STORE-y], [[L4] PUSH-100, [L4] STORE-y])]):[L6] CATCH([[L5] PUSH-5, [L5] STORE-x]):ε, POS:NEG:ε, s[z→NEG,y→POS,x→NEG]>
+<[L0] STORE-z:[L1] TRY([[L2] PUSH-0, [L2] FETCH-x, [L2] EQ, [L2] NEG, [L2] BRANCH([[L3] FETCH-x, [L3] PUSH-100, [L3] DIV, [L3] STORE-y], [[L4] PUSH-100, [L4] STORE-y])]):[L6] CATCH([[L5] PUSH-5, [L5] STORE-x]):ε, NON_POS:ε, s[z→NEG,y→POS,x→NEG]>
+<[L1] TRY([[L2] PUSH-0, [L2] FETCH-x, [L2] EQ, [L2] NEG, [L2] BRANCH([[L3] FETCH-x, [L3] PUSH-100, [L3] DIV, [L3] STORE-y], [[L4] PUSH-100, [L4] STORE-y])]):[L6] CATCH([[L5] PUSH-5, [L5] STORE-x]):ε, ε, s[z→NON_POS,y→POS,x→NEG]>
+<[L2] PUSH-0:[L2] FETCH-x:[L2] EQ:[L2] NEG:[L2] BRANCH([[L3] FETCH-x, [L3] PUSH-100, [L3] DIV, [L3] STORE-y], [[L4] PUSH-100, [L4] STORE-y]):[L6] CATCH([[L5] PUSH-5, [L5] STORE-x]):ε, ε, s[z→NON_POS,y→POS,x→NEG]>
+<[L2] FETCH-x:[L2] EQ:[L2] NEG:[L2] BRANCH([[L3] FETCH-x, [L3] PUSH-100, [L3] DIV, [L3] STORE-y], [[L4] PUSH-100, [L4] STORE-y]):[L6] CATCH([[L5] PUSH-5, [L5] STORE-x]):ε, ZERO:ε, s[z→NON_POS,y→POS,x→NEG]>
+<[L2] EQ:[L2] NEG:[L2] BRANCH([[L3] FETCH-x, [L3] PUSH-100, [L3] DIV, [L3] STORE-y], [[L4] PUSH-100, [L4] STORE-y]):[L6] CATCH([[L5] PUSH-5, [L5] STORE-x]):ε, NEG:ZERO:ε, s[z→NON_POS,y→POS,x→NEG]>
+<[L2] NEG:[L2] BRANCH([[L3] FETCH-x, [L3] PUSH-100, [L3] DIV, [L3] STORE-y], [[L4] PUSH-100, [L4] STORE-y]):[L6] CATCH([[L5] PUSH-5, [L5] STORE-x]):ε, FF:ε, s[z→NON_POS,y→POS,x→NEG]>
+<[L2] BRANCH([[L3] FETCH-x, [L3] PUSH-100, [L3] DIV, [L3] STORE-y], [[L4] PUSH-100, [L4] STORE-y]):[L6] CATCH([[L5] PUSH-5, [L5] STORE-x]):ε, TT:ε, s[z→NON_POS,y→POS,x→NEG]>
+<[L3] FETCH-x:[L3] PUSH-100:[L3] DIV:[L3] STORE-y:[L6] CATCH([[L5] PUSH-5, [L5] STORE-x]):ε, ε, s[z→NON_POS,y→POS,x→NEG]>
+<[L3] PUSH-100:[L3] DIV:[L3] STORE-y:[L6] CATCH([[L5] PUSH-5, [L5] STORE-x]):ε, NEG:ε, s[z→NON_POS,y→POS,x→NEG]>
+<[L3] DIV:[L3] STORE-y:[L6] CATCH([[L5] PUSH-5, [L5] STORE-x]):ε, POS:NEG:ε, s[z→NON_POS,y→POS,x→NEG]>
+<[L3] STORE-y:[L6] CATCH([[L5] PUSH-5, [L5] STORE-x]):ε, NON_POS:ε, s[z→NON_POS,y→POS,x→NEG]>
+=== Running from {z=NEG, y=POS, x=ZERO}
+<[L0] FETCH-z:[L0] PUSH-5:[L0] DIV:[L0] STORE-z:[L1] TRY([[L2] PUSH-0, [L2] FETCH-x, [L2] EQ, [L2] NEG, [L2] BRANCH([[L3] FETCH-x, [L3] PUSH-100, [L3] DIV, [L3] STORE-y], [[L4] PUSH-100, [L4] STORE-y])]):[L6] CATCH([[L5] PUSH-5, [L5] STORE-x]):ε, ε, s[z→NEG,y→POS,x→ZERO]>
+<[L0] PUSH-5:[L0] DIV:[L0] STORE-z:[L1] TRY([[L2] PUSH-0, [L2] FETCH-x, [L2] EQ, [L2] NEG, [L2] BRANCH([[L3] FETCH-x, [L3] PUSH-100, [L3] DIV, [L3] STORE-y], [[L4] PUSH-100, [L4] STORE-y])]):[L6] CATCH([[L5] PUSH-5, [L5] STORE-x]):ε, NEG:ε, s[z→NEG,y→POS,x→ZERO]>
+<[L0] DIV:[L0] STORE-z:[L1] TRY([[L2] PUSH-0, [L2] FETCH-x, [L2] EQ, [L2] NEG, [L2] BRANCH([[L3] FETCH-x, [L3] PUSH-100, [L3] DIV, [L3] STORE-y], [[L4] PUSH-100, [L4] STORE-y])]):[L6] CATCH([[L5] PUSH-5, [L5] STORE-x]):ε, POS:NEG:ε, s[z→NEG,y→POS,x→ZERO]>
+<[L0] STORE-z:[L1] TRY([[L2] PUSH-0, [L2] FETCH-x, [L2] EQ, [L2] NEG, [L2] BRANCH([[L3] FETCH-x, [L3] PUSH-100, [L3] DIV, [L3] STORE-y], [[L4] PUSH-100, [L4] STORE-y])]):[L6] CATCH([[L5] PUSH-5, [L5] STORE-x]):ε, NON_POS:ε, s[z→NEG,y→POS,x→ZERO]>
+<[L1] TRY([[L2] PUSH-0, [L2] FETCH-x, [L2] EQ, [L2] NEG, [L2] BRANCH([[L3] FETCH-x, [L3] PUSH-100, [L3] DIV, [L3] STORE-y], [[L4] PUSH-100, [L4] STORE-y])]):[L6] CATCH([[L5] PUSH-5, [L5] STORE-x]):ε, ε, s[z→NON_POS,y→POS,x→ZERO]>
+<[L2] PUSH-0:[L2] FETCH-x:[L2] EQ:[L2] NEG:[L2] BRANCH([[L3] FETCH-x, [L3] PUSH-100, [L3] DIV, [L3] STORE-y], [[L4] PUSH-100, [L4] STORE-y]):[L6] CATCH([[L5] PUSH-5, [L5] STORE-x]):ε, ε, s[z→NON_POS,y→POS,x→ZERO]>
+<[L2] FETCH-x:[L2] EQ:[L2] NEG:[L2] BRANCH([[L3] FETCH-x, [L3] PUSH-100, [L3] DIV, [L3] STORE-y], [[L4] PUSH-100, [L4] STORE-y]):[L6] CATCH([[L5] PUSH-5, [L5] STORE-x]):ε, ZERO:ε, s[z→NON_POS,y→POS,x→ZERO]>
+<[L2] EQ:[L2] NEG:[L2] BRANCH([[L3] FETCH-x, [L3] PUSH-100, [L3] DIV, [L3] STORE-y], [[L4] PUSH-100, [L4] STORE-y]):[L6] CATCH([[L5] PUSH-5, [L5] STORE-x]):ε, ZERO:ZERO:ε, s[z→NON_POS,y→POS,x→ZERO]>
+<[L2] NEG:[L2] BRANCH([[L3] FETCH-x, [L3] PUSH-100, [L3] DIV, [L3] STORE-y], [[L4] PUSH-100, [L4] STORE-y]):[L6] CATCH([[L5] PUSH-5, [L5] STORE-x]):ε, TT:ε, s[z→NON_POS,y→POS,x→ZERO]>
+<[L2] BRANCH([[L3] FETCH-x, [L3] PUSH-100, [L3] DIV, [L3] STORE-y], [[L4] PUSH-100, [L4] STORE-y]):[L6] CATCH([[L5] PUSH-5, [L5] STORE-x]):ε, FF:ε, s[z→NON_POS,y→POS,x→ZERO]>
+<[L4] PUSH-100:[L4] STORE-y:[L6] CATCH([[L5] PUSH-5, [L5] STORE-x]):ε, ε, s[z→NON_POS,y→POS,x→ZERO]>
+<[L4] STORE-y:[L6] CATCH([[L5] PUSH-5, [L5] STORE-x]):ε, POS:ε, s[z→NON_POS,y→POS,x→ZERO]>
+=== Running from {z=NEG, y=POS, x=POS}
+<[L0] FETCH-z:[L0] PUSH-5:[L0] DIV:[L0] STORE-z:[L1] TRY([[L2] PUSH-0, [L2] FETCH-x, [L2] EQ, [L2] NEG, [L2] BRANCH([[L3] FETCH-x, [L3] PUSH-100, [L3] DIV, [L3] STORE-y], [[L4] PUSH-100, [L4] STORE-y])]):[L6] CATCH([[L5] PUSH-5, [L5] STORE-x]):ε, ε, s[z→NEG,y→POS,x→POS]>
+<[L0] PUSH-5:[L0] DIV:[L0] STORE-z:[L1] TRY([[L2] PUSH-0, [L2] FETCH-x, [L2] EQ, [L2] NEG, [L2] BRANCH([[L3] FETCH-x, [L3] PUSH-100, [L3] DIV, [L3] STORE-y], [[L4] PUSH-100, [L4] STORE-y])]):[L6] CATCH([[L5] PUSH-5, [L5] STORE-x]):ε, NEG:ε, s[z→NEG,y→POS,x→POS]>
+<[L0] DIV:[L0] STORE-z:[L1] TRY([[L2] PUSH-0, [L2] FETCH-x, [L2] EQ, [L2] NEG, [L2] BRANCH([[L3] FETCH-x, [L3] PUSH-100, [L3] DIV, [L3] STORE-y], [[L4] PUSH-100, [L4] STORE-y])]):[L6] CATCH([[L5] PUSH-5, [L5] STORE-x]):ε, POS:NEG:ε, s[z→NEG,y→POS,x→POS]>
+<[L0] STORE-z:[L1] TRY([[L2] PUSH-0, [L2] FETCH-x, [L2] EQ, [L2] NEG, [L2] BRANCH([[L3] FETCH-x, [L3] PUSH-100, [L3] DIV, [L3] STORE-y], [[L4] PUSH-100, [L4] STORE-y])]):[L6] CATCH([[L5] PUSH-5, [L5] STORE-x]):ε, NON_POS:ε, s[z→NEG,y→POS,x→POS]>
+<[L1] TRY([[L2] PUSH-0, [L2] FETCH-x, [L2] EQ, [L2] NEG, [L2] BRANCH([[L3] FETCH-x, [L3] PUSH-100, [L3] DIV, [L3] STORE-y], [[L4] PUSH-100, [L4] STORE-y])]):[L6] CATCH([[L5] PUSH-5, [L5] STORE-x]):ε, ε, s[z→NON_POS,y→POS,x→POS]>
+<[L2] PUSH-0:[L2] FETCH-x:[L2] EQ:[L2] NEG:[L2] BRANCH([[L3] FETCH-x, [L3] PUSH-100, [L3] DIV, [L3] STORE-y], [[L4] PUSH-100, [L4] STORE-y]):[L6] CATCH([[L5] PUSH-5, [L5] STORE-x]):ε, ε, s[z→NON_POS,y→POS,x→POS]>
+<[L2] FETCH-x:[L2] EQ:[L2] NEG:[L2] BRANCH([[L3] FETCH-x, [L3] PUSH-100, [L3] DIV, [L3] STORE-y], [[L4] PUSH-100, [L4] STORE-y]):[L6] CATCH([[L5] PUSH-5, [L5] STORE-x]):ε, ZERO:ε, s[z→NON_POS,y→POS,x→POS]>
+<[L2] EQ:[L2] NEG:[L2] BRANCH([[L3] FETCH-x, [L3] PUSH-100, [L3] DIV, [L3] STORE-y], [[L4] PUSH-100, [L4] STORE-y]):[L6] CATCH([[L5] PUSH-5, [L5] STORE-x]):ε, POS:ZERO:ε, s[z→NON_POS,y→POS,x→POS]>
+<[L2] NEG:[L2] BRANCH([[L3] FETCH-x, [L3] PUSH-100, [L3] DIV, [L3] STORE-y], [[L4] PUSH-100, [L4] STORE-y]):[L6] CATCH([[L5] PUSH-5, [L5] STORE-x]):ε, FF:ε, s[z→NON_POS,y→POS,x→POS]>
+<[L2] BRANCH([[L3] FETCH-x, [L3] PUSH-100, [L3] DIV, [L3] STORE-y], [[L4] PUSH-100, [L4] STORE-y]):[L6] CATCH([[L5] PUSH-5, [L5] STORE-x]):ε, TT:ε, s[z→NON_POS,y→POS,x→POS]>
+<[L3] FETCH-x:[L3] PUSH-100:[L3] DIV:[L3] STORE-y:[L6] CATCH([[L5] PUSH-5, [L5] STORE-x]):ε, ε, s[z→NON_POS,y→POS,x→POS]>
+<[L3] PUSH-100:[L3] DIV:[L3] STORE-y:[L6] CATCH([[L5] PUSH-5, [L5] STORE-x]):ε, POS:ε, s[z→NON_POS,y→POS,x→POS]>
+<[L3] DIV:[L3] STORE-y:[L6] CATCH([[L5] PUSH-5, [L5] STORE-x]):ε, POS:POS:ε, s[z→NON_POS,y→POS,x→POS]>
+<[L3] STORE-y:[L6] CATCH([[L5] PUSH-5, [L5] STORE-x]):ε, NON_NEG:ε, s[z→NON_POS,y→POS,x→POS]>
+=== Running from {z=NEG, y=NEG, x=NEG}
+<[L0] FETCH-z:[L0] PUSH-5:[L0] DIV:[L0] STORE-z:[L1] TRY([[L2] PUSH-0, [L2] FETCH-x, [L2] EQ, [L2] NEG, [L2] BRANCH([[L3] FETCH-x, [L3] PUSH-100, [L3] DIV, [L3] STORE-y], [[L4] PUSH-100, [L4] STORE-y])]):[L6] CATCH([[L5] PUSH-5, [L5] STORE-x]):ε, ε, s[z→NEG,y→NEG,x→NEG]>
+=== Running from {z=NEG, y=ZERO, x=NEG}
+<[L0] FETCH-z:[L0] PUSH-5:[L0] DIV:[L0] STORE-z:[L1] TRY([[L2] PUSH-0, [L2] FETCH-x, [L2] EQ, [L2] NEG, [L2] BRANCH([[L3] FETCH-x, [L3] PUSH-100, [L3] DIV, [L3] STORE-y], [[L4] PUSH-100, [L4] STORE-y])]):[L6] CATCH([[L5] PUSH-5, [L5] STORE-x]):ε, ε, s[z→NEG,y→ZERO,x→NEG]>
+=== Running from {z=NEG, y=POS, x=NEG}
+<[L0] FETCH-z:[L0] PUSH-5:[L0] DIV:[L0] STORE-z:[L1] TRY([[L2] PUSH-0, [L2] FETCH-x, [L2] EQ, [L2] NEG, [L2] BRANCH([[L3] FETCH-x, [L3] PUSH-100, [L3] DIV, [L3] STORE-y], [[L4] PUSH-100, [L4] STORE-y])]):[L6] CATCH([[L5] PUSH-5, [L5] STORE-x]):ε, ε, s[z→NEG,y→POS,x→NEG]>
+=== Running from {z=NEG, y=NEG, x=ZERO}
+<[L0] FETCH-z:[L0] PUSH-5:[L0] DIV:[L0] STORE-z:[L1] TRY([[L2] PUSH-0, [L2] FETCH-x, [L2] EQ, [L2] NEG, [L2] BRANCH([[L3] FETCH-x, [L3] PUSH-100, [L3] DIV, [L3] STORE-y], [[L4] PUSH-100, [L4] STORE-y])]):[L6] CATCH([[L5] PUSH-5, [L5] STORE-x]):ε, ε, s[z→NEG,y→NEG,x→ZERO]>
+=== Running from {z=NEG, y=ZERO, x=ZERO}
+<[L0] FETCH-z:[L0] PUSH-5:[L0] DIV:[L0] STORE-z:[L1] TRY([[L2] PUSH-0, [L2] FETCH-x, [L2] EQ, [L2] NEG, [L2] BRANCH([[L3] FETCH-x, [L3] PUSH-100, [L3] DIV, [L3] STORE-y], [[L4] PUSH-100, [L4] STORE-y])]):[L6] CATCH([[L5] PUSH-5, [L5] STORE-x]):ε, ε, s[z→NEG,y→ZERO,x→ZERO]>
+=== Running from {z=NEG, y=POS, x=ZERO}
+<[L0] FETCH-z:[L0] PUSH-5:[L0] DIV:[L0] STORE-z:[L1] TRY([[L2] PUSH-0, [L2] FETCH-x, [L2] EQ, [L2] NEG, [L2] BRANCH([[L3] FETCH-x, [L3] PUSH-100, [L3] DIV, [L3] STORE-y], [[L4] PUSH-100, [L4] STORE-y])]):[L6] CATCH([[L5] PUSH-5, [L5] STORE-x]):ε, ε, s[z→NEG,y→POS,x→ZERO]>
+=== Running from {z=NEG, y=NEG, x=POS}
+<[L0] FETCH-z:[L0] PUSH-5:[L0] DIV:[L0] STORE-z:[L1] TRY([[L2] PUSH-0, [L2] FETCH-x, [L2] EQ, [L2] NEG, [L2] BRANCH([[L3] FETCH-x, [L3] PUSH-100, [L3] DIV, [L3] STORE-y], [[L4] PUSH-100, [L4] STORE-y])]):[L6] CATCH([[L5] PUSH-5, [L5] STORE-x]):ε, ε, s[z→NEG,y→NEG,x→POS]>
+=== Running from {z=NEG, y=ZERO, x=POS}
+<[L0] FETCH-z:[L0] PUSH-5:[L0] DIV:[L0] STORE-z:[L1] TRY([[L2] PUSH-0, [L2] FETCH-x, [L2] EQ, [L2] NEG, [L2] BRANCH([[L3] FETCH-x, [L3] PUSH-100, [L3] DIV, [L3] STORE-y], [[L4] PUSH-100, [L4] STORE-y])]):[L6] CATCH([[L5] PUSH-5, [L5] STORE-x]):ε, ε, s[z→NEG,y→ZERO,x→POS]>
+=== Running from {z=NEG, y=POS, x=POS}
+<[L0] FETCH-z:[L0] PUSH-5:[L0] DIV:[L0] STORE-z:[L1] TRY([[L2] PUSH-0, [L2] FETCH-x, [L2] EQ, [L2] NEG, [L2] BRANCH([[L3] FETCH-x, [L3] PUSH-100, [L3] DIV, [L3] STORE-y], [[L4] PUSH-100, [L4] STORE-y])]):[L6] CATCH([[L5] PUSH-5, [L5] STORE-x]):ε, ε, s[z→NEG,y→POS,x→POS]>
+=== Running from {z=ZERO, y=NEG, x=NEG}
+<[L0] FETCH-z:[L0] PUSH-5:[L0] DIV:[L0] STORE-z:[L1] TRY([[L2] PUSH-0, [L2] FETCH-x, [L2] EQ, [L2] NEG, [L2] BRANCH([[L3] FETCH-x, [L3] PUSH-100, [L3] DIV, [L3] STORE-y], [[L4] PUSH-100, [L4] STORE-y])]):[L6] CATCH([[L5] PUSH-5, [L5] STORE-x]):ε, ε, s[z→ZERO,y→NEG,x→NEG]>
+<[L0] PUSH-5:[L0] DIV:[L0] STORE-z:[L1] TRY([[L2] PUSH-0, [L2] FETCH-x, [L2] EQ, [L2] NEG, [L2] BRANCH([[L3] FETCH-x, [L3] PUSH-100, [L3] DIV, [L3] STORE-y], [[L4] PUSH-100, [L4] STORE-y])]):[L6] CATCH([[L5] PUSH-5, [L5] STORE-x]):ε, ZERO:ε, s[z→ZERO,y→NEG,x→NEG]>
+<[L0] DIV:[L0] STORE-z:[L1] TRY([[L2] PUSH-0, [L2] FETCH-x, [L2] EQ, [L2] NEG, [L2] BRANCH([[L3] FETCH-x, [L3] PUSH-100, [L3] DIV, [L3] STORE-y], [[L4] PUSH-100, [L4] STORE-y])]):[L6] CATCH([[L5] PUSH-5, [L5] STORE-x]):ε, POS:ZERO:ε, s[z→ZERO,y→NEG,x→NEG]>
+<[L0] STORE-z:[L1] TRY([[L2] PUSH-0, [L2] FETCH-x, [L2] EQ, [L2] NEG, [L2] BRANCH([[L3] FETCH-x, [L3] PUSH-100, [L3] DIV, [L3] STORE-y], [[L4] PUSH-100, [L4] STORE-y])]):[L6] CATCH([[L5] PUSH-5, [L5] STORE-x]):ε, ERR_A:ε, ŝ[z→ZERO,y→NEG,x→NEG]>
+<[L1] TRY([[L2] PUSH-0, [L2] FETCH-x, [L2] EQ, [L2] NEG, [L2] BRANCH([[L3] FETCH-x, [L3] PUSH-100, [L3] DIV, [L3] STORE-y], [[L4] PUSH-100, [L4] STORE-y])]):[L6] CATCH([[L5] PUSH-5, [L5] STORE-x]):ε, ε, ŝ[z→ZERO,y→NEG,x→NEG]>
+<ε, ε, ŝ[z→ZERO,y→NEG,x→NEG]>
+=== Running from {z=ZERO, y=NEG, x=ZERO}
+<[L0] FETCH-z:[L0] PUSH-5:[L0] DIV:[L0] STORE-z:[L1] TRY([[L2] PUSH-0, [L2] FETCH-x, [L2] EQ, [L2] NEG, [L2] BRANCH([[L3] FETCH-x, [L3] PUSH-100, [L3] DIV, [L3] STORE-y], [[L4] PUSH-100, [L4] STORE-y])]):[L6] CATCH([[L5] PUSH-5, [L5] STORE-x]):ε, ε, s[z→ZERO,y→NEG,x→ZERO]>
+<[L0] PUSH-5:[L0] DIV:[L0] STORE-z:[L1] TRY([[L2] PUSH-0, [L2] FETCH-x, [L2] EQ, [L2] NEG, [L2] BRANCH([[L3] FETCH-x, [L3] PUSH-100, [L3] DIV, [L3] STORE-y], [[L4] PUSH-100, [L4] STORE-y])]):[L6] CATCH([[L5] PUSH-5, [L5] STORE-x]):ε, ZERO:ε, s[z→ZERO,y→NEG,x→ZERO]>
+<[L0] DIV:[L0] STORE-z:[L1] TRY([[L2] PUSH-0, [L2] FETCH-x, [L2] EQ, [L2] NEG, [L2] BRANCH([[L3] FETCH-x, [L3] PUSH-100, [L3] DIV, [L3] STORE-y], [[L4] PUSH-100, [L4] STORE-y])]):[L6] CATCH([[L5] PUSH-5, [L5] STORE-x]):ε, POS:ZERO:ε, s[z→ZERO,y→NEG,x→ZERO]>
+<[L0] STORE-z:[L1] TRY([[L2] PUSH-0, [L2] FETCH-x, [L2] EQ, [L2] NEG, [L2] BRANCH([[L3] FETCH-x, [L3] PUSH-100, [L3] DIV, [L3] STORE-y], [[L4] PUSH-100, [L4] STORE-y])]):[L6] CATCH([[L5] PUSH-5, [L5] STORE-x]):ε, ERR_A:ε, ŝ[z→ZERO,y→NEG,x→ZERO]>
+<[L1] TRY([[L2] PUSH-0, [L2] FETCH-x, [L2] EQ, [L2] NEG, [L2] BRANCH([[L3] FETCH-x, [L3] PUSH-100, [L3] DIV, [L3] STORE-y], [[L4] PUSH-100, [L4] STORE-y])]):[L6] CATCH([[L5] PUSH-5, [L5] STORE-x]):ε, ε, ŝ[z→ZERO,y→NEG,x→ZERO]>
+<ε, ε, ŝ[z→ZERO,y→NEG,x→ZERO]>
+=== Running from {z=ZERO, y=NEG, x=POS}
+<[L0] FETCH-z:[L0] PUSH-5:[L0] DIV:[L0] STORE-z:[L1] TRY([[L2] PUSH-0, [L2] FETCH-x, [L2] EQ, [L2] NEG, [L2] BRANCH([[L3] FETCH-x, [L3] PUSH-100, [L3] DIV, [L3] STORE-y], [[L4] PUSH-100, [L4] STORE-y])]):[L6] CATCH([[L5] PUSH-5, [L5] STORE-x]):ε, ε, s[z→ZERO,y→NEG,x→POS]>
+<[L0] PUSH-5:[L0] DIV:[L0] STORE-z:[L1] TRY([[L2] PUSH-0, [L2] FETCH-x, [L2] EQ, [L2] NEG, [L2] BRANCH([[L3] FETCH-x, [L3] PUSH-100, [L3] DIV, [L3] STORE-y], [[L4] PUSH-100, [L4] STORE-y])]):[L6] CATCH([[L5] PUSH-5, [L5] STORE-x]):ε, ZERO:ε, s[z→ZERO,y→NEG,x→POS]>
+<[L0] DIV:[L0] STORE-z:[L1] TRY([[L2] PUSH-0, [L2] FETCH-x, [L2] EQ, [L2] NEG, [L2] BRANCH([[L3] FETCH-x, [L3] PUSH-100, [L3] DIV, [L3] STORE-y], [[L4] PUSH-100, [L4] STORE-y])]):[L6] CATCH([[L5] PUSH-5, [L5] STORE-x]):ε, POS:ZERO:ε, s[z→ZERO,y→NEG,x→POS]>
+<[L0] STORE-z:[L1] TRY([[L2] PUSH-0, [L2] FETCH-x, [L2] EQ, [L2] NEG, [L2] BRANCH([[L3] FETCH-x, [L3] PUSH-100, [L3] DIV, [L3] STORE-y], [[L4] PUSH-100, [L4] STORE-y])]):[L6] CATCH([[L5] PUSH-5, [L5] STORE-x]):ε, ERR_A:ε, ŝ[z→ZERO,y→NEG,x→POS]>
+<[L1] TRY([[L2] PUSH-0, [L2] FETCH-x, [L2] EQ, [L2] NEG, [L2] BRANCH([[L3] FETCH-x, [L3] PUSH-100, [L3] DIV, [L3] STORE-y], [[L4] PUSH-100, [L4] STORE-y])]):[L6] CATCH([[L5] PUSH-5, [L5] STORE-x]):ε, ε, ŝ[z→ZERO,y→NEG,x→POS]>
+<ε, ε, ŝ[z→ZERO,y→NEG,x→POS]>
+=== Running from {z=ZERO, y=ZERO, x=NEG}
+<[L0] FETCH-z:[L0] PUSH-5:[L0] DIV:[L0] STORE-z:[L1] TRY([[L2] PUSH-0, [L2] FETCH-x, [L2] EQ, [L2] NEG, [L2] BRANCH([[L3] FETCH-x, [L3] PUSH-100, [L3] DIV, [L3] STORE-y], [[L4] PUSH-100, [L4] STORE-y])]):[L6] CATCH([[L5] PUSH-5, [L5] STORE-x]):ε, ε, s[z→ZERO,y→ZERO,x→NEG]>
+<[L0] PUSH-5:[L0] DIV:[L0] STORE-z:[L1] TRY([[L2] PUSH-0, [L2] FETCH-x, [L2] EQ, [L2] NEG, [L2] BRANCH([[L3] FETCH-x, [L3] PUSH-100, [L3] DIV, [L3] STORE-y], [[L4] PUSH-100, [L4] STORE-y])]):[L6] CATCH([[L5] PUSH-5, [L5] STORE-x]):ε, ZERO:ε, s[z→ZERO,y→ZERO,x→NEG]>
+<[L0] DIV:[L0] STORE-z:[L1] TRY([[L2] PUSH-0, [L2] FETCH-x, [L2] EQ, [L2] NEG, [L2] BRANCH([[L3] FETCH-x, [L3] PUSH-100, [L3] DIV, [L3] STORE-y], [[L4] PUSH-100, [L4] STORE-y])]):[L6] CATCH([[L5] PUSH-5, [L5] STORE-x]):ε, POS:ZERO:ε, s[z→ZERO,y→ZERO,x→NEG]>
+<[L0] STORE-z:[L1] TRY([[L2] PUSH-0, [L2] FETCH-x, [L2] EQ, [L2] NEG, [L2] BRANCH([[L3] FETCH-x, [L3] PUSH-100, [L3] DIV, [L3] STORE-y], [[L4] PUSH-100, [L4] STORE-y])]):[L6] CATCH([[L5] PUSH-5, [L5] STORE-x]):ε, ERR_A:ε, ŝ[z→ZERO,y→ZERO,x→NEG]>
+<[L1] TRY([[L2] PUSH-0, [L2] FETCH-x, [L2] EQ, [L2] NEG, [L2] BRANCH([[L3] FETCH-x, [L3] PUSH-100, [L3] DIV, [L3] STORE-y], [[L4] PUSH-100, [L4] STORE-y])]):[L6] CATCH([[L5] PUSH-5, [L5] STORE-x]):ε, ε, ŝ[z→ZERO,y→ZERO,x→NEG]>
+<ε, ε, ŝ[z→ZERO,y→ZERO,x→NEG]>
+=== Running from {z=ZERO, y=ZERO, x=ZERO}
+<[L0] FETCH-z:[L0] PUSH-5:[L0] DIV:[L0] STORE-z:[L1] TRY([[L2] PUSH-0, [L2] FETCH-x, [L2] EQ, [L2] NEG, [L2] BRANCH([[L3] FETCH-x, [L3] PUSH-100, [L3] DIV, [L3] STORE-y], [[L4] PUSH-100, [L4] STORE-y])]):[L6] CATCH([[L5] PUSH-5, [L5] STORE-x]):ε, ε, s[z→ZERO,y→ZERO,x→ZERO]>
+<[L0] PUSH-5:[L0] DIV:[L0] STORE-z:[L1] TRY([[L2] PUSH-0, [L2] FETCH-x, [L2] EQ, [L2] NEG, [L2] BRANCH([[L3] FETCH-x, [L3] PUSH-100, [L3] DIV, [L3] STORE-y], [[L4] PUSH-100, [L4] STORE-y])]):[L6] CATCH([[L5] PUSH-5, [L5] STORE-x]):ε, ZERO:ε, s[z→ZERO,y→ZERO,x→ZERO]>
+<[L0] DIV:[L0] STORE-z:[L1] TRY([[L2] PUSH-0, [L2] FETCH-x, [L2] EQ, [L2] NEG, [L2] BRANCH([[L3] FETCH-x, [L3] PUSH-100, [L3] DIV, [L3] STORE-y], [[L4] PUSH-100, [L4] STORE-y])]):[L6] CATCH([[L5] PUSH-5, [L5] STORE-x]):ε, POS:ZERO:ε, s[z→ZERO,y→ZERO,x→ZERO]>
+<[L0] STORE-z:[L1] TRY([[L2] PUSH-0, [L2] FETCH-x, [L2] EQ, [L2] NEG, [L2] BRANCH([[L3] FETCH-x, [L3] PUSH-100, [L3] DIV, [L3] STORE-y], [[L4] PUSH-100, [L4] STORE-y])]):[L6] CATCH([[L5] PUSH-5, [L5] STORE-x]):ε, ERR_A:ε, ŝ[z→ZERO,y→ZERO,x→ZERO]>
+<[L1] TRY([[L2] PUSH-0, [L2] FETCH-x, [L2] EQ, [L2] NEG, [L2] BRANCH([[L3] FETCH-x, [L3] PUSH-100, [L3] DIV, [L3] STORE-y], [[L4] PUSH-100, [L4] STORE-y])]):[L6] CATCH([[L5] PUSH-5, [L5] STORE-x]):ε, ε, ŝ[z→ZERO,y→ZERO,x→ZERO]>
+<ε, ε, ŝ[z→ZERO,y→ZERO,x→ZERO]>
+=== Running from {z=ZERO, y=ZERO, x=POS}
+<[L0] FETCH-z:[L0] PUSH-5:[L0] DIV:[L0] STORE-z:[L1] TRY([[L2] PUSH-0, [L2] FETCH-x, [L2] EQ, [L2] NEG, [L2] BRANCH([[L3] FETCH-x, [L3] PUSH-100, [L3] DIV, [L3] STORE-y], [[L4] PUSH-100, [L4] STORE-y])]):[L6] CATCH([[L5] PUSH-5, [L5] STORE-x]):ε, ε, s[z→ZERO,y→ZERO,x→POS]>
+<[L0] PUSH-5:[L0] DIV:[L0] STORE-z:[L1] TRY([[L2] PUSH-0, [L2] FETCH-x, [L2] EQ, [L2] NEG, [L2] BRANCH([[L3] FETCH-x, [L3] PUSH-100, [L3] DIV, [L3] STORE-y], [[L4] PUSH-100, [L4] STORE-y])]):[L6] CATCH([[L5] PUSH-5, [L5] STORE-x]):ε, ZERO:ε, s[z→ZERO,y→ZERO,x→POS]>
+<[L0] DIV:[L0] STORE-z:[L1] TRY([[L2] PUSH-0, [L2] FETCH-x, [L2] EQ, [L2] NEG, [L2] BRANCH([[L3] FETCH-x, [L3] PUSH-100, [L3] DIV, [L3] STORE-y], [[L4] PUSH-100, [L4] STORE-y])]):[L6] CATCH([[L5] PUSH-5, [L5] STORE-x]):ε, POS:ZERO:ε, s[z→ZERO,y→ZERO,x→POS]>
+<[L0] STORE-z:[L1] TRY([[L2] PUSH-0, [L2] FETCH-x, [L2] EQ, [L2] NEG, [L2] BRANCH([[L3] FETCH-x, [L3] PUSH-100, [L3] DIV, [L3] STORE-y], [[L4] PUSH-100, [L4] STORE-y])]):[L6] CATCH([[L5] PUSH-5, [L5] STORE-x]):ε, ERR_A:ε, ŝ[z→ZERO,y→ZERO,x→POS]>
+<[L1] TRY([[L2] PUSH-0, [L2] FETCH-x, [L2] EQ, [L2] NEG, [L2] BRANCH([[L3] FETCH-x, [L3] PUSH-100, [L3] DIV, [L3] STORE-y], [[L4] PUSH-100, [L4] STORE-y])]):[L6] CATCH([[L5] PUSH-5, [L5] STORE-x]):ε, ε, ŝ[z→ZERO,y→ZERO,x→POS]>
+<ε, ε, ŝ[z→ZERO,y→ZERO,x→POS]>
+=== Running from {z=ZERO, y=POS, x=NEG}
+<[L0] FETCH-z:[L0] PUSH-5:[L0] DIV:[L0] STORE-z:[L1] TRY([[L2] PUSH-0, [L2] FETCH-x, [L2] EQ, [L2] NEG, [L2] BRANCH([[L3] FETCH-x, [L3] PUSH-100, [L3] DIV, [L3] STORE-y], [[L4] PUSH-100, [L4] STORE-y])]):[L6] CATCH([[L5] PUSH-5, [L5] STORE-x]):ε, ε, s[z→ZERO,y→POS,x→NEG]>
+<[L0] PUSH-5:[L0] DIV:[L0] STORE-z:[L1] TRY([[L2] PUSH-0, [L2] FETCH-x, [L2] EQ, [L2] NEG, [L2] BRANCH([[L3] FETCH-x, [L3] PUSH-100, [L3] DIV, [L3] STORE-y], [[L4] PUSH-100, [L4] STORE-y])]):[L6] CATCH([[L5] PUSH-5, [L5] STORE-x]):ε, ZERO:ε, s[z→ZERO,y→POS,x→NEG]>
+<[L0] DIV:[L0] STORE-z:[L1] TRY([[L2] PUSH-0, [L2] FETCH-x, [L2] EQ, [L2] NEG, [L2] BRANCH([[L3] FETCH-x, [L3] PUSH-100, [L3] DIV, [L3] STORE-y], [[L4] PUSH-100, [L4] STORE-y])]):[L6] CATCH([[L5] PUSH-5, [L5] STORE-x]):ε, POS:ZERO:ε, s[z→ZERO,y→POS,x→NEG]>
+<[L0] STORE-z:[L1] TRY([[L2] PUSH-0, [L2] FETCH-x, [L2] EQ, [L2] NEG, [L2] BRANCH([[L3] FETCH-x, [L3] PUSH-100, [L3] DIV, [L3] STORE-y], [[L4] PUSH-100, [L4] STORE-y])]):[L6] CATCH([[L5] PUSH-5, [L5] STORE-x]):ε, ERR_A:ε, ŝ[z→ZERO,y→POS,x→NEG]>
+<[L1] TRY([[L2] PUSH-0, [L2] FETCH-x, [L2] EQ, [L2] NEG, [L2] BRANCH([[L3] FETCH-x, [L3] PUSH-100, [L3] DIV, [L3] STORE-y], [[L4] PUSH-100, [L4] STORE-y])]):[L6] CATCH([[L5] PUSH-5, [L5] STORE-x]):ε, ε, ŝ[z→ZERO,y→POS,x→NEG]>
+<ε, ε, ŝ[z→ZERO,y→POS,x→NEG]>
+=== Running from {z=ZERO, y=POS, x=ZERO}
+<[L0] FETCH-z:[L0] PUSH-5:[L0] DIV:[L0] STORE-z:[L1] TRY([[L2] PUSH-0, [L2] FETCH-x, [L2] EQ, [L2] NEG, [L2] BRANCH([[L3] FETCH-x, [L3] PUSH-100, [L3] DIV, [L3] STORE-y], [[L4] PUSH-100, [L4] STORE-y])]):[L6] CATCH([[L5] PUSH-5, [L5] STORE-x]):ε, ε, s[z→ZERO,y→POS,x→ZERO]>
+<[L0] PUSH-5:[L0] DIV:[L0] STORE-z:[L1] TRY([[L2] PUSH-0, [L2] FETCH-x, [L2] EQ, [L2] NEG, [L2] BRANCH([[L3] FETCH-x, [L3] PUSH-100, [L3] DIV, [L3] STORE-y], [[L4] PUSH-100, [L4] STORE-y])]):[L6] CATCH([[L5] PUSH-5, [L5] STORE-x]):ε, ZERO:ε, s[z→ZERO,y→POS,x→ZERO]>
+<[L0] DIV:[L0] STORE-z:[L1] TRY([[L2] PUSH-0, [L2] FETCH-x, [L2] EQ, [L2] NEG, [L2] BRANCH([[L3] FETCH-x, [L3] PUSH-100, [L3] DIV, [L3] STORE-y], [[L4] PUSH-100, [L4] STORE-y])]):[L6] CATCH([[L5] PUSH-5, [L5] STORE-x]):ε, POS:ZERO:ε, s[z→ZERO,y→POS,x→ZERO]>
+<[L0] STORE-z:[L1] TRY([[L2] PUSH-0, [L2] FETCH-x, [L2] EQ, [L2] NEG, [L2] BRANCH([[L3] FETCH-x, [L3] PUSH-100, [L3] DIV, [L3] STORE-y], [[L4] PUSH-100, [L4] STORE-y])]):[L6] CATCH([[L5] PUSH-5, [L5] STORE-x]):ε, ERR_A:ε, ŝ[z→ZERO,y→POS,x→ZERO]>
+<[L1] TRY([[L2] PUSH-0, [L2] FETCH-x, [L2] EQ, [L2] NEG, [L2] BRANCH([[L3] FETCH-x, [L3] PUSH-100, [L3] DIV, [L3] STORE-y], [[L4] PUSH-100, [L4] STORE-y])]):[L6] CATCH([[L5] PUSH-5, [L5] STORE-x]):ε, ε, ŝ[z→ZERO,y→POS,x→ZERO]>
+<ε, ε, ŝ[z→ZERO,y→POS,x→ZERO]>
+=== Running from {z=ZERO, y=POS, x=POS}
+<[L0] FETCH-z:[L0] PUSH-5:[L0] DIV:[L0] STORE-z:[L1] TRY([[L2] PUSH-0, [L2] FETCH-x, [L2] EQ, [L2] NEG, [L2] BRANCH([[L3] FETCH-x, [L3] PUSH-100, [L3] DIV, [L3] STORE-y], [[L4] PUSH-100, [L4] STORE-y])]):[L6] CATCH([[L5] PUSH-5, [L5] STORE-x]):ε, ε, s[z→ZERO,y→POS,x→POS]>
+<[L0] PUSH-5:[L0] DIV:[L0] STORE-z:[L1] TRY([[L2] PUSH-0, [L2] FETCH-x, [L2] EQ, [L2] NEG, [L2] BRANCH([[L3] FETCH-x, [L3] PUSH-100, [L3] DIV, [L3] STORE-y], [[L4] PUSH-100, [L4] STORE-y])]):[L6] CATCH([[L5] PUSH-5, [L5] STORE-x]):ε, ZERO:ε, s[z→ZERO,y→POS,x→POS]>
+<[L0] DIV:[L0] STORE-z:[L1] TRY([[L2] PUSH-0, [L2] FETCH-x, [L2] EQ, [L2] NEG, [L2] BRANCH([[L3] FETCH-x, [L3] PUSH-100, [L3] DIV, [L3] STORE-y], [[L4] PUSH-100, [L4] STORE-y])]):[L6] CATCH([[L5] PUSH-5, [L5] STORE-x]):ε, POS:ZERO:ε, s[z→ZERO,y→POS,x→POS]>
+<[L0] STORE-z:[L1] TRY([[L2] PUSH-0, [L2] FETCH-x, [L2] EQ, [L2] NEG, [L2] BRANCH([[L3] FETCH-x, [L3] PUSH-100, [L3] DIV, [L3] STORE-y], [[L4] PUSH-100, [L4] STORE-y])]):[L6] CATCH([[L5] PUSH-5, [L5] STORE-x]):ε, ERR_A:ε, ŝ[z→ZERO,y→POS,x→POS]>
+<[L1] TRY([[L2] PUSH-0, [L2] FETCH-x, [L2] EQ, [L2] NEG, [L2] BRANCH([[L3] FETCH-x, [L3] PUSH-100, [L3] DIV, [L3] STORE-y], [[L4] PUSH-100, [L4] STORE-y])]):[L6] CATCH([[L5] PUSH-5, [L5] STORE-x]):ε, ε, ŝ[z→ZERO,y→POS,x→POS]>
+<ε, ε, ŝ[z→ZERO,y→POS,x→POS]>
+=== Running from {z=ZERO, y=NEG, x=NEG}
+<[L0] FETCH-z:[L0] PUSH-5:[L0] DIV:[L0] STORE-z:[L1] TRY([[L2] PUSH-0, [L2] FETCH-x, [L2] EQ, [L2] NEG, [L2] BRANCH([[L3] FETCH-x, [L3] PUSH-100, [L3] DIV, [L3] STORE-y], [[L4] PUSH-100, [L4] STORE-y])]):[L6] CATCH([[L5] PUSH-5, [L5] STORE-x]):ε, ε, s[z→ZERO,y→NEG,x→NEG]>
+=== Running from {z=ZERO, y=ZERO, x=NEG}
+<[L0] FETCH-z:[L0] PUSH-5:[L0] DIV:[L0] STORE-z:[L1] TRY([[L2] PUSH-0, [L2] FETCH-x, [L2] EQ, [L2] NEG, [L2] BRANCH([[L3] FETCH-x, [L3] PUSH-100, [L3] DIV, [L3] STORE-y], [[L4] PUSH-100, [L4] STORE-y])]):[L6] CATCH([[L5] PUSH-5, [L5] STORE-x]):ε, ε, s[z→ZERO,y→ZERO,x→NEG]>
+=== Running from {z=ZERO, y=POS, x=NEG}
+<[L0] FETCH-z:[L0] PUSH-5:[L0] DIV:[L0] STORE-z:[L1] TRY([[L2] PUSH-0, [L2] FETCH-x, [L2] EQ, [L2] NEG, [L2] BRANCH([[L3] FETCH-x, [L3] PUSH-100, [L3] DIV, [L3] STORE-y], [[L4] PUSH-100, [L4] STORE-y])]):[L6] CATCH([[L5] PUSH-5, [L5] STORE-x]):ε, ε, s[z→ZERO,y→POS,x→NEG]>
+=== Running from {z=ZERO, y=NEG, x=ZERO}
+<[L0] FETCH-z:[L0] PUSH-5:[L0] DIV:[L0] STORE-z:[L1] TRY([[L2] PUSH-0, [L2] FETCH-x, [L2] EQ, [L2] NEG, [L2] BRANCH([[L3] FETCH-x, [L3] PUSH-100, [L3] DIV, [L3] STORE-y], [[L4] PUSH-100, [L4] STORE-y])]):[L6] CATCH([[L5] PUSH-5, [L5] STORE-x]):ε, ε, s[z→ZERO,y→NEG,x→ZERO]>
+=== Running from {z=ZERO, y=ZERO, x=ZERO}
+<[L0] FETCH-z:[L0] PUSH-5:[L0] DIV:[L0] STORE-z:[L1] TRY([[L2] PUSH-0, [L2] FETCH-x, [L2] EQ, [L2] NEG, [L2] BRANCH([[L3] FETCH-x, [L3] PUSH-100, [L3] DIV, [L3] STORE-y], [[L4] PUSH-100, [L4] STORE-y])]):[L6] CATCH([[L5] PUSH-5, [L5] STORE-x]):ε, ε, s[z→ZERO,y→ZERO,x→ZERO]>
+=== Running from {z=ZERO, y=POS, x=ZERO}
+<[L0] FETCH-z:[L0] PUSH-5:[L0] DIV:[L0] STORE-z:[L1] TRY([[L2] PUSH-0, [L2] FETCH-x, [L2] EQ, [L2] NEG, [L2] BRANCH([[L3] FETCH-x, [L3] PUSH-100, [L3] DIV, [L3] STORE-y], [[L4] PUSH-100, [L4] STORE-y])]):[L6] CATCH([[L5] PUSH-5, [L5] STORE-x]):ε, ε, s[z→ZERO,y→POS,x→ZERO]>
+=== Running from {z=ZERO, y=NEG, x=POS}
+<[L0] FETCH-z:[L0] PUSH-5:[L0] DIV:[L0] STORE-z:[L1] TRY([[L2] PUSH-0, [L2] FETCH-x, [L2] EQ, [L2] NEG, [L2] BRANCH([[L3] FETCH-x, [L3] PUSH-100, [L3] DIV, [L3] STORE-y], [[L4] PUSH-100, [L4] STORE-y])]):[L6] CATCH([[L5] PUSH-5, [L5] STORE-x]):ε, ε, s[z→ZERO,y→NEG,x→POS]>
+=== Running from {z=ZERO, y=ZERO, x=POS}
+<[L0] FETCH-z:[L0] PUSH-5:[L0] DIV:[L0] STORE-z:[L1] TRY([[L2] PUSH-0, [L2] FETCH-x, [L2] EQ, [L2] NEG, [L2] BRANCH([[L3] FETCH-x, [L3] PUSH-100, [L3] DIV, [L3] STORE-y], [[L4] PUSH-100, [L4] STORE-y])]):[L6] CATCH([[L5] PUSH-5, [L5] STORE-x]):ε, ε, s[z→ZERO,y→ZERO,x→POS]>
+=== Running from {z=ZERO, y=POS, x=POS}
+<[L0] FETCH-z:[L0] PUSH-5:[L0] DIV:[L0] STORE-z:[L1] TRY([[L2] PUSH-0, [L2] FETCH-x, [L2] EQ, [L2] NEG, [L2] BRANCH([[L3] FETCH-x, [L3] PUSH-100, [L3] DIV, [L3] STORE-y], [[L4] PUSH-100, [L4] STORE-y])]):[L6] CATCH([[L5] PUSH-5, [L5] STORE-x]):ε, ε, s[z→ZERO,y→POS,x→POS]>
+=== Running from {z=POS, y=NEG, x=NEG}
+<[L0] FETCH-z:[L0] PUSH-5:[L0] DIV:[L0] STORE-z:[L1] TRY([[L2] PUSH-0, [L2] FETCH-x, [L2] EQ, [L2] NEG, [L2] BRANCH([[L3] FETCH-x, [L3] PUSH-100, [L3] DIV, [L3] STORE-y], [[L4] PUSH-100, [L4] STORE-y])]):[L6] CATCH([[L5] PUSH-5, [L5] STORE-x]):ε, ε, s[z→POS,y→NEG,x→NEG]>
+<[L0] PUSH-5:[L0] DIV:[L0] STORE-z:[L1] TRY([[L2] PUSH-0, [L2] FETCH-x, [L2] EQ, [L2] NEG, [L2] BRANCH([[L3] FETCH-x, [L3] PUSH-100, [L3] DIV, [L3] STORE-y], [[L4] PUSH-100, [L4] STORE-y])]):[L6] CATCH([[L5] PUSH-5, [L5] STORE-x]):ε, POS:ε, s[z→POS,y→NEG,x→NEG]>
+<[L0] DIV:[L0] STORE-z:[L1] TRY([[L2] PUSH-0, [L2] FETCH-x, [L2] EQ, [L2] NEG, [L2] BRANCH([[L3] FETCH-x, [L3] PUSH-100, [L3] DIV, [L3] STORE-y], [[L4] PUSH-100, [L4] STORE-y])]):[L6] CATCH([[L5] PUSH-5, [L5] STORE-x]):ε, POS:POS:ε, s[z→POS,y→NEG,x→NEG]>
+<[L0] STORE-z:[L1] TRY([[L2] PUSH-0, [L2] FETCH-x, [L2] EQ, [L2] NEG, [L2] BRANCH([[L3] FETCH-x, [L3] PUSH-100, [L3] DIV, [L3] STORE-y], [[L4] PUSH-100, [L4] STORE-y])]):[L6] CATCH([[L5] PUSH-5, [L5] STORE-x]):ε, NON_NEG:ε, s[z→POS,y→NEG,x→NEG]>
+<[L1] TRY([[L2] PUSH-0, [L2] FETCH-x, [L2] EQ, [L2] NEG, [L2] BRANCH([[L3] FETCH-x, [L3] PUSH-100, [L3] DIV, [L3] STORE-y], [[L4] PUSH-100, [L4] STORE-y])]):[L6] CATCH([[L5] PUSH-5, [L5] STORE-x]):ε, ε, s[z→NON_NEG,y→NEG,x→NEG]>
+<[L2] PUSH-0:[L2] FETCH-x:[L2] EQ:[L2] NEG:[L2] BRANCH([[L3] FETCH-x, [L3] PUSH-100, [L3] DIV, [L3] STORE-y], [[L4] PUSH-100, [L4] STORE-y]):[L6] CATCH([[L5] PUSH-5, [L5] STORE-x]):ε, ε, s[z→NON_NEG,y→NEG,x→NEG]>
+<[L2] FETCH-x:[L2] EQ:[L2] NEG:[L2] BRANCH([[L3] FETCH-x, [L3] PUSH-100, [L3] DIV, [L3] STORE-y], [[L4] PUSH-100, [L4] STORE-y]):[L6] CATCH([[L5] PUSH-5, [L5] STORE-x]):ε, ZERO:ε, s[z→NON_NEG,y→NEG,x→NEG]>
+<[L2] EQ:[L2] NEG:[L2] BRANCH([[L3] FETCH-x, [L3] PUSH-100, [L3] DIV, [L3] STORE-y], [[L4] PUSH-100, [L4] STORE-y]):[L6] CATCH([[L5] PUSH-5, [L5] STORE-x]):ε, NEG:ZERO:ε, s[z→NON_NEG,y→NEG,x→NEG]>
+<[L2] NEG:[L2] BRANCH([[L3] FETCH-x, [L3] PUSH-100, [L3] DIV, [L3] STORE-y], [[L4] PUSH-100, [L4] STORE-y]):[L6] CATCH([[L5] PUSH-5, [L5] STORE-x]):ε, FF:ε, s[z→NON_NEG,y→NEG,x→NEG]>
+<[L2] BRANCH([[L3] FETCH-x, [L3] PUSH-100, [L3] DIV, [L3] STORE-y], [[L4] PUSH-100, [L4] STORE-y]):[L6] CATCH([[L5] PUSH-5, [L5] STORE-x]):ε, TT:ε, s[z→NON_NEG,y→NEG,x→NEG]>
+<[L3] FETCH-x:[L3] PUSH-100:[L3] DIV:[L3] STORE-y:[L6] CATCH([[L5] PUSH-5, [L5] STORE-x]):ε, ε, s[z→NON_NEG,y→NEG,x→NEG]>
+<[L3] PUSH-100:[L3] DIV:[L3] STORE-y:[L6] CATCH([[L5] PUSH-5, [L5] STORE-x]):ε, NEG:ε, s[z→NON_NEG,y→NEG,x→NEG]>
+<[L3] DIV:[L3] STORE-y:[L6] CATCH([[L5] PUSH-5, [L5] STORE-x]):ε, POS:NEG:ε, s[z→NON_NEG,y→NEG,x→NEG]>
+<[L3] STORE-y:[L6] CATCH([[L5] PUSH-5, [L5] STORE-x]):ε, NON_POS:ε, s[z→NON_NEG,y→NEG,x→NEG]>
+<[L6] CATCH([[L5] PUSH-5, [L5] STORE-x]):ε, ε, s[z→NON_NEG,y→NON_POS,x→NEG]>
+<ε, ε, s[z→NON_NEG,y→NON_POS,x→NEG]>
+=== Running from {z=POS, y=NEG, x=ZERO}
+<[L0] FETCH-z:[L0] PUSH-5:[L0] DIV:[L0] STORE-z:[L1] TRY([[L2] PUSH-0, [L2] FETCH-x, [L2] EQ, [L2] NEG, [L2] BRANCH([[L3] FETCH-x, [L3] PUSH-100, [L3] DIV, [L3] STORE-y], [[L4] PUSH-100, [L4] STORE-y])]):[L6] CATCH([[L5] PUSH-5, [L5] STORE-x]):ε, ε, s[z→POS,y→NEG,x→ZERO]>
+<[L0] PUSH-5:[L0] DIV:[L0] STORE-z:[L1] TRY([[L2] PUSH-0, [L2] FETCH-x, [L2] EQ, [L2] NEG, [L2] BRANCH([[L3] FETCH-x, [L3] PUSH-100, [L3] DIV, [L3] STORE-y], [[L4] PUSH-100, [L4] STORE-y])]):[L6] CATCH([[L5] PUSH-5, [L5] STORE-x]):ε, POS:ε, s[z→POS,y→NEG,x→ZERO]>
+<[L0] DIV:[L0] STORE-z:[L1] TRY([[L2] PUSH-0, [L2] FETCH-x, [L2] EQ, [L2] NEG, [L2] BRANCH([[L3] FETCH-x, [L3] PUSH-100, [L3] DIV, [L3] STORE-y], [[L4] PUSH-100, [L4] STORE-y])]):[L6] CATCH([[L5] PUSH-5, [L5] STORE-x]):ε, POS:POS:ε, s[z→POS,y→NEG,x→ZERO]>
+<[L0] STORE-z:[L1] TRY([[L2] PUSH-0, [L2] FETCH-x, [L2] EQ, [L2] NEG, [L2] BRANCH([[L3] FETCH-x, [L3] PUSH-100, [L3] DIV, [L3] STORE-y], [[L4] PUSH-100, [L4] STORE-y])]):[L6] CATCH([[L5] PUSH-5, [L5] STORE-x]):ε, NON_NEG:ε, s[z→POS,y→NEG,x→ZERO]>
+<[L1] TRY([[L2] PUSH-0, [L2] FETCH-x, [L2] EQ, [L2] NEG, [L2] BRANCH([[L3] FETCH-x, [L3] PUSH-100, [L3] DIV, [L3] STORE-y], [[L4] PUSH-100, [L4] STORE-y])]):[L6] CATCH([[L5] PUSH-5, [L5] STORE-x]):ε, ε, s[z→NON_NEG,y→NEG,x→ZERO]>
+<[L2] PUSH-0:[L2] FETCH-x:[L2] EQ:[L2] NEG:[L2] BRANCH([[L3] FETCH-x, [L3] PUSH-100, [L3] DIV, [L3] STORE-y], [[L4] PUSH-100, [L4] STORE-y]):[L6] CATCH([[L5] PUSH-5, [L5] STORE-x]):ε, ε, s[z→NON_NEG,y→NEG,x→ZERO]>
+<[L2] FETCH-x:[L2] EQ:[L2] NEG:[L2] BRANCH([[L3] FETCH-x, [L3] PUSH-100, [L3] DIV, [L3] STORE-y], [[L4] PUSH-100, [L4] STORE-y]):[L6] CATCH([[L5] PUSH-5, [L5] STORE-x]):ε, ZERO:ε, s[z→NON_NEG,y→NEG,x→ZERO]>
+<[L2] EQ:[L2] NEG:[L2] BRANCH([[L3] FETCH-x, [L3] PUSH-100, [L3] DIV, [L3] STORE-y], [[L4] PUSH-100, [L4] STORE-y]):[L6] CATCH([[L5] PUSH-5, [L5] STORE-x]):ε, ZERO:ZERO:ε, s[z→NON_NEG,y→NEG,x→ZERO]>
+<[L2] NEG:[L2] BRANCH([[L3] FETCH-x, [L3] PUSH-100, [L3] DIV, [L3] STORE-y], [[L4] PUSH-100, [L4] STORE-y]):[L6] CATCH([[L5] PUSH-5, [L5] STORE-x]):ε, TT:ε, s[z→NON_NEG,y→NEG,x→ZERO]>
+<[L2] BRANCH([[L3] FETCH-x, [L3] PUSH-100, [L3] DIV, [L3] STORE-y], [[L4] PUSH-100, [L4] STORE-y]):[L6] CATCH([[L5] PUSH-5, [L5] STORE-x]):ε, FF:ε, s[z→NON_NEG,y→NEG,x→ZERO]>
+<[L4] PUSH-100:[L4] STORE-y:[L6] CATCH([[L5] PUSH-5, [L5] STORE-x]):ε, ε, s[z→NON_NEG,y→NEG,x→ZERO]>
+<[L4] STORE-y:[L6] CATCH([[L5] PUSH-5, [L5] STORE-x]):ε, POS:ε, s[z→NON_NEG,y→NEG,x→ZERO]>
+<[L6] CATCH([[L5] PUSH-5, [L5] STORE-x]):ε, ε, s[z→NON_NEG,y→POS,x→ZERO]>
+<ε, ε, s[z→NON_NEG,y→POS,x→ZERO]>
+=== Running from {z=POS, y=NEG, x=POS}
+<[L0] FETCH-z:[L0] PUSH-5:[L0] DIV:[L0] STORE-z:[L1] TRY([[L2] PUSH-0, [L2] FETCH-x, [L2] EQ, [L2] NEG, [L2] BRANCH([[L3] FETCH-x, [L3] PUSH-100, [L3] DIV, [L3] STORE-y], [[L4] PUSH-100, [L4] STORE-y])]):[L6] CATCH([[L5] PUSH-5, [L5] STORE-x]):ε, ε, s[z→POS,y→NEG,x→POS]>
+<[L0] PUSH-5:[L0] DIV:[L0] STORE-z:[L1] TRY([[L2] PUSH-0, [L2] FETCH-x, [L2] EQ, [L2] NEG, [L2] BRANCH([[L3] FETCH-x, [L3] PUSH-100, [L3] DIV, [L3] STORE-y], [[L4] PUSH-100, [L4] STORE-y])]):[L6] CATCH([[L5] PUSH-5, [L5] STORE-x]):ε, POS:ε, s[z→POS,y→NEG,x→POS]>
+<[L0] DIV:[L0] STORE-z:[L1] TRY([[L2] PUSH-0, [L2] FETCH-x, [L2] EQ, [L2] NEG, [L2] BRANCH([[L3] FETCH-x, [L3] PUSH-100, [L3] DIV, [L3] STORE-y], [[L4] PUSH-100, [L4] STORE-y])]):[L6] CATCH([[L5] PUSH-5, [L5] STORE-x]):ε, POS:POS:ε, s[z→POS,y→NEG,x→POS]>
+<[L0] STORE-z:[L1] TRY([[L2] PUSH-0, [L2] FETCH-x, [L2] EQ, [L2] NEG, [L2] BRANCH([[L3] FETCH-x, [L3] PUSH-100, [L3] DIV, [L3] STORE-y], [[L4] PUSH-100, [L4] STORE-y])]):[L6] CATCH([[L5] PUSH-5, [L5] STORE-x]):ε, NON_NEG:ε, s[z→POS,y→NEG,x→POS]>
+<[L1] TRY([[L2] PUSH-0, [L2] FETCH-x, [L2] EQ, [L2] NEG, [L2] BRANCH([[L3] FETCH-x, [L3] PUSH-100, [L3] DIV, [L3] STORE-y], [[L4] PUSH-100, [L4] STORE-y])]):[L6] CATCH([[L5] PUSH-5, [L5] STORE-x]):ε, ε, s[z→NON_NEG,y→NEG,x→POS]>
+<[L2] PUSH-0:[L2] FETCH-x:[L2] EQ:[L2] NEG:[L2] BRANCH([[L3] FETCH-x, [L3] PUSH-100, [L3] DIV, [L3] STORE-y], [[L4] PUSH-100, [L4] STORE-y]):[L6] CATCH([[L5] PUSH-5, [L5] STORE-x]):ε, ε, s[z→NON_NEG,y→NEG,x→POS]>
+<[L2] FETCH-x:[L2] EQ:[L2] NEG:[L2] BRANCH([[L3] FETCH-x, [L3] PUSH-100, [L3] DIV, [L3] STORE-y], [[L4] PUSH-100, [L4] STORE-y]):[L6] CATCH([[L5] PUSH-5, [L5] STORE-x]):ε, ZERO:ε, s[z→NON_NEG,y→NEG,x→POS]>
+<[L2] EQ:[L2] NEG:[L2] BRANCH([[L3] FETCH-x, [L3] PUSH-100, [L3] DIV, [L3] STORE-y], [[L4] PUSH-100, [L4] STORE-y]):[L6] CATCH([[L5] PUSH-5, [L5] STORE-x]):ε, POS:ZERO:ε, s[z→NON_NEG,y→NEG,x→POS]>
+<[L2] NEG:[L2] BRANCH([[L3] FETCH-x, [L3] PUSH-100, [L3] DIV, [L3] STORE-y], [[L4] PUSH-100, [L4] STORE-y]):[L6] CATCH([[L5] PUSH-5, [L5] STORE-x]):ε, FF:ε, s[z→NON_NEG,y→NEG,x→POS]>
+<[L2] BRANCH([[L3] FETCH-x, [L3] PUSH-100, [L3] DIV, [L3] STORE-y], [[L4] PUSH-100, [L4] STORE-y]):[L6] CATCH([[L5] PUSH-5, [L5] STORE-x]):ε, TT:ε, s[z→NON_NEG,y→NEG,x→POS]>
+<[L3] FETCH-x:[L3] PUSH-100:[L3] DIV:[L3] STORE-y:[L6] CATCH([[L5] PUSH-5, [L5] STORE-x]):ε, ε, s[z→NON_NEG,y→NEG,x→POS]>
+<[L3] PUSH-100:[L3] DIV:[L3] STORE-y:[L6] CATCH([[L5] PUSH-5, [L5] STORE-x]):ε, POS:ε, s[z→NON_NEG,y→NEG,x→POS]>
+<[L3] DIV:[L3] STORE-y:[L6] CATCH([[L5] PUSH-5, [L5] STORE-x]):ε, POS:POS:ε, s[z→NON_NEG,y→NEG,x→POS]>
+<[L3] STORE-y:[L6] CATCH([[L5] PUSH-5, [L5] STORE-x]):ε, NON_NEG:ε, s[z→NON_NEG,y→NEG,x→POS]>
+<[L6] CATCH([[L5] PUSH-5, [L5] STORE-x]):ε, ε, s[z→NON_NEG,y→NON_NEG,x→POS]>
+<ε, ε, s[z→NON_NEG,y→NON_NEG,x→POS]>
+=== Running from {z=POS, y=ZERO, x=NEG}
+<[L0] FETCH-z:[L0] PUSH-5:[L0] DIV:[L0] STORE-z:[L1] TRY([[L2] PUSH-0, [L2] FETCH-x, [L2] EQ, [L2] NEG, [L2] BRANCH([[L3] FETCH-x, [L3] PUSH-100, [L3] DIV, [L3] STORE-y], [[L4] PUSH-100, [L4] STORE-y])]):[L6] CATCH([[L5] PUSH-5, [L5] STORE-x]):ε, ε, s[z→POS,y→ZERO,x→NEG]>
+<[L0] PUSH-5:[L0] DIV:[L0] STORE-z:[L1] TRY([[L2] PUSH-0, [L2] FETCH-x, [L2] EQ, [L2] NEG, [L2] BRANCH([[L3] FETCH-x, [L3] PUSH-100, [L3] DIV, [L3] STORE-y], [[L4] PUSH-100, [L4] STORE-y])]):[L6] CATCH([[L5] PUSH-5, [L5] STORE-x]):ε, POS:ε, s[z→POS,y→ZERO,x→NEG]>
+<[L0] DIV:[L0] STORE-z:[L1] TRY([[L2] PUSH-0, [L2] FETCH-x, [L2] EQ, [L2] NEG, [L2] BRANCH([[L3] FETCH-x, [L3] PUSH-100, [L3] DIV, [L3] STORE-y], [[L4] PUSH-100, [L4] STORE-y])]):[L6] CATCH([[L5] PUSH-5, [L5] STORE-x]):ε, POS:POS:ε, s[z→POS,y→ZERO,x→NEG]>
+<[L0] STORE-z:[L1] TRY([[L2] PUSH-0, [L2] FETCH-x, [L2] EQ, [L2] NEG, [L2] BRANCH([[L3] FETCH-x, [L3] PUSH-100, [L3] DIV, [L3] STORE-y], [[L4] PUSH-100, [L4] STORE-y])]):[L6] CATCH([[L5] PUSH-5, [L5] STORE-x]):ε, NON_NEG:ε, s[z→POS,y→ZERO,x→NEG]>
+<[L1] TRY([[L2] PUSH-0, [L2] FETCH-x, [L2] EQ, [L2] NEG, [L2] BRANCH([[L3] FETCH-x, [L3] PUSH-100, [L3] DIV, [L3] STORE-y], [[L4] PUSH-100, [L4] STORE-y])]):[L6] CATCH([[L5] PUSH-5, [L5] STORE-x]):ε, ε, s[z→NON_NEG,y→ZERO,x→NEG]>
+<[L2] PUSH-0:[L2] FETCH-x:[L2] EQ:[L2] NEG:[L2] BRANCH([[L3] FETCH-x, [L3] PUSH-100, [L3] DIV, [L3] STORE-y], [[L4] PUSH-100, [L4] STORE-y]):[L6] CATCH([[L5] PUSH-5, [L5] STORE-x]):ε, ε, s[z→NON_NEG,y→ZERO,x→NEG]>
+<[L2] FETCH-x:[L2] EQ:[L2] NEG:[L2] BRANCH([[L3] FETCH-x, [L3] PUSH-100, [L3] DIV, [L3] STORE-y], [[L4] PUSH-100, [L4] STORE-y]):[L6] CATCH([[L5] PUSH-5, [L5] STORE-x]):ε, ZERO:ε, s[z→NON_NEG,y→ZERO,x→NEG]>
+<[L2] EQ:[L2] NEG:[L2] BRANCH([[L3] FETCH-x, [L3] PUSH-100, [L3] DIV, [L3] STORE-y], [[L4] PUSH-100, [L4] STORE-y]):[L6] CATCH([[L5] PUSH-5, [L5] STORE-x]):ε, NEG:ZERO:ε, s[z→NON_NEG,y→ZERO,x→NEG]>
+<[L2] NEG:[L2] BRANCH([[L3] FETCH-x, [L3] PUSH-100, [L3] DIV, [L3] STORE-y], [[L4] PUSH-100, [L4] STORE-y]):[L6] CATCH([[L5] PUSH-5, [L5] STORE-x]):ε, FF:ε, s[z→NON_NEG,y→ZERO,x→NEG]>
+<[L2] BRANCH([[L3] FETCH-x, [L3] PUSH-100, [L3] DIV, [L3] STORE-y], [[L4] PUSH-100, [L4] STORE-y]):[L6] CATCH([[L5] PUSH-5, [L5] STORE-x]):ε, TT:ε, s[z→NON_NEG,y→ZERO,x→NEG]>
+<[L3] FETCH-x:[L3] PUSH-100:[L3] DIV:[L3] STORE-y:[L6] CATCH([[L5] PUSH-5, [L5] STORE-x]):ε, ε, s[z→NON_NEG,y→ZERO,x→NEG]>
+<[L3] PUSH-100:[L3] DIV:[L3] STORE-y:[L6] CATCH([[L5] PUSH-5, [L5] STORE-x]):ε, NEG:ε, s[z→NON_NEG,y→ZERO,x→NEG]>
+<[L3] DIV:[L3] STORE-y:[L6] CATCH([[L5] PUSH-5, [L5] STORE-x]):ε, POS:NEG:ε, s[z→NON_NEG,y→ZERO,x→NEG]>
+<[L3] STORE-y:[L6] CATCH([[L5] PUSH-5, [L5] STORE-x]):ε, NON_POS:ε, s[z→NON_NEG,y→ZERO,x→NEG]>
+=== Running from {z=POS, y=ZERO, x=ZERO}
+<[L0] FETCH-z:[L0] PUSH-5:[L0] DIV:[L0] STORE-z:[L1] TRY([[L2] PUSH-0, [L2] FETCH-x, [L2] EQ, [L2] NEG, [L2] BRANCH([[L3] FETCH-x, [L3] PUSH-100, [L3] DIV, [L3] STORE-y], [[L4] PUSH-100, [L4] STORE-y])]):[L6] CATCH([[L5] PUSH-5, [L5] STORE-x]):ε, ε, s[z→POS,y→ZERO,x→ZERO]>
+<[L0] PUSH-5:[L0] DIV:[L0] STORE-z:[L1] TRY([[L2] PUSH-0, [L2] FETCH-x, [L2] EQ, [L2] NEG, [L2] BRANCH([[L3] FETCH-x, [L3] PUSH-100, [L3] DIV, [L3] STORE-y], [[L4] PUSH-100, [L4] STORE-y])]):[L6] CATCH([[L5] PUSH-5, [L5] STORE-x]):ε, POS:ε, s[z→POS,y→ZERO,x→ZERO]>
+<[L0] DIV:[L0] STORE-z:[L1] TRY([[L2] PUSH-0, [L2] FETCH-x, [L2] EQ, [L2] NEG, [L2] BRANCH([[L3] FETCH-x, [L3] PUSH-100, [L3] DIV, [L3] STORE-y], [[L4] PUSH-100, [L4] STORE-y])]):[L6] CATCH([[L5] PUSH-5, [L5] STORE-x]):ε, POS:POS:ε, s[z→POS,y→ZERO,x→ZERO]>
+<[L0] STORE-z:[L1] TRY([[L2] PUSH-0, [L2] FETCH-x, [L2] EQ, [L2] NEG, [L2] BRANCH([[L3] FETCH-x, [L3] PUSH-100, [L3] DIV, [L3] STORE-y], [[L4] PUSH-100, [L4] STORE-y])]):[L6] CATCH([[L5] PUSH-5, [L5] STORE-x]):ε, NON_NEG:ε, s[z→POS,y→ZERO,x→ZERO]>
+<[L1] TRY([[L2] PUSH-0, [L2] FETCH-x, [L2] EQ, [L2] NEG, [L2] BRANCH([[L3] FETCH-x, [L3] PUSH-100, [L3] DIV, [L3] STORE-y], [[L4] PUSH-100, [L4] STORE-y])]):[L6] CATCH([[L5] PUSH-5, [L5] STORE-x]):ε, ε, s[z→NON_NEG,y→ZERO,x→ZERO]>
+<[L2] PUSH-0:[L2] FETCH-x:[L2] EQ:[L2] NEG:[L2] BRANCH([[L3] FETCH-x, [L3] PUSH-100, [L3] DIV, [L3] STORE-y], [[L4] PUSH-100, [L4] STORE-y]):[L6] CATCH([[L5] PUSH-5, [L5] STORE-x]):ε, ε, s[z→NON_NEG,y→ZERO,x→ZERO]>
+<[L2] FETCH-x:[L2] EQ:[L2] NEG:[L2] BRANCH([[L3] FETCH-x, [L3] PUSH-100, [L3] DIV, [L3] STORE-y], [[L4] PUSH-100, [L4] STORE-y]):[L6] CATCH([[L5] PUSH-5, [L5] STORE-x]):ε, ZERO:ε, s[z→NON_NEG,y→ZERO,x→ZERO]>
+<[L2] EQ:[L2] NEG:[L2] BRANCH([[L3] FETCH-x, [L3] PUSH-100, [L3] DIV, [L3] STORE-y], [[L4] PUSH-100, [L4] STORE-y]):[L6] CATCH([[L5] PUSH-5, [L5] STORE-x]):ε, ZERO:ZERO:ε, s[z→NON_NEG,y→ZERO,x→ZERO]>
+<[L2] NEG:[L2] BRANCH([[L3] FETCH-x, [L3] PUSH-100, [L3] DIV, [L3] STORE-y], [[L4] PUSH-100, [L4] STORE-y]):[L6] CATCH([[L5] PUSH-5, [L5] STORE-x]):ε, TT:ε, s[z→NON_NEG,y→ZERO,x→ZERO]>
+<[L2] BRANCH([[L3] FETCH-x, [L3] PUSH-100, [L3] DIV, [L3] STORE-y], [[L4] PUSH-100, [L4] STORE-y]):[L6] CATCH([[L5] PUSH-5, [L5] STORE-x]):ε, FF:ε, s[z→NON_NEG,y→ZERO,x→ZERO]>
+<[L4] PUSH-100:[L4] STORE-y:[L6] CATCH([[L5] PUSH-5, [L5] STORE-x]):ε, ε, s[z→NON_NEG,y→ZERO,x→ZERO]>
+<[L4] STORE-y:[L6] CATCH([[L5] PUSH-5, [L5] STORE-x]):ε, POS:ε, s[z→NON_NEG,y→ZERO,x→ZERO]>
+=== Running from {z=POS, y=ZERO, x=POS}
+<[L0] FETCH-z:[L0] PUSH-5:[L0] DIV:[L0] STORE-z:[L1] TRY([[L2] PUSH-0, [L2] FETCH-x, [L2] EQ, [L2] NEG, [L2] BRANCH([[L3] FETCH-x, [L3] PUSH-100, [L3] DIV, [L3] STORE-y], [[L4] PUSH-100, [L4] STORE-y])]):[L6] CATCH([[L5] PUSH-5, [L5] STORE-x]):ε, ε, s[z→POS,y→ZERO,x→POS]>
+<[L0] PUSH-5:[L0] DIV:[L0] STORE-z:[L1] TRY([[L2] PUSH-0, [L2] FETCH-x, [L2] EQ, [L2] NEG, [L2] BRANCH([[L3] FETCH-x, [L3] PUSH-100, [L3] DIV, [L3] STORE-y], [[L4] PUSH-100, [L4] STORE-y])]):[L6] CATCH([[L5] PUSH-5, [L5] STORE-x]):ε, POS:ε, s[z→POS,y→ZERO,x→POS]>
+<[L0] DIV:[L0] STORE-z:[L1] TRY([[L2] PUSH-0, [L2] FETCH-x, [L2] EQ, [L2] NEG, [L2] BRANCH([[L3] FETCH-x, [L3] PUSH-100, [L3] DIV, [L3] STORE-y], [[L4] PUSH-100, [L4] STORE-y])]):[L6] CATCH([[L5] PUSH-5, [L5] STORE-x]):ε, POS:POS:ε, s[z→POS,y→ZERO,x→POS]>
+<[L0] STORE-z:[L1] TRY([[L2] PUSH-0, [L2] FETCH-x, [L2] EQ, [L2] NEG, [L2] BRANCH([[L3] FETCH-x, [L3] PUSH-100, [L3] DIV, [L3] STORE-y], [[L4] PUSH-100, [L4] STORE-y])]):[L6] CATCH([[L5] PUSH-5, [L5] STORE-x]):ε, NON_NEG:ε, s[z→POS,y→ZERO,x→POS]>
+<[L1] TRY([[L2] PUSH-0, [L2] FETCH-x, [L2] EQ, [L2] NEG, [L2] BRANCH([[L3] FETCH-x, [L3] PUSH-100, [L3] DIV, [L3] STORE-y], [[L4] PUSH-100, [L4] STORE-y])]):[L6] CATCH([[L5] PUSH-5, [L5] STORE-x]):ε, ε, s[z→NON_NEG,y→ZERO,x→POS]>
+<[L2] PUSH-0:[L2] FETCH-x:[L2] EQ:[L2] NEG:[L2] BRANCH([[L3] FETCH-x, [L3] PUSH-100, [L3] DIV, [L3] STORE-y], [[L4] PUSH-100, [L4] STORE-y]):[L6] CATCH([[L5] PUSH-5, [L5] STORE-x]):ε, ε, s[z→NON_NEG,y→ZERO,x→POS]>
+<[L2] FETCH-x:[L2] EQ:[L2] NEG:[L2] BRANCH([[L3] FETCH-x, [L3] PUSH-100, [L3] DIV, [L3] STORE-y], [[L4] PUSH-100, [L4] STORE-y]):[L6] CATCH([[L5] PUSH-5, [L5] STORE-x]):ε, ZERO:ε, s[z→NON_NEG,y→ZERO,x→POS]>
+<[L2] EQ:[L2] NEG:[L2] BRANCH([[L3] FETCH-x, [L3] PUSH-100, [L3] DIV, [L3] STORE-y], [[L4] PUSH-100, [L4] STORE-y]):[L6] CATCH([[L5] PUSH-5, [L5] STORE-x]):ε, POS:ZERO:ε, s[z→NON_NEG,y→ZERO,x→POS]>
+<[L2] NEG:[L2] BRANCH([[L3] FETCH-x, [L3] PUSH-100, [L3] DIV, [L3] STORE-y], [[L4] PUSH-100, [L4] STORE-y]):[L6] CATCH([[L5] PUSH-5, [L5] STORE-x]):ε, FF:ε, s[z→NON_NEG,y→ZERO,x→POS]>
+<[L2] BRANCH([[L3] FETCH-x, [L3] PUSH-100, [L3] DIV, [L3] STORE-y], [[L4] PUSH-100, [L4] STORE-y]):[L6] CATCH([[L5] PUSH-5, [L5] STORE-x]):ε, TT:ε, s[z→NON_NEG,y→ZERO,x→POS]>
+<[L3] FETCH-x:[L3] PUSH-100:[L3] DIV:[L3] STORE-y:[L6] CATCH([[L5] PUSH-5, [L5] STORE-x]):ε, ε, s[z→NON_NEG,y→ZERO,x→POS]>
+<[L3] PUSH-100:[L3] DIV:[L3] STORE-y:[L6] CATCH([[L5] PUSH-5, [L5] STORE-x]):ε, POS:ε, s[z→NON_NEG,y→ZERO,x→POS]>
+<[L3] DIV:[L3] STORE-y:[L6] CATCH([[L5] PUSH-5, [L5] STORE-x]):ε, POS:POS:ε, s[z→NON_NEG,y→ZERO,x→POS]>
+<[L3] STORE-y:[L6] CATCH([[L5] PUSH-5, [L5] STORE-x]):ε, NON_NEG:ε, s[z→NON_NEG,y→ZERO,x→POS]>
+=== Running from {z=POS, y=POS, x=NEG}
+<[L0] FETCH-z:[L0] PUSH-5:[L0] DIV:[L0] STORE-z:[L1] TRY([[L2] PUSH-0, [L2] FETCH-x, [L2] EQ, [L2] NEG, [L2] BRANCH([[L3] FETCH-x, [L3] PUSH-100, [L3] DIV, [L3] STORE-y], [[L4] PUSH-100, [L4] STORE-y])]):[L6] CATCH([[L5] PUSH-5, [L5] STORE-x]):ε, ε, s[z→POS,y→POS,x→NEG]>
+<[L0] PUSH-5:[L0] DIV:[L0] STORE-z:[L1] TRY([[L2] PUSH-0, [L2] FETCH-x, [L2] EQ, [L2] NEG, [L2] BRANCH([[L3] FETCH-x, [L3] PUSH-100, [L3] DIV, [L3] STORE-y], [[L4] PUSH-100, [L4] STORE-y])]):[L6] CATCH([[L5] PUSH-5, [L5] STORE-x]):ε, POS:ε, s[z→POS,y→POS,x→NEG]>
+<[L0] DIV:[L0] STORE-z:[L1] TRY([[L2] PUSH-0, [L2] FETCH-x, [L2] EQ, [L2] NEG, [L2] BRANCH([[L3] FETCH-x, [L3] PUSH-100, [L3] DIV, [L3] STORE-y], [[L4] PUSH-100, [L4] STORE-y])]):[L6] CATCH([[L5] PUSH-5, [L5] STORE-x]):ε, POS:POS:ε, s[z→POS,y→POS,x→NEG]>
+<[L0] STORE-z:[L1] TRY([[L2] PUSH-0, [L2] FETCH-x, [L2] EQ, [L2] NEG, [L2] BRANCH([[L3] FETCH-x, [L3] PUSH-100, [L3] DIV, [L3] STORE-y], [[L4] PUSH-100, [L4] STORE-y])]):[L6] CATCH([[L5] PUSH-5, [L5] STORE-x]):ε, NON_NEG:ε, s[z→POS,y→POS,x→NEG]>
+<[L1] TRY([[L2] PUSH-0, [L2] FETCH-x, [L2] EQ, [L2] NEG, [L2] BRANCH([[L3] FETCH-x, [L3] PUSH-100, [L3] DIV, [L3] STORE-y], [[L4] PUSH-100, [L4] STORE-y])]):[L6] CATCH([[L5] PUSH-5, [L5] STORE-x]):ε, ε, s[z→NON_NEG,y→POS,x→NEG]>
+<[L2] PUSH-0:[L2] FETCH-x:[L2] EQ:[L2] NEG:[L2] BRANCH([[L3] FETCH-x, [L3] PUSH-100, [L3] DIV, [L3] STORE-y], [[L4] PUSH-100, [L4] STORE-y]):[L6] CATCH([[L5] PUSH-5, [L5] STORE-x]):ε, ε, s[z→NON_NEG,y→POS,x→NEG]>
+<[L2] FETCH-x:[L2] EQ:[L2] NEG:[L2] BRANCH([[L3] FETCH-x, [L3] PUSH-100, [L3] DIV, [L3] STORE-y], [[L4] PUSH-100, [L4] STORE-y]):[L6] CATCH([[L5] PUSH-5, [L5] STORE-x]):ε, ZERO:ε, s[z→NON_NEG,y→POS,x→NEG]>
+<[L2] EQ:[L2] NEG:[L2] BRANCH([[L3] FETCH-x, [L3] PUSH-100, [L3] DIV, [L3] STORE-y], [[L4] PUSH-100, [L4] STORE-y]):[L6] CATCH([[L5] PUSH-5, [L5] STORE-x]):ε, NEG:ZERO:ε, s[z→NON_NEG,y→POS,x→NEG]>
+<[L2] NEG:[L2] BRANCH([[L3] FETCH-x, [L3] PUSH-100, [L3] DIV, [L3] STORE-y], [[L4] PUSH-100, [L4] STORE-y]):[L6] CATCH([[L5] PUSH-5, [L5] STORE-x]):ε, FF:ε, s[z→NON_NEG,y→POS,x→NEG]>
+<[L2] BRANCH([[L3] FETCH-x, [L3] PUSH-100, [L3] DIV, [L3] STORE-y], [[L4] PUSH-100, [L4] STORE-y]):[L6] CATCH([[L5] PUSH-5, [L5] STORE-x]):ε, TT:ε, s[z→NON_NEG,y→POS,x→NEG]>
+<[L3] FETCH-x:[L3] PUSH-100:[L3] DIV:[L3] STORE-y:[L6] CATCH([[L5] PUSH-5, [L5] STORE-x]):ε, ε, s[z→NON_NEG,y→POS,x→NEG]>
+<[L3] PUSH-100:[L3] DIV:[L3] STORE-y:[L6] CATCH([[L5] PUSH-5, [L5] STORE-x]):ε, NEG:ε, s[z→NON_NEG,y→POS,x→NEG]>
+<[L3] DIV:[L3] STORE-y:[L6] CATCH([[L5] PUSH-5, [L5] STORE-x]):ε, POS:NEG:ε, s[z→NON_NEG,y→POS,x→NEG]>
+<[L3] STORE-y:[L6] CATCH([[L5] PUSH-5, [L5] STORE-x]):ε, NON_POS:ε, s[z→NON_NEG,y→POS,x→NEG]>
+=== Running from {z=POS, y=POS, x=ZERO}
+<[L0] FETCH-z:[L0] PUSH-5:[L0] DIV:[L0] STORE-z:[L1] TRY([[L2] PUSH-0, [L2] FETCH-x, [L2] EQ, [L2] NEG, [L2] BRANCH([[L3] FETCH-x, [L3] PUSH-100, [L3] DIV, [L3] STORE-y], [[L4] PUSH-100, [L4] STORE-y])]):[L6] CATCH([[L5] PUSH-5, [L5] STORE-x]):ε, ε, s[z→POS,y→POS,x→ZERO]>
+<[L0] PUSH-5:[L0] DIV:[L0] STORE-z:[L1] TRY([[L2] PUSH-0, [L2] FETCH-x, [L2] EQ, [L2] NEG, [L2] BRANCH([[L3] FETCH-x, [L3] PUSH-100, [L3] DIV, [L3] STORE-y], [[L4] PUSH-100, [L4] STORE-y])]):[L6] CATCH([[L5] PUSH-5, [L5] STORE-x]):ε, POS:ε, s[z→POS,y→POS,x→ZERO]>
+<[L0] DIV:[L0] STORE-z:[L1] TRY([[L2] PUSH-0, [L2] FETCH-x, [L2] EQ, [L2] NEG, [L2] BRANCH([[L3] FETCH-x, [L3] PUSH-100, [L3] DIV, [L3] STORE-y], [[L4] PUSH-100, [L4] STORE-y])]):[L6] CATCH([[L5] PUSH-5, [L5] STORE-x]):ε, POS:POS:ε, s[z→POS,y→POS,x→ZERO]>
+<[L0] STORE-z:[L1] TRY([[L2] PUSH-0, [L2] FETCH-x, [L2] EQ, [L2] NEG, [L2] BRANCH([[L3] FETCH-x, [L3] PUSH-100, [L3] DIV, [L3] STORE-y], [[L4] PUSH-100, [L4] STORE-y])]):[L6] CATCH([[L5] PUSH-5, [L5] STORE-x]):ε, NON_NEG:ε, s[z→POS,y→POS,x→ZERO]>
+<[L1] TRY([[L2] PUSH-0, [L2] FETCH-x, [L2] EQ, [L2] NEG, [L2] BRANCH([[L3] FETCH-x, [L3] PUSH-100, [L3] DIV, [L3] STORE-y], [[L4] PUSH-100, [L4] STORE-y])]):[L6] CATCH([[L5] PUSH-5, [L5] STORE-x]):ε, ε, s[z→NON_NEG,y→POS,x→ZERO]>
+<[L2] PUSH-0:[L2] FETCH-x:[L2] EQ:[L2] NEG:[L2] BRANCH([[L3] FETCH-x, [L3] PUSH-100, [L3] DIV, [L3] STORE-y], [[L4] PUSH-100, [L4] STORE-y]):[L6] CATCH([[L5] PUSH-5, [L5] STORE-x]):ε, ε, s[z→NON_NEG,y→POS,x→ZERO]>
+<[L2] FETCH-x:[L2] EQ:[L2] NEG:[L2] BRANCH([[L3] FETCH-x, [L3] PUSH-100, [L3] DIV, [L3] STORE-y], [[L4] PUSH-100, [L4] STORE-y]):[L6] CATCH([[L5] PUSH-5, [L5] STORE-x]):ε, ZERO:ε, s[z→NON_NEG,y→POS,x→ZERO]>
+<[L2] EQ:[L2] NEG:[L2] BRANCH([[L3] FETCH-x, [L3] PUSH-100, [L3] DIV, [L3] STORE-y], [[L4] PUSH-100, [L4] STORE-y]):[L6] CATCH([[L5] PUSH-5, [L5] STORE-x]):ε, ZERO:ZERO:ε, s[z→NON_NEG,y→POS,x→ZERO]>
+<[L2] NEG:[L2] BRANCH([[L3] FETCH-x, [L3] PUSH-100, [L3] DIV, [L3] STORE-y], [[L4] PUSH-100, [L4] STORE-y]):[L6] CATCH([[L5] PUSH-5, [L5] STORE-x]):ε, TT:ε, s[z→NON_NEG,y→POS,x→ZERO]>
+<[L2] BRANCH([[L3] FETCH-x, [L3] PUSH-100, [L3] DIV, [L3] STORE-y], [[L4] PUSH-100, [L4] STORE-y]):[L6] CATCH([[L5] PUSH-5, [L5] STORE-x]):ε, FF:ε, s[z→NON_NEG,y→POS,x→ZERO]>
+<[L4] PUSH-100:[L4] STORE-y:[L6] CATCH([[L5] PUSH-5, [L5] STORE-x]):ε, ε, s[z→NON_NEG,y→POS,x→ZERO]>
+<[L4] STORE-y:[L6] CATCH([[L5] PUSH-5, [L5] STORE-x]):ε, POS:ε, s[z→NON_NEG,y→POS,x→ZERO]>
+=== Running from {z=POS, y=POS, x=POS}
+<[L0] FETCH-z:[L0] PUSH-5:[L0] DIV:[L0] STORE-z:[L1] TRY([[L2] PUSH-0, [L2] FETCH-x, [L2] EQ, [L2] NEG, [L2] BRANCH([[L3] FETCH-x, [L3] PUSH-100, [L3] DIV, [L3] STORE-y], [[L4] PUSH-100, [L4] STORE-y])]):[L6] CATCH([[L5] PUSH-5, [L5] STORE-x]):ε, ε, s[z→POS,y→POS,x→POS]>
+<[L0] PUSH-5:[L0] DIV:[L0] STORE-z:[L1] TRY([[L2] PUSH-0, [L2] FETCH-x, [L2] EQ, [L2] NEG, [L2] BRANCH([[L3] FETCH-x, [L3] PUSH-100, [L3] DIV, [L3] STORE-y], [[L4] PUSH-100, [L4] STORE-y])]):[L6] CATCH([[L5] PUSH-5, [L5] STORE-x]):ε, POS:ε, s[z→POS,y→POS,x→POS]>
+<[L0] DIV:[L0] STORE-z:[L1] TRY([[L2] PUSH-0, [L2] FETCH-x, [L2] EQ, [L2] NEG, [L2] BRANCH([[L3] FETCH-x, [L3] PUSH-100, [L3] DIV, [L3] STORE-y], [[L4] PUSH-100, [L4] STORE-y])]):[L6] CATCH([[L5] PUSH-5, [L5] STORE-x]):ε, POS:POS:ε, s[z→POS,y→POS,x→POS]>
+<[L0] STORE-z:[L1] TRY([[L2] PUSH-0, [L2] FETCH-x, [L2] EQ, [L2] NEG, [L2] BRANCH([[L3] FETCH-x, [L3] PUSH-100, [L3] DIV, [L3] STORE-y], [[L4] PUSH-100, [L4] STORE-y])]):[L6] CATCH([[L5] PUSH-5, [L5] STORE-x]):ε, NON_NEG:ε, s[z→POS,y→POS,x→POS]>
+<[L1] TRY([[L2] PUSH-0, [L2] FETCH-x, [L2] EQ, [L2] NEG, [L2] BRANCH([[L3] FETCH-x, [L3] PUSH-100, [L3] DIV, [L3] STORE-y], [[L4] PUSH-100, [L4] STORE-y])]):[L6] CATCH([[L5] PUSH-5, [L5] STORE-x]):ε, ε, s[z→NON_NEG,y→POS,x→POS]>
+<[L2] PUSH-0:[L2] FETCH-x:[L2] EQ:[L2] NEG:[L2] BRANCH([[L3] FETCH-x, [L3] PUSH-100, [L3] DIV, [L3] STORE-y], [[L4] PUSH-100, [L4] STORE-y]):[L6] CATCH([[L5] PUSH-5, [L5] STORE-x]):ε, ε, s[z→NON_NEG,y→POS,x→POS]>
+<[L2] FETCH-x:[L2] EQ:[L2] NEG:[L2] BRANCH([[L3] FETCH-x, [L3] PUSH-100, [L3] DIV, [L3] STORE-y], [[L4] PUSH-100, [L4] STORE-y]):[L6] CATCH([[L5] PUSH-5, [L5] STORE-x]):ε, ZERO:ε, s[z→NON_NEG,y→POS,x→POS]>
+<[L2] EQ:[L2] NEG:[L2] BRANCH([[L3] FETCH-x, [L3] PUSH-100, [L3] DIV, [L3] STORE-y], [[L4] PUSH-100, [L4] STORE-y]):[L6] CATCH([[L5] PUSH-5, [L5] STORE-x]):ε, POS:ZERO:ε, s[z→NON_NEG,y→POS,x→POS]>
+<[L2] NEG:[L2] BRANCH([[L3] FETCH-x, [L3] PUSH-100, [L3] DIV, [L3] STORE-y], [[L4] PUSH-100, [L4] STORE-y]):[L6] CATCH([[L5] PUSH-5, [L5] STORE-x]):ε, FF:ε, s[z→NON_NEG,y→POS,x→POS]>
+<[L2] BRANCH([[L3] FETCH-x, [L3] PUSH-100, [L3] DIV, [L3] STORE-y], [[L4] PUSH-100, [L4] STORE-y]):[L6] CATCH([[L5] PUSH-5, [L5] STORE-x]):ε, TT:ε, s[z→NON_NEG,y→POS,x→POS]>
+<[L3] FETCH-x:[L3] PUSH-100:[L3] DIV:[L3] STORE-y:[L6] CATCH([[L5] PUSH-5, [L5] STORE-x]):ε, ε, s[z→NON_NEG,y→POS,x→POS]>
+<[L3] PUSH-100:[L3] DIV:[L3] STORE-y:[L6] CATCH([[L5] PUSH-5, [L5] STORE-x]):ε, POS:ε, s[z→NON_NEG,y→POS,x→POS]>
+<[L3] DIV:[L3] STORE-y:[L6] CATCH([[L5] PUSH-5, [L5] STORE-x]):ε, POS:POS:ε, s[z→NON_NEG,y→POS,x→POS]>
+<[L3] STORE-y:[L6] CATCH([[L5] PUSH-5, [L5] STORE-x]):ε, NON_NEG:ε, s[z→NON_NEG,y→POS,x→POS]>
+=== Running from {z=POS, y=NEG, x=NEG}
+<[L0] FETCH-z:[L0] PUSH-5:[L0] DIV:[L0] STORE-z:[L1] TRY([[L2] PUSH-0, [L2] FETCH-x, [L2] EQ, [L2] NEG, [L2] BRANCH([[L3] FETCH-x, [L3] PUSH-100, [L3] DIV, [L3] STORE-y], [[L4] PUSH-100, [L4] STORE-y])]):[L6] CATCH([[L5] PUSH-5, [L5] STORE-x]):ε, ε, s[z→POS,y→NEG,x→NEG]>
+=== Running from {z=POS, y=ZERO, x=NEG}
+<[L0] FETCH-z:[L0] PUSH-5:[L0] DIV:[L0] STORE-z:[L1] TRY([[L2] PUSH-0, [L2] FETCH-x, [L2] EQ, [L2] NEG, [L2] BRANCH([[L3] FETCH-x, [L3] PUSH-100, [L3] DIV, [L3] STORE-y], [[L4] PUSH-100, [L4] STORE-y])]):[L6] CATCH([[L5] PUSH-5, [L5] STORE-x]):ε, ε, s[z→POS,y→ZERO,x→NEG]>
+=== Running from {z=POS, y=POS, x=NEG}
+<[L0] FETCH-z:[L0] PUSH-5:[L0] DIV:[L0] STORE-z:[L1] TRY([[L2] PUSH-0, [L2] FETCH-x, [L2] EQ, [L2] NEG, [L2] BRANCH([[L3] FETCH-x, [L3] PUSH-100, [L3] DIV, [L3] STORE-y], [[L4] PUSH-100, [L4] STORE-y])]):[L6] CATCH([[L5] PUSH-5, [L5] STORE-x]):ε, ε, s[z→POS,y→POS,x→NEG]>
+=== Running from {z=POS, y=NEG, x=ZERO}
+<[L0] FETCH-z:[L0] PUSH-5:[L0] DIV:[L0] STORE-z:[L1] TRY([[L2] PUSH-0, [L2] FETCH-x, [L2] EQ, [L2] NEG, [L2] BRANCH([[L3] FETCH-x, [L3] PUSH-100, [L3] DIV, [L3] STORE-y], [[L4] PUSH-100, [L4] STORE-y])]):[L6] CATCH([[L5] PUSH-5, [L5] STORE-x]):ε, ε, s[z→POS,y→NEG,x→ZERO]>
+=== Running from {z=POS, y=ZERO, x=ZERO}
+<[L0] FETCH-z:[L0] PUSH-5:[L0] DIV:[L0] STORE-z:[L1] TRY([[L2] PUSH-0, [L2] FETCH-x, [L2] EQ, [L2] NEG, [L2] BRANCH([[L3] FETCH-x, [L3] PUSH-100, [L3] DIV, [L3] STORE-y], [[L4] PUSH-100, [L4] STORE-y])]):[L6] CATCH([[L5] PUSH-5, [L5] STORE-x]):ε, ε, s[z→POS,y→ZERO,x→ZERO]>
+=== Running from {z=POS, y=POS, x=ZERO}
+<[L0] FETCH-z:[L0] PUSH-5:[L0] DIV:[L0] STORE-z:[L1] TRY([[L2] PUSH-0, [L2] FETCH-x, [L2] EQ, [L2] NEG, [L2] BRANCH([[L3] FETCH-x, [L3] PUSH-100, [L3] DIV, [L3] STORE-y], [[L4] PUSH-100, [L4] STORE-y])]):[L6] CATCH([[L5] PUSH-5, [L5] STORE-x]):ε, ε, s[z→POS,y→POS,x→ZERO]>
+=== Running from {z=POS, y=NEG, x=POS}
+<[L0] FETCH-z:[L0] PUSH-5:[L0] DIV:[L0] STORE-z:[L1] TRY([[L2] PUSH-0, [L2] FETCH-x, [L2] EQ, [L2] NEG, [L2] BRANCH([[L3] FETCH-x, [L3] PUSH-100, [L3] DIV, [L3] STORE-y], [[L4] PUSH-100, [L4] STORE-y])]):[L6] CATCH([[L5] PUSH-5, [L5] STORE-x]):ε, ε, s[z→POS,y→NEG,x→POS]>
+=== Running from {z=POS, y=ZERO, x=POS}
+<[L0] FETCH-z:[L0] PUSH-5:[L0] DIV:[L0] STORE-z:[L1] TRY([[L2] PUSH-0, [L2] FETCH-x, [L2] EQ, [L2] NEG, [L2] BRANCH([[L3] FETCH-x, [L3] PUSH-100, [L3] DIV, [L3] STORE-y], [[L4] PUSH-100, [L4] STORE-y])]):[L6] CATCH([[L5] PUSH-5, [L5] STORE-x]):ε, ε, s[z→POS,y→ZERO,x→POS]>
+=== Running from {z=POS, y=POS, x=POS}
+<[L0] FETCH-z:[L0] PUSH-5:[L0] DIV:[L0] STORE-z:[L1] TRY([[L2] PUSH-0, [L2] FETCH-x, [L2] EQ, [L2] NEG, [L2] BRANCH([[L3] FETCH-x, [L3] PUSH-100, [L3] DIV, [L3] STORE-y], [[L4] PUSH-100, [L4] STORE-y])]):[L6] CATCH([[L5] PUSH-5, [L5] STORE-x]):ε, ε, s[z→POS,y→POS,x→POS]>
+=== Running from {z=NEG, y=NEG, x=NEG}
+<[L0] FETCH-z:[L0] PUSH-5:[L0] DIV:[L0] STORE-z:[L1] TRY([[L2] PUSH-0, [L2] FETCH-x, [L2] EQ, [L2] NEG, [L2] BRANCH([[L3] FETCH-x, [L3] PUSH-100, [L3] DIV, [L3] STORE-y], [[L4] PUSH-100, [L4] STORE-y])]):[L6] CATCH([[L5] PUSH-5, [L5] STORE-x]):ε, ε, s[z→NEG,y→NEG,x→NEG]>
+=== Running from {z=NEG, y=NEG, x=ZERO}
+<[L0] FETCH-z:[L0] PUSH-5:[L0] DIV:[L0] STORE-z:[L1] TRY([[L2] PUSH-0, [L2] FETCH-x, [L2] EQ, [L2] NEG, [L2] BRANCH([[L3] FETCH-x, [L3] PUSH-100, [L3] DIV, [L3] STORE-y], [[L4] PUSH-100, [L4] STORE-y])]):[L6] CATCH([[L5] PUSH-5, [L5] STORE-x]):ε, ε, s[z→NEG,y→NEG,x→ZERO]>
+=== Running from {z=NEG, y=NEG, x=POS}
+<[L0] FETCH-z:[L0] PUSH-5:[L0] DIV:[L0] STORE-z:[L1] TRY([[L2] PUSH-0, [L2] FETCH-x, [L2] EQ, [L2] NEG, [L2] BRANCH([[L3] FETCH-x, [L3] PUSH-100, [L3] DIV, [L3] STORE-y], [[L4] PUSH-100, [L4] STORE-y])]):[L6] CATCH([[L5] PUSH-5, [L5] STORE-x]):ε, ε, s[z→NEG,y→NEG,x→POS]>
+=== Running from {z=ZERO, y=NEG, x=NEG}
+<[L0] FETCH-z:[L0] PUSH-5:[L0] DIV:[L0] STORE-z:[L1] TRY([[L2] PUSH-0, [L2] FETCH-x, [L2] EQ, [L2] NEG, [L2] BRANCH([[L3] FETCH-x, [L3] PUSH-100, [L3] DIV, [L3] STORE-y], [[L4] PUSH-100, [L4] STORE-y])]):[L6] CATCH([[L5] PUSH-5, [L5] STORE-x]):ε, ε, s[z→ZERO,y→NEG,x→NEG]>
+=== Running from {z=ZERO, y=NEG, x=ZERO}
+<[L0] FETCH-z:[L0] PUSH-5:[L0] DIV:[L0] STORE-z:[L1] TRY([[L2] PUSH-0, [L2] FETCH-x, [L2] EQ, [L2] NEG, [L2] BRANCH([[L3] FETCH-x, [L3] PUSH-100, [L3] DIV, [L3] STORE-y], [[L4] PUSH-100, [L4] STORE-y])]):[L6] CATCH([[L5] PUSH-5, [L5] STORE-x]):ε, ε, s[z→ZERO,y→NEG,x→ZERO]>
+=== Running from {z=ZERO, y=NEG, x=POS}
+<[L0] FETCH-z:[L0] PUSH-5:[L0] DIV:[L0] STORE-z:[L1] TRY([[L2] PUSH-0, [L2] FETCH-x, [L2] EQ, [L2] NEG, [L2] BRANCH([[L3] FETCH-x, [L3] PUSH-100, [L3] DIV, [L3] STORE-y], [[L4] PUSH-100, [L4] STORE-y])]):[L6] CATCH([[L5] PUSH-5, [L5] STORE-x]):ε, ε, s[z→ZERO,y→NEG,x→POS]>
+=== Running from {z=POS, y=NEG, x=NEG}
+<[L0] FETCH-z:[L0] PUSH-5:[L0] DIV:[L0] STORE-z:[L1] TRY([[L2] PUSH-0, [L2] FETCH-x, [L2] EQ, [L2] NEG, [L2] BRANCH([[L3] FETCH-x, [L3] PUSH-100, [L3] DIV, [L3] STORE-y], [[L4] PUSH-100, [L4] STORE-y])]):[L6] CATCH([[L5] PUSH-5, [L5] STORE-x]):ε, ε, s[z→POS,y→NEG,x→NEG]>
+=== Running from {z=POS, y=NEG, x=ZERO}
+<[L0] FETCH-z:[L0] PUSH-5:[L0] DIV:[L0] STORE-z:[L1] TRY([[L2] PUSH-0, [L2] FETCH-x, [L2] EQ, [L2] NEG, [L2] BRANCH([[L3] FETCH-x, [L3] PUSH-100, [L3] DIV, [L3] STORE-y], [[L4] PUSH-100, [L4] STORE-y])]):[L6] CATCH([[L5] PUSH-5, [L5] STORE-x]):ε, ε, s[z→POS,y→NEG,x→ZERO]>
+=== Running from {z=POS, y=NEG, x=POS}
+<[L0] FETCH-z:[L0] PUSH-5:[L0] DIV:[L0] STORE-z:[L1] TRY([[L2] PUSH-0, [L2] FETCH-x, [L2] EQ, [L2] NEG, [L2] BRANCH([[L3] FETCH-x, [L3] PUSH-100, [L3] DIV, [L3] STORE-y], [[L4] PUSH-100, [L4] STORE-y])]):[L6] CATCH([[L5] PUSH-5, [L5] STORE-x]):ε, ε, s[z→POS,y→NEG,x→POS]>
+=== Running from {z=NEG, y=NEG, x=NEG}
+<[L0] FETCH-z:[L0] PUSH-5:[L0] DIV:[L0] STORE-z:[L1] TRY([[L2] PUSH-0, [L2] FETCH-x, [L2] EQ, [L2] NEG, [L2] BRANCH([[L3] FETCH-x, [L3] PUSH-100, [L3] DIV, [L3] STORE-y], [[L4] PUSH-100, [L4] STORE-y])]):[L6] CATCH([[L5] PUSH-5, [L5] STORE-x]):ε, ε, s[z→NEG,y→NEG,x→NEG]>
+=== Running from {z=ZERO, y=NEG, x=NEG}
+<[L0] FETCH-z:[L0] PUSH-5:[L0] DIV:[L0] STORE-z:[L1] TRY([[L2] PUSH-0, [L2] FETCH-x, [L2] EQ, [L2] NEG, [L2] BRANCH([[L3] FETCH-x, [L3] PUSH-100, [L3] DIV, [L3] STORE-y], [[L4] PUSH-100, [L4] STORE-y])]):[L6] CATCH([[L5] PUSH-5, [L5] STORE-x]):ε, ε, s[z→ZERO,y→NEG,x→NEG]>
+=== Running from {z=POS, y=NEG, x=NEG}
+<[L0] FETCH-z:[L0] PUSH-5:[L0] DIV:[L0] STORE-z:[L1] TRY([[L2] PUSH-0, [L2] FETCH-x, [L2] EQ, [L2] NEG, [L2] BRANCH([[L3] FETCH-x, [L3] PUSH-100, [L3] DIV, [L3] STORE-y], [[L4] PUSH-100, [L4] STORE-y])]):[L6] CATCH([[L5] PUSH-5, [L5] STORE-x]):ε, ε, s[z→POS,y→NEG,x→NEG]>
+=== Running from {z=NEG, y=NEG, x=ZERO}
+<[L0] FETCH-z:[L0] PUSH-5:[L0] DIV:[L0] STORE-z:[L1] TRY([[L2] PUSH-0, [L2] FETCH-x, [L2] EQ, [L2] NEG, [L2] BRANCH([[L3] FETCH-x, [L3] PUSH-100, [L3] DIV, [L3] STORE-y], [[L4] PUSH-100, [L4] STORE-y])]):[L6] CATCH([[L5] PUSH-5, [L5] STORE-x]):ε, ε, s[z→NEG,y→NEG,x→ZERO]>
+=== Running from {z=ZERO, y=NEG, x=ZERO}
+<[L0] FETCH-z:[L0] PUSH-5:[L0] DIV:[L0] STORE-z:[L1] TRY([[L2] PUSH-0, [L2] FETCH-x, [L2] EQ, [L2] NEG, [L2] BRANCH([[L3] FETCH-x, [L3] PUSH-100, [L3] DIV, [L3] STORE-y], [[L4] PUSH-100, [L4] STORE-y])]):[L6] CATCH([[L5] PUSH-5, [L5] STORE-x]):ε, ε, s[z→ZERO,y→NEG,x→ZERO]>
+=== Running from {z=POS, y=NEG, x=ZERO}
+<[L0] FETCH-z:[L0] PUSH-5:[L0] DIV:[L0] STORE-z:[L1] TRY([[L2] PUSH-0, [L2] FETCH-x, [L2] EQ, [L2] NEG, [L2] BRANCH([[L3] FETCH-x, [L3] PUSH-100, [L3] DIV, [L3] STORE-y], [[L4] PUSH-100, [L4] STORE-y])]):[L6] CATCH([[L5] PUSH-5, [L5] STORE-x]):ε, ε, s[z→POS,y→NEG,x→ZERO]>
+=== Running from {z=NEG, y=NEG, x=POS}
+<[L0] FETCH-z:[L0] PUSH-5:[L0] DIV:[L0] STORE-z:[L1] TRY([[L2] PUSH-0, [L2] FETCH-x, [L2] EQ, [L2] NEG, [L2] BRANCH([[L3] FETCH-x, [L3] PUSH-100, [L3] DIV, [L3] STORE-y], [[L4] PUSH-100, [L4] STORE-y])]):[L6] CATCH([[L5] PUSH-5, [L5] STORE-x]):ε, ε, s[z→NEG,y→NEG,x→POS]>
+=== Running from {z=ZERO, y=NEG, x=POS}
+<[L0] FETCH-z:[L0] PUSH-5:[L0] DIV:[L0] STORE-z:[L1] TRY([[L2] PUSH-0, [L2] FETCH-x, [L2] EQ, [L2] NEG, [L2] BRANCH([[L3] FETCH-x, [L3] PUSH-100, [L3] DIV, [L3] STORE-y], [[L4] PUSH-100, [L4] STORE-y])]):[L6] CATCH([[L5] PUSH-5, [L5] STORE-x]):ε, ε, s[z→ZERO,y→NEG,x→POS]>
+=== Running from {z=POS, y=NEG, x=POS}
+<[L0] FETCH-z:[L0] PUSH-5:[L0] DIV:[L0] STORE-z:[L1] TRY([[L2] PUSH-0, [L2] FETCH-x, [L2] EQ, [L2] NEG, [L2] BRANCH([[L3] FETCH-x, [L3] PUSH-100, [L3] DIV, [L3] STORE-y], [[L4] PUSH-100, [L4] STORE-y])]):[L6] CATCH([[L5] PUSH-5, [L5] STORE-x]):ε, ε, s[z→POS,y→NEG,x→POS]>
+=== Running from {z=NEG, y=ZERO, x=NEG}
+<[L0] FETCH-z:[L0] PUSH-5:[L0] DIV:[L0] STORE-z:[L1] TRY([[L2] PUSH-0, [L2] FETCH-x, [L2] EQ, [L2] NEG, [L2] BRANCH([[L3] FETCH-x, [L3] PUSH-100, [L3] DIV, [L3] STORE-y], [[L4] PUSH-100, [L4] STORE-y])]):[L6] CATCH([[L5] PUSH-5, [L5] STORE-x]):ε, ε, s[z→NEG,y→ZERO,x→NEG]>
+=== Running from {z=NEG, y=ZERO, x=ZERO}
+<[L0] FETCH-z:[L0] PUSH-5:[L0] DIV:[L0] STORE-z:[L1] TRY([[L2] PUSH-0, [L2] FETCH-x, [L2] EQ, [L2] NEG, [L2] BRANCH([[L3] FETCH-x, [L3] PUSH-100, [L3] DIV, [L3] STORE-y], [[L4] PUSH-100, [L4] STORE-y])]):[L6] CATCH([[L5] PUSH-5, [L5] STORE-x]):ε, ε, s[z→NEG,y→ZERO,x→ZERO]>
+=== Running from {z=NEG, y=ZERO, x=POS}
+<[L0] FETCH-z:[L0] PUSH-5:[L0] DIV:[L0] STORE-z:[L1] TRY([[L2] PUSH-0, [L2] FETCH-x, [L2] EQ, [L2] NEG, [L2] BRANCH([[L3] FETCH-x, [L3] PUSH-100, [L3] DIV, [L3] STORE-y], [[L4] PUSH-100, [L4] STORE-y])]):[L6] CATCH([[L5] PUSH-5, [L5] STORE-x]):ε, ε, s[z→NEG,y→ZERO,x→POS]>
+=== Running from {z=ZERO, y=ZERO, x=NEG}
+<[L0] FETCH-z:[L0] PUSH-5:[L0] DIV:[L0] STORE-z:[L1] TRY([[L2] PUSH-0, [L2] FETCH-x, [L2] EQ, [L2] NEG, [L2] BRANCH([[L3] FETCH-x, [L3] PUSH-100, [L3] DIV, [L3] STORE-y], [[L4] PUSH-100, [L4] STORE-y])]):[L6] CATCH([[L5] PUSH-5, [L5] STORE-x]):ε, ε, s[z→ZERO,y→ZERO,x→NEG]>
+=== Running from {z=ZERO, y=ZERO, x=ZERO}
+<[L0] FETCH-z:[L0] PUSH-5:[L0] DIV:[L0] STORE-z:[L1] TRY([[L2] PUSH-0, [L2] FETCH-x, [L2] EQ, [L2] NEG, [L2] BRANCH([[L3] FETCH-x, [L3] PUSH-100, [L3] DIV, [L3] STORE-y], [[L4] PUSH-100, [L4] STORE-y])]):[L6] CATCH([[L5] PUSH-5, [L5] STORE-x]):ε, ε, s[z→ZERO,y→ZERO,x→ZERO]>
+=== Running from {z=ZERO, y=ZERO, x=POS}
+<[L0] FETCH-z:[L0] PUSH-5:[L0] DIV:[L0] STORE-z:[L1] TRY([[L2] PUSH-0, [L2] FETCH-x, [L2] EQ, [L2] NEG, [L2] BRANCH([[L3] FETCH-x, [L3] PUSH-100, [L3] DIV, [L3] STORE-y], [[L4] PUSH-100, [L4] STORE-y])]):[L6] CATCH([[L5] PUSH-5, [L5] STORE-x]):ε, ε, s[z→ZERO,y→ZERO,x→POS]>
+=== Running from {z=POS, y=ZERO, x=NEG}
+<[L0] FETCH-z:[L0] PUSH-5:[L0] DIV:[L0] STORE-z:[L1] TRY([[L2] PUSH-0, [L2] FETCH-x, [L2] EQ, [L2] NEG, [L2] BRANCH([[L3] FETCH-x, [L3] PUSH-100, [L3] DIV, [L3] STORE-y], [[L4] PUSH-100, [L4] STORE-y])]):[L6] CATCH([[L5] PUSH-5, [L5] STORE-x]):ε, ε, s[z→POS,y→ZERO,x→NEG]>
+=== Running from {z=POS, y=ZERO, x=ZERO}
+<[L0] FETCH-z:[L0] PUSH-5:[L0] DIV:[L0] STORE-z:[L1] TRY([[L2] PUSH-0, [L2] FETCH-x, [L2] EQ, [L2] NEG, [L2] BRANCH([[L3] FETCH-x, [L3] PUSH-100, [L3] DIV, [L3] STORE-y], [[L4] PUSH-100, [L4] STORE-y])]):[L6] CATCH([[L5] PUSH-5, [L5] STORE-x]):ε, ε, s[z→POS,y→ZERO,x→ZERO]>
+=== Running from {z=POS, y=ZERO, x=POS}
+<[L0] FETCH-z:[L0] PUSH-5:[L0] DIV:[L0] STORE-z:[L1] TRY([[L2] PUSH-0, [L2] FETCH-x, [L2] EQ, [L2] NEG, [L2] BRANCH([[L3] FETCH-x, [L3] PUSH-100, [L3] DIV, [L3] STORE-y], [[L4] PUSH-100, [L4] STORE-y])]):[L6] CATCH([[L5] PUSH-5, [L5] STORE-x]):ε, ε, s[z→POS,y→ZERO,x→POS]>
+=== Running from {z=NEG, y=ZERO, x=NEG}
+<[L0] FETCH-z:[L0] PUSH-5:[L0] DIV:[L0] STORE-z:[L1] TRY([[L2] PUSH-0, [L2] FETCH-x, [L2] EQ, [L2] NEG, [L2] BRANCH([[L3] FETCH-x, [L3] PUSH-100, [L3] DIV, [L3] STORE-y], [[L4] PUSH-100, [L4] STORE-y])]):[L6] CATCH([[L5] PUSH-5, [L5] STORE-x]):ε, ε, s[z→NEG,y→ZERO,x→NEG]>
+=== Running from {z=ZERO, y=ZERO, x=NEG}
+<[L0] FETCH-z:[L0] PUSH-5:[L0] DIV:[L0] STORE-z:[L1] TRY([[L2] PUSH-0, [L2] FETCH-x, [L2] EQ, [L2] NEG, [L2] BRANCH([[L3] FETCH-x, [L3] PUSH-100, [L3] DIV, [L3] STORE-y], [[L4] PUSH-100, [L4] STORE-y])]):[L6] CATCH([[L5] PUSH-5, [L5] STORE-x]):ε, ε, s[z→ZERO,y→ZERO,x→NEG]>
+=== Running from {z=POS, y=ZERO, x=NEG}
+<[L0] FETCH-z:[L0] PUSH-5:[L0] DIV:[L0] STORE-z:[L1] TRY([[L2] PUSH-0, [L2] FETCH-x, [L2] EQ, [L2] NEG, [L2] BRANCH([[L3] FETCH-x, [L3] PUSH-100, [L3] DIV, [L3] STORE-y], [[L4] PUSH-100, [L4] STORE-y])]):[L6] CATCH([[L5] PUSH-5, [L5] STORE-x]):ε, ε, s[z→POS,y→ZERO,x→NEG]>
+=== Running from {z=NEG, y=ZERO, x=ZERO}
+<[L0] FETCH-z:[L0] PUSH-5:[L0] DIV:[L0] STORE-z:[L1] TRY([[L2] PUSH-0, [L2] FETCH-x, [L2] EQ, [L2] NEG, [L2] BRANCH([[L3] FETCH-x, [L3] PUSH-100, [L3] DIV, [L3] STORE-y], [[L4] PUSH-100, [L4] STORE-y])]):[L6] CATCH([[L5] PUSH-5, [L5] STORE-x]):ε, ε, s[z→NEG,y→ZERO,x→ZERO]>
+=== Running from {z=ZERO, y=ZERO, x=ZERO}
+<[L0] FETCH-z:[L0] PUSH-5:[L0] DIV:[L0] STORE-z:[L1] TRY([[L2] PUSH-0, [L2] FETCH-x, [L2] EQ, [L2] NEG, [L2] BRANCH([[L3] FETCH-x, [L3] PUSH-100, [L3] DIV, [L3] STORE-y], [[L4] PUSH-100, [L4] STORE-y])]):[L6] CATCH([[L5] PUSH-5, [L5] STORE-x]):ε, ε, s[z→ZERO,y→ZERO,x→ZERO]>
+=== Running from {z=POS, y=ZERO, x=ZERO}
+<[L0] FETCH-z:[L0] PUSH-5:[L0] DIV:[L0] STORE-z:[L1] TRY([[L2] PUSH-0, [L2] FETCH-x, [L2] EQ, [L2] NEG, [L2] BRANCH([[L3] FETCH-x, [L3] PUSH-100, [L3] DIV, [L3] STORE-y], [[L4] PUSH-100, [L4] STORE-y])]):[L6] CATCH([[L5] PUSH-5, [L5] STORE-x]):ε, ε, s[z→POS,y→ZERO,x→ZERO]>
+=== Running from {z=NEG, y=ZERO, x=POS}
+<[L0] FETCH-z:[L0] PUSH-5:[L0] DIV:[L0] STORE-z:[L1] TRY([[L2] PUSH-0, [L2] FETCH-x, [L2] EQ, [L2] NEG, [L2] BRANCH([[L3] FETCH-x, [L3] PUSH-100, [L3] DIV, [L3] STORE-y], [[L4] PUSH-100, [L4] STORE-y])]):[L6] CATCH([[L5] PUSH-5, [L5] STORE-x]):ε, ε, s[z→NEG,y→ZERO,x→POS]>
+=== Running from {z=ZERO, y=ZERO, x=POS}
+<[L0] FETCH-z:[L0] PUSH-5:[L0] DIV:[L0] STORE-z:[L1] TRY([[L2] PUSH-0, [L2] FETCH-x, [L2] EQ, [L2] NEG, [L2] BRANCH([[L3] FETCH-x, [L3] PUSH-100, [L3] DIV, [L3] STORE-y], [[L4] PUSH-100, [L4] STORE-y])]):[L6] CATCH([[L5] PUSH-5, [L5] STORE-x]):ε, ε, s[z→ZERO,y→ZERO,x→POS]>
+=== Running from {z=POS, y=ZERO, x=POS}
+<[L0] FETCH-z:[L0] PUSH-5:[L0] DIV:[L0] STORE-z:[L1] TRY([[L2] PUSH-0, [L2] FETCH-x, [L2] EQ, [L2] NEG, [L2] BRANCH([[L3] FETCH-x, [L3] PUSH-100, [L3] DIV, [L3] STORE-y], [[L4] PUSH-100, [L4] STORE-y])]):[L6] CATCH([[L5] PUSH-5, [L5] STORE-x]):ε, ε, s[z→POS,y→ZERO,x→POS]>
+=== Running from {z=NEG, y=POS, x=NEG}
+<[L0] FETCH-z:[L0] PUSH-5:[L0] DIV:[L0] STORE-z:[L1] TRY([[L2] PUSH-0, [L2] FETCH-x, [L2] EQ, [L2] NEG, [L2] BRANCH([[L3] FETCH-x, [L3] PUSH-100, [L3] DIV, [L3] STORE-y], [[L4] PUSH-100, [L4] STORE-y])]):[L6] CATCH([[L5] PUSH-5, [L5] STORE-x]):ε, ε, s[z→NEG,y→POS,x→NEG]>
+=== Running from {z=NEG, y=POS, x=ZERO}
+<[L0] FETCH-z:[L0] PUSH-5:[L0] DIV:[L0] STORE-z:[L1] TRY([[L2] PUSH-0, [L2] FETCH-x, [L2] EQ, [L2] NEG, [L2] BRANCH([[L3] FETCH-x, [L3] PUSH-100, [L3] DIV, [L3] STORE-y], [[L4] PUSH-100, [L4] STORE-y])]):[L6] CATCH([[L5] PUSH-5, [L5] STORE-x]):ε, ε, s[z→NEG,y→POS,x→ZERO]>
+=== Running from {z=NEG, y=POS, x=POS}
+<[L0] FETCH-z:[L0] PUSH-5:[L0] DIV:[L0] STORE-z:[L1] TRY([[L2] PUSH-0, [L2] FETCH-x, [L2] EQ, [L2] NEG, [L2] BRANCH([[L3] FETCH-x, [L3] PUSH-100, [L3] DIV, [L3] STORE-y], [[L4] PUSH-100, [L4] STORE-y])]):[L6] CATCH([[L5] PUSH-5, [L5] STORE-x]):ε, ε, s[z→NEG,y→POS,x→POS]>
+=== Running from {z=ZERO, y=POS, x=NEG}
+<[L0] FETCH-z:[L0] PUSH-5:[L0] DIV:[L0] STORE-z:[L1] TRY([[L2] PUSH-0, [L2] FETCH-x, [L2] EQ, [L2] NEG, [L2] BRANCH([[L3] FETCH-x, [L3] PUSH-100, [L3] DIV, [L3] STORE-y], [[L4] PUSH-100, [L4] STORE-y])]):[L6] CATCH([[L5] PUSH-5, [L5] STORE-x]):ε, ε, s[z→ZERO,y→POS,x→NEG]>
+=== Running from {z=ZERO, y=POS, x=ZERO}
+<[L0] FETCH-z:[L0] PUSH-5:[L0] DIV:[L0] STORE-z:[L1] TRY([[L2] PUSH-0, [L2] FETCH-x, [L2] EQ, [L2] NEG, [L2] BRANCH([[L3] FETCH-x, [L3] PUSH-100, [L3] DIV, [L3] STORE-y], [[L4] PUSH-100, [L4] STORE-y])]):[L6] CATCH([[L5] PUSH-5, [L5] STORE-x]):ε, ε, s[z→ZERO,y→POS,x→ZERO]>
+=== Running from {z=ZERO, y=POS, x=POS}
+<[L0] FETCH-z:[L0] PUSH-5:[L0] DIV:[L0] STORE-z:[L1] TRY([[L2] PUSH-0, [L2] FETCH-x, [L2] EQ, [L2] NEG, [L2] BRANCH([[L3] FETCH-x, [L3] PUSH-100, [L3] DIV, [L3] STORE-y], [[L4] PUSH-100, [L4] STORE-y])]):[L6] CATCH([[L5] PUSH-5, [L5] STORE-x]):ε, ε, s[z→ZERO,y→POS,x→POS]>
+=== Running from {z=POS, y=POS, x=NEG}
+<[L0] FETCH-z:[L0] PUSH-5:[L0] DIV:[L0] STORE-z:[L1] TRY([[L2] PUSH-0, [L2] FETCH-x, [L2] EQ, [L2] NEG, [L2] BRANCH([[L3] FETCH-x, [L3] PUSH-100, [L3] DIV, [L3] STORE-y], [[L4] PUSH-100, [L4] STORE-y])]):[L6] CATCH([[L5] PUSH-5, [L5] STORE-x]):ε, ε, s[z→POS,y→POS,x→NEG]>
+=== Running from {z=POS, y=POS, x=ZERO}
+<[L0] FETCH-z:[L0] PUSH-5:[L0] DIV:[L0] STORE-z:[L1] TRY([[L2] PUSH-0, [L2] FETCH-x, [L2] EQ, [L2] NEG, [L2] BRANCH([[L3] FETCH-x, [L3] PUSH-100, [L3] DIV, [L3] STORE-y], [[L4] PUSH-100, [L4] STORE-y])]):[L6] CATCH([[L5] PUSH-5, [L5] STORE-x]):ε, ε, s[z→POS,y→POS,x→ZERO]>
+=== Running from {z=POS, y=POS, x=POS}
+<[L0] FETCH-z:[L0] PUSH-5:[L0] DIV:[L0] STORE-z:[L1] TRY([[L2] PUSH-0, [L2] FETCH-x, [L2] EQ, [L2] NEG, [L2] BRANCH([[L3] FETCH-x, [L3] PUSH-100, [L3] DIV, [L3] STORE-y], [[L4] PUSH-100, [L4] STORE-y])]):[L6] CATCH([[L5] PUSH-5, [L5] STORE-x]):ε, ε, s[z→POS,y→POS,x→POS]>
+=== Running from {z=NEG, y=POS, x=NEG}
+<[L0] FETCH-z:[L0] PUSH-5:[L0] DIV:[L0] STORE-z:[L1] TRY([[L2] PUSH-0, [L2] FETCH-x, [L2] EQ, [L2] NEG, [L2] BRANCH([[L3] FETCH-x, [L3] PUSH-100, [L3] DIV, [L3] STORE-y], [[L4] PUSH-100, [L4] STORE-y])]):[L6] CATCH([[L5] PUSH-5, [L5] STORE-x]):ε, ε, s[z→NEG,y→POS,x→NEG]>
+=== Running from {z=ZERO, y=POS, x=NEG}
+<[L0] FETCH-z:[L0] PUSH-5:[L0] DIV:[L0] STORE-z:[L1] TRY([[L2] PUSH-0, [L2] FETCH-x, [L2] EQ, [L2] NEG, [L2] BRANCH([[L3] FETCH-x, [L3] PUSH-100, [L3] DIV, [L3] STORE-y], [[L4] PUSH-100, [L4] STORE-y])]):[L6] CATCH([[L5] PUSH-5, [L5] STORE-x]):ε, ε, s[z→ZERO,y→POS,x→NEG]>
+=== Running from {z=POS, y=POS, x=NEG}
+<[L0] FETCH-z:[L0] PUSH-5:[L0] DIV:[L0] STORE-z:[L1] TRY([[L2] PUSH-0, [L2] FETCH-x, [L2] EQ, [L2] NEG, [L2] BRANCH([[L3] FETCH-x, [L3] PUSH-100, [L3] DIV, [L3] STORE-y], [[L4] PUSH-100, [L4] STORE-y])]):[L6] CATCH([[L5] PUSH-5, [L5] STORE-x]):ε, ε, s[z→POS,y→POS,x→NEG]>
+=== Running from {z=NEG, y=POS, x=ZERO}
+<[L0] FETCH-z:[L0] PUSH-5:[L0] DIV:[L0] STORE-z:[L1] TRY([[L2] PUSH-0, [L2] FETCH-x, [L2] EQ, [L2] NEG, [L2] BRANCH([[L3] FETCH-x, [L3] PUSH-100, [L3] DIV, [L3] STORE-y], [[L4] PUSH-100, [L4] STORE-y])]):[L6] CATCH([[L5] PUSH-5, [L5] STORE-x]):ε, ε, s[z→NEG,y→POS,x→ZERO]>
+=== Running from {z=ZERO, y=POS, x=ZERO}
+<[L0] FETCH-z:[L0] PUSH-5:[L0] DIV:[L0] STORE-z:[L1] TRY([[L2] PUSH-0, [L2] FETCH-x, [L2] EQ, [L2] NEG, [L2] BRANCH([[L3] FETCH-x, [L3] PUSH-100, [L3] DIV, [L3] STORE-y], [[L4] PUSH-100, [L4] STORE-y])]):[L6] CATCH([[L5] PUSH-5, [L5] STORE-x]):ε, ε, s[z→ZERO,y→POS,x→ZERO]>
+=== Running from {z=POS, y=POS, x=ZERO}
+<[L0] FETCH-z:[L0] PUSH-5:[L0] DIV:[L0] STORE-z:[L1] TRY([[L2] PUSH-0, [L2] FETCH-x, [L2] EQ, [L2] NEG, [L2] BRANCH([[L3] FETCH-x, [L3] PUSH-100, [L3] DIV, [L3] STORE-y], [[L4] PUSH-100, [L4] STORE-y])]):[L6] CATCH([[L5] PUSH-5, [L5] STORE-x]):ε, ε, s[z→POS,y→POS,x→ZERO]>
+=== Running from {z=NEG, y=POS, x=POS}
+<[L0] FETCH-z:[L0] PUSH-5:[L0] DIV:[L0] STORE-z:[L1] TRY([[L2] PUSH-0, [L2] FETCH-x, [L2] EQ, [L2] NEG, [L2] BRANCH([[L3] FETCH-x, [L3] PUSH-100, [L3] DIV, [L3] STORE-y], [[L4] PUSH-100, [L4] STORE-y])]):[L6] CATCH([[L5] PUSH-5, [L5] STORE-x]):ε, ε, s[z→NEG,y→POS,x→POS]>
+=== Running from {z=ZERO, y=POS, x=POS}
+<[L0] FETCH-z:[L0] PUSH-5:[L0] DIV:[L0] STORE-z:[L1] TRY([[L2] PUSH-0, [L2] FETCH-x, [L2] EQ, [L2] NEG, [L2] BRANCH([[L3] FETCH-x, [L3] PUSH-100, [L3] DIV, [L3] STORE-y], [[L4] PUSH-100, [L4] STORE-y])]):[L6] CATCH([[L5] PUSH-5, [L5] STORE-x]):ε, ε, s[z→ZERO,y→POS,x→POS]>
+=== Running from {z=POS, y=POS, x=POS}
+<[L0] FETCH-z:[L0] PUSH-5:[L0] DIV:[L0] STORE-z:[L1] TRY([[L2] PUSH-0, [L2] FETCH-x, [L2] EQ, [L2] NEG, [L2] BRANCH([[L3] FETCH-x, [L3] PUSH-100, [L3] DIV, [L3] STORE-y], [[L4] PUSH-100, [L4] STORE-y])]):[L6] CATCH([[L5] PUSH-5, [L5] STORE-x]):ε, ε, s[z→POS,y→POS,x→POS]>
+=== Running from {z=NEG, y=NEG, x=NEG}
+<[L0] FETCH-z:[L0] PUSH-5:[L0] DIV:[L0] STORE-z:[L1] TRY([[L2] PUSH-0, [L2] FETCH-x, [L2] EQ, [L2] NEG, [L2] BRANCH([[L3] FETCH-x, [L3] PUSH-100, [L3] DIV, [L3] STORE-y], [[L4] PUSH-100, [L4] STORE-y])]):[L6] CATCH([[L5] PUSH-5, [L5] STORE-x]):ε, ε, s[z→NEG,y→NEG,x→NEG]>
+=== Running from {z=NEG, y=ZERO, x=NEG}
+<[L0] FETCH-z:[L0] PUSH-5:[L0] DIV:[L0] STORE-z:[L1] TRY([[L2] PUSH-0, [L2] FETCH-x, [L2] EQ, [L2] NEG, [L2] BRANCH([[L3] FETCH-x, [L3] PUSH-100, [L3] DIV, [L3] STORE-y], [[L4] PUSH-100, [L4] STORE-y])]):[L6] CATCH([[L5] PUSH-5, [L5] STORE-x]):ε, ε, s[z→NEG,y→ZERO,x→NEG]>
+=== Running from {z=NEG, y=POS, x=NEG}
+<[L0] FETCH-z:[L0] PUSH-5:[L0] DIV:[L0] STORE-z:[L1] TRY([[L2] PUSH-0, [L2] FETCH-x, [L2] EQ, [L2] NEG, [L2] BRANCH([[L3] FETCH-x, [L3] PUSH-100, [L3] DIV, [L3] STORE-y], [[L4] PUSH-100, [L4] STORE-y])]):[L6] CATCH([[L5] PUSH-5, [L5] STORE-x]):ε, ε, s[z→NEG,y→POS,x→NEG]>
+=== Running from {z=ZERO, y=NEG, x=NEG}
+<[L0] FETCH-z:[L0] PUSH-5:[L0] DIV:[L0] STORE-z:[L1] TRY([[L2] PUSH-0, [L2] FETCH-x, [L2] EQ, [L2] NEG, [L2] BRANCH([[L3] FETCH-x, [L3] PUSH-100, [L3] DIV, [L3] STORE-y], [[L4] PUSH-100, [L4] STORE-y])]):[L6] CATCH([[L5] PUSH-5, [L5] STORE-x]):ε, ε, s[z→ZERO,y→NEG,x→NEG]>
+=== Running from {z=ZERO, y=ZERO, x=NEG}
+<[L0] FETCH-z:[L0] PUSH-5:[L0] DIV:[L0] STORE-z:[L1] TRY([[L2] PUSH-0, [L2] FETCH-x, [L2] EQ, [L2] NEG, [L2] BRANCH([[L3] FETCH-x, [L3] PUSH-100, [L3] DIV, [L3] STORE-y], [[L4] PUSH-100, [L4] STORE-y])]):[L6] CATCH([[L5] PUSH-5, [L5] STORE-x]):ε, ε, s[z→ZERO,y→ZERO,x→NEG]>
+=== Running from {z=ZERO, y=POS, x=NEG}
+<[L0] FETCH-z:[L0] PUSH-5:[L0] DIV:[L0] STORE-z:[L1] TRY([[L2] PUSH-0, [L2] FETCH-x, [L2] EQ, [L2] NEG, [L2] BRANCH([[L3] FETCH-x, [L3] PUSH-100, [L3] DIV, [L3] STORE-y], [[L4] PUSH-100, [L4] STORE-y])]):[L6] CATCH([[L5] PUSH-5, [L5] STORE-x]):ε, ε, s[z→ZERO,y→POS,x→NEG]>
+=== Running from {z=POS, y=NEG, x=NEG}
+<[L0] FETCH-z:[L0] PUSH-5:[L0] DIV:[L0] STORE-z:[L1] TRY([[L2] PUSH-0, [L2] FETCH-x, [L2] EQ, [L2] NEG, [L2] BRANCH([[L3] FETCH-x, [L3] PUSH-100, [L3] DIV, [L3] STORE-y], [[L4] PUSH-100, [L4] STORE-y])]):[L6] CATCH([[L5] PUSH-5, [L5] STORE-x]):ε, ε, s[z→POS,y→NEG,x→NEG]>
+=== Running from {z=POS, y=ZERO, x=NEG}
+<[L0] FETCH-z:[L0] PUSH-5:[L0] DIV:[L0] STORE-z:[L1] TRY([[L2] PUSH-0, [L2] FETCH-x, [L2] EQ, [L2] NEG, [L2] BRANCH([[L3] FETCH-x, [L3] PUSH-100, [L3] DIV, [L3] STORE-y], [[L4] PUSH-100, [L4] STORE-y])]):[L6] CATCH([[L5] PUSH-5, [L5] STORE-x]):ε, ε, s[z→POS,y→ZERO,x→NEG]>
+=== Running from {z=POS, y=POS, x=NEG}
+<[L0] FETCH-z:[L0] PUSH-5:[L0] DIV:[L0] STORE-z:[L1] TRY([[L2] PUSH-0, [L2] FETCH-x, [L2] EQ, [L2] NEG, [L2] BRANCH([[L3] FETCH-x, [L3] PUSH-100, [L3] DIV, [L3] STORE-y], [[L4] PUSH-100, [L4] STORE-y])]):[L6] CATCH([[L5] PUSH-5, [L5] STORE-x]):ε, ε, s[z→POS,y→POS,x→NEG]>
+=== Running from {z=NEG, y=NEG, x=NEG}
+<[L0] FETCH-z:[L0] PUSH-5:[L0] DIV:[L0] STORE-z:[L1] TRY([[L2] PUSH-0, [L2] FETCH-x, [L2] EQ, [L2] NEG, [L2] BRANCH([[L3] FETCH-x, [L3] PUSH-100, [L3] DIV, [L3] STORE-y], [[L4] PUSH-100, [L4] STORE-y])]):[L6] CATCH([[L5] PUSH-5, [L5] STORE-x]):ε, ε, s[z→NEG,y→NEG,x→NEG]>
+=== Running from {z=ZERO, y=NEG, x=NEG}
+<[L0] FETCH-z:[L0] PUSH-5:[L0] DIV:[L0] STORE-z:[L1] TRY([[L2] PUSH-0, [L2] FETCH-x, [L2] EQ, [L2] NEG, [L2] BRANCH([[L3] FETCH-x, [L3] PUSH-100, [L3] DIV, [L3] STORE-y], [[L4] PUSH-100, [L4] STORE-y])]):[L6] CATCH([[L5] PUSH-5, [L5] STORE-x]):ε, ε, s[z→ZERO,y→NEG,x→NEG]>
+=== Running from {z=POS, y=NEG, x=NEG}
+<[L0] FETCH-z:[L0] PUSH-5:[L0] DIV:[L0] STORE-z:[L1] TRY([[L2] PUSH-0, [L2] FETCH-x, [L2] EQ, [L2] NEG, [L2] BRANCH([[L3] FETCH-x, [L3] PUSH-100, [L3] DIV, [L3] STORE-y], [[L4] PUSH-100, [L4] STORE-y])]):[L6] CATCH([[L5] PUSH-5, [L5] STORE-x]):ε, ε, s[z→POS,y→NEG,x→NEG]>
+=== Running from {z=NEG, y=ZERO, x=NEG}
+<[L0] FETCH-z:[L0] PUSH-5:[L0] DIV:[L0] STORE-z:[L1] TRY([[L2] PUSH-0, [L2] FETCH-x, [L2] EQ, [L2] NEG, [L2] BRANCH([[L3] FETCH-x, [L3] PUSH-100, [L3] DIV, [L3] STORE-y], [[L4] PUSH-100, [L4] STORE-y])]):[L6] CATCH([[L5] PUSH-5, [L5] STORE-x]):ε, ε, s[z→NEG,y→ZERO,x→NEG]>
+=== Running from {z=ZERO, y=ZERO, x=NEG}
+<[L0] FETCH-z:[L0] PUSH-5:[L0] DIV:[L0] STORE-z:[L1] TRY([[L2] PUSH-0, [L2] FETCH-x, [L2] EQ, [L2] NEG, [L2] BRANCH([[L3] FETCH-x, [L3] PUSH-100, [L3] DIV, [L3] STORE-y], [[L4] PUSH-100, [L4] STORE-y])]):[L6] CATCH([[L5] PUSH-5, [L5] STORE-x]):ε, ε, s[z→ZERO,y→ZERO,x→NEG]>
+=== Running from {z=POS, y=ZERO, x=NEG}
+<[L0] FETCH-z:[L0] PUSH-5:[L0] DIV:[L0] STORE-z:[L1] TRY([[L2] PUSH-0, [L2] FETCH-x, [L2] EQ, [L2] NEG, [L2] BRANCH([[L3] FETCH-x, [L3] PUSH-100, [L3] DIV, [L3] STORE-y], [[L4] PUSH-100, [L4] STORE-y])]):[L6] CATCH([[L5] PUSH-5, [L5] STORE-x]):ε, ε, s[z→POS,y→ZERO,x→NEG]>
+=== Running from {z=NEG, y=POS, x=NEG}
+<[L0] FETCH-z:[L0] PUSH-5:[L0] DIV:[L0] STORE-z:[L1] TRY([[L2] PUSH-0, [L2] FETCH-x, [L2] EQ, [L2] NEG, [L2] BRANCH([[L3] FETCH-x, [L3] PUSH-100, [L3] DIV, [L3] STORE-y], [[L4] PUSH-100, [L4] STORE-y])]):[L6] CATCH([[L5] PUSH-5, [L5] STORE-x]):ε, ε, s[z→NEG,y→POS,x→NEG]>
+=== Running from {z=ZERO, y=POS, x=NEG}
+<[L0] FETCH-z:[L0] PUSH-5:[L0] DIV:[L0] STORE-z:[L1] TRY([[L2] PUSH-0, [L2] FETCH-x, [L2] EQ, [L2] NEG, [L2] BRANCH([[L3] FETCH-x, [L3] PUSH-100, [L3] DIV, [L3] STORE-y], [[L4] PUSH-100, [L4] STORE-y])]):[L6] CATCH([[L5] PUSH-5, [L5] STORE-x]):ε, ε, s[z→ZERO,y→POS,x→NEG]>
+=== Running from {z=POS, y=POS, x=NEG}
+<[L0] FETCH-z:[L0] PUSH-5:[L0] DIV:[L0] STORE-z:[L1] TRY([[L2] PUSH-0, [L2] FETCH-x, [L2] EQ, [L2] NEG, [L2] BRANCH([[L3] FETCH-x, [L3] PUSH-100, [L3] DIV, [L3] STORE-y], [[L4] PUSH-100, [L4] STORE-y])]):[L6] CATCH([[L5] PUSH-5, [L5] STORE-x]):ε, ε, s[z→POS,y→POS,x→NEG]>
+=== Running from {z=NEG, y=NEG, x=ZERO}
+<[L0] FETCH-z:[L0] PUSH-5:[L0] DIV:[L0] STORE-z:[L1] TRY([[L2] PUSH-0, [L2] FETCH-x, [L2] EQ, [L2] NEG, [L2] BRANCH([[L3] FETCH-x, [L3] PUSH-100, [L3] DIV, [L3] STORE-y], [[L4] PUSH-100, [L4] STORE-y])]):[L6] CATCH([[L5] PUSH-5, [L5] STORE-x]):ε, ε, s[z→NEG,y→NEG,x→ZERO]>
+=== Running from {z=NEG, y=ZERO, x=ZERO}
+<[L0] FETCH-z:[L0] PUSH-5:[L0] DIV:[L0] STORE-z:[L1] TRY([[L2] PUSH-0, [L2] FETCH-x, [L2] EQ, [L2] NEG, [L2] BRANCH([[L3] FETCH-x, [L3] PUSH-100, [L3] DIV, [L3] STORE-y], [[L4] PUSH-100, [L4] STORE-y])]):[L6] CATCH([[L5] PUSH-5, [L5] STORE-x]):ε, ε, s[z→NEG,y→ZERO,x→ZERO]>
+=== Running from {z=NEG, y=POS, x=ZERO}
+<[L0] FETCH-z:[L0] PUSH-5:[L0] DIV:[L0] STORE-z:[L1] TRY([[L2] PUSH-0, [L2] FETCH-x, [L2] EQ, [L2] NEG, [L2] BRANCH([[L3] FETCH-x, [L3] PUSH-100, [L3] DIV, [L3] STORE-y], [[L4] PUSH-100, [L4] STORE-y])]):[L6] CATCH([[L5] PUSH-5, [L5] STORE-x]):ε, ε, s[z→NEG,y→POS,x→ZERO]>
+=== Running from {z=ZERO, y=NEG, x=ZERO}
+<[L0] FETCH-z:[L0] PUSH-5:[L0] DIV:[L0] STORE-z:[L1] TRY([[L2] PUSH-0, [L2] FETCH-x, [L2] EQ, [L2] NEG, [L2] BRANCH([[L3] FETCH-x, [L3] PUSH-100, [L3] DIV, [L3] STORE-y], [[L4] PUSH-100, [L4] STORE-y])]):[L6] CATCH([[L5] PUSH-5, [L5] STORE-x]):ε, ε, s[z→ZERO,y→NEG,x→ZERO]>
+=== Running from {z=ZERO, y=ZERO, x=ZERO}
+<[L0] FETCH-z:[L0] PUSH-5:[L0] DIV:[L0] STORE-z:[L1] TRY([[L2] PUSH-0, [L2] FETCH-x, [L2] EQ, [L2] NEG, [L2] BRANCH([[L3] FETCH-x, [L3] PUSH-100, [L3] DIV, [L3] STORE-y], [[L4] PUSH-100, [L4] STORE-y])]):[L6] CATCH([[L5] PUSH-5, [L5] STORE-x]):ε, ε, s[z→ZERO,y→ZERO,x→ZERO]>
+=== Running from {z=ZERO, y=POS, x=ZERO}
+<[L0] FETCH-z:[L0] PUSH-5:[L0] DIV:[L0] STORE-z:[L1] TRY([[L2] PUSH-0, [L2] FETCH-x, [L2] EQ, [L2] NEG, [L2] BRANCH([[L3] FETCH-x, [L3] PUSH-100, [L3] DIV, [L3] STORE-y], [[L4] PUSH-100, [L4] STORE-y])]):[L6] CATCH([[L5] PUSH-5, [L5] STORE-x]):ε, ε, s[z→ZERO,y→POS,x→ZERO]>
+=== Running from {z=POS, y=NEG, x=ZERO}
+<[L0] FETCH-z:[L0] PUSH-5:[L0] DIV:[L0] STORE-z:[L1] TRY([[L2] PUSH-0, [L2] FETCH-x, [L2] EQ, [L2] NEG, [L2] BRANCH([[L3] FETCH-x, [L3] PUSH-100, [L3] DIV, [L3] STORE-y], [[L4] PUSH-100, [L4] STORE-y])]):[L6] CATCH([[L5] PUSH-5, [L5] STORE-x]):ε, ε, s[z→POS,y→NEG,x→ZERO]>
+=== Running from {z=POS, y=ZERO, x=ZERO}
+<[L0] FETCH-z:[L0] PUSH-5:[L0] DIV:[L0] STORE-z:[L1] TRY([[L2] PUSH-0, [L2] FETCH-x, [L2] EQ, [L2] NEG, [L2] BRANCH([[L3] FETCH-x, [L3] PUSH-100, [L3] DIV, [L3] STORE-y], [[L4] PUSH-100, [L4] STORE-y])]):[L6] CATCH([[L5] PUSH-5, [L5] STORE-x]):ε, ε, s[z→POS,y→ZERO,x→ZERO]>
+=== Running from {z=POS, y=POS, x=ZERO}
+<[L0] FETCH-z:[L0] PUSH-5:[L0] DIV:[L0] STORE-z:[L1] TRY([[L2] PUSH-0, [L2] FETCH-x, [L2] EQ, [L2] NEG, [L2] BRANCH([[L3] FETCH-x, [L3] PUSH-100, [L3] DIV, [L3] STORE-y], [[L4] PUSH-100, [L4] STORE-y])]):[L6] CATCH([[L5] PUSH-5, [L5] STORE-x]):ε, ε, s[z→POS,y→POS,x→ZERO]>
+=== Running from {z=NEG, y=NEG, x=ZERO}
+<[L0] FETCH-z:[L0] PUSH-5:[L0] DIV:[L0] STORE-z:[L1] TRY([[L2] PUSH-0, [L2] FETCH-x, [L2] EQ, [L2] NEG, [L2] BRANCH([[L3] FETCH-x, [L3] PUSH-100, [L3] DIV, [L3] STORE-y], [[L4] PUSH-100, [L4] STORE-y])]):[L6] CATCH([[L5] PUSH-5, [L5] STORE-x]):ε, ε, s[z→NEG,y→NEG,x→ZERO]>
+=== Running from {z=ZERO, y=NEG, x=ZERO}
+<[L0] FETCH-z:[L0] PUSH-5:[L0] DIV:[L0] STORE-z:[L1] TRY([[L2] PUSH-0, [L2] FETCH-x, [L2] EQ, [L2] NEG, [L2] BRANCH([[L3] FETCH-x, [L3] PUSH-100, [L3] DIV, [L3] STORE-y], [[L4] PUSH-100, [L4] STORE-y])]):[L6] CATCH([[L5] PUSH-5, [L5] STORE-x]):ε, ε, s[z→ZERO,y→NEG,x→ZERO]>
+=== Running from {z=POS, y=NEG, x=ZERO}
+<[L0] FETCH-z:[L0] PUSH-5:[L0] DIV:[L0] STORE-z:[L1] TRY([[L2] PUSH-0, [L2] FETCH-x, [L2] EQ, [L2] NEG, [L2] BRANCH([[L3] FETCH-x, [L3] PUSH-100, [L3] DIV, [L3] STORE-y], [[L4] PUSH-100, [L4] STORE-y])]):[L6] CATCH([[L5] PUSH-5, [L5] STORE-x]):ε, ε, s[z→POS,y→NEG,x→ZERO]>
+=== Running from {z=NEG, y=ZERO, x=ZERO}
+<[L0] FETCH-z:[L0] PUSH-5:[L0] DIV:[L0] STORE-z:[L1] TRY([[L2] PUSH-0, [L2] FETCH-x, [L2] EQ, [L2] NEG, [L2] BRANCH([[L3] FETCH-x, [L3] PUSH-100, [L3] DIV, [L3] STORE-y], [[L4] PUSH-100, [L4] STORE-y])]):[L6] CATCH([[L5] PUSH-5, [L5] STORE-x]):ε, ε, s[z→NEG,y→ZERO,x→ZERO]>
+=== Running from {z=ZERO, y=ZERO, x=ZERO}
+<[L0] FETCH-z:[L0] PUSH-5:[L0] DIV:[L0] STORE-z:[L1] TRY([[L2] PUSH-0, [L2] FETCH-x, [L2] EQ, [L2] NEG, [L2] BRANCH([[L3] FETCH-x, [L3] PUSH-100, [L3] DIV, [L3] STORE-y], [[L4] PUSH-100, [L4] STORE-y])]):[L6] CATCH([[L5] PUSH-5, [L5] STORE-x]):ε, ε, s[z→ZERO,y→ZERO,x→ZERO]>
+=== Running from {z=POS, y=ZERO, x=ZERO}
+<[L0] FETCH-z:[L0] PUSH-5:[L0] DIV:[L0] STORE-z:[L1] TRY([[L2] PUSH-0, [L2] FETCH-x, [L2] EQ, [L2] NEG, [L2] BRANCH([[L3] FETCH-x, [L3] PUSH-100, [L3] DIV, [L3] STORE-y], [[L4] PUSH-100, [L4] STORE-y])]):[L6] CATCH([[L5] PUSH-5, [L5] STORE-x]):ε, ε, s[z→POS,y→ZERO,x→ZERO]>
+=== Running from {z=NEG, y=POS, x=ZERO}
+<[L0] FETCH-z:[L0] PUSH-5:[L0] DIV:[L0] STORE-z:[L1] TRY([[L2] PUSH-0, [L2] FETCH-x, [L2] EQ, [L2] NEG, [L2] BRANCH([[L3] FETCH-x, [L3] PUSH-100, [L3] DIV, [L3] STORE-y], [[L4] PUSH-100, [L4] STORE-y])]):[L6] CATCH([[L5] PUSH-5, [L5] STORE-x]):ε, ε, s[z→NEG,y→POS,x→ZERO]>
+=== Running from {z=ZERO, y=POS, x=ZERO}
+<[L0] FETCH-z:[L0] PUSH-5:[L0] DIV:[L0] STORE-z:[L1] TRY([[L2] PUSH-0, [L2] FETCH-x, [L2] EQ, [L2] NEG, [L2] BRANCH([[L3] FETCH-x, [L3] PUSH-100, [L3] DIV, [L3] STORE-y], [[L4] PUSH-100, [L4] STORE-y])]):[L6] CATCH([[L5] PUSH-5, [L5] STORE-x]):ε, ε, s[z→ZERO,y→POS,x→ZERO]>
+=== Running from {z=POS, y=POS, x=ZERO}
+<[L0] FETCH-z:[L0] PUSH-5:[L0] DIV:[L0] STORE-z:[L1] TRY([[L2] PUSH-0, [L2] FETCH-x, [L2] EQ, [L2] NEG, [L2] BRANCH([[L3] FETCH-x, [L3] PUSH-100, [L3] DIV, [L3] STORE-y], [[L4] PUSH-100, [L4] STORE-y])]):[L6] CATCH([[L5] PUSH-5, [L5] STORE-x]):ε, ε, s[z→POS,y→POS,x→ZERO]>
+=== Running from {z=NEG, y=NEG, x=POS}
+<[L0] FETCH-z:[L0] PUSH-5:[L0] DIV:[L0] STORE-z:[L1] TRY([[L2] PUSH-0, [L2] FETCH-x, [L2] EQ, [L2] NEG, [L2] BRANCH([[L3] FETCH-x, [L3] PUSH-100, [L3] DIV, [L3] STORE-y], [[L4] PUSH-100, [L4] STORE-y])]):[L6] CATCH([[L5] PUSH-5, [L5] STORE-x]):ε, ε, s[z→NEG,y→NEG,x→POS]>
+=== Running from {z=NEG, y=ZERO, x=POS}
+<[L0] FETCH-z:[L0] PUSH-5:[L0] DIV:[L0] STORE-z:[L1] TRY([[L2] PUSH-0, [L2] FETCH-x, [L2] EQ, [L2] NEG, [L2] BRANCH([[L3] FETCH-x, [L3] PUSH-100, [L3] DIV, [L3] STORE-y], [[L4] PUSH-100, [L4] STORE-y])]):[L6] CATCH([[L5] PUSH-5, [L5] STORE-x]):ε, ε, s[z→NEG,y→ZERO,x→POS]>
+=== Running from {z=NEG, y=POS, x=POS}
+<[L0] FETCH-z:[L0] PUSH-5:[L0] DIV:[L0] STORE-z:[L1] TRY([[L2] PUSH-0, [L2] FETCH-x, [L2] EQ, [L2] NEG, [L2] BRANCH([[L3] FETCH-x, [L3] PUSH-100, [L3] DIV, [L3] STORE-y], [[L4] PUSH-100, [L4] STORE-y])]):[L6] CATCH([[L5] PUSH-5, [L5] STORE-x]):ε, ε, s[z→NEG,y→POS,x→POS]>
+=== Running from {z=ZERO, y=NEG, x=POS}
+<[L0] FETCH-z:[L0] PUSH-5:[L0] DIV:[L0] STORE-z:[L1] TRY([[L2] PUSH-0, [L2] FETCH-x, [L2] EQ, [L2] NEG, [L2] BRANCH([[L3] FETCH-x, [L3] PUSH-100, [L3] DIV, [L3] STORE-y], [[L4] PUSH-100, [L4] STORE-y])]):[L6] CATCH([[L5] PUSH-5, [L5] STORE-x]):ε, ε, s[z→ZERO,y→NEG,x→POS]>
+=== Running from {z=ZERO, y=ZERO, x=POS}
+<[L0] FETCH-z:[L0] PUSH-5:[L0] DIV:[L0] STORE-z:[L1] TRY([[L2] PUSH-0, [L2] FETCH-x, [L2] EQ, [L2] NEG, [L2] BRANCH([[L3] FETCH-x, [L3] PUSH-100, [L3] DIV, [L3] STORE-y], [[L4] PUSH-100, [L4] STORE-y])]):[L6] CATCH([[L5] PUSH-5, [L5] STORE-x]):ε, ε, s[z→ZERO,y→ZERO,x→POS]>
+=== Running from {z=ZERO, y=POS, x=POS}
+<[L0] FETCH-z:[L0] PUSH-5:[L0] DIV:[L0] STORE-z:[L1] TRY([[L2] PUSH-0, [L2] FETCH-x, [L2] EQ, [L2] NEG, [L2] BRANCH([[L3] FETCH-x, [L3] PUSH-100, [L3] DIV, [L3] STORE-y], [[L4] PUSH-100, [L4] STORE-y])]):[L6] CATCH([[L5] PUSH-5, [L5] STORE-x]):ε, ε, s[z→ZERO,y→POS,x→POS]>
+=== Running from {z=POS, y=NEG, x=POS}
+<[L0] FETCH-z:[L0] PUSH-5:[L0] DIV:[L0] STORE-z:[L1] TRY([[L2] PUSH-0, [L2] FETCH-x, [L2] EQ, [L2] NEG, [L2] BRANCH([[L3] FETCH-x, [L3] PUSH-100, [L3] DIV, [L3] STORE-y], [[L4] PUSH-100, [L4] STORE-y])]):[L6] CATCH([[L5] PUSH-5, [L5] STORE-x]):ε, ε, s[z→POS,y→NEG,x→POS]>
+=== Running from {z=POS, y=ZERO, x=POS}
+<[L0] FETCH-z:[L0] PUSH-5:[L0] DIV:[L0] STORE-z:[L1] TRY([[L2] PUSH-0, [L2] FETCH-x, [L2] EQ, [L2] NEG, [L2] BRANCH([[L3] FETCH-x, [L3] PUSH-100, [L3] DIV, [L3] STORE-y], [[L4] PUSH-100, [L4] STORE-y])]):[L6] CATCH([[L5] PUSH-5, [L5] STORE-x]):ε, ε, s[z→POS,y→ZERO,x→POS]>
+=== Running from {z=POS, y=POS, x=POS}
+<[L0] FETCH-z:[L0] PUSH-5:[L0] DIV:[L0] STORE-z:[L1] TRY([[L2] PUSH-0, [L2] FETCH-x, [L2] EQ, [L2] NEG, [L2] BRANCH([[L3] FETCH-x, [L3] PUSH-100, [L3] DIV, [L3] STORE-y], [[L4] PUSH-100, [L4] STORE-y])]):[L6] CATCH([[L5] PUSH-5, [L5] STORE-x]):ε, ε, s[z→POS,y→POS,x→POS]>
+=== Running from {z=NEG, y=NEG, x=POS}
+<[L0] FETCH-z:[L0] PUSH-5:[L0] DIV:[L0] STORE-z:[L1] TRY([[L2] PUSH-0, [L2] FETCH-x, [L2] EQ, [L2] NEG, [L2] BRANCH([[L3] FETCH-x, [L3] PUSH-100, [L3] DIV, [L3] STORE-y], [[L4] PUSH-100, [L4] STORE-y])]):[L6] CATCH([[L5] PUSH-5, [L5] STORE-x]):ε, ε, s[z→NEG,y→NEG,x→POS]>
+=== Running from {z=ZERO, y=NEG, x=POS}
+<[L0] FETCH-z:[L0] PUSH-5:[L0] DIV:[L0] STORE-z:[L1] TRY([[L2] PUSH-0, [L2] FETCH-x, [L2] EQ, [L2] NEG, [L2] BRANCH([[L3] FETCH-x, [L3] PUSH-100, [L3] DIV, [L3] STORE-y], [[L4] PUSH-100, [L4] STORE-y])]):[L6] CATCH([[L5] PUSH-5, [L5] STORE-x]):ε, ε, s[z→ZERO,y→NEG,x→POS]>
+=== Running from {z=POS, y=NEG, x=POS}
+<[L0] FETCH-z:[L0] PUSH-5:[L0] DIV:[L0] STORE-z:[L1] TRY([[L2] PUSH-0, [L2] FETCH-x, [L2] EQ, [L2] NEG, [L2] BRANCH([[L3] FETCH-x, [L3] PUSH-100, [L3] DIV, [L3] STORE-y], [[L4] PUSH-100, [L4] STORE-y])]):[L6] CATCH([[L5] PUSH-5, [L5] STORE-x]):ε, ε, s[z→POS,y→NEG,x→POS]>
+=== Running from {z=NEG, y=ZERO, x=POS}
+<[L0] FETCH-z:[L0] PUSH-5:[L0] DIV:[L0] STORE-z:[L1] TRY([[L2] PUSH-0, [L2] FETCH-x, [L2] EQ, [L2] NEG, [L2] BRANCH([[L3] FETCH-x, [L3] PUSH-100, [L3] DIV, [L3] STORE-y], [[L4] PUSH-100, [L4] STORE-y])]):[L6] CATCH([[L5] PUSH-5, [L5] STORE-x]):ε, ε, s[z→NEG,y→ZERO,x→POS]>
+=== Running from {z=ZERO, y=ZERO, x=POS}
+<[L0] FETCH-z:[L0] PUSH-5:[L0] DIV:[L0] STORE-z:[L1] TRY([[L2] PUSH-0, [L2] FETCH-x, [L2] EQ, [L2] NEG, [L2] BRANCH([[L3] FETCH-x, [L3] PUSH-100, [L3] DIV, [L3] STORE-y], [[L4] PUSH-100, [L4] STORE-y])]):[L6] CATCH([[L5] PUSH-5, [L5] STORE-x]):ε, ε, s[z→ZERO,y→ZERO,x→POS]>
+=== Running from {z=POS, y=ZERO, x=POS}
+<[L0] FETCH-z:[L0] PUSH-5:[L0] DIV:[L0] STORE-z:[L1] TRY([[L2] PUSH-0, [L2] FETCH-x, [L2] EQ, [L2] NEG, [L2] BRANCH([[L3] FETCH-x, [L3] PUSH-100, [L3] DIV, [L3] STORE-y], [[L4] PUSH-100, [L4] STORE-y])]):[L6] CATCH([[L5] PUSH-5, [L5] STORE-x]):ε, ε, s[z→POS,y→ZERO,x→POS]>
+=== Running from {z=NEG, y=POS, x=POS}
+<[L0] FETCH-z:[L0] PUSH-5:[L0] DIV:[L0] STORE-z:[L1] TRY([[L2] PUSH-0, [L2] FETCH-x, [L2] EQ, [L2] NEG, [L2] BRANCH([[L3] FETCH-x, [L3] PUSH-100, [L3] DIV, [L3] STORE-y], [[L4] PUSH-100, [L4] STORE-y])]):[L6] CATCH([[L5] PUSH-5, [L5] STORE-x]):ε, ε, s[z→NEG,y→POS,x→POS]>
+=== Running from {z=ZERO, y=POS, x=POS}
+<[L0] FETCH-z:[L0] PUSH-5:[L0] DIV:[L0] STORE-z:[L1] TRY([[L2] PUSH-0, [L2] FETCH-x, [L2] EQ, [L2] NEG, [L2] BRANCH([[L3] FETCH-x, [L3] PUSH-100, [L3] DIV, [L3] STORE-y], [[L4] PUSH-100, [L4] STORE-y])]):[L6] CATCH([[L5] PUSH-5, [L5] STORE-x]):ε, ε, s[z→ZERO,y→POS,x→POS]>
+=== Running from {z=POS, y=POS, x=POS}
+<[L0] FETCH-z:[L0] PUSH-5:[L0] DIV:[L0] STORE-z:[L1] TRY([[L2] PUSH-0, [L2] FETCH-x, [L2] EQ, [L2] NEG, [L2] BRANCH([[L3] FETCH-x, [L3] PUSH-100, [L3] DIV, [L3] STORE-y], [[L4] PUSH-100, [L4] STORE-y])]):[L6] CATCH([[L5] PUSH-5, [L5] STORE-x]):ε, ε, s[z→POS,y→POS,x→POS]>
+
+{z=Z, y=Z, x=Z} rhs: ANY_A
+z := (5 / z);
+{z=Z, y=Z, x=Z}
+try
+    {z=Z, y=Z, x=Z} rhs: T
+    if !(x = 0) then
+        {z=Z, y=Z, x=NON_ZERO} rhs: Z
+        y := (100 / x)
+    else
+        {z=Z, y=Z, x=ZERO} rhs: POS
+        y := 100
+catch
+    {z=NONE_A, y=NONE_A, x=NONE_A} rhs: NONE (Dead Code)
+    x := 5;
+{z=Z, y=Z, x=Z}
+Abnormal termination possible!
+Normal termination possible!

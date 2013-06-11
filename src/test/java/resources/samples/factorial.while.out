@@ -1,0 +1,106 @@
+=== Running from {f=NEG, x=NEG}
+<[L0] PUSH-1:[L0] STORE-f:[L1] PUSH-9:[L1] STORE-x:[L2] LOOP([[L2] FETCH-x, [L2] PUSH-2, [L2] LE], [[L3] FETCH-x, [L3] FETCH-f, [L3] MULT, [L3] STORE-f, [L4] PUSH-1, [L4] FETCH-x, [L4] SUB, [L4] STORE-x]):ε, ε, s[f→NEG,x→NEG]>
+<[L0] STORE-f:[L1] PUSH-9:[L1] STORE-x:[L2] LOOP([[L2] FETCH-x, [L2] PUSH-2, [L2] LE], [[L3] FETCH-x, [L3] FETCH-f, [L3] MULT, [L3] STORE-f, [L4] PUSH-1, [L4] FETCH-x, [L4] SUB, [L4] STORE-x]):ε, POS:ε, s[f→NEG,x→NEG]>
+<[L1] PUSH-9:[L1] STORE-x:[L2] LOOP([[L2] FETCH-x, [L2] PUSH-2, [L2] LE], [[L3] FETCH-x, [L3] FETCH-f, [L3] MULT, [L3] STORE-f, [L4] PUSH-1, [L4] FETCH-x, [L4] SUB, [L4] STORE-x]):ε, ε, s[f→POS,x→NEG]>
+<[L1] STORE-x:[L2] LOOP([[L2] FETCH-x, [L2] PUSH-2, [L2] LE], [[L3] FETCH-x, [L3] FETCH-f, [L3] MULT, [L3] STORE-f, [L4] PUSH-1, [L4] FETCH-x, [L4] SUB, [L4] STORE-x]):ε, POS:ε, s[f→POS,x→NEG]>
+<[L2] LOOP([[L2] FETCH-x, [L2] PUSH-2, [L2] LE], [[L3] FETCH-x, [L3] FETCH-f, [L3] MULT, [L3] STORE-f, [L4] PUSH-1, [L4] FETCH-x, [L4] SUB, [L4] STORE-x]):ε, ε, s[f→POS,x→POS]>
+<[L2] FETCH-x:[L2] PUSH-2:[L2] LE:[L2] BRANCH([[L3] FETCH-x, [L3] FETCH-f, [L3] MULT, [L3] STORE-f, [L4] PUSH-1, [L4] FETCH-x, [L4] SUB, [L4] STORE-x, [L2] LOOP([[L2] FETCH-x, [L2] PUSH-2, [L2] LE], [[L3] FETCH-x, [L3] FETCH-f, [L3] MULT, [L3] STORE-f, [L4] PUSH-1, [L4] FETCH-x, [L4] SUB, [L4] STORE-x])], [[L2] NOOP]):ε, ε, s[f→POS,x→POS]>
+<[L2] PUSH-2:[L2] LE:[L2] BRANCH([[L3] FETCH-x, [L3] FETCH-f, [L3] MULT, [L3] STORE-f, [L4] PUSH-1, [L4] FETCH-x, [L4] SUB, [L4] STORE-x, [L2] LOOP([[L2] FETCH-x, [L2] PUSH-2, [L2] LE], [[L3] FETCH-x, [L3] FETCH-f, [L3] MULT, [L3] STORE-f, [L4] PUSH-1, [L4] FETCH-x, [L4] SUB, [L4] STORE-x])], [[L2] NOOP]):ε, POS:ε, s[f→POS,x→POS]>
+<[L2] LE:[L2] BRANCH([[L3] FETCH-x, [L3] FETCH-f, [L3] MULT, [L3] STORE-f, [L4] PUSH-1, [L4] FETCH-x, [L4] SUB, [L4] STORE-x, [L2] LOOP([[L2] FETCH-x, [L2] PUSH-2, [L2] LE], [[L3] FETCH-x, [L3] FETCH-f, [L3] MULT, [L3] STORE-f, [L4] PUSH-1, [L4] FETCH-x, [L4] SUB, [L4] STORE-x])], [[L2] NOOP]):ε, POS:POS:ε, s[f→POS,x→POS]>
+<[L2] BRANCH([[L3] FETCH-x, [L3] FETCH-f, [L3] MULT, [L3] STORE-f, [L4] PUSH-1, [L4] FETCH-x, [L4] SUB, [L4] STORE-x, [L2] LOOP([[L2] FETCH-x, [L2] PUSH-2, [L2] LE], [[L3] FETCH-x, [L3] FETCH-f, [L3] MULT, [L3] STORE-f, [L4] PUSH-1, [L4] FETCH-x, [L4] SUB, [L4] STORE-x])], [[L2] NOOP]):ε, T:ε, s[f→POS,x→POS]>
+<[L2] NOOP:ε, ε, s[f→POS,x→POS]>
+<ε, ε, s[f→POS,x→POS]>
+<[L3] FETCH-x:[L3] FETCH-f:[L3] MULT:[L3] STORE-f:[L4] PUSH-1:[L4] FETCH-x:[L4] SUB:[L4] STORE-x:[L2] LOOP([[L2] FETCH-x, [L2] PUSH-2, [L2] LE], [[L3] FETCH-x, [L3] FETCH-f, [L3] MULT, [L3] STORE-f, [L4] PUSH-1, [L4] FETCH-x, [L4] SUB, [L4] STORE-x]):ε, ε, s[f→POS,x→POS]>
+<[L3] FETCH-f:[L3] MULT:[L3] STORE-f:[L4] PUSH-1:[L4] FETCH-x:[L4] SUB:[L4] STORE-x:[L2] LOOP([[L2] FETCH-x, [L2] PUSH-2, [L2] LE], [[L3] FETCH-x, [L3] FETCH-f, [L3] MULT, [L3] STORE-f, [L4] PUSH-1, [L4] FETCH-x, [L4] SUB, [L4] STORE-x]):ε, POS:ε, s[f→POS,x→POS]>
+<[L3] MULT:[L3] STORE-f:[L4] PUSH-1:[L4] FETCH-x:[L4] SUB:[L4] STORE-x:[L2] LOOP([[L2] FETCH-x, [L2] PUSH-2, [L2] LE], [[L3] FETCH-x, [L3] FETCH-f, [L3] MULT, [L3] STORE-f, [L4] PUSH-1, [L4] FETCH-x, [L4] SUB, [L4] STORE-x]):ε, POS:POS:ε, s[f→POS,x→POS]>
+<[L3] STORE-f:[L4] PUSH-1:[L4] FETCH-x:[L4] SUB:[L4] STORE-x:[L2] LOOP([[L2] FETCH-x, [L2] PUSH-2, [L2] LE], [[L3] FETCH-x, [L3] FETCH-f, [L3] MULT, [L3] STORE-f, [L4] PUSH-1, [L4] FETCH-x, [L4] SUB, [L4] STORE-x]):ε, POS:ε, s[f→POS,x→POS]>
+<[L4] PUSH-1:[L4] FETCH-x:[L4] SUB:[L4] STORE-x:[L2] LOOP([[L2] FETCH-x, [L2] PUSH-2, [L2] LE], [[L3] FETCH-x, [L3] FETCH-f, [L3] MULT, [L3] STORE-f, [L4] PUSH-1, [L4] FETCH-x, [L4] SUB, [L4] STORE-x]):ε, ε, s[f→POS,x→POS]>
+<[L4] FETCH-x:[L4] SUB:[L4] STORE-x:[L2] LOOP([[L2] FETCH-x, [L2] PUSH-2, [L2] LE], [[L3] FETCH-x, [L3] FETCH-f, [L3] MULT, [L3] STORE-f, [L4] PUSH-1, [L4] FETCH-x, [L4] SUB, [L4] STORE-x]):ε, POS:ε, s[f→POS,x→POS]>
+<[L4] SUB:[L4] STORE-x:[L2] LOOP([[L2] FETCH-x, [L2] PUSH-2, [L2] LE], [[L3] FETCH-x, [L3] FETCH-f, [L3] MULT, [L3] STORE-f, [L4] PUSH-1, [L4] FETCH-x, [L4] SUB, [L4] STORE-x]):ε, POS:POS:ε, s[f→POS,x→POS]>
+<[L4] STORE-x:[L2] LOOP([[L2] FETCH-x, [L2] PUSH-2, [L2] LE], [[L3] FETCH-x, [L3] FETCH-f, [L3] MULT, [L3] STORE-f, [L4] PUSH-1, [L4] FETCH-x, [L4] SUB, [L4] STORE-x]):ε, Z:ε, s[f→POS,x→POS]>
+<[L2] LOOP([[L2] FETCH-x, [L2] PUSH-2, [L2] LE], [[L3] FETCH-x, [L3] FETCH-f, [L3] MULT, [L3] STORE-f, [L4] PUSH-1, [L4] FETCH-x, [L4] SUB, [L4] STORE-x]):ε, ε, s[f→POS,x→Z]>
+<[L2] FETCH-x:[L2] PUSH-2:[L2] LE:[L2] BRANCH([[L3] FETCH-x, [L3] FETCH-f, [L3] MULT, [L3] STORE-f, [L4] PUSH-1, [L4] FETCH-x, [L4] SUB, [L4] STORE-x, [L2] LOOP([[L2] FETCH-x, [L2] PUSH-2, [L2] LE], [[L3] FETCH-x, [L3] FETCH-f, [L3] MULT, [L3] STORE-f, [L4] PUSH-1, [L4] FETCH-x, [L4] SUB, [L4] STORE-x])], [[L2] NOOP]):ε, ε, s[f→POS,x→Z]>
+<[L2] PUSH-2:[L2] LE:[L2] BRANCH([[L3] FETCH-x, [L3] FETCH-f, [L3] MULT, [L3] STORE-f, [L4] PUSH-1, [L4] FETCH-x, [L4] SUB, [L4] STORE-x, [L2] LOOP([[L2] FETCH-x, [L2] PUSH-2, [L2] LE], [[L3] FETCH-x, [L3] FETCH-f, [L3] MULT, [L3] STORE-f, [L4] PUSH-1, [L4] FETCH-x, [L4] SUB, [L4] STORE-x])], [[L2] NOOP]):ε, Z:ε, s[f→POS,x→Z]>
+<[L2] LE:[L2] BRANCH([[L3] FETCH-x, [L3] FETCH-f, [L3] MULT, [L3] STORE-f, [L4] PUSH-1, [L4] FETCH-x, [L4] SUB, [L4] STORE-x, [L2] LOOP([[L2] FETCH-x, [L2] PUSH-2, [L2] LE], [[L3] FETCH-x, [L3] FETCH-f, [L3] MULT, [L3] STORE-f, [L4] PUSH-1, [L4] FETCH-x, [L4] SUB, [L4] STORE-x])], [[L2] NOOP]):ε, POS:Z:ε, s[f→POS,x→Z]>
+<[L2] BRANCH([[L3] FETCH-x, [L3] FETCH-f, [L3] MULT, [L3] STORE-f, [L4] PUSH-1, [L4] FETCH-x, [L4] SUB, [L4] STORE-x, [L2] LOOP([[L2] FETCH-x, [L2] PUSH-2, [L2] LE], [[L3] FETCH-x, [L3] FETCH-f, [L3] MULT, [L3] STORE-f, [L4] PUSH-1, [L4] FETCH-x, [L4] SUB, [L4] STORE-x])], [[L2] NOOP]):ε, T:ε, s[f→POS,x→Z]>
+<[L3] FETCH-x:[L3] FETCH-f:[L3] MULT:[L3] STORE-f:[L4] PUSH-1:[L4] FETCH-x:[L4] SUB:[L4] STORE-x:[L2] LOOP([[L2] FETCH-x, [L2] PUSH-2, [L2] LE], [[L3] FETCH-x, [L3] FETCH-f, [L3] MULT, [L3] STORE-f, [L4] PUSH-1, [L4] FETCH-x, [L4] SUB, [L4] STORE-x]):ε, ε, s[f→POS,x→Z]>
+<[L3] FETCH-f:[L3] MULT:[L3] STORE-f:[L4] PUSH-1:[L4] FETCH-x:[L4] SUB:[L4] STORE-x:[L2] LOOP([[L2] FETCH-x, [L2] PUSH-2, [L2] LE], [[L3] FETCH-x, [L3] FETCH-f, [L3] MULT, [L3] STORE-f, [L4] PUSH-1, [L4] FETCH-x, [L4] SUB, [L4] STORE-x]):ε, Z:ε, s[f→POS,x→Z]>
+<[L3] MULT:[L3] STORE-f:[L4] PUSH-1:[L4] FETCH-x:[L4] SUB:[L4] STORE-x:[L2] LOOP([[L2] FETCH-x, [L2] PUSH-2, [L2] LE], [[L3] FETCH-x, [L3] FETCH-f, [L3] MULT, [L3] STORE-f, [L4] PUSH-1, [L4] FETCH-x, [L4] SUB, [L4] STORE-x]):ε, POS:Z:ε, s[f→POS,x→Z]>
+<[L3] STORE-f:[L4] PUSH-1:[L4] FETCH-x:[L4] SUB:[L4] STORE-x:[L2] LOOP([[L2] FETCH-x, [L2] PUSH-2, [L2] LE], [[L3] FETCH-x, [L3] FETCH-f, [L3] MULT, [L3] STORE-f, [L4] PUSH-1, [L4] FETCH-x, [L4] SUB, [L4] STORE-x]):ε, Z:ε, s[f→POS,x→Z]>
+<[L4] PUSH-1:[L4] FETCH-x:[L4] SUB:[L4] STORE-x:[L2] LOOP([[L2] FETCH-x, [L2] PUSH-2, [L2] LE], [[L3] FETCH-x, [L3] FETCH-f, [L3] MULT, [L3] STORE-f, [L4] PUSH-1, [L4] FETCH-x, [L4] SUB, [L4] STORE-x]):ε, ε, s[f→Z,x→Z]>
+<[L4] FETCH-x:[L4] SUB:[L4] STORE-x:[L2] LOOP([[L2] FETCH-x, [L2] PUSH-2, [L2] LE], [[L3] FETCH-x, [L3] FETCH-f, [L3] MULT, [L3] STORE-f, [L4] PUSH-1, [L4] FETCH-x, [L4] SUB, [L4] STORE-x]):ε, POS:ε, s[f→Z,x→Z]>
+<[L4] SUB:[L4] STORE-x:[L2] LOOP([[L2] FETCH-x, [L2] PUSH-2, [L2] LE], [[L3] FETCH-x, [L3] FETCH-f, [L3] MULT, [L3] STORE-f, [L4] PUSH-1, [L4] FETCH-x, [L4] SUB, [L4] STORE-x]):ε, Z:POS:ε, s[f→Z,x→Z]>
+<[L4] STORE-x:[L2] LOOP([[L2] FETCH-x, [L2] PUSH-2, [L2] LE], [[L3] FETCH-x, [L3] FETCH-f, [L3] MULT, [L3] STORE-f, [L4] PUSH-1, [L4] FETCH-x, [L4] SUB, [L4] STORE-x]):ε, Z:ε, s[f→Z,x→Z]>
+<[L2] LOOP([[L2] FETCH-x, [L2] PUSH-2, [L2] LE], [[L3] FETCH-x, [L3] FETCH-f, [L3] MULT, [L3] STORE-f, [L4] PUSH-1, [L4] FETCH-x, [L4] SUB, [L4] STORE-x]):ε, ε, s[f→Z,x→Z]>
+<[L2] FETCH-x:[L2] PUSH-2:[L2] LE:[L2] BRANCH([[L3] FETCH-x, [L3] FETCH-f, [L3] MULT, [L3] STORE-f, [L4] PUSH-1, [L4] FETCH-x, [L4] SUB, [L4] STORE-x, [L2] LOOP([[L2] FETCH-x, [L2] PUSH-2, [L2] LE], [[L3] FETCH-x, [L3] FETCH-f, [L3] MULT, [L3] STORE-f, [L4] PUSH-1, [L4] FETCH-x, [L4] SUB, [L4] STORE-x])], [[L2] NOOP]):ε, ε, s[f→Z,x→Z]>
+<[L2] PUSH-2:[L2] LE:[L2] BRANCH([[L3] FETCH-x, [L3] FETCH-f, [L3] MULT, [L3] STORE-f, [L4] PUSH-1, [L4] FETCH-x, [L4] SUB, [L4] STORE-x, [L2] LOOP([[L2] FETCH-x, [L2] PUSH-2, [L2] LE], [[L3] FETCH-x, [L3] FETCH-f, [L3] MULT, [L3] STORE-f, [L4] PUSH-1, [L4] FETCH-x, [L4] SUB, [L4] STORE-x])], [[L2] NOOP]):ε, Z:ε, s[f→Z,x→Z]>
+<[L2] LE:[L2] BRANCH([[L3] FETCH-x, [L3] FETCH-f, [L3] MULT, [L3] STORE-f, [L4] PUSH-1, [L4] FETCH-x, [L4] SUB, [L4] STORE-x, [L2] LOOP([[L2] FETCH-x, [L2] PUSH-2, [L2] LE], [[L3] FETCH-x, [L3] FETCH-f, [L3] MULT, [L3] STORE-f, [L4] PUSH-1, [L4] FETCH-x, [L4] SUB, [L4] STORE-x])], [[L2] NOOP]):ε, POS:Z:ε, s[f→Z,x→Z]>
+<[L2] BRANCH([[L3] FETCH-x, [L3] FETCH-f, [L3] MULT, [L3] STORE-f, [L4] PUSH-1, [L4] FETCH-x, [L4] SUB, [L4] STORE-x, [L2] LOOP([[L2] FETCH-x, [L2] PUSH-2, [L2] LE], [[L3] FETCH-x, [L3] FETCH-f, [L3] MULT, [L3] STORE-f, [L4] PUSH-1, [L4] FETCH-x, [L4] SUB, [L4] STORE-x])], [[L2] NOOP]):ε, T:ε, s[f→Z,x→Z]>
+<[L3] FETCH-x:[L3] FETCH-f:[L3] MULT:[L3] STORE-f:[L4] PUSH-1:[L4] FETCH-x:[L4] SUB:[L4] STORE-x:[L2] LOOP([[L2] FETCH-x, [L2] PUSH-2, [L2] LE], [[L3] FETCH-x, [L3] FETCH-f, [L3] MULT, [L3] STORE-f, [L4] PUSH-1, [L4] FETCH-x, [L4] SUB, [L4] STORE-x]):ε, ε, s[f→Z,x→Z]>
+<[L3] FETCH-f:[L3] MULT:[L3] STORE-f:[L4] PUSH-1:[L4] FETCH-x:[L4] SUB:[L4] STORE-x:[L2] LOOP([[L2] FETCH-x, [L2] PUSH-2, [L2] LE], [[L3] FETCH-x, [L3] FETCH-f, [L3] MULT, [L3] STORE-f, [L4] PUSH-1, [L4] FETCH-x, [L4] SUB, [L4] STORE-x]):ε, Z:ε, s[f→Z,x→Z]>
+<[L3] MULT:[L3] STORE-f:[L4] PUSH-1:[L4] FETCH-x:[L4] SUB:[L4] STORE-x:[L2] LOOP([[L2] FETCH-x, [L2] PUSH-2, [L2] LE], [[L3] FETCH-x, [L3] FETCH-f, [L3] MULT, [L3] STORE-f, [L4] PUSH-1, [L4] FETCH-x, [L4] SUB, [L4] STORE-x]):ε, Z:Z:ε, s[f→Z,x→Z]>
+<[L3] STORE-f:[L4] PUSH-1:[L4] FETCH-x:[L4] SUB:[L4] STORE-x:[L2] LOOP([[L2] FETCH-x, [L2] PUSH-2, [L2] LE], [[L3] FETCH-x, [L3] FETCH-f, [L3] MULT, [L3] STORE-f, [L4] PUSH-1, [L4] FETCH-x, [L4] SUB, [L4] STORE-x]):ε, Z:ε, s[f→Z,x→Z]>
+<[L2] NOOP:ε, ε, s[f→Z,x→Z]>
+<ε, ε, s[f→Z,x→Z]>
+<[L2] NOOP:ε, ε, s[f→POS,x→Z]>
+<ε, ε, s[f→POS,x→Z]>
+=== Running from {f=NEG, x=ZERO}
+<[L0] PUSH-1:[L0] STORE-f:[L1] PUSH-9:[L1] STORE-x:[L2] LOOP([[L2] FETCH-x, [L2] PUSH-2, [L2] LE], [[L3] FETCH-x, [L3] FETCH-f, [L3] MULT, [L3] STORE-f, [L4] PUSH-1, [L4] FETCH-x, [L4] SUB, [L4] STORE-x]):ε, ε, s[f→NEG,x→ZERO]>
+<[L0] STORE-f:[L1] PUSH-9:[L1] STORE-x:[L2] LOOP([[L2] FETCH-x, [L2] PUSH-2, [L2] LE], [[L3] FETCH-x, [L3] FETCH-f, [L3] MULT, [L3] STORE-f, [L4] PUSH-1, [L4] FETCH-x, [L4] SUB, [L4] STORE-x]):ε, POS:ε, s[f→NEG,x→ZERO]>
+<[L1] PUSH-9:[L1] STORE-x:[L2] LOOP([[L2] FETCH-x, [L2] PUSH-2, [L2] LE], [[L3] FETCH-x, [L3] FETCH-f, [L3] MULT, [L3] STORE-f, [L4] PUSH-1, [L4] FETCH-x, [L4] SUB, [L4] STORE-x]):ε, ε, s[f→POS,x→ZERO]>
+<[L1] STORE-x:[L2] LOOP([[L2] FETCH-x, [L2] PUSH-2, [L2] LE], [[L3] FETCH-x, [L3] FETCH-f, [L3] MULT, [L3] STORE-f, [L4] PUSH-1, [L4] FETCH-x, [L4] SUB, [L4] STORE-x]):ε, POS:ε, s[f→POS,x→ZERO]>
+=== Running from {f=NEG, x=POS}
+<[L0] PUSH-1:[L0] STORE-f:[L1] PUSH-9:[L1] STORE-x:[L2] LOOP([[L2] FETCH-x, [L2] PUSH-2, [L2] LE], [[L3] FETCH-x, [L3] FETCH-f, [L3] MULT, [L3] STORE-f, [L4] PUSH-1, [L4] FETCH-x, [L4] SUB, [L4] STORE-x]):ε, ε, s[f→NEG,x→POS]>
+<[L0] STORE-f:[L1] PUSH-9:[L1] STORE-x:[L2] LOOP([[L2] FETCH-x, [L2] PUSH-2, [L2] LE], [[L3] FETCH-x, [L3] FETCH-f, [L3] MULT, [L3] STORE-f, [L4] PUSH-1, [L4] FETCH-x, [L4] SUB, [L4] STORE-x]):ε, POS:ε, s[f→NEG,x→POS]>
+<[L1] PUSH-9:[L1] STORE-x:[L2] LOOP([[L2] FETCH-x, [L2] PUSH-2, [L2] LE], [[L3] FETCH-x, [L3] FETCH-f, [L3] MULT, [L3] STORE-f, [L4] PUSH-1, [L4] FETCH-x, [L4] SUB, [L4] STORE-x]):ε, ε, s[f→POS,x→POS]>
+<[L1] STORE-x:[L2] LOOP([[L2] FETCH-x, [L2] PUSH-2, [L2] LE], [[L3] FETCH-x, [L3] FETCH-f, [L3] MULT, [L3] STORE-f, [L4] PUSH-1, [L4] FETCH-x, [L4] SUB, [L4] STORE-x]):ε, POS:ε, s[f→POS,x→POS]>
+=== Running from {f=ZERO, x=NEG}
+<[L0] PUSH-1:[L0] STORE-f:[L1] PUSH-9:[L1] STORE-x:[L2] LOOP([[L2] FETCH-x, [L2] PUSH-2, [L2] LE], [[L3] FETCH-x, [L3] FETCH-f, [L3] MULT, [L3] STORE-f, [L4] PUSH-1, [L4] FETCH-x, [L4] SUB, [L4] STORE-x]):ε, ε, s[f→ZERO,x→NEG]>
+<[L0] STORE-f:[L1] PUSH-9:[L1] STORE-x:[L2] LOOP([[L2] FETCH-x, [L2] PUSH-2, [L2] LE], [[L3] FETCH-x, [L3] FETCH-f, [L3] MULT, [L3] STORE-f, [L4] PUSH-1, [L4] FETCH-x, [L4] SUB, [L4] STORE-x]):ε, POS:ε, s[f→ZERO,x→NEG]>
+=== Running from {f=ZERO, x=ZERO}
+<[L0] PUSH-1:[L0] STORE-f:[L1] PUSH-9:[L1] STORE-x:[L2] LOOP([[L2] FETCH-x, [L2] PUSH-2, [L2] LE], [[L3] FETCH-x, [L3] FETCH-f, [L3] MULT, [L3] STORE-f, [L4] PUSH-1, [L4] FETCH-x, [L4] SUB, [L4] STORE-x]):ε, ε, s[f→ZERO,x→ZERO]>
+<[L0] STORE-f:[L1] PUSH-9:[L1] STORE-x:[L2] LOOP([[L2] FETCH-x, [L2] PUSH-2, [L2] LE], [[L3] FETCH-x, [L3] FETCH-f, [L3] MULT, [L3] STORE-f, [L4] PUSH-1, [L4] FETCH-x, [L4] SUB, [L4] STORE-x]):ε, POS:ε, s[f→ZERO,x→ZERO]>
+=== Running from {f=ZERO, x=POS}
+<[L0] PUSH-1:[L0] STORE-f:[L1] PUSH-9:[L1] STORE-x:[L2] LOOP([[L2] FETCH-x, [L2] PUSH-2, [L2] LE], [[L3] FETCH-x, [L3] FETCH-f, [L3] MULT, [L3] STORE-f, [L4] PUSH-1, [L4] FETCH-x, [L4] SUB, [L4] STORE-x]):ε, ε, s[f→ZERO,x→POS]>
+<[L0] STORE-f:[L1] PUSH-9:[L1] STORE-x:[L2] LOOP([[L2] FETCH-x, [L2] PUSH-2, [L2] LE], [[L3] FETCH-x, [L3] FETCH-f, [L3] MULT, [L3] STORE-f, [L4] PUSH-1, [L4] FETCH-x, [L4] SUB, [L4] STORE-x]):ε, POS:ε, s[f→ZERO,x→POS]>
+=== Running from {f=POS, x=NEG}
+<[L0] PUSH-1:[L0] STORE-f:[L1] PUSH-9:[L1] STORE-x:[L2] LOOP([[L2] FETCH-x, [L2] PUSH-2, [L2] LE], [[L3] FETCH-x, [L3] FETCH-f, [L3] MULT, [L3] STORE-f, [L4] PUSH-1, [L4] FETCH-x, [L4] SUB, [L4] STORE-x]):ε, ε, s[f→POS,x→NEG]>
+<[L0] STORE-f:[L1] PUSH-9:[L1] STORE-x:[L2] LOOP([[L2] FETCH-x, [L2] PUSH-2, [L2] LE], [[L3] FETCH-x, [L3] FETCH-f, [L3] MULT, [L3] STORE-f, [L4] PUSH-1, [L4] FETCH-x, [L4] SUB, [L4] STORE-x]):ε, POS:ε, s[f→POS,x→NEG]>
+=== Running from {f=POS, x=ZERO}
+<[L0] PUSH-1:[L0] STORE-f:[L1] PUSH-9:[L1] STORE-x:[L2] LOOP([[L2] FETCH-x, [L2] PUSH-2, [L2] LE], [[L3] FETCH-x, [L3] FETCH-f, [L3] MULT, [L3] STORE-f, [L4] PUSH-1, [L4] FETCH-x, [L4] SUB, [L4] STORE-x]):ε, ε, s[f→POS,x→ZERO]>
+<[L0] STORE-f:[L1] PUSH-9:[L1] STORE-x:[L2] LOOP([[L2] FETCH-x, [L2] PUSH-2, [L2] LE], [[L3] FETCH-x, [L3] FETCH-f, [L3] MULT, [L3] STORE-f, [L4] PUSH-1, [L4] FETCH-x, [L4] SUB, [L4] STORE-x]):ε, POS:ε, s[f→POS,x→ZERO]>
+=== Running from {f=POS, x=POS}
+<[L0] PUSH-1:[L0] STORE-f:[L1] PUSH-9:[L1] STORE-x:[L2] LOOP([[L2] FETCH-x, [L2] PUSH-2, [L2] LE], [[L3] FETCH-x, [L3] FETCH-f, [L3] MULT, [L3] STORE-f, [L4] PUSH-1, [L4] FETCH-x, [L4] SUB, [L4] STORE-x]):ε, ε, s[f→POS,x→POS]>
+<[L0] STORE-f:[L1] PUSH-9:[L1] STORE-x:[L2] LOOP([[L2] FETCH-x, [L2] PUSH-2, [L2] LE], [[L3] FETCH-x, [L3] FETCH-f, [L3] MULT, [L3] STORE-f, [L4] PUSH-1, [L4] FETCH-x, [L4] SUB, [L4] STORE-x]):ε, POS:ε, s[f→POS,x→POS]>
+=== Running from {f=NEG, x=NEG}
+<[L0] PUSH-1:[L0] STORE-f:[L1] PUSH-9:[L1] STORE-x:[L2] LOOP([[L2] FETCH-x, [L2] PUSH-2, [L2] LE], [[L3] FETCH-x, [L3] FETCH-f, [L3] MULT, [L3] STORE-f, [L4] PUSH-1, [L4] FETCH-x, [L4] SUB, [L4] STORE-x]):ε, ε, s[f→NEG,x→NEG]>
+=== Running from {f=ZERO, x=NEG}
+<[L0] PUSH-1:[L0] STORE-f:[L1] PUSH-9:[L1] STORE-x:[L2] LOOP([[L2] FETCH-x, [L2] PUSH-2, [L2] LE], [[L3] FETCH-x, [L3] FETCH-f, [L3] MULT, [L3] STORE-f, [L4] PUSH-1, [L4] FETCH-x, [L4] SUB, [L4] STORE-x]):ε, ε, s[f→ZERO,x→NEG]>
+=== Running from {f=POS, x=NEG}
+<[L0] PUSH-1:[L0] STORE-f:[L1] PUSH-9:[L1] STORE-x:[L2] LOOP([[L2] FETCH-x, [L2] PUSH-2, [L2] LE], [[L3] FETCH-x, [L3] FETCH-f, [L3] MULT, [L3] STORE-f, [L4] PUSH-1, [L4] FETCH-x, [L4] SUB, [L4] STORE-x]):ε, ε, s[f→POS,x→NEG]>
+=== Running from {f=NEG, x=ZERO}
+<[L0] PUSH-1:[L0] STORE-f:[L1] PUSH-9:[L1] STORE-x:[L2] LOOP([[L2] FETCH-x, [L2] PUSH-2, [L2] LE], [[L3] FETCH-x, [L3] FETCH-f, [L3] MULT, [L3] STORE-f, [L4] PUSH-1, [L4] FETCH-x, [L4] SUB, [L4] STORE-x]):ε, ε, s[f→NEG,x→ZERO]>
+=== Running from {f=ZERO, x=ZERO}
+<[L0] PUSH-1:[L0] STORE-f:[L1] PUSH-9:[L1] STORE-x:[L2] LOOP([[L2] FETCH-x, [L2] PUSH-2, [L2] LE], [[L3] FETCH-x, [L3] FETCH-f, [L3] MULT, [L3] STORE-f, [L4] PUSH-1, [L4] FETCH-x, [L4] SUB, [L4] STORE-x]):ε, ε, s[f→ZERO,x→ZERO]>
+=== Running from {f=POS, x=ZERO}
+<[L0] PUSH-1:[L0] STORE-f:[L1] PUSH-9:[L1] STORE-x:[L2] LOOP([[L2] FETCH-x, [L2] PUSH-2, [L2] LE], [[L3] FETCH-x, [L3] FETCH-f, [L3] MULT, [L3] STORE-f, [L4] PUSH-1, [L4] FETCH-x, [L4] SUB, [L4] STORE-x]):ε, ε, s[f→POS,x→ZERO]>
+=== Running from {f=NEG, x=POS}
+<[L0] PUSH-1:[L0] STORE-f:[L1] PUSH-9:[L1] STORE-x:[L2] LOOP([[L2] FETCH-x, [L2] PUSH-2, [L2] LE], [[L3] FETCH-x, [L3] FETCH-f, [L3] MULT, [L3] STORE-f, [L4] PUSH-1, [L4] FETCH-x, [L4] SUB, [L4] STORE-x]):ε, ε, s[f→NEG,x→POS]>
+=== Running from {f=ZERO, x=POS}
+<[L0] PUSH-1:[L0] STORE-f:[L1] PUSH-9:[L1] STORE-x:[L2] LOOP([[L2] FETCH-x, [L2] PUSH-2, [L2] LE], [[L3] FETCH-x, [L3] FETCH-f, [L3] MULT, [L3] STORE-f, [L4] PUSH-1, [L4] FETCH-x, [L4] SUB, [L4] STORE-x]):ε, ε, s[f→ZERO,x→POS]>
+=== Running from {f=POS, x=POS}
+<[L0] PUSH-1:[L0] STORE-f:[L1] PUSH-9:[L1] STORE-x:[L2] LOOP([[L2] FETCH-x, [L2] PUSH-2, [L2] LE], [[L3] FETCH-x, [L3] FETCH-f, [L3] MULT, [L3] STORE-f, [L4] PUSH-1, [L4] FETCH-x, [L4] SUB, [L4] STORE-x]):ε, ε, s[f→POS,x→POS]>
+
+{f=Z, x=Z} rhs: POS
+f := 1;
+{f=POS, x=Z} rhs: POS
+x := 9;
+{f=Z, x=Z} rhs: T
+while 2 <= x do
+    {f=Z, x=Z} rhs: Z
+    f := (f * x);
+    {f=Z, x=Z} rhs: Z
+    x := (x - 1);
+{f=Z, x=Z}
+Abnormal termination impossible!
+Normal termination possible!
