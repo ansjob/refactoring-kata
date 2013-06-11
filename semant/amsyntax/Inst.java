@@ -1,0 +1,44 @@
+package semant.amsyntax;
+
+import semant.Main;
+
+
+public abstract class Inst {
+	
+	public int stmControlPoint = -1;
+    
+    public enum Opcode { ADD, AND, BRANCH, EQ, FALSE, FETCH, LE,
+        LOOP, MULT, NEG, NOOP, PUSH, STORE, SUB, TRUE, DIV, CATCH, TRY
+    };
+    
+    
+    public final Opcode opcode;
+    
+    
+    public Inst(Opcode opcode) {
+        this.opcode = opcode;
+    }
+    
+    
+    public String toString() {
+    	if (Main.LATEX)
+    		return "\\texttt{" + opcode.toString() + "}";
+    	else
+    		return String.format("[L%d] %s", stmControlPoint, opcode.toString());
+    }
+    
+    
+    // Two instructions are equal iff their string representations are equal.
+    public boolean equals(Object o) {
+        if (!(o instanceof Inst))
+            return false;
+        
+        return o.toString().equals(toString());
+    }
+    
+    
+    public int hashCode() {
+        return toString().hashCode();
+    }
+    
+}

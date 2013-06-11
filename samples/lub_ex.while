@@ -1,0 +1,4 @@
+# This program should terminate in an exceptional state where x = 4 (or POS)
+x:= 4;
+x:= 1 / 0;
+x:= 7

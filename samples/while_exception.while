@@ -1,0 +1,7 @@
+
+#Should terminate in an exceptional state with x = 2
+
+x := 2;
+while x <= 4 do
+	x := 1 / 0;
+x:= 3

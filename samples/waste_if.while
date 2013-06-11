@@ -1,0 +1,8 @@
+try
+	x := 5 / y;
+	if y = 0 then
+		x:= 3
+	else 
+		skip
+catch
+	x:= 45

@@ -1,0 +1,6 @@
+
+#Weakness of the signs analysis. There is no way to get into the else-clause
+if (x -1 <= x+1) then
+	y := 5
+else
+	y := 0 - 5

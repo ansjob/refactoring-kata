@@ -1,0 +1,8 @@
+try
+	(if (y <= 0) then
+		y := 0 - y
+	else
+		skip);
+	x := 5 / y
+catch
+	x := 3

@@ -1,0 +1,8 @@
+x:= 5;
+y:= 3;
+(try 
+	z := x / y;
+	x := x / z
+catch
+	skip);
+y := x + 2

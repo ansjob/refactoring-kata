@@ -1,0 +1,335 @@
+\documentclass[a4paper,11pt]{article}
+\usepackage[english]{babel}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{fancyhdr}
+\usepackage{graphicx}
+\usepackage{a4wide}
+\usepackage{numprint}
+\usepackage{url}
+\usepackage{moreverb}
+\usepackage{algpseudocode}
+\usepackage{algorithm}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{stmaryrd}
+\usepackage{cite}
+\usepackage{wasysym}
+\usepackage{bussproofs}
+\usepackage{pdflscape}
+\usepackage{changepage}
+
+\pagestyle{fancy}
+\def\mathlarge#1{\mbox{\LARGE $#1$}}
+
+\newcommand{\tab}{\hspace*{2em}}
+\title{Lab 2: Abstract Interpretation}
+\author{Andreas Sjöberg \\ \url{ansjob@kth.se} 
+		\and Marcus Larsson \\ \url{marcular@kth.se}
+	}
+
+\fancypagestyle{plain}
+{
+	\fancyhf{}
+	\renewcommand{\headrulewidth}{0pt}
+	\fancyfoot[C]{}
+}
+
+\begin{document}
+
+\thispagestyle{plain}
+\maketitle
+\clearpage
+
+\tableofcontents
+\clearpage
+
+\section{Introduction}
+In this lab we extend the previously developed abstract machine to execute in abstract domains.
+We focus specifically on the detection of signs domain in this report.
+With this extension programs may be analysed, which can be the basis for optimizations or bug detection (for example detection of dead code or uncaught exceptions).
+
+\section{Modifications}
+
+\subsection{Operational semantics for execution in abstract domain}
+The rules of operational semantics for While have been modified to support the detection of signs analysis.
+Modified rules are described below.
+One should note that the language is no longer deterministic because of the branch and division instructions.
+
+\begin{table}[h!]
+\centering
+\begin{tabular}{|llll|}
+\hline
+
+$\langle \texttt{PUSH-}n:c, e, ps \rangle$ & $\rhd$ & $\langle c, \textbf{abs}_{Z_{\bot}}(n):e, ps \rangle$ &\\
+$\langle \texttt{ADD}:c, v_1:v_2:e, ps \rangle$ & $\rhd$ & $\langle c, (v_1 +_{SE} v_2):e, ps \rangle$ & \\
+$\langle \texttt{SUB}:c, v_1:v_2:e, ps \rangle$ & $\rhd$ & $\langle c, (v_1 -_{SE} v_2):e, ps \rangle$ & \\
+$\langle \texttt{MULT}:c, v_1:v_2:e, ps \rangle$ & $\rhd$ & $\langle c, (v_1 \star_{SE} v_2):e, ps \rangle$ & \\
+$\langle \texttt{DIV}:c, v_1:v_2:e, ps \rangle$ & $\rhd$ &
+	$\left\{
+	\parbox{5cm}{
+		$\langle c, (v_1 /_{SE} (v_2 \backslash \texttt{ZERO})):e, ps \rangle$ \\
+ 		$\langle c, (v_1 /_{SE} v_2):e, \hat{ps} \rangle $
+	} \right. $
+	&
+	$\parbox{4cm}{
+		$\text{if }  v_2 \neq \texttt{ZERO} $ \\
+		$\text{if } \texttt{ZERO} \sqsubseteq_{SE} v_2$
+	}$\\
+$\langle \texttt{TRUE}:c, e, ps \rangle $ & $ \rhd $ & $ \langle c, \texttt{TT}:e, ps \rangle  $ &\\
+$\langle \texttt{FALSE}:c, e, ps \rangle $ & $ \rhd $ & $ \langle c, \texttt{FF}:e, ps \rangle  $ &\\
+
+$\langle \texttt{EQ}:c, v_1:v_2:e, ps \rangle $ & $ \rhd $ & $ \langle c, (v_1 =_{SE} v_2):e, ps \rangle $ &\\
+$\langle \texttt{LE}:c, v_1:v_2:e, ps \rangle $ & $ \rhd $ & $ \langle c, (v_1 \leq_{SE} v_2):e, ps \rangle $ &\\
+$\langle \texttt{AND}:c, v_1:v_2:e, ps \rangle $ & $ \rhd $ & $ \langle c, (v_1 \wedge_{SE} v_2):e, ps \rangle $ &\\
+$\langle \texttt{NEG}:c, v:e, ps \rangle $ & $ \rhd $ & $ \langle c, (\neg_{SE} v):e, ps \rangle $ &\\
+$\langle \texttt{FETCH-}x:c, e, ps \rangle $ & $ \rhd $ & $ \langle c, ps(x):e, ps \rangle $ &\\
+$\langle \texttt{STORE-}x:c, v:e, ps \rangle $ & $ \rhd $ & $ \langle c, e, ps[x \mapsto v] \rangle $ &\\
+$\langle \texttt{NOOP}:c, e, ps \rangle $ & $ \rhd $ & $ \langle c, e, ps \rangle $ &\\
+$\langle \texttt{BRANCH}(c_1, c_2):c, v:e, ps \rangle $ & $ \rhd $ &  
+	$\left\{
+	\parbox{3cm}{
+		$\langle c_1:c, e, ps \rangle$ \\
+		$\langle c_2:c, e, ps \rangle$ \\
+		$\langle c, e, \hat{ps} \rangle$ 
+	} \right.$
+	&
+	\parbox{3cm}{
+		if $ \texttt{TT} \sqsubseteq_{TE} v$ \\
+		if $ \texttt{FF} \sqsubseteq_{TE} v$\\
+		if $ \texttt{ERR}_B \sqsubseteq_{TE} v $
+	} \\
+$\langle \texttt{LOOP}(c_1, c_2):c, e, ps \rangle $ & $ \rhd $ & \multicolumn{2}{l|}{$\langle c_1:\texttt{BRANCH}(c_2:\texttt{LOOP}(c_1, c_2), \texttt{NOOP}):c, e, ps \rangle $ }\\
+$\langle \texttt{STORE-}x:c, e, \hat{ps} \rangle $ & $ \rhd $ & $ \langle c, e, \hat{ps} \rangle $ &\\
+$\langle \texttt{BRANCH}(c_1, c_2):c, v:e, \hat{ps} \rangle $ & $ \rhd $ & $ \langle c, e, \hat{ps} \rangle $ &\\
+$\langle \texttt{LOOP}(c_1, c_2):c, e, \hat{ps} \rangle $ & $ \rhd $ & $ \langle c, e, \hat{ps} \rangle $ &\\
+$\langle \texttt{TRY}(c_1):\texttt{CATCH}(c_2):c, e, \hat{ps} \rangle $ & $ \rhd $ & $ \langle c, e, \hat{ps} \rangle $ &\\
+$\langle \texttt{TRY}(c_1):c, e, ps \rangle $ & $ \rhd $ & $ \langle c_1:c, e, ps \rangle $ &\\
+$\langle \texttt{CATCH}(c_1):c, e, \hat{ps} \rangle $ & $ \rhd $ & $ \langle c_1:c, e, ps \rangle $ &\\
+$\langle \texttt{CATCH}(c_1):c, e, ps \rangle $ & $ \rhd $ & $ \langle c, e, ps \rangle $ &\\
+$\langle c_1:c, e, \hat {ps} \rangle$ & $\rhd$ & $\langle c':c, e', \hat {ps} \rangle$
+&\parbox{5.5cm}{ if $\langle c_1, e, ps \rangle \rhd \langle c', e', ps \rangle \text{ and} \\ c_1 \notin \{ \texttt{BRANCH}, \texttt{LOOP}, \texttt{TRY}, \texttt{CATCH} \}$}\\
+
+\hline
+\end{tabular}
+\caption{Operational Semantics for abstract execution in the Sign Detection domain}
+\label{table:am_rules}
+\end{table}
+
+\section{Implementation}
+To support abstract domain execution the previously developed abstract machine was modified to use user-provided functions rather than
+the regular arithmetic operations.
+Also, \verb|Configuration.step| no longer returns a single configuration but rather a set of possible configurations because of the non-determinism introduced.
+
+To support our rules regarding division we had to extend the supplied \verb|Operations| interface to include functions \verb|possiblyZero, isDefZero, removeZero|.
+\begin{itemize}
+\item
+\verb|possiblyZero(A)| will return true if the arithmetic expression \verb|A| contains zero (for example \verb|possiblyZero(NON_POS)| would return true,
+whereas \verb|possiblyZero(NON_ZERO)| would not).
+
+\item
+\verb|isDefZero(A)| will return true if \verb|A| is known to be exactly zero.
+
+\item
+\verb|removeZero(A)| will return the abstract value obtained by removing the abstract representation of zero from \verb|A| (for example, \verb|removeZero(NON_POS)| would return \verb|NEG|).
+
+\end{itemize}
+
+\subsection{Traversal}
+In order to have as much precision as possible, the program is executed from every combination
+of initial assignments of values (that the abstract domain provides) to variables.
+Assume for example that a program has two variables $x$ and $y$.
+The program will be run $3^2 = 9$ times, since there are $3$ different starting values (\verb|NEG, ZERO, POS|) for
+each of the two variables.
+
+Our implementation explores the configuration graph depth-first.
+This design decision was made because it simplifies the implementation, and it becomes easier to trace execution.
+
+To obtain the correct values for property states at each control point,
+every control point is mapped to a property state, and this mapping is updated
+whenever we visit this control point.
+This mapping is initialized so that every control point maps to \verb|INIT|.
+The updating simply computes the \emph{least upper bound} of variables in the previous mapping and the mapping of the current configuration.
+
+Imagine a control point in our program with the $x$ and $y$ variables.
+Initially it is associated with the mapping $\{x \mapsto \texttt{NONE}_A, y \mapsto \texttt{NONE}_A \}$.
+Assume we reach this control point in a configuration with a property state 
+$ps = \{x \mapsto \texttt{NEG}, y \mapsto \texttt{ZERO} \}$.
+The mapping associated with this control point is then updated to
+$\{ x \mapsto \texttt{NONE}_A \sqcup \texttt{NEG}, y \mapsto \texttt{NONE}_A \sqcup \texttt{ZERO} \} 
+= \{x \mapsto \texttt{NEG}, y \mapsto \texttt{ZERO} \} $.
+After every execution, the mapping at each control point will
+contain the least upper bound of the possible values for each variable at that control point.
+
+\clearpage
+\section{Results}
+
+In this section we will present some annotated programs, describe what conclusions can be drawn from the annotations,
+and how this demonstrates different strengths and weaknesses of the sign analysis.
+
+\subsection{Hello Analysis.while}
+
+\begin{figure}[h!]
+\centering
+\begin{verbatimtab}[4]
+{y=Z, x=Z}
+try
+    {y=Z, x=Z} rhs: T
+    if y <= 0 then
+        {y=NON_POS, x=Z} rhs: NON_NEG
+        y := (0 - y)
+    else
+        skip;
+    {y=NON_NEG, x=Z} rhs: ANY_A
+    x := (5 / y)
+catch
+    {y=ZERO, x=Z} rhs: POS
+    x := 3;
+{y=NON_NEG, x=NON_NEG}
+Abnormal termination impossible!
+Normal termination possible!
+\end{verbatimtab}
+
+\label{hello_analysis.while}
+\caption{A simple annotated program}
+\end{figure}
+
+As can be seen by the above annotated program,
+the signs analysis is able to deduce that \emph{if this program terminates},
+variables $x$ and $y$ will be non-negative. 
+This is as expected because the program is equivalent to $x = \lfloor 5 / |y| \rfloor, y = |y|$ if $y \neq 0$,
+and $x = 3, y = |y|$ otherwise.
+
+This analysis is possible, because we iterate over every possible start configuration,
+rather than starting from assigning every variable to $Z$.
+
+\clearpage
+\subsection{Division Precision.while}
+\begin{figure}[h!]
+\centering
+\begin{verbatimtab}[4]
+{z=Z, y=Z, x=Z} rhs: POS
+x := 5;
+{z=Z, y=Z, x=POS} rhs: POS
+y := 3;
+{z=Z, y=POS, x=POS}
+try
+    {z=Z, y=POS, x=POS} rhs: NON_NEG
+    z := (x / y);
+    {z=NON_NEG, y=POS, x=POS} rhs: ANY_A
+    x := (x / z)
+catch
+    skip;
+{z=NON_NEG, y=POS, x=NON_NEG} rhs: POS
+y := (x + 2);
+{z=NON_NEG, y=POS, x=NON_NEG}
+Abnormal termination impossible!
+Normal termination possible!
+\end{verbatimtab}
+
+\label{division_precision.while}
+\caption{Example program analysis which is possible because of the intact precision of the division}
+\end{figure}
+
+The above example shows a case where loss of precision is avoided in the division operation.
+This is because the divisor is a \verb|NON_NEG|, so we branch into two possible futures:
+$\frac{x}{\texttt{ZERO}}$ and $\frac{x}{\texttt{POS}}$.
+The analysis would have been less precise if the second branch had executed $\frac{x}{\texttt{Z}}$ instead.
+$y$ is correctly deduced to be \verb|POS| after this program, which would have been impossible with the less precise division.
+
+\clearpage
+\subsection{Else What?.while}
+
+\begin{figure}[h!]
+\centering
+\begin{verbatimtab}[4]
+{y=Z, x=Z}
+try
+    {y=Z, x=Z} rhs: ANY_A
+    x := (5 / y);
+    {y=NON_ZERO, x=Z} rhs: FF
+    if y = 0 then
+        {y=NONE_A, x=NONE_A} rhs: NONE (Dead Code)
+        x := 3
+    else
+        skip
+catch
+    {y=ZERO, x=Z} rhs: POS
+    x := 45;
+{y=Z, x=Z}
+Abnormal termination impossible!
+Normal termination possible!
+\end{verbatimtab}
+
+\label{waste_if.while}
+\caption{Example program analysis which shows detection of dead code (unnecessary if-then-else)}
+\end{figure}
+
+The above example shows that it is possible for the analysis to detect some dead code in an if-statement.
+This is possible because all code is initially marked as dead, until it is visited for the first time.
+Note that the branch where $y=\texttt{ZERO}$ does not mark the then clause as visited,
+even though it visits that instruction.
+This is because it has actually aborted at the division, and is simply ignoring instructions up until the next catch (or end of program).
+
+This kind of analysis supports program transformation that removes unnecessary if then else statements.
+
+\clearpage
+\subsection{Wasted Catch}
+\begin{figure}[h!]
+\centering
+\begin{verbatimtab}[4]
+{z=Z, y=Z, x=Z} rhs: ANY_A
+z := (5 / z);
+{z=Z, y=Z, x=Z}
+try
+    {z=Z, y=Z, x=Z} rhs: T
+    if !(x = 0) then
+        {z=Z, y=Z, x=NON_ZERO} rhs: Z
+        y := (100 / x)
+    else
+        {z=Z, y=Z, x=ZERO} rhs: POS
+        y := 100
+catch
+    {z=NONE_A, y=NONE_A, x=NONE_A} rhs: NONE (Dead Code)
+    x := 5;
+{z=Z, y=Z, x=Z}
+Abnormal termination possible!
+Normal termination possible!
+\end{verbatimtab}
+\label{waste_catch.while}
+\caption{Example program analysis which shows detection of dead code (unnecessary try-catch) and uncaught exception}
+\end{figure}
+
+This example program shows that the analysis is able to detect:
+
+\begin{itemize}
+\item	That the try-catch is unnecessary. This is because the division cannot be executed with $x = 0$ due to the if-guard.
+\item	That the program may terminate with an uncaught exception (because of the first division assignment).
+\end{itemize}
+
+\clearpage
+\subsection{Analyze this.while}
+\begin{figure}[h!]
+\centering
+\begin{verbatimtab}[4]
+{z=Z} rhs: T
+if 5 <= 3 then
+    {z=Z} rhs: POS
+    z := 5
+else
+    {z=Z} rhs: NEG
+    z := (0 - 5);
+{z=NON_ZERO}
+Abnormal termination impossible!
+Normal termination possible!
+\end{verbatimtab}
+\label{waste_catch.while}
+\caption{Example program analysis which shows limitation of the signs analysis}
+\end{figure}
+
+This example program shows that the analysis cannot deduce things about some constant expressions.
+This is simply because of the lack of granularity in the domain.
+This sample program would obviously get a better analysis from the constant propagation domain.
+
+
+\end{document}
