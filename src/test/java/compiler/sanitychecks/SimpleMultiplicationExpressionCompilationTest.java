@@ -8,6 +8,7 @@ import semant.amsyntax.Mult;
 import semant.amsyntax.Push;
 import semant.amsyntax.Store;
 import semant.whilesyntax.Assignment;
+import semant.whilesyntax.Minus;
 import semant.whilesyntax.Num;
 import semant.whilesyntax.Times;
 import semant.whilesyntax.Var;
