@@ -2,6 +2,8 @@ package configuration;
 
 import static org.junit.Assert.*;
 
+import java.util.Set;
+
 import org.junit.Test;
 
 import semant.Configuration;
@@ -11,18 +13,17 @@ import semant.signexc.TTExc;
 
 public abstract class ConfigurationTestBase  {
 	
-	Configuration initialConfig, expectedNext;
+	Configuration initialConfig;
+	Set<Configuration> expectedNexts;
 	
-	protected ConfigurationTestBase(Configuration initialConfig, Configuration expectedNext) {
+	protected ConfigurationTestBase(Configuration initialConfig, Set<Configuration> expectedNexts) {
 		this.initialConfig = initialConfig;
-		this.expectedNext = expectedNext;
+		this.expectedNexts = expectedNexts;
 	}
 	
 	@Test
 	public void nextConfigFits() {
-		assertEquals(expectedNext, initialConfig.step(getMockOps()));
+		assertEquals(expectedNexts, initialConfig.step(getMockOps()));
 	}
-
 	protected abstract Operations<SignExc, TTExc> getMockOps();
-
 }

@@ -57,8 +57,6 @@ public class Main {
             System.out.printf("Normal termination %spossible!\n",  exec.normalTerminationPossible ? "" : "im");
         }
         
-        
-                
     }
 
 	
