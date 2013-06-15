@@ -13,10 +13,6 @@ import semant.signexc.TTExc;
 
 public abstract class ConfigurationTestBase  {
 	
-	protected ConfigurationTestBase() {
-		
-	}
-	
 	@Test
 	public void nextConfigFits() {
 		assertEquals(expectedNexts(), initialConfig().step(getMockOps()));
