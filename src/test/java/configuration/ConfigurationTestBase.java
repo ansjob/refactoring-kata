@@ -13,17 +13,18 @@ import semant.signexc.TTExc;
 
 public abstract class ConfigurationTestBase  {
 	
-	Configuration initialConfig;
-	Set<Configuration> expectedNexts;
-	
-	protected ConfigurationTestBase(Configuration initialConfig, Set<Configuration> expectedNexts) {
-		this.initialConfig = initialConfig;
-		this.expectedNexts = expectedNexts;
+	protected ConfigurationTestBase() {
+		
 	}
 	
 	@Test
 	public void nextConfigFits() {
-		assertEquals(expectedNexts, initialConfig.step(getMockOps()));
+		assertEquals(expectedNexts(), initialConfig().step(getMockOps()));
 	}
+	
+	protected abstract Configuration initialConfig();
+	
+	protected abstract Set<Configuration> expectedNexts(); 
+
 	protected abstract Operations<SignExc, TTExc> getMockOps();
 }

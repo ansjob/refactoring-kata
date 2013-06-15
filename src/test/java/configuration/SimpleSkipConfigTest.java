@@ -16,12 +16,10 @@ import semant.signexc.TTExc;
 
 public class SimpleSkipConfigTest extends ConfigurationTestBase {
 
-	public SimpleSkipConfigTest() {
-		super(initialConfig(), expectedNext());
-		// TODO Auto-generated constructor stub
-	}
 
-	private static Set<Configuration> expectedNext() {
+
+	@Override
+	protected Set<Configuration> expectedNexts() {
 		Set<Configuration> ret = new HashSet<Configuration>();
 		ret.add(finalConfig());
 		return ret;
@@ -37,7 +35,8 @@ public class SimpleSkipConfigTest extends ConfigurationTestBase {
 		return empty;
 	}
 
-	private static Configuration initialConfig() {
+	@Override
+	protected Configuration initialConfig() {
 		
 		Map<String, Object> sto = new HashMap<String, Object>();
 		Stack<Object> stack = new Stack<Object>();
