@@ -91,7 +91,7 @@ public class Configuration {
 		}
 	}
 	
-	private Configuration copy() {
+	public Configuration copy() {
 		@SuppressWarnings("unchecked")
 		Stack<Object> newStack = (Stack<Object>) stack.clone();
 		Code newCode = (Code) c.clone();
