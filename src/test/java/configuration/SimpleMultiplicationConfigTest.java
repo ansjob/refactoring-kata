@@ -1,6 +1,5 @@
 package configuration;
 
-
 import java.util.ArrayList;
 import java.util.Collection;
 import java.util.List;
@@ -9,13 +8,12 @@ import org.junit.runner.RunWith;
 import org.junit.runners.Parameterized;
 import org.junit.runners.Parameterized.Parameters;
 
-import semant.amsyntax.Add;
 import semant.amsyntax.Inst;
+import semant.amsyntax.Mult;
 import semant.signexc.SignExc;
 
-
 @RunWith(Parameterized.class)
-public class SimpleAddConfigTest extends SimpleArtihmeticOperationConfigTest {
+public class SimpleMultiplicationConfigTest extends SimpleArtihmeticOperationConfigTest {
 	
 	@Parameters
 	public static Collection<Object[]> parameters() {
@@ -29,19 +27,19 @@ public class SimpleAddConfigTest extends SimpleArtihmeticOperationConfigTest {
 		
 		return parameterSets;
 	}
-	
-	public SimpleAddConfigTest(int a, int b) {
-		super(a,b);
+
+	public SimpleMultiplicationConfigTest(int a, int b) {
+		super(a, b);
 	}
 
 	@Override
 	protected SignExc expectedValue(int a, int b) {
-		return getMockOps().abs(a+b);
+		return getMockOps().abs(a*b);
 	}
 
 	@Override
 	protected Inst getInstruction() {
-		return new Add();
+		return new Mult();
 	}
 
 }
