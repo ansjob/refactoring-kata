@@ -33,8 +33,8 @@ import semant.signexc.SignExc;
 public class Configuration {
 
 	final Map<String, Object> sto;
-	final Stack<Object> stack;
-	final Code c;
+	public final Stack<Object> stack;
+	public final Code c;
 	int exception;
 
 	public Configuration(Map<String, Object> sto, Stack<Object> stack, Code c,
@@ -273,20 +273,10 @@ public class Configuration {
 
 	public <A, B> Set<Configuration> execute(Add add, Operations<A,B> ops) {
 		
-		Configuration next = this.copy();
-		next.c.remove(0);
-
-		@SuppressWarnings("unchecked")
-		A a1 = (A) next.stack.pop();
-		@SuppressWarnings("unchecked")
-		A a2 = (A) next.stack.pop();
-
-		A sum = ops.add(a1, a2);
-		next.stack.push(sum);
-
-		Set<Configuration> result = new HashSet<Configuration>();
-		result.add(next);
-		return result;
+		return add.step(this, ops);
+/*
+		
+		*/
 	}
 
 	public <A, B> Set<Configuration> execute(And and, Operations<A, B> ops) {
