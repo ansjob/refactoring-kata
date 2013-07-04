@@ -1,11 +1,7 @@
 package compiler.sanitychecks;
 
-import static org.junit.Assert.assertEquals;
-
 import org.junit.Before;
-import org.junit.Test;
 
-import semant.amsyntax.Code;
 import semant.amsyntax.Inst;
 import semant.amsyntax.Push;
 import semant.amsyntax.Store;

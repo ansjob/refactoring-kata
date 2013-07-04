@@ -1,7 +1,8 @@
 package compiler.sanitychecks;
 
-import org.junit.Before;
+import static java.util.Arrays.asList;
 
+import org.junit.Before;
 
 import semant.amsyntax.And;
 import semant.amsyntax.Code;
@@ -16,7 +17,6 @@ import semant.whilesyntax.FalseConst;
 import semant.whilesyntax.Skip;
 import semant.whilesyntax.TrueConst;
 import semant.whilesyntax.While;
-import static java.util.Arrays.*;
 
 public class SimpleWhileCompilerTest extends CompilerTestBase {
 	

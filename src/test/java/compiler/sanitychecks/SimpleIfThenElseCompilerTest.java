@@ -1,5 +1,7 @@
 package compiler.sanitychecks;
 
+import static java.util.Arrays.asList;
+
 import org.junit.Before;
 
 import semant.amsyntax.Branch;
@@ -17,8 +19,6 @@ import semant.whilesyntax.Skip;
 import semant.whilesyntax.Stm;
 import semant.whilesyntax.TrueConst;
 import semant.whilesyntax.Var;
-
-import static java.util.Arrays.*;
 
 public class SimpleIfThenElseCompilerTest extends CompilerTestBase {
 	

@@ -1,6 +1,6 @@
 package compiler.sanitychecks;
 
-import java.util.Collection;
+import static java.util.Arrays.asList;
 
 import org.junit.Before;
 
@@ -10,15 +10,12 @@ import semant.amsyntax.Inst;
 import semant.amsyntax.Le;
 import semant.amsyntax.Noop;
 import semant.amsyntax.Push;
-import semant.whilesyntax.Assignment;
 import semant.whilesyntax.Bexp;
 import semant.whilesyntax.Conditional;
 import semant.whilesyntax.LessThanEq;
 import semant.whilesyntax.Num;
 import semant.whilesyntax.Skip;
 import semant.whilesyntax.Stm;
-
-import static java.util.Arrays.*;
 
 public class SimpleLessEqualCompilerTest extends CompilerTestBase {
 	

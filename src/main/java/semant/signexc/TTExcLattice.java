@@ -1,6 +1,11 @@
 package semant.signexc;
 
-import static semant.signexc.TTExc.*;
+import static semant.signexc.TTExc.ANY_B;
+import static semant.signexc.TTExc.ERR_B;
+import static semant.signexc.TTExc.FF;
+import static semant.signexc.TTExc.NONE_B;
+import static semant.signexc.TTExc.T;
+import static semant.signexc.TTExc.TT;
 import semant.Lattice;
 
 public class TTExcLattice extends Lattice<TTExc> {

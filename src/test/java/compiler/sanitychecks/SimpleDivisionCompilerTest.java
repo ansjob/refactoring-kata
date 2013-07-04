@@ -1,5 +1,7 @@
 package compiler.sanitychecks;
 
+import static java.util.Arrays.asList;
+
 import org.junit.Before;
 
 import semant.amsyntax.Catch;
@@ -18,8 +20,6 @@ import semant.whilesyntax.Skip;
 import semant.whilesyntax.Stm;
 import semant.whilesyntax.TryCatch;
 import semant.whilesyntax.Var;
-
-import static java.util.Arrays.*;
 
 public class SimpleDivisionCompilerTest extends CompilerTestBase {
 

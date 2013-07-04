@@ -7,8 +7,29 @@ package semant;
 
 import java.io.FileReader;
 import java.lang.reflect.Field;
+
 import java_cup.runtime.Symbol;
-import semant.whilesyntax.*;
+import semant.whilesyntax.Aexp;
+import semant.whilesyntax.Assignment;
+import semant.whilesyntax.Bexp;
+import semant.whilesyntax.Compound;
+import semant.whilesyntax.Conditional;
+import semant.whilesyntax.Conjunction;
+import semant.whilesyntax.Divide;
+import semant.whilesyntax.Equals;
+import semant.whilesyntax.FalseConst;
+import semant.whilesyntax.LessThanEq;
+import semant.whilesyntax.Minus;
+import semant.whilesyntax.Not;
+import semant.whilesyntax.Num;
+import semant.whilesyntax.Plus;
+import semant.whilesyntax.Skip;
+import semant.whilesyntax.Stm;
+import semant.whilesyntax.Times;
+import semant.whilesyntax.TrueConst;
+import semant.whilesyntax.TryCatch;
+import semant.whilesyntax.Var;
+import semant.whilesyntax.While;
 
 /** CUP v0.10k TUM Edition 20050516 generated parser.
   * @version Thu Oct 15 11:30:10 CEST 2009

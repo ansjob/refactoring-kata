@@ -1,7 +1,25 @@
 package semant;
 
-import semant.amsyntax.*;
-import semant.whilesyntax.*;
+import semant.amsyntax.Code;
+import semant.whilesyntax.Assignment;
+import semant.whilesyntax.Compound;
+import semant.whilesyntax.Conditional;
+import semant.whilesyntax.Conjunction;
+import semant.whilesyntax.Divide;
+import semant.whilesyntax.EndOfProgram;
+import semant.whilesyntax.Equals;
+import semant.whilesyntax.FalseConst;
+import semant.whilesyntax.LessThanEq;
+import semant.whilesyntax.Minus;
+import semant.whilesyntax.Not;
+import semant.whilesyntax.Num;
+import semant.whilesyntax.Plus;
+import semant.whilesyntax.Skip;
+import semant.whilesyntax.Times;
+import semant.whilesyntax.TrueConst;
+import semant.whilesyntax.TryCatch;
+import semant.whilesyntax.Var;
+import semant.whilesyntax.While;
 
 public interface WhileVisitor {
     public Code visit(Compound compound);

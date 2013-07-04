@@ -7,13 +7,11 @@ import java.util.Set;
 import java.util.Stack;
 
 import semant.Configuration;
-import semant.Lattice;
 import semant.Operations;
 import semant.amsyntax.Add;
 import semant.amsyntax.Code;
 import semant.amsyntax.Noop;
 import semant.signexc.SignExc;
-import semant.signexc.SignExcLattice;
 import semant.signexc.SignExcOps;
 import semant.signexc.TTExc;
 

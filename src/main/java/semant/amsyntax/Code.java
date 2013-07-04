@@ -1,6 +1,6 @@
 package semant.amsyntax;
 
-import java.util.*;
+import java.util.ArrayList;
 
 @SuppressWarnings("serial")
 public class Code extends ArrayList<Inst> {

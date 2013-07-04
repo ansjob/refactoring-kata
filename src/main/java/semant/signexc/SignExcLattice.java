@@ -1,6 +1,15 @@
 package semant.signexc;
 
-import static semant.signexc.SignExc.*;
+import static semant.signexc.SignExc.ANY_A;
+import static semant.signexc.SignExc.ERR_A;
+import static semant.signexc.SignExc.NEG;
+import static semant.signexc.SignExc.NONE_A;
+import static semant.signexc.SignExc.NON_NEG;
+import static semant.signexc.SignExc.NON_POS;
+import static semant.signexc.SignExc.NON_ZERO;
+import static semant.signexc.SignExc.POS;
+import static semant.signexc.SignExc.Z;
+import static semant.signexc.SignExc.ZERO;
 import semant.Lattice;
 
 public class SignExcLattice extends Lattice<SignExc> {

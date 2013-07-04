@@ -1,18 +1,13 @@
 package compiler.sanitychecks;
 
-import static org.junit.Assert.*;
-
 import org.junit.Before;
-import org.junit.Test;
 
 import semant.CompileVisitor;
-import semant.amsyntax.Code;
 import semant.amsyntax.Inst;
 import semant.amsyntax.Push;
 import semant.amsyntax.Store;
 import semant.whilesyntax.Assignment;
 import semant.whilesyntax.Num;
-import semant.whilesyntax.Stm;
 import semant.whilesyntax.Var;
 
 

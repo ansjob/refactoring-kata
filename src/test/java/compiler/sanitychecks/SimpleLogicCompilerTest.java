@@ -1,5 +1,7 @@
 package compiler.sanitychecks;
 
+import static java.util.Arrays.asList;
+
 import org.junit.Before;
 
 import semant.amsyntax.And;
@@ -20,8 +22,6 @@ import semant.whilesyntax.Not;
 import semant.whilesyntax.Num;
 import semant.whilesyntax.Skip;
 import semant.whilesyntax.Stm;
-
-import static java.util.Arrays.*;
 
 public class SimpleLogicCompilerTest extends CompilerTestBase {
 

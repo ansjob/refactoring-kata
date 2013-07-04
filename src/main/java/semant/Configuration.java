@@ -28,7 +28,6 @@ import semant.amsyntax.Store;
 import semant.amsyntax.Sub;
 import semant.amsyntax.True;
 import semant.amsyntax.Try;
-import semant.signexc.SignExc;
 
 public class Configuration {
 
@@ -50,9 +49,9 @@ public class Configuration {
 		Inst inst = c.get(0);
 		switch (inst.opcode) {
 		case ADD:
-			return execute((Add) inst, ops);
+			return ((Add)inst).step(this, ops);
 		case AND:
-			return execute((And) inst, ops);
+			return ((And) inst).step(this, ops);
 		case BRANCH:
 			return execute((Branch) inst, ops);
 		case EQ:
@@ -66,17 +65,17 @@ public class Configuration {
 		case LOOP:
 			return execute((Loop) inst, ops);
 		case MULT:
-			return execute((Mult) inst, ops);
+			return ((Mult) inst).step(this, ops);
 		case NEG:
 			return execute((Neg) inst, ops);
 		case NOOP:
-			return execute((Noop) inst, ops);
+			return ((Noop) inst).step(this, ops);
 		case PUSH:
 			return execute((Push) inst, ops);
 		case STORE:
 			return execute((Store) inst, ops);
 		case SUB:
-			return execute((Sub) inst, ops);
+			return ((Sub) inst).step(this, ops);
 		case TRUE:
 			return execute((True) inst, ops);
 		case CATCH:
@@ -271,30 +270,6 @@ public class Configuration {
 		return res.toString();
 	}
 
-	public <A, B> Set<Configuration> execute(Add add, Operations<A,B> ops) {
-		
-		return add.step(this, ops);
-/*
-		
-		*/
-	}
-
-	public <A, B> Set<Configuration> execute(And and, Operations<A, B> ops) {
-		Configuration next = this.copy();
-		next.c.remove(0);
-
-		@SuppressWarnings("unchecked")
-		B b1 = (B) next.stack.pop();
-		@SuppressWarnings("unchecked")
-		B b2 = (B) next.stack.pop();
-		B res = ops.and(b1, b2);
-		next.stack.push(res);
-
-		TreeSet<Configuration> result = new TreeSet<Configuration>();
-		result.add(next);
-		return result;
-	}
-
 	public <A, B> Set<Configuration> execute(Branch branch, Operations<A, B> ops) {
 
 		Configuration next = this.copy();
@@ -423,21 +398,6 @@ public class Configuration {
 	}
 
 	@SuppressWarnings("unchecked")
-	public <A, B> Set<Configuration> execute(Mult mult, Operations<A, B> ops) {
-
-		Configuration next = this.copy();
-		next.c.remove(0);
-
-		A a2 = (A) next.stack.pop();
-		A a1 = (A) next.stack.pop();
-		next.stack.push(ops.multiply(a1, a2));
-
-		Set<Configuration> result = new HashSet<Configuration>();
-		result.add(next);
-		return result;
-	}
-
-	@SuppressWarnings("unchecked")
 	public <A, B> Set<Configuration> execute(Neg neg, Operations<A, B> ops) {
 
 		
@@ -447,14 +407,6 @@ public class Configuration {
 		B b = (B) next.stack.pop();
 		next.stack.push(ops.neg(b));
 
-		Set<Configuration> result = new HashSet<Configuration>();
-		result.add(next);
-		return result;
-	}
-
-	public <A, B> Set<Configuration> execute(Noop noop, Operations<A, B> ops) {
-		Configuration next = this.copy();
-		next.c.remove(0);
 		Set<Configuration> result = new HashSet<Configuration>();
 		result.add(next);
 		return result;
@@ -490,22 +442,6 @@ public class Configuration {
 		result.add(next);
 		return result;
 		
-	}
-
-	@SuppressWarnings("unchecked")
-	public <A, B> Set<Configuration> execute(Sub sub, Operations<A, B> ops) {
-
-		Configuration next = this.copy();
-		next.c.remove(0);
-
-		A a1 = (A) next.stack.pop();
-		A a2 = (A) next.stack.pop();
-		A res = ops.subtract(a1, a2);
-		next.stack.push(res);
-		
-		Set<Configuration> result = new HashSet<Configuration>();
-		result.add(next);
-		return result;
 	}
 
 	public <A, B> Set<Configuration> execute(True trueConst, Operations<A, B> ops) {

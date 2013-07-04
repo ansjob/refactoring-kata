@@ -1,5 +1,7 @@
 package compiler.sanitychecks;
 
+import static java.util.Arrays.asList;
+
 import org.junit.Before;
 
 import semant.amsyntax.Add;
@@ -12,8 +14,6 @@ import semant.whilesyntax.Minus;
 import semant.whilesyntax.Num;
 import semant.whilesyntax.Plus;
 import semant.whilesyntax.Var;
-
-import static java.util.Arrays.*;
 
 public class SimpleArithmeticCompilerTest extends CompilerTestBase {
 	
