@@ -6,7 +6,6 @@ import java.util.Map;
 import java.util.Map.Entry;
 import java.util.Set;
 import java.util.Stack;
-import java.util.TreeSet;
 
 import semant.amsyntax.Add;
 import semant.amsyntax.And;
@@ -34,7 +33,7 @@ public class Configuration {
 	final Map<String, Object> sto;
 	public final Stack<Object> stack;
 	public final Code c;
-	int exception;
+	public int exception;
 
 	public Configuration(Map<String, Object> sto, Stack<Object> stack, Code c,
 			int exception) {
@@ -53,7 +52,7 @@ public class Configuration {
 		case AND:
 			return ((And) inst).step(this, ops);
 		case BRANCH:
-			return execute((Branch) inst, ops);
+			return ((Branch) inst).step(this, ops);
 		case EQ:
 			return execute((Eq) inst, ops);
 		case FALSE:
@@ -268,40 +267,6 @@ public class Configuration {
 			res.append(">");
 
 		return res.toString();
-	}
-
-	public <A, B> Set<Configuration> execute(Branch branch, Operations<A, B> ops) {
-
-		Configuration next = this.copy();
-		next.c.remove(0);
-
-		@SuppressWarnings("unchecked")
-		B guard = (B) next.stack.pop();
-		if (exception != -1) {
-			Set<Configuration> result = new HashSet<Configuration>();
-			result.add(next);
-			return result;
-		}
-		
-		Set<Configuration> result = new HashSet<Configuration>();
-
-		if (ops.possiblyTrue(guard)) {
-			Configuration nextp = next.copy();
-			nextp.c.addAll(0, branch.c1);
-			result.add(nextp);
-		}
-		if(ops.possiblyFalse(guard)) {
-			Configuration nextp = next.copy();
-			nextp.c.addAll(0, branch.c2);
-			result.add(nextp);
-		}
-		if(ops.possiblyBErr(guard)) {
-			Configuration nextp = next.copy();
-			nextp.exception = branch.stmControlPoint;
-			result.add(nextp);
-		}
-
-		return result;
 	}
 
 	@SuppressWarnings("unchecked")
