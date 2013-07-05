@@ -66,7 +66,7 @@ public class Configuration {
 		case MULT:
 			return ((Mult) inst).step(this, ops);
 		case NEG:
-			return execute((Neg) inst, ops);
+			return ((Neg) inst).step(this, ops);
 		case NOOP:
 			return ((Noop) inst).step(this, ops);
 		case PUSH:
@@ -360,21 +360,6 @@ public class Configuration {
 		result.add(next);
 		return result;
 
-	}
-
-	@SuppressWarnings("unchecked")
-	public <A, B> Set<Configuration> execute(Neg neg, Operations<A, B> ops) {
-
-		
-		Configuration next = this.copy();
-		next.c.remove(0);
-
-		B b = (B) next.stack.pop();
-		next.stack.push(ops.neg(b));
-
-		Set<Configuration> result = new HashSet<Configuration>();
-		result.add(next);
-		return result;
 	}
 
 	public <A, B> Set<Configuration> execute(Push push, Operations<A, B> ops) {
